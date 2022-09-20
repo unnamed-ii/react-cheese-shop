@@ -1,0 +1,15 @@
+@import "../../styles/vars";
+
+.popular__recipes {
+
+  &-title {
+    @include h2;
+    color: $brown;
+    margin-bottom: 20px;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

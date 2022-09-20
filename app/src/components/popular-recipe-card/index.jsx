@@ -1,8 +1,8 @@
 import React from 'react';
 import './style.scss'
 import {ReactComponent as ArrowRightIcon} from "../../images/icons/arrow-right.svg";
-import popularRecipe from "../../images/popular-recipe.png";
 import {Link} from "react-router-dom";
+import popularRecipe from "../../images/popular-recipe.png";
 
 const PopularRecipeCard = () => {
     return (
