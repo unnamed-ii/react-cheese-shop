@@ -1,0 +1,183 @@
+@import "../../styles/vars";
+
+.wrapper__sign-up {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.sign-up {
+  display: flex;
+  background-color: $white;
+  border: 1px solid rgba(230, 230, 230, 0.2);
+  border-radius: 8px;
+  margin-bottom: 44px;
+
+  &__info {
+    width: 590px;
+    background-color: #FDF2D8;
+    padding: 40px 55px 84px 40px;
+
+    &-title {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 40px;
+      color: $brown;
+      margin-bottom: 12px;
+    }
+
+    &-text {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 52px;
+    }
+
+    &-benefitts {
+
+    }
+
+    &-benefit {
+
+      & + & {
+        margin-top: 30px;
+      }
+
+      .title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .text {
+        font-size: 14px;
+        line-height: 22px;
+        color: #666666;
+      }
+    }
+  }
+
+  &__form {
+    width: 590px;
+    padding: 40px 55px 0;
+
+    form {
+
+      .name,
+      .email {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 6px;
+
+        input {
+          border: 1px solid #E6E6E6;
+          border-radius: 6px;
+          padding: 13px 0 11px 14px;
+          width: 100%;
+          outline: none;
+          margin-bottom: 20px;
+
+          &::placeholder {
+            font-size: 15px;
+            line-height: 24px;
+            color: #BFBFBF;
+          }
+        }
+      }
+
+      .password {
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        input {
+          border: 1px solid #E6E6E6;
+          border-radius: 6px;
+          padding: 13px 0 11px 14px;
+          outline: none;
+          width: 232px;
+          margin-top: 6px;
+        }
+      }
+
+      button {
+        background-color: $orange;
+        border-radius: 5px;
+        color: $white;
+        border: none;
+        width: 100%;
+        padding: 12px 0;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 14px;
+      }
+    }
+
+    &-accounts {
+      .top {
+        font-size: 16px;
+        line-height: 24px;
+        color: $darkGrey;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 17px;
+
+        &::before,
+        &::after {
+          content: '';
+          width: 210px;
+          height: 1px;
+          color: $darkGrey;
+        }
+      }
+
+      .services {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 37px;
+
+        .icon + .icon {
+          margin-left: 15px;
+        }
+      }
+
+      .agreements {
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(230, 230, 230, 1);
+        margin-bottom: 30px;
+
+        &__agreement {
+          font-size: 13px;
+          line-height: 20px;
+          color: #686868;
+
+          a {
+            text-decoration: underline;
+            color: $orange;
+          }
+
+          input {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    &-link {
+      text-align: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: $brown;
+
+      a {
+        color: $orange;
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+@import "../../styles/vars";
+
+.benefits-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.benefits {
+  min-width: 1190px;
+  padding: 100px 0 66px;
+
+  &__info {
+    width: 398px;
+
+    &-title {
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 64px;
+      text-transform: uppercase;
+      color: $brown;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__list {
+    margin-top: -75px;
+
+    &-benefit {
+      position: relative;
+      width: 291px;
+
+      &.clock {
+        margin-left: 753px;
+        margin-bottom: 10px;
+      }
+
+      &.quality {
+        margin-left: 122px;
+        margin-bottom: 78px;
+      }
+
+      &.discounts {
+        margin-left: -10px;
+      }
+
+      &.prices {
+        width: 255px;
+        margin-left: 603px;
+        margin-top: -300px;
+
+        .plus {
+          left: -28px;
+        }
+
+        .box {
+
+          .icon {
+            left: 71px;
+          }
+
+          .message-image {
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+          }
+
+          .text {
+            left: 104px;
+          }
+        }
+      }
+
+      &.service {
+        width: 305px;
+        margin-left: 843px;
+        margin-top: 50px;
+
+        .plus {
+          right: -40px;
+        }
+
+        .box {
+
+          .text {
+            left: 81px;
+          }
+        }
+      }
+
+      .plus {
+        width: 51px;
+        height: 51px;
+        background: $orange;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+        right: -55px;
+        bottom: 0;
+
+        &__inner {
+          width: 33px;
+          height: 33px;
+          background: #FF9E4D;
+          box-shadow: -5px 5px 4px #E78634;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $white;
+        }
+      }
+
+      .box {
+        position: relative;
+
+        .message-image {
+          z-index: -1;
+        }
+
+        .icon {
+          position: absolute;
+          left: 30px;
+          top: 0;
+        }
+
+        .text {
+          font-size: 15px;
+          line-height: 21px;
+          color: #666666;
+          position: absolute;
+          top: 39px;
+          left: 88px;
+          width: 144px;
+        }
+      }
+    }
+  }
+}

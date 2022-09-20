@@ -1,0 +1,57 @@
+@import "../../styles/vars";
+
+.qa {
+
+  &__inner {
+    display: flex;
+
+    &-content {
+      max-width: 820px;
+      margin-left: 80px;
+    }
+  }
+
+  &__title {
+    @include h2;
+    margin-bottom: 20px;
+    color: $brown;
+  }
+
+  &__questions {
+    background: #FEF0C2;
+    border: 1px solid #FAE9B3;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    padding: 30px;
+
+    &-question {
+      margin-bottom: 12px;
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 600px;
+    }
+  }
+
+  &__answers {
+
+    &-answer {
+      margin-bottom: 41px;
+
+      &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: $brown;
+        margin-bottom: 10px;
+      }
+
+      &__text {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #666666;
+        white-space: pre-line;
+      }
+    }
+  }
+}

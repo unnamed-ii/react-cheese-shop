@@ -1,0 +1,139 @@
+@import "../../styles/vars";
+
+.calculator {
+  padding-bottom: 140px;
+
+  &__inner {
+    display: flex;
+
+    &-content {
+      width: 820px;
+      margin-left: 80px;
+    }
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 40px;
+    color: $brown;
+    margin-bottom: 20px;
+  }
+
+  &__box {
+    display: flex;
+
+    &-calculations {
+      max-width: 400px;
+      width: 100%;
+      padding: 30px 20px;
+      background: $white;
+      border: 1px solid rgba(229, 229, 229, 0.5);
+      border-radius: 5px;
+      margin-right: 20px;
+
+      &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: $brown;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(128, 128, 128, .5);
+        margin-bottom: 20px;
+      }
+
+      &__inputs {
+
+      }
+
+      &__input {
+
+        .title {
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 6px;
+        }
+
+        input {
+          width: 100%;
+          font-size: 15px;
+          line-height: 24px;
+          margin-bottom: 24px;
+          border: 1px solid #E6E6E6;
+          border-radius: 6px;
+          outline: none;
+          padding: 13px 0 11px 14px;
+        }
+      }
+
+      &__btn {
+        border-radius: 5px;
+        background-color: $orange;
+        width: 100%;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $white;
+        padding: 12px 0;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+
+    &-result {
+      background: $white;
+      border: 1px solid rgba(229, 229, 229, 0.5);
+      border-radius: 5px;
+      padding: 30px 20px;
+      max-width: 400px;
+
+      &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: $brown;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(128, 128, 128, .5);
+        margin-bottom: 20px;
+      }
+
+      &__text {
+        font-size: 14px;
+        line-height: 26px;
+        margin-bottom: 40px;
+
+        span {
+          font-weight: 700;
+          color: $orange;
+          font-size: 20px;
+          line-height: 26px;
+        }
+      }
+
+      &__instructions {
+
+        .title {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 22px;
+          color: $brown;
+        }
+
+        .line {
+          position: relative;
+          display: flex;
+          margin-top: 20px;
+          padding-left: 31px;
+          color: #666666;
+
+          .question-mark {
+            margin-right: 11px;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}

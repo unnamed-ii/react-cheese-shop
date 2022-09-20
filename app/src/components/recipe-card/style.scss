@@ -1,0 +1,40 @@
+@import "src/styles/vars";
+
+.recipe {
+  width: 280px;
+  padding: 84px 126px 10px 16px;
+  border-radius: 5px;
+  margin-top: 15px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../../images/recipe.png");
+    width: 280px;
+    height: 140px;
+    z-index: -1;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: $white;
+    margin-bottom: 2px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    a {
+      color: $orange;
+      margin-right: 6px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

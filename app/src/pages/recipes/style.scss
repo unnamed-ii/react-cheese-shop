@@ -1,0 +1,66 @@
+@import "../../styles/vars";
+
+.recipes {
+  padding-bottom: 100px;
+
+  &__inner {
+    display: flex;
+
+    &-content {
+      margin-left: 30px;
+      width: 870px;
+
+      &__cheese {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid rgba($darkGrey, .1);
+
+        .title {
+          @include h2;
+          color: $brown;
+          margin-bottom: 15px;
+        }
+
+        .box {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+      }
+
+      &__added {
+        margin-bottom: 30px;
+
+        .title {
+          margin-bottom: 5px;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 40px;
+          color: $brown;
+        }
+
+        .box {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+      }
+
+      &__button {
+        text-align: center;
+
+        button {
+          background: $orange;
+          border-radius: 5px;
+          border: none;
+          padding: 12px 55px;
+          cursor: pointer;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          color: $white;
+        }
+      }
+    }
+  }
+}

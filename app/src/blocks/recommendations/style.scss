@@ -1,0 +1,80 @@
+@import "../../styles/vars";
+
+.recommendations {
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    color: $white;
+    text-align: left;
+
+    & + & {
+      margin-left: 2px;
+    }
+
+    &-subtitle {
+      font-size: 16px;
+      line-height: 24px;
+      color: $orange;
+      margin-top: -73px;
+      text-align: left;
+      padding-left: 14px;
+    }
+
+    &-title {
+      font-size: 22px;
+      line-height: 28px;
+      text-transform: uppercase;
+      text-align: left;
+      padding-left: 14px;
+    }
+
+    &-text {
+      font-size: 18px;
+      line-height: 26px;
+      display: none;
+    }
+
+    &-link {
+      font-size: 16px;
+      line-height: 24px;
+      border-radius: 5px;
+      background-color: $orange;
+      color: $white;
+      padding: 13px 30px;
+      display: none;
+    }
+
+    img {
+    }
+
+    &.active {
+
+      .recommendations__item-subtitle {
+        display: none;
+      }
+
+      .recommendations__item-title {
+        margin: -271px 0 10px 0;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        padding-left: 30px;
+      }
+
+      .recommendations__item-text {
+        display: block;
+        text-align: left;
+        max-width: 352px;
+        margin-bottom: 82px;
+        padding-left: 30px;
+      }
+
+      .recommendations__item-link {
+        display: inline;
+        margin-left: 30px;
+      }
+    }
+  }
+}

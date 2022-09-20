@@ -1,0 +1,56 @@
+@import "src/styles/vars";
+
+.review {
+  padding: 24px 20px 20px 20px;
+  background: $white;
+  border: 1px solid #E6E6E6;
+  border-radius: 5px;
+  max-width: 400px;
+  margin-top: 20px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    .user {
+
+      &__name {
+        font-size: 16px;
+        line-height: 20px;
+        color: $brown;
+      }
+
+      &__city {
+        font-size: 15px;
+        line-height: 20px;
+        color: $darkGrey;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__images {
+    margin-bottom: 16px;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+
+    img + img {
+      margin-left: 10px;
+    }
+  }
+
+  &__date {
+    font-size: 14px;
+    line-height: 24px;
+    color: $darkGrey;
+  }
+}

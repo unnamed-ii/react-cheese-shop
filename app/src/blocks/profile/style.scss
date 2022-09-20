@@ -1,0 +1,495 @@
+@import "../../styles/vars";
+
+.wrapper-profile {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  max-width: 1180px;
+  width: 100%;
+  margin-bottom: 266px;
+
+  &__title {
+    @include h2;
+    color: $brown;
+    margin-bottom: 24px;
+  }
+
+  &__tabs {
+
+    &-titles {
+      display: flex;
+    }
+
+    &-title {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      line-height: 24px;
+      color: $brown;
+      padding: 14px 16px;
+      cursor: pointer;
+
+      &.active {
+        background-color: $white;
+      }
+
+      .icon {
+        margin-right: 9px;
+      }
+    }
+
+    &-item {
+      background-color: $white;
+      display: none;
+
+      &.active {
+        display: block;
+      }
+
+      .title {
+        font-size: 24px;
+        line-height: 32px;
+        color: $brown;
+      }
+
+      .subtitle {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: $darkGrey;
+      }
+
+      &.user {
+        padding: 60px 40px;
+        position: relative;
+
+        .title {
+          margin-bottom: 20px;
+        }
+
+        .edit {
+          text-decoration: underline;
+          color: $orange;
+          position: absolute;
+          font-size: 16px;
+          line-height: 32px;
+          top: 64px;
+          right: 40px;
+        }
+
+        .phone,
+        .email,
+        .address {
+          display: flex;
+          font-size: 16px;
+          line-height: 32px;
+
+          &__title {
+            width: 140px;
+            margin-right: 20px;
+            color: $darkGrey;
+          }
+        }
+      }
+
+      &.orders {
+        padding: 40px 40px 30px;
+
+        .title {
+          margin-bottom: 4px;
+        }
+
+        .subtitle {
+          margin-bottom: 30px;
+        }
+
+        .table {
+
+          &__headline {
+            background: #FEE89F;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+            display: flex;
+            justify-content: space-between;
+            padding: 9px 196px 9px 100px;
+
+            &-title {
+              width: 85px;
+            }
+
+            &-title.main {
+              width: 440px;
+            }
+          }
+
+          &__items {
+
+            .table__item + .table__item {
+              border-top: 1px solid rgba(224, 221, 221, 0.5);
+            }
+          }
+
+          &__item {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            line-height: 30px;
+            padding: 20px 0;
+
+            &-image {
+              width: 60px;
+              height: 60px;
+              margin-right: 40px;
+            }
+
+            &-info {
+              width: 440px;
+              margin-right: 40px;
+
+              &__title {
+
+              }
+
+              &__code {
+                font-size: 16px;
+                line-height: 24px;
+                color: $darkGrey;
+              }
+            }
+
+            &-price {
+              width: 85px;
+              margin-right: 32px;
+            }
+
+            &-amount {
+              width: 85px;
+              margin-right: 38px;
+            }
+
+            &-total {
+              width: 85px;
+              margin-right: 38px;
+            }
+
+            &-button {
+              background: #FD9339;
+              border-radius: 5px;
+              color: $white;
+              border: none;
+              padding: 10px 20px;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 24px;
+              cursor: pointer;
+              margin-left: 40px;
+            }
+          }
+        }
+      }
+
+      &.favourite {
+        padding: 40px 40px 30px;
+
+        .subtitle {
+          margin-bottom: 30px;
+        }
+
+        .favourite-cards {
+          display: flex;
+
+          &__card {
+            border: 1px solid #E7E7E7;
+            border-radius: 6px;
+            padding: 20px 20px 30px;
+            margin-right: 20px;
+            min-width: 260px;
+
+            &-top {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 14px;
+
+              .text {
+                padding-left: 14px;
+                position: relative;
+                color: $green;
+
+                &::before {
+                  content: '';
+                  position: absolute;
+                  width: 8px;
+                  height: 8px;
+                  background-color: $green;
+                  border-radius: 50%;
+                  left: 0;
+                  top: 6px;
+                }
+              }
+
+              img {
+
+              }
+            }
+
+            &__image {
+              margin-bottom: 14px;
+              width: 220px;
+              height: 180px;
+            }
+
+            &-title {
+              font-size: 18px;
+              line-height: 22px;
+              margin-bottom: 6px;
+              width: 220px;
+            }
+
+            &-subtitle {
+              font-size: 16px;
+              line-height: 24px;
+              color: $darkGrey;
+              margin-bottom: 18px;
+            }
+
+            &-bottom {
+              display: flex;
+              justify-content: space-between;
+
+              .price {
+                font-size: 20px;
+                line-height: 24px;
+
+                &__discount {
+                  font-size: 16px;
+                  line-height: 20px;
+                  text-decoration-line: line-through;
+                  color: $darkGrey;
+                  margin-bottom: 4px;
+                }
+              }
+
+              button {
+                padding: 10px 20px;
+                color: $white;
+                background-color: $orange;
+                border: none;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                border-radius: 5px;
+                cursor: pointer;
+              }
+            }
+
+            &.out-of-stock {
+
+              .favourite-cards__card-top {
+                .text {
+                  color: $darkGrey;
+
+                  &::before {
+                    background-color: $darkGrey;
+                  }
+                }
+              }
+
+              .favourite-cards__card-bottom {
+                color: $darkGrey;
+
+                button {
+                  background: #E0DFDC;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.coupons {
+        padding: 10px 35px 0;
+
+        .coupons__coupon + .coupons__coupon {
+          border-top: 1px solid rgba(210, 210, 210, 0.5);
+        }
+
+        .coupons__coupon {
+          padding: 20px 0;
+          display: flex;
+          justify-content: space-between;
+
+          &.active {
+            .status {
+              color: $green;
+            }
+
+            .title {
+              color: $brown;
+            }
+
+            button {
+              display: block;
+            }
+          }
+
+          img {
+            margin-right: 20px;
+          }
+
+          &-info {
+            display: flex;
+
+            &__box {
+
+              .status {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FB6042;
+                margin-bottom: 20px;
+              }
+
+              .title {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 26px;
+                color: $darkGrey;
+                margin-bottom: 2px;
+              }
+
+              .subtitle {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: #7D7D7D;
+              }
+            }
+          }
+
+          &-scan {
+
+            .code {
+              text-align: right;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 24px;
+              color: $darkGrey;
+              margin-bottom: 28px;
+            }
+
+            button {
+              background-color: transparent;
+              border: 1px solid #292929;
+              border-radius: 5px;
+              padding: 10px;
+              font-size: 16px;
+              line-height: 24px;
+              cursor: pointer;
+              display: none;
+            }
+          }
+        }
+      }
+
+      &.address {
+        padding: 60px 40px;
+        position: relative;
+
+        .title {
+          margin-bottom: 20px;
+        }
+
+        .edit {
+          position: absolute;
+          top: 60px;
+          right: 40px;
+          color: $orange;
+          text-decoration: underline;
+          font-size: 16px;
+          line-height: 32px;
+          cursor: pointer;
+        }
+
+        .box {
+          display: flex;
+
+          &-titles {
+            font-size: 16px;
+            line-height: 32px;
+            color: $darkGrey;
+            margin-right: 45px;
+          }
+
+          &-texts {
+            font-size: 16px;
+            line-height: 32px;
+            color: #292929;
+          }
+        }
+      }
+
+      &.change-password {
+        padding: 40px 0 94px 40px;
+
+        .title {
+          margin-bottom: 4px;
+        }
+
+        .subtitle {
+          margin-bottom: 40px;
+        }
+
+        form {
+          .inputs {
+            display: flex;
+            margin-bottom: 20px;
+
+            &__input + &__input {
+              margin-right: 20px;
+            }
+
+            &__input {
+              font-size: 16px;
+              line-height: 24px;
+
+              input {
+                border: 1px solid #E6E6E6;
+                border-radius: 6px;
+                outline: none;
+                padding: 13px 0 11px 14px;
+                width: 340px;
+                margin: 6px 20px 0 0;
+
+                &::placeholder {
+                  font-size: 15px;
+                  line-height: 24px;
+                  color: #BFBFBF;
+                }
+              }
+            }
+          }
+
+          button {
+            background: $orange;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: $white;
+            padding: 12px 59px;
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+  }
+
+}

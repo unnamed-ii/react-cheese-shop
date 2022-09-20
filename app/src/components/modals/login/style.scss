@@ -1,0 +1,92 @@
+@import "src/styles/vars";
+
+.login-wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.login {
+  width: 410px;
+  padding: 20px 0 16px;
+  background: $white;
+  border: 1px solid rgba(229, 229, 229, 0.5);
+  border-radius: 5px;
+  position: relative;
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $brown;
+    padding: 0 0 20px 30px;
+    border-bottom: 1px solid #E6E6E6;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+  }
+
+  &__form {
+    padding: 20px 30px 30px 30px;
+    border-bottom: 1px solid #E6E6E6;
+    font-size: 16px;
+    line-height: 24px;
+
+    input {
+      margin: 6px 0 20px;
+      border: 1px solid #E6E6E6;
+      border-radius: 6px;
+      outline: none;
+      padding: 13px 0 11px 14px;
+      width: 100%;
+
+      &::placeholder {
+        font-size: 15px;
+        line-height: 24px;
+        color: #BFBFBF;
+      }
+    }
+
+    button {
+      background: $orange;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: $white;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      padding: 12px 0;
+      margin-bottom: 28px;
+    }
+
+    &-link {
+      text-align: center;
+
+      a {
+        color: $orange;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration-line: underline;
+      }
+    }
+  }
+
+  &__link {
+    padding: 16px 30px 0;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: $brown;
+
+    a {
+      color: $orange;
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "src/styles/vars";
+
+.added-recipe {
+  width: 280px;
+  background: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  border-radius: 5px;
+  margin-top: 15px;
+
+  &__info {
+    margin-bottom: 10px;
+    padding: 20px;
+
+    &-title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: $brown;
+      margin-bottom: 2px;
+    }
+
+    &-text {
+      font-size: 16px;
+      line-height: 24px;
+      color: #000000;
+      opacity: 0.6;
+    }
+  }
+
+  &__link {
+    padding: 0 0 20px 20px;
+
+    a {
+      margin-right: 10px;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration-line: underline;
+      color: $orange;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+@import "../../styles/vars";
+
+.sign-in {
+  background: $white;
+  border: 1px solid rgba(230, 230, 230, 0.2);
+  border-radius: 8px;
+  display: flex;
+  margin-bottom: 44px;
+
+  &__form {
+    padding: 40px 55px 30px;
+    width: 590px;
+
+    &-title {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 40px;
+      color: $brown;
+      margin-bottom: 80px;
+    }
+
+    form {
+      font-size: 16px;
+      line-height: 24px;
+
+      input {
+        margin: 6px 0 20px;
+        border: 1px solid #E6E6E6;
+        border-radius: 6px;
+        padding: 13px 0 11px 14px;
+        width: 100%;
+        outline: none;
+        font-size: 15px;
+        line-height: 24px;
+
+        &::placeholder {
+          color: #BFBFBF;
+        }
+      }
+
+      button {
+        background: $orange;
+        border-radius: 5px;
+        border: none;
+        color: $white;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+        padding: 12px 0;
+        margin-bottom: 14px;
+      }
+    }
+
+    &-accounts {
+
+      .title {
+        font-size: 16px;
+        line-height: 24px;
+        color: $darkGrey;
+        opacity: 0.5;
+        text-align: center;
+        margin-bottom: 17px;
+      }
+
+      .services {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 114px;
+
+        .icon + .icon {
+          margin-left: 15px;
+        }
+      }
+    }
+
+    &-link {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      justify-content: center;
+      text-decoration-line: underline;
+      color: $orange;
+    }
+  }
+
+  &__register {
+    background: #FDF2D8;
+    width: 590px;
+    padding: 218px 55px;
+
+    &-title {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 40px;
+      text-align: center;
+      color: $brown;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    &-link {
+      text-align: center;
+
+      a {
+        border: 1px solid #FD9339;
+        border-radius: 5px;
+        padding: 12px 47px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $orange;
+      }
+    }
+  }
+}

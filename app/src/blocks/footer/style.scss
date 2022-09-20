@@ -1,0 +1,81 @@
+@import "../../styles/vars";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 250px;
+  background-color: $white;
+
+  &__copyright {
+    max-width: 210px;
+
+    &-logo {
+      width: 200px;
+      height: 30px;
+      margin-bottom: 20px;
+    }
+
+    &-text {
+      color: $darkGrey;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__company-title,
+  &__support-title,
+  &__payment-methods__title,
+  &__info-phone {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 16px;
+  }
+
+  li {
+    line-height: 20px;
+    margin-bottom: 24px;
+  }
+
+  &__payment-methods {
+    max-width: 170px;
+
+    ul + ul {
+      margin-top: 12px;
+    }
+
+    ul {
+      display: flex;
+
+      li + li {
+        margin-left: 14px;
+      }
+    }
+  }
+
+  &__info {
+    text-align: right;
+
+    &-address__line {
+
+      img {
+        margin-right: 8px;
+      }
+
+      margin-top: 16px;
+      line-height: 20px;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+
+      & + & {
+        margin-top: 10px;
+      }
+    }
+
+    &-social {
+      margin-top: 65px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

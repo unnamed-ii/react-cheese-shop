@@ -1,0 +1,106 @@
+@import "src/styles/vars";
+
+.registration-wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.registration {
+  width: 410px;
+  padding: 20px 0 16px;
+  background: $white;
+  border: 1px solid rgba(229, 229, 229, 0.5);
+  border-radius: 5px;
+  position: relative;
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $brown;
+    padding: 0 0 20px 30px;
+    border-bottom: 1px solid #E6E6E6;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+  }
+
+  &__form {
+    padding: 30px;
+    border-bottom: 1px solid #E6E6E6;
+
+    form {
+      font-size: 16px;
+      line-height: 24px;
+
+      input {
+        border: 1px solid #E6E6E6;
+        border-radius: 6px;
+        font-size: 15px;
+        line-height: 24px;
+        padding: 13px 0 11px 14px;
+        outline: none;
+        width: 100%;
+        margin: 6px 0 20px;
+
+        &::placeholder {
+          color: #BFBFBF;
+        }
+      }
+    }
+
+    &-agreements {
+
+      &__agreement {
+        display: flex;
+        font-size: 14px;
+        line-height: 20px;
+        color: #686868;
+        margin-bottom: 14px;
+
+        .link {
+          text-decoration: underline;
+          color: $orange;
+        }
+
+        .checkbox {
+          width: 20px;
+          height: 20px;
+          border: 1px solid #CCCCCC;
+          border-radius: 2px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    button {
+      margin-top: 6px;
+      background-color: $orange;
+      color: $white;
+      padding: 12px 0;
+      width: 100%;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__link {
+    padding: 16px 30px 0;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    a {
+      color: $orange;
+      text-decoration: underline;
+    }
+  }
+}

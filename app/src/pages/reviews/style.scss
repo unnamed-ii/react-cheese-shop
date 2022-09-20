@@ -1,0 +1,53 @@
+@import "../../styles/vars";
+
+.reviews {
+
+  &__inner {
+    display: flex;
+
+    &-content {
+      width: 820px;
+      margin-left: 80px;
+      padding-bottom: 100px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    color: $brown;
+    margin-bottom: 10px;
+
+    &-title {
+      @include h2;
+    }
+
+    &-authorization {
+      font-size: 16px;
+      line-height: 24px;
+      color: $brown;
+      display: flex;
+      align-items: center;
+
+      a {
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration-line: underline;
+        color: $orange;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+
+        .user-icon {
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

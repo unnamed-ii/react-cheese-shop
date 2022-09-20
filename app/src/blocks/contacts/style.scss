@@ -1,0 +1,144 @@
+@import "../../styles/vars";
+
+.contacts {
+
+  &__inner {
+    display: flex;
+
+    &-content {
+      width: 820px;
+      padding-bottom: 100px;
+      margin-left: 80px;
+    }
+  }
+
+  &__title {
+    @include h2;
+    color: $brown;
+    padding-bottom: 30px;
+  }
+
+  &__info {
+    padding-bottom: 50px;
+
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 0 30px;
+      border-top: 1px solid $darkGrey;
+
+      &__phone,
+      &__schedule,
+      &__mail,
+      &__address,
+      &__entity {
+        max-width: 230px;
+        width: 100%;
+      }
+
+      &__phone {
+
+        a {
+          font-weight: 400;
+          font-size: 26px;
+          line-height: 44px;
+          text-transform: uppercase;
+          color: $brown;
+          display: block;
+        }
+      }
+
+      &__mail {
+
+        a {
+          text-decoration: underline;
+          color: $brown;
+        }
+      }
+
+      &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: $brown;
+        margin-bottom: 10px;
+      }
+
+      &__text {
+        font-size: 13px;
+        line-height: 22px;
+        color: #666666;
+
+        span {
+          color: $brown;
+        }
+      }
+    }
+  }
+
+  &__feedback {
+    display: flex;
+    justify-content: space-between;
+
+    &-form {
+
+      &__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        color: $brown;
+      }
+
+      &__subtitle {
+        font-size: 16px;
+        line-height: 24px;
+        color: $darkGrey;
+        margin-bottom: 20px;
+      }
+
+      form {
+        max-width: 380px;
+
+        input,
+        textarea {
+          width: 100%;
+          background-color: $white;
+          padding: 12px 0 12px 16px;
+          border: 1px solid #E7E7E7;
+          border-radius: 6px;
+          margin-bottom: 10px;
+          outline: none;
+        }
+        input::placeholder,
+        textarea::placeholder {
+          font-size: 16px;
+          line-height: 24px;
+          color: $darkGrey;
+        }
+
+        textarea {
+          min-height: 96px;
+          resize: none;
+        }
+
+        button {
+          background: $orange;
+          border-radius: 5px;
+          border: none;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          color: $white;
+          padding: 16px 67px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-map {
+      width: 400px;
+      height: 364px;
+    }
+  }
+}

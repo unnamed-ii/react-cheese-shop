@@ -1,0 +1,64 @@
+@import "../../styles/vars";
+
+.products {
+
+  &__inner {
+    display: flex;
+
+    &-content {
+      width: 880px;
+      margin-left: 20px;
+
+      &__filters {
+        display: flex;
+
+        .filter {
+          cursor: pointer;
+          transition: all .3s;
+        }
+
+        & div:first-child {
+          margin-right: 30px;
+        }
+
+        .filter {
+          font-weight: 700;
+          font-size: 17px;
+          line-height: 24px;
+          color: $darkGrey;
+          border-bottom: 1px solid transparent;
+
+          &.active {
+            color: $orange;
+            border-color: $orange;
+          }
+        }
+      }
+
+      &__groups {
+
+        .ingredients,
+        .equipment {
+
+          &__title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 24px;
+            color: $brown;
+            margin: 40px 0 20px;
+          }
+
+          &__products {
+
+            &-row {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              margin-top: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
