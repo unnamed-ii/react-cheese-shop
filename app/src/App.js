@@ -18,6 +18,7 @@ import Authorization from "./pages/authorization";
 import Recovery from "./pages/recovery";
 import Recipes from "./pages/recipes";
 import Article from "./pages/article";
+import Recipe from "./pages/recipe";
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="recipes" element={<Recipes/>}/>
+                <Route path="recipe" element={<Recipe/>}/>
                 <Route path="article" element={<Article/>}/>
                 <Route path="delivery" element={<Delivery/>}/>
                 <Route path="reviews" element={<Reviews/>}/>
