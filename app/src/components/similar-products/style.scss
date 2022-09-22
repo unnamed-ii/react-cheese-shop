@@ -1,0 +1,17 @@
+@import "src/styles/vars";
+
+.similar-products {
+  width: 1180px;
+  padding-bottom: 20px;
+
+  &__title {
+    @include h2;
+    margin-bottom: 20px;
+    color: $brown;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
