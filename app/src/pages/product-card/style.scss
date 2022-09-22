@@ -1,0 +1,219 @@
+@import "src/styles/vars";
+
+.product-card {
+  padding-bottom: 70px;
+
+  &__inner {
+    display: flex;
+
+    &-content {
+      margin-left: 30px;
+      width: 870px;
+
+      .title {
+        font-size: 24px;
+        line-height: 30px;
+        color: $brown;
+        margin-bottom: 12px;
+      }
+
+      .rate {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &__stars {
+          margin-right: 12px;
+        }
+
+        &__reviews {
+          display: flex;
+          font-size: 13px;
+          line-height: 18px;
+          text-decoration-line: underline;
+          color: $brown;
+
+          svg {
+            margin-right: 6px;
+          }
+        }
+      }
+
+      .box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 34px;
+
+        &__images {
+          background: #FFFFFF;
+          border-radius: 8px;
+          padding: 20px 20px 15px 20px;
+        }
+
+        &__info {
+          max-width: 470px;
+          width: 100%;
+
+          &-available {
+            font-size: 16px;
+            line-height: 20px;
+            color: $green;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 18px;
+
+            &::before {
+              content: "";
+              position: absolute;
+              width: 8px;
+              height: 8px;
+              top: 4px;
+              left: 0;
+              background-color: $green;
+              border-radius: 50%;
+            }
+          }
+
+          &-title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+
+            &__price {
+              font-weight: 700;
+              font-size: 28px;
+              line-height: 30px;
+              color: $orange;
+              position: relative;
+
+              span {
+                position: absolute;
+                font-size: 14px;
+                line-height: 22px;
+                text-decoration-line: line-through;
+                color: $darkGrey;
+              }
+            }
+
+            &__favourite {
+              display: flex;
+              align-items: center;
+              font-size: 16px;
+              line-height: 20px;
+              color: $orange;
+
+              svg {
+                margin-right: 4px;
+              }
+            }
+          }
+
+          &-bonus {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            line-height: 22px;
+            color: $darkGrey;
+            margin-bottom: 16px;
+
+            span {
+              font-weight: 700;
+              color: $orange;
+              margin-right: 4px;
+            }
+
+            svg {
+              margin-left: 4px;
+            }
+          }
+
+          &-details {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 17px;
+
+            &__detail {
+              margin-bottom: 10px;
+
+              span {
+                color: $darkGrey;
+              }
+            }
+          }
+
+          &-adding {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 16px;
+
+            &-calculator {
+              width: 140px;
+              height: 44px;
+              background: #FFFFFF;
+              border: 1px solid rgba(128, 128, 128, 0.2);
+              border-radius: 5px;
+            }
+
+            button {
+              background: $orange;
+              border-radius: 5px;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 24px;
+              color: #FFFFFF;
+              border: none;
+              width: 320px;
+              padding: 10px 0;
+              cursor: pointer;
+            }
+          }
+
+          &-address {
+            background: #FCF7E3;
+            border: 1px solid #F2EFE2;
+            border-radius: 5px;
+            padding: 16px 20px 20px 20px;
+            margin-bottom: 20px;
+
+            &__title {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 20px;
+              margin-bottom: 12px;
+            }
+
+            select {
+              background: #FFFFFF;
+              border: 1px solid rgba(128, 128, 128, 0.2);
+              border-radius: 5px;
+              width: 100%;
+              font-size: 16px;
+              line-height: 24px;
+              color: rgba($darkGrey, .7);
+              padding: 10px 0 10px 12px;
+              outline: none;
+            }
+          }
+
+          &-benefits {
+            display: flex;
+            flex-wrap: wrap;
+
+            &__benefit {
+              display: flex;
+              align-items: center;
+              font-size: 14px;
+              line-height: 20px;
+              margin-bottom: 8px;
+              margin-right: 20px;
+
+              svg {
+                margin-right: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

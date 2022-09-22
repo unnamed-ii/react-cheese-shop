@@ -19,6 +19,7 @@ import Recovery from "./pages/recovery";
 import Recipes from "./pages/recipes";
 import Article from "./pages/article";
 import Recipe from "./pages/recipe";
+import ProductCard from "./pages/product-card";
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
             <Header/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
+                <Route path="product-card" element={<ProductCard/>}/>
                 <Route path="recipes" element={<Recipes/>}/>
                 <Route path="recipe" element={<Recipe/>}/>
                 <Route path="article" element={<Article/>}/>
