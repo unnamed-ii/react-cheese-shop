@@ -2,13 +2,38 @@ import React from 'react';
 import './style.scss';
 import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
+import SimilarProducts from "../../components/similar-products";
 import {ReactComponent as ReviewIcon} from "../../images/icons/review.svg";
 import {ReactComponent as SolidHeartIcon} from "../../images/icons/profile/heart-solid.svg";
 import {ReactComponent as QuestionIcon} from "../../images/icons/choose-modal-question.svg";
 import {ReactComponent as GiftIcon} from "../../images/icons/product-card-page/gift.svg";
 import {ReactComponent as CreditCardsIcon} from "../../images/icons/product-card-page/credit-cards.svg";
 import {ReactComponent as MedalIcon} from "../../images/icons/product-card-page/medals.svg";
-import SimilarProducts from "../../components/similar-products";
+import analogProduct from '../../images/analog-product.png';
+
+const AnalogProductCard = () => {
+    return (
+        <div className="analog-product">
+            <img src={analogProduct} alt=""/>
+            <div className="analog-product__info">
+                <div className="analog-product__info-title">
+                    Стоик, Россия
+                </div>
+                <div className="analog-product__info-text">
+                    Мезофильная закваска Biochem Lactoferm MSO (20U)
+                </div>
+                <div className="analog-product__info-bottom">
+                    <div className="price">
+                        1,250₽
+                    </div>
+                    <div>
+                        5 stars
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
 
 const ProductCard = () => {
     return (
@@ -89,6 +114,9 @@ const ProductCard = () => {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div>
+                            <AnalogProductCard />
                         </div>
                     </div>
                 </div>
