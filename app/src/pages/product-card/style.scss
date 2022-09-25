@@ -1,49 +1,5 @@
 @import "src/styles/vars";
 
-.analog-product {
-  width: 280px;
-  background: #FFFFFF;
-  border: 1px solid #E6E6E6;
-  border-radius: 8px;
-  padding: 14px 10px;
-  display: flex;
-
-  img {
-    margin-right: 10px;
-    width: 90px;
-    height: 110px;
-  }
-
-  &__info {
-
-    &-title {
-      font-size: 14px;
-      line-height: 20px;
-      text-transform: capitalize;
-      color: $darkGrey;
-      margin-bottom: 2px;
-    }
-
-    &-text {
-      font-size: 14px;
-      line-height: 20px;
-      margin-bottom: 10px;
-    }
-
-    &-bottom {
-      display: flex;
-      justify-content: space-between;
-
-      .price {
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 20px;
-        color: #FD9339;
-      }
-    }
-  }
-}
-
 .product-card {
   padding-bottom: 70px;
 
@@ -225,7 +181,7 @@
               border-radius: 5px;
             }
 
-            button {
+            .available {
               background: $orange;
               border-radius: 5px;
               font-weight: 700;
@@ -236,6 +192,10 @@
               width: 320px;
               padding: 10px 0;
               cursor: pointer;
+            }
+
+            .not-available {
+              display: none;
             }
           }
 
@@ -379,6 +339,103 @@
                   width: 570px;
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.not-available {
+
+    .product-card__inner {
+
+      &-content {
+
+        .title {
+          color: $darkGrey;
+          opacity: 0.8;
+        }
+
+        .rate {
+
+          &__reviews {
+            color: $darkGrey;
+          }
+        }
+
+        .box {
+
+          &__images {
+            opacity: .5;
+            position: relative;
+
+            &::before {
+              content: 'Распродан';
+              position: absolute;
+              background: #B4B4B4;
+              border-radius: 8px;
+              padding: 10px 20px;
+              font-size: 18px;
+              line-height: 28px;
+              color: #FFFFFF;
+              top: 134px;
+              left: 120px;
+            }
+
+            &-360__view {
+              display: none;
+            }
+          }
+
+          &__info {
+
+            &-available {
+              display: none;
+            }
+
+            &-title {
+
+              &__price {
+                color: $darkGrey;
+                margin-bottom: 24px;
+              }
+            }
+
+            &-bonus {
+              display: none;
+            }
+
+            &-adding {
+              &-calculator {
+                display: none;
+              }
+
+              .available {
+                display: none;
+              }
+
+              .not-available {
+                background: #FF4F4F;
+                border-radius: 5px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+                border: none;
+                width: 100%;
+                padding: 10px 0;
+                cursor: pointer;
+                display: block;
+              }
+            }
+
+            &-address {
+              display: none;
+            }
+
+            &-benefits {
+              display: none;
             }
           }
         }

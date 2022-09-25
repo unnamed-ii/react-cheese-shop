@@ -75,8 +75,11 @@ const ProductCard = () => {
                                     <div className="box__info-adding-calculator">
                                         calculator
                                     </div>
-                                    <button>
+                                    <button className="available">
                                         В корзину
+                                    </button>
+                                    <button className="not-available">
+                                        Товар закончился
                                     </button>
                                 </div>
                                 <div className="box__info-address">
@@ -224,7 +227,6 @@ const ProductCard = () => {
                                     </div>
                                 </div>
                                 <div className="tabs__items-reviews">
-
                                 </div>
                             </div>
                         </div>
