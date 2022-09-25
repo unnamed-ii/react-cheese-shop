@@ -17,11 +17,12 @@ import ProductAddedAlert from "../../components/product-added-alert";
 
 const ProductCard = () => {
     const [isProductAvailable, setIsProductAvailable] = useState(false);
+    const [showAlert, setShowAlert] = useState(false);
 
     return (
         <Wrapper>
             <div className="product-card">
-                <ProductAddedAlert productName={'Мезофильная закваска Hansen Flora Danica (50U)'}/>
+                <ProductAddedAlert productName={'Мезофильная закваска Hansen Flora Danica (50U)'} showAlert={showAlert}/>
                 <div className="product-card__inner">
                     <MainNav/>
                     <div className="product-card__inner-content">
