@@ -13,6 +13,7 @@ import {ReactComponent as MedalIcon} from "../../images/icons/product-card-page/
 import {ReactComponent as FullViewIcon} from "../../images/icons/360.svg";
 import productCart from '../../images/product-card-page.png'
 import productCart2 from '../../images/product-card-page2.png'
+import ProductAddedAlert from "../../components/product-added-alert";
 
 const ProductCard = () => {
     const [isProductAvailable, setIsProductAvailable] = useState(false);
@@ -20,6 +21,7 @@ const ProductCard = () => {
     return (
         <Wrapper>
             <div className="product-card">
+                <ProductAddedAlert productName={'Мезофильная закваска Hansen Flora Danica (50U)'}/>
                 <div className="product-card__inner">
                     <MainNav/>
                     <div className="product-card__inner-content">
