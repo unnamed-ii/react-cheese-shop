@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './style.scss';
 import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
@@ -15,6 +15,8 @@ import productCart from '../../images/product-card-page.png'
 import productCart2 from '../../images/product-card-page2.png'
 
 const ProductCard = () => {
+    const [isProductAvailable, setIsProductAvailable] = useState(false);
+
     return (
         <Wrapper>
             <div className="product-card">
@@ -106,7 +108,10 @@ const ProductCard = () => {
                                 </div>
                             </div>
                         </div>
-                        <AnalogsProductsSlider/>
+                        {isProductAvailable
+                            ? <AnalogsProductsSlider/>
+                            : <AnalogsProductsSlider bigSize={!isProductAvailable}/>
+                        }
                         <div className="tabs">
                             <div className="tabs__titles">
                                 <button className="tabs__titles-title active">Описание</button>
