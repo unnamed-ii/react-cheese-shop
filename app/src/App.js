@@ -20,6 +20,7 @@ import Recipes from "./pages/recipes";
 import Article from "./pages/article";
 import Recipe from "./pages/recipe";
 import ProductCard from "./pages/product-card";
+import Category from "./pages/category";
 
 function App() {
     return (
@@ -28,6 +29,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="product-card" element={<ProductCard/>}/>
+                <Route path="category" element={<Category/>}/>
                 <Route path="recipes" element={<Recipes/>}/>
                 <Route path="recipe" element={<Recipe/>}/>
                 <Route path="article" element={<Article/>}/>
