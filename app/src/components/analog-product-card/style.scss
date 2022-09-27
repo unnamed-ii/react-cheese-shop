@@ -1,0 +1,45 @@
+@import "src/styles/vars";
+
+.analog-product {
+  width: 280px;
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+  padding: 14px 10px;
+  display: flex;
+
+  img {
+    margin-right: 10px;
+    width: 90px;
+    height: 110px;
+  }
+
+  &__info {
+
+    &-title {
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: capitalize;
+      color: $darkGrey;
+      margin-bottom: 2px;
+    }
+
+    &-text {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+
+      .price {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        color: #FD9339;
+      }
+    }
+  }
+}

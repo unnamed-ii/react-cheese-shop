@@ -1,0 +1,25 @@
+@import "src/styles/vars";
+
+.product-added-alert {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFF5D6;
+  border: 1px solid #F8EABF;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $orange;
+  padding-left: 20px;
+  margin-bottom: 20px;
+
+  &.show {
+    display: flex;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
