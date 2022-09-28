@@ -7,7 +7,7 @@
   line-height: 1.1;
   display: grid;
   grid-template-columns: 1em auto;
-  gap: 0.5em;
+  //gap: 0.5em;
 }
 
 .form-control--disabled {
@@ -18,7 +18,8 @@
 input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
-  background-color: var(--form-background);
+  //background-color: var(--form-background);
+  background-color: #fff;
   margin: 0;
   color: currentColor;
   width: 20px;
