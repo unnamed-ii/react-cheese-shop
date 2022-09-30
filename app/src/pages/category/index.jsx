@@ -30,8 +30,23 @@ const Category = () => {
                                 От дорогих к дешевым
                                 <ArrowDownIcon />
                             </div>
-                            <div className="dropdown-list">
-
+                            <div className="dropdown-list quality-filter">
+                                <div className="dropdown-list__title">
+                                    Выберите фильтр
+                                </div>
+                                <div className="dropdown-list__filters">
+                                    <div className="dropdown-list__filters-filter">
+                                        <CheckBox />
+                                        От дорогих к дешевым
+                                    </div>
+                                    <div className="dropdown-list__filters-filter">
+                                        <CheckBox />
+                                        От дешёвых к дорогим
+                                    </div>
+                                </div>
+                                <div className="dropdown-list__button">
+                                    <button>Применить</button>
+                                </div>
                             </div>
                         </div>
                         <div className="category__filters-list__filter">
@@ -40,7 +55,42 @@ const Category = () => {
                                 <ArrowDownIcon />
                             </div>
                             <div className="dropdown-list">
-
+                                <div className="dropdown-list__title">
+                                    Выберите фильтр
+                                </div>
+                                <div className="dropdown-list__filters">
+                                    <div className="dropdown-list__filters-filter">
+                                        <CheckBox />
+                                        Закваски для йогурта
+                                    </div>
+                                    <div className="dropdown-list__filters-filter">
+                                        <CheckBox />
+                                        Закваски для творога
+                                    </div>
+                                    <div className="dropdown-list__filters-filter">
+                                        <CheckBox />
+                                        Закваска для ряженки
+                                    </div>
+                                    <div className="dropdown-list__filters-filter">
+                                        <CheckBox />
+                                        Закваски для йогурта
+                                    </div>
+                                    <div className="dropdown-list__filters-filter">
+                                        <CheckBox />
+                                        Закваски Скваска
+                                    </div>
+                                    <div className="dropdown-list__filters-filter">
+                                        <CheckBox />
+                                        Закваски Каприна
+                                    </div>
+                                    <div className="dropdown-list__filters-filter">
+                                        <CheckBox />
+                                        Закваски для кефира
+                                    </div>
+                                </div>
+                                <div className="dropdown-list__button">
+                                    <button>Применить</button>
+                                </div>
                             </div>
                         </div>
                         <div className="category__filters-list__filter">
@@ -57,8 +107,17 @@ const Category = () => {
                                 Цена
                                 <ArrowDownIcon />
                             </div>
-                            <div className="dropdown-list">
-
+                            <div className="dropdown-list active price-filter">
+                                <input type="range"/>
+                                <div className="dropdown-list__filters">
+                                    <div className="dropdown-list__filters-filter">
+                                        <CheckBox />
+                                        Товары со скидкой
+                                    </div>
+                                </div>
+                                <div className="dropdown-list__button">
+                                    <button>Применить</button>
+                                </div>
                             </div>
                         </div>
                     </div>
