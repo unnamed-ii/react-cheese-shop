@@ -7,7 +7,8 @@ import CheckBox from "../../components/checkbox";
 import {ReactComponent as FilterToggleIcon} from "../../images/icons/fitler-toggle.svg";
 import {ReactComponent as FilterToggleDisabledIcon} from "../../images/icons/fitler-toggle-disabled.svg";
 import {ReactComponent as ArrowDownIcon} from "../../images/icons/arrow-down.svg";
-
+import {ReactComponent as CloseFilterIcon} from "../../images/icons/close-moduls-btn.svg";
+import FilterCard from "../../components/filter-card";
 
 const Category = () => {
     return (
@@ -125,6 +126,9 @@ const Category = () => {
                         <CheckBox />
                         Показывать только товар в наличии
                     </div>
+                </div>
+                <div className="category__added-filters">
+                    <FilterCard />
                 </div>
                 <div className="category__inner">
                     <MainNav />
