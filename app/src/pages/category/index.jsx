@@ -128,7 +128,14 @@ const Category = () => {
                     </div>
                 </div>
                 <div className="category__added-filters">
-                    <FilterCard />
+                    <div className="category__added-filters__list">
+                        <FilterCard />
+                        <FilterCard />
+                        <FilterCard />
+                    </div>
+                    <div className="category__added-filters__reset">
+                        <button>Очистить фильтр</button>
+                    </div>
                 </div>
                 <div className="category__inner">
                     <MainNav />

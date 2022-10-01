@@ -145,6 +145,28 @@
     }
   }
 
+  &__added-filters {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    &__list {
+      display: flex;
+    }
+
+    &__reset {
+
+      button {
+        background-color: transparent;
+        border: none;
+        font-size: 14px;
+        line-height: 24px;
+        text-decoration-line: underline;
+        color: $brown;
+      }
+    }
+  }
+
   &__inner {
     display: flex;
 
