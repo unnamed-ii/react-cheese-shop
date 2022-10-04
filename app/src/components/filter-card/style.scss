@@ -1,0 +1,22 @@
+@import "src/styles/vars";
+
+.added-filter {
+  background: rgba(78, 45, 45, 0.1);
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 10px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px 4px 14px;
+    font-size: 14px;
+    line-height: 24px;
+    color: $brown;
+
+    svg {
+      margin-left: 12px;
+      cursor: pointer;
+    }
+  }
+}
