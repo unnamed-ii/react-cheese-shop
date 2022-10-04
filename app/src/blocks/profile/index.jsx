@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './style.scss';
-
+import Wrapper from "../../components/wrapper";
 import {ReactComponent as UserIcon} from '../../images/icons/profile/user.svg';
 import {ReactComponent as BagIcon} from '../../images/icons/profile/bag.svg';
 import {ReactComponent as HeartIcon} from '../../images/icons/profile/heart.svg';
@@ -9,61 +9,79 @@ import {ReactComponent as DirectionIcon} from '../../images/icons/profile/direct
 import {ReactComponent as LockIcon} from '../../images/icons/profile/lock.svg';
 import {ReactComponent as LogoutIcon} from '../../images/icons/profile/logout.svg';
 import {ReactComponent as HeartSolidIcon} from '../../images/icons/profile/heart-solid.svg';
-
-
 import productImage from '../../images/checkout-products-image.png';
 import favouriteProduct from '../../images/favourite-product.png';
 import couponActive from '../../images/profile-coupon-active.png';
 import couponNonActive from '../../images/profile-coupon-not-active.png';
 
+const setActiveTab = (tabId) => {
+    setActiveTab(tabId)
+}
+
 const Profile = () => {
+    const [activeTab, setActiveTab] = useState("user");
+
     return (
-        <div className="wrapper-profile">
+        <Wrapper>
             <div className="profile">
                 <div className="profile__title">
                     Личный кабинет
                 </div>
                 <div className="profile__tabs">
                     <div className="profile__tabs-titles">
-                        <div className="profile__tabs-title active">
+                        <div className={"profile__tabs-title " + (activeTab === "user" && "active")}
+                             onClick={() => setActiveTab("user")}
+                        >
                             <UserIcon className="icon"/>
                             Мой профиль
                         </div>
-                        <div className="profile__tabs-title">
+                        <div className={"profile__tabs-title " + (activeTab === "orders" && "active")}
+                             onClick={() => setActiveTab("orders")}
+                        >
                             <BagIcon className="icon"/>
                             Мои заказы
                         </div>
-                        <div className="profile__tabs-title">
+                        <div className={"profile__tabs-title " + (activeTab === "favourite" && "active")}
+                             onClick={() => setActiveTab("favourite")}
+                        >
                             <HeartIcon className="icon"/>
                             Избранные товары
                         </div>
-                        <div className="profile__tabs-title">
+                        <div className={"profile__tabs-title " + (activeTab === "coupons" && "active")}
+                             onClick={() => setActiveTab("coupons")}
+                        >
                             <CouponIcon className="icon"/>
                             Мои купоны
                         </div>
-                        <div className="profile__tabs-title">
+                        <div className={"profile__tabs-title " + (activeTab === "address" && "active")}
+                             onClick={() => setActiveTab("address")}
+                        >
                             <DirectionIcon className="icon"/>
                             Адрес доставки
                         </div>
-                        <div className="profile__tabs-title">
+                        <div className={"profile__tabs-title " + (activeTab === "change-password" && "active")}
+                             onClick={() => setActiveTab("change-password")}
+                        >
                             <LockIcon className="icon"/>
                             Сменить пароль
                         </div>
-                        <div className="profile__tabs-title">
+                        <div className={"profile__tabs-title " + (activeTab === "exit" && "active")}
+                             onClick={() => setActiveTab("exit")}
+                        >
                             <LogoutIcon className="icon"/>
                             Выход
                         </div>
                     </div>
                     <div className="profile__tabs-items">
-                        <div className="profile__tabs-item user active">
+                        <div className={"profile__tabs-item " + (activeTab === "user" && "active user")}>
                             <div className="title">
                                 Kristina Anfalova
                             </div>
                             <div className="edit">
-                                 Редактировать информацию
-                             </div>
-                             <div className="phone">
-                                 <div className="phone__title">
+                                Редактировать информацию
+                            </div>
+                            <div className="phone">
+                                <div className="phone__title">
                                     Телефон:
                                 </div>
                                 <div className="phone__text">
@@ -74,10 +92,10 @@ const Profile = () => {
                                 <div className="email__title">
                                     Email:
                                 </div>
-                                 <div className="email__text">
-                                     saraconet@gmail.com
-                                 </div>
-                             </div>
+                                <div className="email__text">
+                                    saraconet@gmail.com
+                                </div>
+                            </div>
                             <div className="address">
                                 <div className="address__title">
                                     Адрес доставки:
@@ -89,7 +107,7 @@ const Profile = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="profile__tabs-item orders">
+                        <div className={"profile__tabs-item " + (activeTab === "orders" && "active orders")}>
                             <div className="title">
                                 Мои заказы
                             </div>
@@ -184,7 +202,7 @@ const Profile = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="profile__tabs-item favourite">
+                        <div className={"profile__tabs-item " + (activeTab === "favourite" && "active favourite")}>
                             <div className="title">
                                 Избранные товары
                             </div>
@@ -197,7 +215,7 @@ const Profile = () => {
                                         <div className="text">
                                             В наличии
                                         </div>
-                                        <HeartSolidIcon />
+                                        <HeartSolidIcon/>
                                     </div>
                                     <img src={favouriteProduct} alt="" className="favourite-cards__card-image"/>
                                     <div className="favourite-cards__card-title">
@@ -225,7 +243,7 @@ const Profile = () => {
                                         <div className="text">
                                             Нет в наличии
                                         </div>
-                                        <HeartSolidIcon />
+                                        <HeartSolidIcon/>
                                     </div>
                                     <img src={favouriteProduct} alt="" className="favourite-cards__card-image"/>
                                     <div className="favourite-cards__card-title">
@@ -253,7 +271,7 @@ const Profile = () => {
                                         <div className="text">
                                             В наличии
                                         </div>
-                                        <HeartSolidIcon />
+                                        <HeartSolidIcon/>
                                     </div>
                                     <img src={favouriteProduct} alt="" className="favourite-cards__card-image"/>
                                     <div className="favourite-cards__card-title">
@@ -281,7 +299,7 @@ const Profile = () => {
                                         <div className="text">
                                             В наличии
                                         </div>
-                                        <HeartSolidIcon />
+                                        <HeartSolidIcon/>
                                     </div>
                                     <img src={favouriteProduct} alt="" className="favourite-cards__card-image"/>
                                     <div className="favourite-cards__card-title">
@@ -306,32 +324,32 @@ const Profile = () => {
                                 </div>
                             </div>
                         </div>
-                         <div className="profile__tabs-item coupons">
-                             <div className="coupons__coupon active">
-                                 <div className="coupons__coupon-info">
-                                     <img src={couponActive} alt=""/>
-                                     <div className="coupons__coupon-info__box">
-                                         <div className="status">
-                                             Активный
-                                         </div>
-                                         <div className="title">
-                                             Скидочный купон на 300 руб.
-                                         </div>
-                                         <div className="subtitle">
-                                             До 20 июня 2021 г.
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div className="coupons__coupon-scan">
-                                     <div className="code">
-                                         №1234556
-                                     </div>
-                                     <button>Скопировать код</button>
-                                 </div>
-                             </div>
-                             <div className="coupons__coupon">
-                                 <div className="coupons__coupon-info">
-                                     <img src={couponActive} alt=""/>
+                        <div className={"profile__tabs-item " + (activeTab === "coupons" && "active coupons")}>
+                            <div className="coupons__coupon active">
+                                <div className="coupons__coupon-info">
+                                    <img src={couponActive} alt=""/>
+                                    <div className="coupons__coupon-info__box">
+                                        <div className="status">
+                                            Активный
+                                        </div>
+                                        <div className="title">
+                                            Скидочный купон на 300 руб.
+                                        </div>
+                                        <div className="subtitle">
+                                            До 20 июня 2021 г.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="coupons__coupon-scan">
+                                    <div className="code">
+                                        №1234556
+                                    </div>
+                                    <button>Скопировать код</button>
+                                </div>
+                            </div>
+                            <div className="coupons__coupon">
+                                <div className="coupons__coupon-info">
+                                    <img src={couponActive} alt=""/>
                                     <div className="coupons__coupon-info__box">
                                         <div className="status">
                                             Не активный
@@ -352,7 +370,7 @@ const Profile = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="profile__tabs-item address">
+                        <div className={"profile__tabs-item " + (activeTab === "address" && "active address")}>
                             <div className="title">
                                 Kristina Anfalova
                             </div>
@@ -374,7 +392,7 @@ const Profile = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="profile__tabs-item change-password">
+                        <div className={"profile__tabs-item " + (activeTab === "change-password" && "active change-password")}>
                             <div className="title">
                                 Сменить пароль
                             </div>
@@ -398,7 +416,7 @@ const Profile = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Wrapper>
     );
 };
 

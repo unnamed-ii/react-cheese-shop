@@ -9,6 +9,7 @@ import {ReactComponent as FilterToggleDisabledIcon} from "../../images/icons/fit
 import {ReactComponent as ArrowDownIcon} from "../../images/icons/arrow-down.svg";
 import {ReactComponent as CloseFilterIcon} from "../../images/icons/close-moduls-btn.svg";
 import FilterCard from "../../components/filter-card";
+import CustomInputRange from "../../components/input-range";
 
 const Category = () => {
     return (
