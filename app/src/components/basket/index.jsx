@@ -5,8 +5,9 @@ import item1 from '../../images/basket/item-1.png';
 import item2 from '../../images/basket/item-2.png';
 import {ReactComponent as RemoveBtnIcon} from '../../images/icons/close-btn.svg';
 import {ReactComponent as MinusIcon} from '../../images/icons/minus.svg';
-import {ReactComponent as PlusIcon} from '../../images/icons/minus.svg';
+import {ReactComponent as PlusIcon} from '../../images/icons/plus.svg';
 import {Link} from "react-router-dom";
+import Counter from "../counter";
 
 const Basket = ({isActive}) => {
     return (
@@ -22,15 +23,7 @@ const Basket = ({isActive}) => {
                         <div className="basket__box-title">
                             Форма для твердого сыра 1 кг - 40 отверстий
                         </div>
-                        <div className="basket__box-counter">
-                            <div className="basket__box-counter__block minus">
-                                <MinusIcon />
-                            </div>
-                            <div className="basket__box-counter__block number">1</div>
-                            <div className="basket__box-counter__block plus">
-                                <PlusIcon />
-                            </div>
-                        </div>
+                        <Counter />
                     </div>
                     <RemoveBtnIcon className="basket__items-item__remove"/>
                     <div className="basket__items-item__price">
@@ -43,15 +36,7 @@ const Basket = ({isActive}) => {
                         <div className="basket__box-title">
                             Форма для твердого сыра 1 кг - 40 отверстий
                         </div>
-                        <div className="basket__box-counter">
-                            <div className="basket__box-counter__block minus">
-                                <MinusIcon />
-                            </div>
-                            <div className="basket__box-counter__block number">1</div>
-                            <div className="basket__box-counter__block plus">
-                                <PlusIcon />
-                            </div>
-                        </div>
+                        <Counter />
                     </div>
                     <RemoveBtnIcon className="basket__items-item__remove"/>
                     <div className="basket__items-item__price">
