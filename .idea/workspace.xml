@@ -42,6 +42,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/components" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -99,7 +100,8 @@
       <workItem from="1664880937241" duration="63000" />
       <workItem from="1664881003114" duration="401000" />
       <workItem from="1664961381140" duration="1161000" />
-      <workItem from="1665059483109" duration="563000" />
+      <workItem from="1665059483109" duration="867000" />
+      <workItem from="1665060374169" duration="2270000" />
     </task>
     <servers />
   </component>
@@ -127,22 +129,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1664880998881" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1665059624860">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1665063555470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1665059624860" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1665059624860">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1665063555470" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1665063555470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1665059624860" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1665059624859">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1665063555470" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1665063555470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1665059624859" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1665059624860">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1665063555470" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1665063555470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1665059624860" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1665063555470" />
     <state width="1877" height="340" key="GridCell.Tab.1.bottom" timestamp="1663845774264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -195,9 +197,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1664715091931" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1664961755142">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1665063485271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1664961755142" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1665063485271" />
   </component>
 </project>

@@ -20,8 +20,8 @@ const ProductCard = () => {
     const [showAlert, setShowAlert] = useState(false);
     const [activeTab, setActiveTab] = useState("description");
 
-    const handleToggleTab = (nameOfTab) => {
-        setActiveTab(nameOfTab)
+    const handleToggleTab = (id) => {
+        setActiveTab(id)
     }
 
     return (
@@ -123,13 +123,16 @@ const ProductCard = () => {
                         <div className="tabs">
                             <div className="tabs__titles">
                                 <button className={"tabs__titles-title " + (activeTab === "description" && "active")}
-                                        onClick={() => handleToggleTab("description")}
+                                        onClick={(e) => handleToggleTab(e.target.id)}
+                                        id="description"
                                 >Описание</button>
                                 <button className={"tabs__titles-title " + (activeTab === "deliveryPayment" && "active")}
-                                        onClick={() => handleToggleTab("deliveryPayment")}
+                                        onClick={(e) => handleToggleTab(e.target.id)}
+                                        id="deliveryPayment"
                                 >Доставка и оплата</button>
                                 <button className={"tabs__titles-title " + (activeTab === "reviews" && "active")}
-                                        onClick={() => handleToggleTab("reviews")}
+                                        onClick={(e) => handleToggleTab(e.target.id)}
+                                        id="reviews"
                                 >Отзывы (3)</button>
                             </div>
                             <div className="tabs__items">
