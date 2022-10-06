@@ -4,6 +4,7 @@ import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
 import SimilarProducts from "../../components/similar-products";
 import AnalogsProductsSlider from "../../components/analogs-slider";
+import ProductAddedAlert from "../../components/product-added-alert";
 import {ReactComponent as ReviewIcon} from "../../images/icons/review.svg";
 import {ReactComponent as SolidHeartIcon} from "../../images/icons/profile/heart-solid.svg";
 import {ReactComponent as QuestionIcon} from "../../images/icons/choose-modal-question.svg";
@@ -13,11 +14,15 @@ import {ReactComponent as MedalIcon} from "../../images/icons/product-card-page/
 import {ReactComponent as FullViewIcon} from "../../images/icons/360.svg";
 import productCart from '../../images/product-card-page.png'
 import productCart2 from '../../images/product-card-page2.png'
-import ProductAddedAlert from "../../components/product-added-alert";
 
 const ProductCard = () => {
     const [isProductAvailable, setIsProductAvailable] = useState(false);
     const [showAlert, setShowAlert] = useState(false);
+    const [activeTab, setActiveTab] = useState("description");
+
+    const handleToggleTab = (nameOfTab) => {
+        setActiveTab(nameOfTab)
+    }
 
     return (
         <Wrapper>
@@ -117,12 +122,18 @@ const ProductCard = () => {
                         }
                         <div className="tabs">
                             <div className="tabs__titles">
-                                <button className="tabs__titles-title active">Описание</button>
-                                <button className="tabs__titles-title">Доставка и оплата</button>
-                                <button className="tabs__titles-title">Отзывы (3)</button>
+                                <button className={"tabs__titles-title " + (activeTab === "description" && "active")}
+                                        onClick={() => handleToggleTab("description")}
+                                >Описание</button>
+                                <button className={"tabs__titles-title " + (activeTab === "deliveryPayment" && "active")}
+                                        onClick={() => handleToggleTab("deliveryPayment")}
+                                >Доставка и оплата</button>
+                                <button className={"tabs__titles-title " + (activeTab === "reviews" && "active")}
+                                        onClick={() => handleToggleTab("reviews")}
+                                >Отзывы (3)</button>
                             </div>
                             <div className="tabs__items">
-                                <div className="tabs__items-description active">
+                                <div className={"tabs__items-description " + (activeTab === "description" && "active")}>
                                     <div className="tabs__items-description__text">
                                         P00802 Эта форма небольших размеров предназначена для получения маленьких
                                         головок сыра Рикотта и других мягких сыров в условиях домашнего или фермерского
@@ -176,7 +187,7 @@ const ProductCard = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="tabs__items-deliveryPayment">
+                                <div className={"tabs__items-deliveryPayment " + (activeTab === "deliveryPayment" && "active")}>
                                     <div className="tabs__items-deliveryPayment__title">
                                         Для Вашего удобства мы предусмотрели все возможные способы оплаты заказа:
                                     </div>
@@ -234,7 +245,7 @@ const ProductCard = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="tabs__items-reviews">
+                                <div className={"tabs__items-reviews " + (activeTab === "reviews" && "active")}>
                                 </div>
                             </div>
                         </div>
