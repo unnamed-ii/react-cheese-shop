@@ -7,6 +7,7 @@ import article3 from '../../images/articles/article3.png';
 import article4 from '../../images/articles/article4.png';
 import {ReactComponent as ArrowRightIcon} from '../../images/icons/arrow-right.svg';
 import Wrapper from "../../components/wrapper";
+import {Link} from "react-router-dom";
 
 const Articles = () => {
     return (
@@ -35,10 +36,10 @@ const Articles = () => {
                                 <div className="articles__list-item__text">
                                     Так называется блюдо, которое состоит из разных сортов сыра.
                                 </div>
-                                <a className="articles__list-item__link" href="#">
+                                <Link className="articles__list-item__link" to="article">
                                     Читать далее
                                     <ArrowRightIcon class="image"/>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="articles__list-item">
@@ -50,10 +51,10 @@ const Articles = () => {
                                 <div className="articles__list-item__text">
                                     Особенно характерно наличие дырочек разных размеров в структуре швейцарских сортов...
                                 </div>
-                                <a className="articles__list-item__link" href="#">
+                                <Link className="articles__list-item__link" to="article">
                                     Читать далее
                                     <ArrowRightIcon class="image"/>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -67,10 +68,10 @@ const Articles = () => {
                                 <div className="articles__list-item__text">
                                     Из-за недостатка физической активности и стабильного переедания образуется лишний...
                                 </div>
-                                <a className="articles__list-item__link" href="#">
+                                <Link className="articles__list-item__link" to="article">
                                     Читать далее
                                     <ArrowRightIcon class="image"/>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="articles__list-item">
@@ -82,10 +83,10 @@ const Articles = () => {
                                 <div className="articles__list-item__text">
                                     Особенно характерно наличие дырочек разных размеров в структуре швейцарских сортов...
                                 </div>
-                                <a className="articles__list-item__link" href="#">
+                                <Link className="articles__list-item__link" to="article">
                                     Читать далее`
                                     <ArrowRightIcon class="image"/>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

@@ -20,7 +20,7 @@ const Reviews = () => {
                             </div>
                             <div className="reviews__top-authorization">
                                 Что бы оставить отзыв необходимо
-                                <Link to="authorization">
+                                <Link to="/authorization">
                                     <UserIcon className="user-icon" /> Авторизоваться
                                 </Link>
                             </div>

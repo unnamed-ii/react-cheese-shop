@@ -5,6 +5,7 @@ import setsBg from '../../images/recommendations/sets-bg.png'
 import recipesBg from '../../images/recommendations/recipes-bg.png'
 import discountsBg from '../../images/recommendations/discounts-bg.png'
 import Wrapper from "../../components/wrapper";
+import {Link} from "react-router-dom";
 
 const Recommendations = () => {
     return (
@@ -17,7 +18,7 @@ const Recommendations = () => {
                     <div className="recommendations__item-text">
                         Все что вам нужно для приготовления сыра в домашних условиях
                     </div>
-                    <a href="#" className="recommendations__item-link">Смотреть наборы</a>
+                    <Link to="collections" className="recommendations__item-link">Смотреть наборы</Link>
                 </div>
                 <div className="recommendations__item">
                     <img src={recipesBg} alt=""/>

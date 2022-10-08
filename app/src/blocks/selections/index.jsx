@@ -4,6 +4,7 @@ import './style.scss';
 import recipes from '../../images/selections/recipe.png';
 import sets from '../../images/selections/sets.png';
 import Wrapper from "../../components/wrapper";
+import {Link} from "react-router-dom";
 
 const Selections = () => {
     return (
@@ -22,9 +23,9 @@ const Selections = () => {
                             Мы собрали для Вас большую
                             базу рецептов.
                         </div>
-                        <a className="selections__items-recipes__link" href="#">
+                        <Link className="selections__items-recipes__link" to="recipes">
                             Перейти
-                        </a>
+                        </Link>
                     </div>
                     <div className="selections__items-sets">
                         <img className="selections__items-sets__bg" src={sets} alt=""/>
@@ -34,9 +35,9 @@ const Selections = () => {
                         <div className="selections__items-sets__text">
                             Готовые наборы сэкономят время, мы всё сделали за Вас.
                         </div>
-                        <a className="selections__items-sets__link" href="#">
+                        <Link className="selections__items-sets__link" to="collections">
                             Перейти
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
