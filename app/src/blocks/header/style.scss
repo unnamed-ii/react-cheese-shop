@@ -104,6 +104,19 @@
       font-size: 13px;
       line-height: 16px;
       color: $darkGrey;
+      position: relative;
+
+      &.delivery {
+        width: 116px;
+      }
+
+      &.discount {
+        width: 139px
+      }
+
+      &.safety {
+        width: 116px;
+      }
 
       & + & {
         margin-left: 18px;
@@ -113,6 +126,32 @@
         width: 28px;
         height: 28px;
         margin-right: 11px;
+      }
+
+      &__hover {
+        display: none;
+        position: absolute;
+        top: 45px;
+        left: -45px;
+        z-index: 10;
+        background: rgb(41, 41, 41);
+        width: 244px;
+        border-radius: 4px;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        color: $white;
+        padding: 8px 12px;
+
+        .fragment {
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          background: rgb(41, 41, 41);
+          left: 105px;
+          top: -5px;
+          transform: rotate(45deg);
+        }
       }
     }
 
@@ -273,5 +312,26 @@
         }
       }
     }
+  }
+}
+
+.header__info-advantage.delivery:hover {
+
+  .header__info-advantage__hover.delivery {
+    display: block;
+  }
+}
+
+.header__info-advantage.discount:hover {
+
+  .header__info-advantage__hover.discount {
+    display: block;
+  }
+}
+
+.header__info-advantage.safety:hover {
+
+  .header__info-advantage__hover.safety {
+    display: block;
   }
 }

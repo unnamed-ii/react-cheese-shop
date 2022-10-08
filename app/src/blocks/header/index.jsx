@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import './style.scss';
-
+import Basket from "../../components/basket";
+import Wrapper from "../../components/wrapper";
+import {Link} from "react-router-dom";
 import {ReactComponent as LocationIcon} from '../../images/icons/location.svg';
 import {ReactComponent as ArrowDownIcon} from '../../images/icons/arrow-down.svg';
 import {ReactComponent as ClockIcon} from '../../images/icons/clock.svg';
@@ -15,17 +17,13 @@ import delivery from '../../images/header-advantages/delivery.png';
 import discount from '../../images/header-advantages/discount.png';
 import protection from '../../images/header-advantages/user-protection.png';
 
-import Basket from "../../components/basket";
-import Wrapper from "../../components/wrapper";
-import {Link} from "react-router-dom";
-
 const Header = () => {
     const [isListDropped, setIsListDropped] = useState(false);
     const [isBasketDropped, setIsBasketDropped] = useState(false);
 
     const toggleDroppingItem = (droppingItem) => {
-        if (droppingItem === 'dropdown-list') setIsListDropped(!isListDropped);
-        if (droppingItem === 'basket') setIsBasketDropped(!isBasketDropped);
+        if (droppingItem === "dropdown-list") setIsListDropped(!isListDropped);
+        if (droppingItem === "basket") setIsBasketDropped(!isBasketDropped);
     }
 
     return (
@@ -60,17 +58,29 @@ const Header = () => {
                     <div className="header__info">
                         <Link to="/" className="link"><img className="logo" src={darkLogo} alt=""/></Link>
                         <div className="header__info-advantages">
-                            <div className="header__info-advantage" style={{width: '116px'}}>
+                            <div className="header__info-advantage delivery">
                                 <img src={delivery} alt=""/>
                                 Бесплатная доставка
+                                <div className="header__info-advantage__hover delivery">
+                                    <div className="fragment" />
+                                    Дарим бесплатную доставку в пределах России при заказе товара на сумму от 2500 руб.
+                                </div>
                             </div>
-                            <div className="header__info-advantage" style={{width: '139px'}}>
+                            <div className="header__info-advantage discount">
                                 <img src={discount} alt=""/>
                                 Скидка при оплате на сайте
+                                <div className="header__info-advantage__hover discount">
+                                    <div className="fragment" />
+                                    Дарим скидку при заказе товара на сумму от 2500 руб.
+                                </div>
                             </div>
-                            <div className="header__info-advantage" style={{width: '116px'}}>
+                            <div className="header__info-advantage safety">
                                 <img src={protection} alt=""/>
                                 Защита покупателей
+                                <div className="header__info-advantage__hover safety">
+                                    <div className="fragment" />
+                                    Дарим скидку при заказе товара на сумму от 2500 руб.
+                                </div>
                             </div>
                         </div>
                         <div className="vertical"/>

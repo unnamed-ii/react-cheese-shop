@@ -14,9 +14,10 @@ import {ReactComponent as MedalIcon} from "../../images/icons/product-card-page/
 import {ReactComponent as FullViewIcon} from "../../images/icons/360.svg";
 import productCart from '../../images/product-card-page.png'
 import productCart2 from '../../images/product-card-page2.png'
+import Counter from "../../components/counter";
 
 const ProductCard = () => {
-    const [isProductAvailable, setIsProductAvailable] = useState(false);
+    const [isProductAvailable, setIsProductAvailable] = useState(true);
     const [showAlert, setShowAlert] = useState(false);
     const [activeTab, setActiveTab] = useState("description");
 
@@ -82,9 +83,7 @@ const ProductCard = () => {
                                     </div>
                                 </div>
                                 <div className="box__info-adding">
-                                    <div className="box__info-adding-calculator">
-                                        calculator
-                                    </div>
+                                    <Counter />
                                     <button className="available">
                                         В корзину
                                     </button>
