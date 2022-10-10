@@ -1,9 +1,12 @@
 import React from 'react';
 import './style.scss'
-
 import {ReactComponent as CloseBtnIcon} from '../../../images/icons/close-moduls-btn.svg'
 
-const RegistrationModal = () => {
+const RegistrationModal = ({show}) => {
+    if (!show) {
+        return null
+    }
+
     return (
         <div className="registration-wrapper">
             <div className="registration">

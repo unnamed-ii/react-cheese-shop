@@ -12,12 +12,17 @@
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/articles/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/articles/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/recommendations/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/recommendations/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/selections/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/selections/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/main-nav/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/main-nav/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/main-nav/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/main-nav/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/choose-product/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/choose-product/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/registration/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/registration/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/registration/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/registration/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/pages/reviews/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/reviews/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/reviews/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/reviews/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +111,7 @@
       <workItem from="1665090731181" duration="955000" />
       <workItem from="1665247005952" duration="1150000" />
       <workItem from="1665254183068" duration="1208000" />
-      <workItem from="1665432249835" duration="937000" />
+      <workItem from="1665432249835" duration="1991000" />
     </task>
     <servers />
   </component>

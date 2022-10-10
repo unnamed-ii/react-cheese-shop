@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.scss'
-
 import {ReactComponent as CloseBtnIcon} from '../../../images/icons/close-moduls-btn.svg';
 import productImage from '../../../images/choose-product.png';
 

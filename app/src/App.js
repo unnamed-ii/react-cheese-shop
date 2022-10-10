@@ -21,6 +21,7 @@ import Article from "./pages/article";
 import Recipe from "./pages/recipe";
 import ProductCard from "./pages/product-card";
 import Category from "./pages/category";
+import RegistrationModal from "./components/modals/registration";
 
 function App() {
     return (
@@ -45,6 +46,7 @@ function App() {
                 <Route path="registration" element={<Registration/>}/>
                 <Route path="authorization" element={<Authorization/>}/>
                 <Route path="recovery" element={<Recovery/>}/>
+                <Route path="registration-modal" element={<RegistrationModal/>}/>
             </Routes>
             <Footer/>
         </div>
