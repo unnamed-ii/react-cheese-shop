@@ -4,14 +4,10 @@ import {ReactComponent as UserIcon} from '../../images/icons/reviews-user.svg';
 import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
 import ReviewCard from "../../components/review-card";
-import {Link} from "react-router-dom";
 import RegistrationModal from "../../components/modals/registration";
 
 const Reviews = () => {
     const [isModalShowed, setIsModalShowed] = useState(false);
-    const handleToggleModal = () => {
-        setIsModalShowed(!isModalShowed);
-    }
 
     return (
         <Wrapper>
@@ -25,7 +21,7 @@ const Reviews = () => {
                             </div>
                             <div className="reviews__top-authorization">
                                 Что бы оставить отзыв необходимо
-                                <button onClick={handleToggleModal}>
+                                <button onClick={() => setIsModalShowed(!isModalShowed)}>
                                     <UserIcon className="user-icon" /> Авторизоваться
                                 </button>
                                 <RegistrationModal show={isModalShowed} />
