@@ -1,0 +1,36 @@
+@import "src/styles/vars";
+
+.counter {
+
+  &__inner {
+    max-width: 108px;
+    display: flex;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 5px;
+
+    &-block {
+      font-size: 18px;
+      line-height: 24px;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+
+      &.minus,
+      &.number {
+        border-right: 1px solid rgba(128, 128, 128, 0.2);
+      }
+
+      &.minus,
+      &.plus {
+        cursor: pointer;
+
+        &:hover {
+          background-color: #e1d5d5;
+        }
+      }
+    }
+  }
+}
