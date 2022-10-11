@@ -1,9 +1,7 @@
 import React from 'react';
 import './style.scss'
-
 import {ReactComponent as CloseBtnIcon} from '../../../images/icons/close-moduls-btn.svg';
 import {ReactComponent as QuestionMarkIcon} from '../../../images/icons/choose-modal-question.svg';
-
 import productImg from '../../../images/icons/choose-product-img.png';
 
 const ProductAddedModal = () => {
