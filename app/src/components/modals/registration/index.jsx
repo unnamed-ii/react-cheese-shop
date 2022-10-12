@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.scss'
+import ModalWrapper from "../../modal-wrapper";
 import {ReactComponent as CloseBtnIcon} from '../../../images/icons/close-moduls-btn.svg'
 
 const RegistrationModal = ({show}) => {
@@ -8,7 +9,7 @@ const RegistrationModal = ({show}) => {
     }
 
     return (
-        <div className="registration-wrapper">
+        <ModalWrapper>
             <div className="registration">
                 <div className="registration__title">
                     Регистрация
@@ -59,7 +60,7 @@ const RegistrationModal = ({show}) => {
                     У вас есть профиль? <a href="#">Войти в аккаунт</a>
                 </div>
             </div>
-        </div>
+        </ModalWrapper>
     );
 };
 

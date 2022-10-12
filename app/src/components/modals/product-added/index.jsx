@@ -1,12 +1,13 @@
 import React from 'react';
 import './style.scss'
+import ModalWrapper from "../../modal-wrapper";
 import {ReactComponent as CloseBtnIcon} from '../../../images/icons/close-moduls-btn.svg';
 import {ReactComponent as QuestionMarkIcon} from '../../../images/icons/choose-modal-question.svg';
 import productImg from '../../../images/icons/choose-product-img.png';
 
 const ProductAddedModal = () => {
     return (
-        <div className="product-added__wrapper">
+        <ModalWrapper>
             <div className="product-added">
                 <div className="product-added__title">
                     Добавлено в корзину
@@ -43,7 +44,7 @@ const ProductAddedModal = () => {
 
                 </div>
             </div>
-        </div>
+        </ModalWrapper>
     );
 };
 

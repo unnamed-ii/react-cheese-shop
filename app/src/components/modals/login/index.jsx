@@ -1,11 +1,11 @@
 import React from 'react';
 import './style.scss'
-
+import ModalWrapper from "../../modal-wrapper";
 import {ReactComponent as CloseBtnIcon} from '../../../images/icons/close-moduls-btn.svg'
 
 const LoginModal = () => {
     return (
-        <div className="login-wrapper">
+        <ModalWrapper>
             <div className="login">
                 <div className="login__title">
                     Вход в аккаунт
@@ -39,7 +39,7 @@ const LoginModal = () => {
                     У вас нет профиля? <a href="#">Создайте аккаунт</a>
                 </div>
             </div>
-        </div>
+        </ModalWrapper>
     );
 };
 

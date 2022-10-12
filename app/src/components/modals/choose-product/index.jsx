@@ -1,11 +1,12 @@
 import React from 'react';
 import './style.scss'
+import ModalWrapper from "../../modal-wrapper";
 import {ReactComponent as CloseBtnIcon} from '../../../images/icons/close-moduls-btn.svg';
 import productImage from '../../../images/choose-product.png';
 
 const ChooseProductModal = () => {
     return (
-        <div className="choose-product__wrapper">
+        <ModalWrapper>
             <div className="choose-product">
                 <div className="choose-product__title">
                     Выберите производителя
@@ -97,7 +98,7 @@ const ChooseProductModal = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </ModalWrapper>
     );
 };
 

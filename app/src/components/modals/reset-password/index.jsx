@@ -1,11 +1,11 @@
 import React from 'react';
 import './style.scss'
-
+import ModalWrapper from "../../modal-wrapper";
 import {ReactComponent as CloseBtnIcon} from '../../../images/icons/close-moduls-btn.svg'
 
 const ResetPasswordModal = () => {
     return (
-        <div className="reset-wrapper">
+        <ModalWrapper>
             <div className="reset">
                 <div className="reset__title">
                     Восстановить пароль
@@ -30,7 +30,7 @@ const ResetPasswordModal = () => {
                     У вас нет профиля? <a href="#">Создайте аккаунт</a>
                 </div>
             </div>
-        </div>
+        </ModalWrapper>
     );
 };
 

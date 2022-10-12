@@ -18,8 +18,13 @@
       <change beforePath="$PROJECT_DIR$/app/src/components/main-nav/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/main-nav/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/main-nav/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/main-nav/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/modals/choose-product/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/choose-product/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/choose-product/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/choose-product/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/login/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/login/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/product-added/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/product-added/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/product-added/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/product-added/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/modals/registration/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/registration/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/modals/registration/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/registration/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/reset-password/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/reset-password/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/pages/reviews/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/reviews/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/pages/reviews/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/reviews/style.scss" afterDir="false" />
     </list>
@@ -111,6 +116,7 @@
       <workItem from="1665247005952" duration="1150000" />
       <workItem from="1665254183068" duration="1208000" />
       <workItem from="1665432249835" duration="2658000" />
+      <workItem from="1665520077595" duration="417000" />
     </task>
     <servers />
   </component>
