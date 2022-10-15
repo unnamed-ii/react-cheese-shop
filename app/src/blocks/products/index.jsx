@@ -1,14 +1,29 @@
 import React, {useState} from 'react';
 import './style.scss';
-
 import MainNav from "../../components/main-nav";
 import Wrapper from "../../components/wrapper";
 import Card from "../../components/card";
+
+const popularItems = {
+    ingredients: [Card,Card,Card],
+    equipment: [Card,Card,Card]
+};
+
+const discountItems = {
+    ingredients: [Card,Card,Card,Card,Card,Card],
+    equipment: [Card,Card,Card,Card,Card,Card]
+};
+
+console.log(popularItems)
 
 const Products = () => {
     const [currentFilter, setCurrentFilter] = useState('filter-popular');
     const toggleCurrentFilter = (filterName) => {
         setCurrentFilter(filterName);
+    }
+
+    const showFilteredItems = () => {
+        return currentFilter === 'filter-popular' ? popularItems : discountItems
     }
 
     return (
@@ -36,16 +51,9 @@ const Products = () => {
                                 </div>
                                 <div className="ingredients__products">
                                     <div className="ingredients__products-row">
-                                        <Card/>
-                                        <Card/>
-                                        <Card/>
-                                        <Card/>
-                                    </div>
-                                    <div className="ingredients__products-row">
-                                        <Card/>
-                                        <Card/>
-                                        <Card/>
-                                        <Card/>
+                                        {showFilteredItems().ingredients.map((i) =>
+                                            <Card/>
+                                        )}
                                     </div>
                                 </div>
                             </div>
@@ -53,19 +61,10 @@ const Products = () => {
                                 <div className="equipment__title">
                                     Оборудование
                                 </div>
-                                <div className="equipment__products">
-                                    <div className="equipment__products-row">
+                                <div className="ingredients__products-row">
+                                    {showFilteredItems().equipment.map((i) =>
                                         <Card/>
-                                        <Card/>
-                                        <Card/>
-                                        <Card/>
-                                    </div>
-                                    <div className="equipment__products-row">
-                                        <Card/>
-                                        <Card/>
-                                        <Card/>
-                                        <Card/>
-                                    </div>
+                                    )}
                                 </div>
                             </div>
                         </div>

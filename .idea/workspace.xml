@@ -11,19 +11,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/components/modal-wrapper/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/components/modal-wrapper/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/articles/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/articles/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/products/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/products/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/recommendations/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/recommendations/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/selections/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/selections/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/main-nav/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/main-nav/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/main-nav/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/main-nav/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/modals/choose-product/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/choose-product/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/modals/choose-product/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/choose-product/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/login/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/modals/login/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/login/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/modals/product-added/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/product-added/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/modals/product-added/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/product-added/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/modals/registration/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/registration/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/modals/registration/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/registration/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/reset-password/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/reset-password/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/modals/reset-password/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/reset-password/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/pages/reviews/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/reviews/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/pages/reviews/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/reviews/style.scss" afterDir="false" />
@@ -117,6 +123,8 @@
       <workItem from="1665254183068" duration="1208000" />
       <workItem from="1665432249835" duration="2658000" />
       <workItem from="1665520077595" duration="417000" />
+      <workItem from="1665571861623" duration="471000" />
+      <workItem from="1665829018101" duration="1007000" />
     </task>
     <servers />
   </component>
@@ -144,22 +152,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1664880998881" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1665434954852">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1665829046437">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1665434954852" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1665434954852">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1665829046437" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1665829046436">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1665434954852" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1665434954852">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1665829046436" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1665829046436">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1665434954852" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1665434954852">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1665829046436" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1665829046436">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1665434954852" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1665829046436" />
     <state width="1877" height="340" key="GridCell.Tab.1.bottom" timestamp="1663845774264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -212,9 +220,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1664715091931" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1665063485271">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1665571905931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1665063485271" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1665571905931" />
   </component>
 </project>

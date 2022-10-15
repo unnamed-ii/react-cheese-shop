@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.scss'
-
 import setsBg from '../../images/recommendations/sets-bg.png'
 import recipesBg from '../../images/recommendations/recipes-bg.png'
 import discountsBg from '../../images/recommendations/discounts-bg.png'
