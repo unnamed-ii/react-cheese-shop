@@ -31,7 +31,7 @@ const Header = () => {
             <div className="header">
                 <div className="header__inner">
                     <div className="header__about">
-                        <div>
+                        <div className="header__about-block">
                             <div className="header__about-address">
                                 <LocationIcon className="location-icon"/>
                                 Ваш город: Москва
@@ -42,7 +42,7 @@ const Header = () => {
                                 Пн-Пт 9:00 - 19:00
                             </div>
                         </div>
-                        <div>
+                        <div className="header__about-block">
                             <div className="header__about-links">
                                 <Link to="/about">О компании</Link>
                                 <Link to="/">Преимущества</Link>
@@ -102,7 +102,7 @@ const Header = () => {
                                 <span>1680 руб.</span>
                             </div>
                             <div className="basket-image">
-                                <BasketIcon onClick={() => toggleDroppingItem('basket')}/>
+                                <BasketIcon onClick={() => toggleDroppingItem('basket')} className="svg"/>
                                 <div className='basket-image__circle'>5</div>
                                 <Basket isActive={isBasketDropped}/>
                             </div>

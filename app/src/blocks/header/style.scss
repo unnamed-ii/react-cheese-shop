@@ -172,7 +172,7 @@
 
         a {
           font-weight: 700;
-          font-size: 16px;
+          font-size: 15px;
           line-height: 22px;
           color: $brown;
         }
@@ -183,9 +183,11 @@
           line-height: 18px;
           border: 1px solid #FD9339;
           color: $orange;
-          padding: 6px 6px 6px 26px;
+          padding: 0 0 0 26px;
           border-radius: 4px;
           cursor: pointer;
+          width: 136px;
+          height: 30px;
 
           &::before {
             content: '';
@@ -333,5 +335,150 @@
 
   .header__info-advantage__hover.safety {
     display: block;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 0 10px;
+
+    &__info {
+
+      &-basket {
+
+        &__price {
+          text-align: center;
+
+          span {
+            text-align: center;
+          }
+        }
+      }
+
+      &-contacts {
+
+        &__social {
+          display: block;
+          text-align: center;
+
+          a {
+            display: block;
+          }
+
+          a + a {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .header__info {
+    padding: 5px 0;
+
+    &-contacts__phone {
+      display: none;
+    }
+  }
+
+  .header__nav {
+    display: block;
+    text-align: center;
+
+    &-links {
+      margin-bottom: 15px;
+    }
+
+    &-search {
+      .vertical {
+        display: none;
+      }
+
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .header {
+    .vertical {
+      display: none;
+    }
+
+    &__info-basket {
+      margin-left: 10px;
+    }
+
+    &__about {
+      display: none;
+    }
+
+    .header__about-address {
+      display: none;
+    }
+
+    .header__info {
+      padding-top: 10px;
+
+      &-contacts {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .header__info {
+
+    &-advantages {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .header__info-basket {
+    margin-left: 5px;
+    .svg {
+      width: 27px;
+      height: 27px;
+    }
+
+    &__price {
+      display: none;
+    }
+  }
+
+  .header__nav-links {
+    &__recipe {
+      .arrow-down {
+        position: absolute;
+        top: 13px;
+        right: 100px;
+      }
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      padding: 5px 0;
+      font-size: 18px;
+      transition: all .3s;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: $orange;
+        color: $white;
+      }
+    }
+
+    a + a {
+      margin: 0;
+    }
   }
 }
