@@ -1,13 +1,12 @@
 import React from 'react';
 import './style.scss';
-
+import Wrapper from "../../components/wrapper";
+import {Link} from "react-router-dom";
 import article1 from '../../images/articles/article1.png';
 import article2 from '../../images/articles/article2.png';
 import article3 from '../../images/articles/article3.png';
 import article4 from '../../images/articles/article4.png';
 import {ReactComponent as ArrowRightIcon} from '../../images/icons/arrow-right.svg';
-import Wrapper from "../../components/wrapper";
-import {Link} from "react-router-dom";
 
 const Articles = () => {
     return (

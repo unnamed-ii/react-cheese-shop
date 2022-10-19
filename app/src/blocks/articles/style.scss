@@ -1,7 +1,7 @@
 @import "../../styles/vars";
 
 .articles {
-  padding-bottom: 80px;
+  padding: 0 15px 80px 15px;
   display: flex;
 
   &__compilation  {
@@ -46,7 +46,7 @@
     }
 
     &-item {
-      min-width: 380px;
+      width: 380px;
       background-color: $white;
       border: 1px solid #E7E7E7;
       border-radius: 5px;
@@ -85,5 +85,48 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1220px) {
+  .articles {
+    display: block;
+
+    &__compilation {
+      width: 100%;
+      max-width: none;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .articles__list-line {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .articles__list-item + .articles__list-item{
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 435px) {
+  .articles__list-item {
+    width: 290px;
+
+    img {
+      width: 290px;
+    }
+  }
+
+  .articles__compilation-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 370px) {
+  .articles__compilation-title {
+    font-size: 20px;
   }
 }
