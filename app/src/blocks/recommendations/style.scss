@@ -1,9 +1,10 @@
 @import "../../styles/vars";
 
 .recommendations {
-  padding-bottom: 40px;
+  padding: 0 15px 40px 15px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 
   &__item {
     color: $white;
@@ -74,6 +75,41 @@
       .recommendations__item-link {
         display: inline;
         margin-left: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1230px) {
+  .recommendations__item {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 940px) {
+  .recommendations__item {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 610px) {
+  .recommendations {
+    justify-content: center;
+
+    &__item.active .recommendations__item-title {
+        font-size: 30px;
+    }
+
+    &__item.active .recommendations__item-text {
+      margin-bottom: 57px;
+    }
+
+    &__item {
+      max-width: 293px;
+
+      img {
+        width: 293px;
+        height: 300px;
       }
     }
   }

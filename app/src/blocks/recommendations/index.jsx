@@ -1,10 +1,10 @@
 import React from 'react';
 import './style.scss'
+import Wrapper from "../../components/wrapper";
+import {Link} from "react-router-dom";
 import setsBg from '../../images/recommendations/sets-bg.png'
 import recipesBg from '../../images/recommendations/recipes-bg.png'
 import discountsBg from '../../images/recommendations/discounts-bg.png'
-import Wrapper from "../../components/wrapper";
-import {Link} from "react-router-dom";
 
 const Recommendations = () => {
     return (

@@ -14,8 +14,6 @@ const discountItems = {
     equipment: [Card,Card,Card,Card,Card,Card]
 };
 
-console.log(popularItems)
-
 const Products = () => {
     const [currentFilter, setCurrentFilter] = useState('filter-popular');
     const toggleCurrentFilter = (filterName) => {
