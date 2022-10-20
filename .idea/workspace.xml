@@ -13,10 +13,10 @@
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/app/src/components/modal-wrapper/index.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/components/modal-wrapper/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/articles/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/articles/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/articles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/articles/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/benefits/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/benefits/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/equipment/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/equipment/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/equipment/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/equipment/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/footer/index.jsx" afterDir="false" />
@@ -138,7 +138,7 @@
       <workItem from="1666029671707" duration="1844000" />
       <workItem from="1666117076603" duration="5144000" />
       <workItem from="1666203559760" duration="1380000" />
-      <workItem from="1666266165844" duration="1864000" />
+      <workItem from="1666266165844" duration="2227000" />
     </task>
     <servers />
   </component>
