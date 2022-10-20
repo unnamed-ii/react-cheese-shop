@@ -15,8 +15,8 @@ const Home = () => {
             {/*<Products/>*/}
             {/*<Benefits/>*/}
             {/*<Selections/>*/}
-            {/*<Equipment/>*/}
-            <Articles/>
+            <Equipment/>
+            {/*<Articles/>*/}
             {/*<ProductsSlider title={'Просмотренные товары'}/>*/}
         </div>
     );

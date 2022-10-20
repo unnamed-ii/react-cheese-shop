@@ -1,12 +1,11 @@
 import React, {useState} from 'react';
 import './style.scss';
-
+import Wrapper from "../../components/wrapper";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {ReactComponent as ArrowRight} from "../../images/icons/slider/arrow-right.svg";
 import {ReactComponent as ArrowLeft} from "../../images/icons/slider/arrow-left.svg";
-import Wrapper from "../../components/wrapper";
 
 const SampleNextArrow = (props) => {
     const { className, style, onClick } = props;
