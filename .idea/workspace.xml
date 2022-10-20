@@ -26,6 +26,7 @@
       <change beforePath="$PROJECT_DIR$/app/src/blocks/products/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/products/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/recommendations/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/recommendations/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/selections/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/selections/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/selections/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/selections/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/main-nav/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/main-nav/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/main-nav/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/main-nav/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/components/modals/choose-product/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/choose-product/index.jsx" afterDir="false" />
@@ -137,7 +138,7 @@
       <workItem from="1666029671707" duration="1844000" />
       <workItem from="1666117076603" duration="5144000" />
       <workItem from="1666203559760" duration="1380000" />
-      <workItem from="1666266165844" duration="934000" />
+      <workItem from="1666266165844" duration="1864000" />
     </task>
     <servers />
   </component>

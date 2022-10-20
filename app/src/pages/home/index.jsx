@@ -14,8 +14,8 @@ const Home = () => {
             {/*<Recommendations/>*/}
             {/*<Products/>*/}
             {/*<Benefits/>*/}
-            {/*<Selections/>*/}
-            <Equipment/>
+            <Selections/>
+            {/*<Equipment/>*/}
             {/*<Articles/>*/}
             {/*<ProductsSlider title={'Просмотренные товары'}/>*/}
         </div>

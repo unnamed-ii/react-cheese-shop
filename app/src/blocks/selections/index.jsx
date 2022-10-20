@@ -1,10 +1,9 @@
 import React from 'react';
 import './style.scss';
-
-import recipes from '../../images/selections/recipe.png';
-import sets from '../../images/selections/sets.png';
 import Wrapper from "../../components/wrapper";
 import {Link} from "react-router-dom";
+import recipes from '../../images/selections/recipe.png';
+import sets from '../../images/selections/sets.png';
 
 const Selections = () => {
     return (
