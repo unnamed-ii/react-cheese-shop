@@ -11,5 +11,40 @@
   &-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1200px) {
+  .popular__recipes {
+    padding: 0 15px;
+
+    &-title {
+      text-align: center;
+    }
+
+    &-list {
+      justify-content: center;
+
+      .popular-recipe {
+        margin-bottom: 15px;
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .popular__recipes {
+
+    &-title {
+      text-align: center;
+    }
+
+    &-list {
+      .popular-recipe {
+        margin-right: 0;
+      }
+    }
   }
 }

@@ -24,6 +24,7 @@
       <change beforePath="$PROJECT_DIR$/app/src/blocks/footer/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/footer/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/header/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/header/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/popular-recipes/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/popular-recipes/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/products/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/products/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/recommendations/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/recommendations/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/blocks/recommendations/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/recommendations/style.scss" afterDir="false" />
@@ -142,7 +143,7 @@
       <workItem from="1666203559760" duration="1380000" />
       <workItem from="1666266165844" duration="2272000" />
       <workItem from="1666298474428" duration="1209000" />
-      <workItem from="1666431971922" duration="329000" />
+      <workItem from="1666431971922" duration="927000" />
     </task>
     <servers />
   </component>
@@ -238,9 +239,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1664715091931" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1665950157260">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1666432492325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1665950157260" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1666432492325" />
   </component>
 </project>
