@@ -1,7 +1,7 @@
 @import "src/styles/vars";
 
 .popular-recipe {
-  width: 380px;
+  max-width: 380px;
   background: #FFFFFF;
   border: 1px solid #E7E7E7;
   border-radius: 5px;
@@ -35,6 +35,16 @@
       line-height: 24px;
       text-decoration-line: underline;
       color: $orange;
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .popular-recipe {
+    max-width: 280px;
+
+    img {
+      width: 280px;
     }
   }
 }
