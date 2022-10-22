@@ -22,7 +22,6 @@ import Recipe from "./pages/recipe";
 import ProductCard from "./pages/product-card";
 import Category from "./pages/category";
 import RegistrationModal from "./components/modals/registration";
-import PopularRecipes from "./blocks/popular-recipes";
 
 function App() {
     return (

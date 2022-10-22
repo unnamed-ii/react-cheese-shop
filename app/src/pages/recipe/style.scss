@@ -134,6 +134,17 @@
           display: flex;
           justify-content: space-between;
           margin-bottom: 20px;
+          cursor: pointer;
+        }
+
+        &__info {
+          height: 0;
+          display: none;
+
+          &.dropped {
+            height: auto;
+            display: block;
+          }
         }
 
         &__list {
