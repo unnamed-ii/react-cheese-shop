@@ -11,43 +11,252 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/components/modal-wrapper/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/components/modal-wrapper/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/blocks/articles/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/articles/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/blocks/articles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/articles/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/blocks/benefits/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/benefits/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/blocks/equipment/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/equipment/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/blocks/equipment/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/equipment/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/blocks/footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/footer/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/blocks/footer/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/footer/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/blocks/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/blocks/header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/header/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/blocks/popular-recipes/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/popular-recipes/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/blocks/products/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/products/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/blocks/recommendations/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/recommendations/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/blocks/recommendations/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/recommendations/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/blocks/selections/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/selections/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/blocks/selections/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/blocks/selections/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/components/main-nav/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/main-nav/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/components/main-nav/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/main-nav/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/components/modals/choose-product/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/choose-product/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/components/modals/choose-product/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/choose-product/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/components/modals/login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/login/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/components/modals/login/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/login/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/components/modals/product-added/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/product-added/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/components/modals/product-added/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/product-added/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/components/modals/registration/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/registration/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/components/modals/registration/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/registration/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/components/modals/reset-password/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/reset-password/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/components/modals/reset-password/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/modals/reset-password/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/components/popular-recipe-card/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/popular-recipe-card/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pages/recipe/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/recipe/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pages/recipe/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/recipe/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pages/recipes/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/recipes/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pages/reviews/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/reviews/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pages/reviews/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/reviews/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/articles/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/articles/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/benefits/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/benefits/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/calculator/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/calculator/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/collection/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/collection/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/contacts/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/contacts/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/delivery/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/delivery/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/equipment/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/equipment/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/footer/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/footer/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/header/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/header/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/popular-recipes/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/popular-recipes/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/products/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/products/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/profile/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/profile/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/recommendations/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/recommendations/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/selections/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/blocks/selections/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/added-recipe-card/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/added-recipe-card/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/advantage-card/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/advantage-card/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/analog-product-card/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/analog-product-card/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/analogs-slider/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/analogs-slider/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/basket/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/basket/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/card/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/card/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/checkbox/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/checkbox/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/counter/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/counter/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/filter-card/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/filter-card/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/input-range/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/input-range/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/instruction-step/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/instruction-step/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/main-nav/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/main-nav/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/master-card/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/master-card/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modal-wrapper/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modal-wrapper/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/choose-product/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/choose-product/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/login/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/login/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/product-added/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/product-added/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/registration/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/registration/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/reset-password/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/modals/reset-password/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/payment-method/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/payment-method/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/popular-recipe-card/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/popular-recipe-card/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/product-added-alert/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/product-added-alert/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/products-slider/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/products-slider/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/recipe-card/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/recipe-card/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/review-card/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/review-card/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/similar-products/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/similar-products/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/wrapper/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/wrapper/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/about/box/client-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/about/box/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/about/box/result-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/about/cheese.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/about/master.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/about/store/cheese1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/added-recipe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/analog-product.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/article.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/articles/article1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/articles/article2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/articles/article3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/articles/article4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/basker-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/basket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/basket/item-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/basket/item-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/benefits/approved.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/benefits/award.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/benefits/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/benefits/clock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/benefits/dollar-sign.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/benefits/message.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/benefits/percent.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/card.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/checkout-products-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/choose-product.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/collection.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/collections.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/contacts-map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/dark-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/delivery-CDEK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/delivery-map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/equipment/first-slide-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/favourite-product.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/footer-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/footer-social/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/footer-social/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/footer-social/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/footer-social/vk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/footer-social/youtube.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/header-advantages/delivery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/header-advantages/discount.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/header-advantages/user-protection.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/header-social/messenger.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/header-social/telegram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/header-social/whatsup.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/360.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/about/box.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/about/percent.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/about/phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/about/shield.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/arrow-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/arrow-right-grey.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/arrow-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/checkbox-mark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/choose-modal-question.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/choose-product-img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/clock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/close-btn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/close-moduls-btn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/delivery.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/fitler-toggle-disabled.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/fitler-toggle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/heart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/location.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/main-nav/equipment.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/main-nav/ingredients.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/minus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/orange-empty-heart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/payment-methods/advance.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/payment-methods/cash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/payment-methods/online.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/plus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/product-card-page/credit-cards.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/product-card-page/gift.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/product-card-page/medals.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/profile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/profile/bag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/profile/coupon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/profile/direction.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/profile/heart-solid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/profile/heart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/profile/lock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/profile/logout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/profile/user.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/question-mark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/recipe-page-arrow-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/recipe-page-basket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/review.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/reviews-user.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/sign-up-benefits/cashback.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/sign-up-benefits/payment-methods.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/sign-up-benefits/quality-assurance.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/sign-up/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/sign-up/google.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/sign-up/mailRu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/sign-up/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/sign-up/vk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/sign-up/yandex.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/slider/arrow-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/icons/slider/arrow-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/payment-methods/mastercard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/payment-methods/ruble.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/payment-methods/sberbank.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/payment-methods/visa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/payment-methods/webmoney.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/payment-methods/yandex.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/popular-recipe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/product-card-page.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/product-card-page2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/profile-coupon-active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/profile-coupon-not-active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/recipe-page-benefit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/recipe-page-description.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/recipe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/recommendations/discounts-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/recommendations/recipes-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/recommendations/sets-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/review-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/selections/recipe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/selections/sets.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/slide-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/ about/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/ about/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/article/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/article/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/authorization/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/authorization/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/category/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/category/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/checkout/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/checkout/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/collections/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/collections/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/delivery/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/delivery/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/home/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/home/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/product-card/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/product-card/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/qa/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/qa/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/recipe/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/recipe/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/recipes/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/recipes/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/recovery/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/recovery/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/registration/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/registration/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/reviews/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/reviews/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/styles/_vars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/styles/global.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +264,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/app" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2F1yon6uB7pXZhCIXCEVY2arkMk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -71,7 +280,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
@@ -146,7 +355,8 @@
       <workItem from="1666203559760" duration="1380000" />
       <workItem from="1666266165844" duration="2272000" />
       <workItem from="1666298474428" duration="1209000" />
-      <workItem from="1666431971922" duration="2037000" />
+      <workItem from="1666431971922" duration="2531000" />
+      <workItem from="1666448098072" duration="179000" />
     </task>
     <servers />
   </component>
@@ -170,26 +380,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1663674198611" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1664880998881">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1666448279476">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1664880998881" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1666431978431">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1666448279476" />
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1666434536207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1666431978431" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1666431978431">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1666434536207" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1666434536207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1666431978431" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1666431978430">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1666434536207" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1666434536206">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1666431978430" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1666431978431">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1666434536206" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1666434536207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1666431978431" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1666434536207" />
     <state width="1877" height="340" key="GridCell.Tab.1.bottom" timestamp="1663845774264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
