@@ -1,14 +1,14 @@
 @import "../../styles/vars";
 
 .recipes {
-  padding-bottom: 100px;
+  padding: 0 15px 100px;
 
   &__inner {
     display: flex;
 
     &-content {
       margin-left: 30px;
-      width: 870px;
+      max-width: 870px;
 
       &__cheese {
         padding-bottom: 40px;
@@ -61,6 +61,29 @@
           color: $white;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper-nav {
+    display: none;
+  }
+
+  .recipes__inner-content {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 890px) {
+  .recipes__inner-content__cheese,
+  .recipes__inner-content__added {
+    .title {
+      text-align: center;
+    }
+
+    .box {
+      justify-content: center;
     }
   }
 }
