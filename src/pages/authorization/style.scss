@@ -121,3 +121,88 @@
     }
   }
 }
+
+@media (max-width: 1215px) {
+  .sign-in {
+    display: block;
+  }
+}
+
+@media (max-width: 635px) {
+  .sign-in {
+
+    &__form {
+      width: 480px;
+
+      &-title {
+        margin-bottom: 20px;
+      }
+
+      &-accounts {
+
+        .services {
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+    &__register {
+      width: 480px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .sign-in {
+
+    &__form {
+      width: 380px;
+
+      &-title {
+        font-size: 23px;
+        line-height: 30px;
+      }
+    }
+
+    &__register {
+      width: 380px;
+      padding: 118px 55px;
+
+      &-title {
+        font-size: 23px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .sign-in {
+
+    &__form {
+      form {
+        input {
+          padding: 7px 0 7px 14px;
+        }
+
+        button {
+          padding: 6px 0;
+        }
+      }
+    }
+
+    &__form,
+    &__register {
+      width: 300px;
+
+      &-title {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .sign-in__register-link a {
+    padding: 12px 20px;
+  }
+}
