@@ -1,10 +1,11 @@
 import React from 'react';
 import './style.scss'
 import {Link} from "react-router-dom";
+import Wrapper from "../../components/wrapper";
 
 const Recovery = () => {
     return (
-        <div className="wrapper__recover">
+        <Wrapper>
             <div className="recover">
                 <div className="recover__title">
                     Восстановить пароль
@@ -27,7 +28,7 @@ const Recovery = () => {
                     У вас нет профиля?? <Link to="/registration">Создайте аккаунт</Link>
                 </div>
             </div>
-        </div>
+        </Wrapper>
     );
 };
 

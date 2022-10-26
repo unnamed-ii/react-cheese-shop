@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.scss'
-
+import {Link} from "react-router-dom";
+import Wrapper from "../../components/wrapper";
 import {ReactComponent as CashbackIcon} from '../../images/icons/sign-up-benefits/cashback.svg';
 import {ReactComponent as QualityAssuranceIcon} from '../../images/icons/sign-up-benefits/quality-assurance.svg';
 import {ReactComponent as PaymentMethodsIcon} from '../../images/icons/sign-up-benefits/payment-methods.svg';
@@ -10,12 +11,11 @@ import {ReactComponent as VkIcon} from '../../images/icons/sign-up/vk.svg';
 import {ReactComponent as TwitterIcon} from '../../images/icons/sign-up/twitter.svg';
 import {ReactComponent as MailRuIcon} from '../../images/icons/sign-up/mailRu.svg';
 import {ReactComponent as YandexIcon} from '../../images/icons/sign-up/yandex.svg';
-import {Link} from "react-router-dom";
 
 
 const Registration = () => {
     return (
-        <div className="wrapper__sign-up">
+        <Wrapper>
             <div className="sign-up">
                 <div className="sign-up__info">
                     <div className="sign-up__info-title">
@@ -107,7 +107,7 @@ const Registration = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Wrapper>
     );
 };
 
