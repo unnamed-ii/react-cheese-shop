@@ -175,3 +175,32 @@
     }
   }
 }
+
+@media (max-width: 1215px) {
+  .sign-up {
+    display: block;
+  }
+}
+
+@media (max-width: 635px) {
+  .sign-up {
+
+    &__info {
+      width: 480px;
+    }
+
+    &__form {
+      width: 480px;
+
+      form {
+        .password {
+          display: block;
+
+          &__enter {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
