@@ -7,7 +7,6 @@
   line-height: 1.1;
   display: grid;
   grid-template-columns: 1em auto;
-  //gap: 0.5em;
 }
 
 .form-control--disabled {
@@ -18,7 +17,6 @@
 input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
-  //background-color: var(--form-background);
   background-color: #fff;
   margin: 0;
   color: currentColor;
@@ -29,6 +27,7 @@ input[type="checkbox"] {
   transform: translateY(-0.075em);
   display: grid;
   place-content: center;
+  cursor: pointer;
 }
 
 input[type="checkbox"]::before {
