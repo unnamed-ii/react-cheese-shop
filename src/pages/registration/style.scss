@@ -142,12 +142,14 @@
       .agreements {
         padding-bottom: 20px;
         border-bottom: 1px solid rgba(230, 230, 230, 1);
-        margin-bottom: 30px;
+        margin-bottom: 20px;
 
         &__agreement {
           font-size: 13px;
           line-height: 20px;
           color: #686868;
+          display: flex;
+          margin-bottom: 12px;
 
           a {
             text-decoration: underline;
@@ -179,6 +181,10 @@
 @media (max-width: 1215px) {
   .sign-up {
     display: block;
+
+    &__form-link {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -199,8 +205,52 @@
           &__enter {
             margin-bottom: 20px;
           }
+
+          input {
+            width: 100%;
+          }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .sign-up {
+
+    &__info {
+      width: 380px;
+
+      &-title {
+        font-size: 26px;
+        line-height: 36px;
+      }
+
+      &-text {
+        margin-bottom: 40px;
+      }
+    }
+
+    &__form {
+      width: 380px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .sign-up {
+
+    &__info {
+      width: 300px;
+
+      &-title {
+        font-size: 19px;
+        line-height: 28px;
+      }
+    }
+
+    &__form {
+      width: 300px;
     }
   }
 }
