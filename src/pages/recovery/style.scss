@@ -38,6 +38,7 @@
       border-radius: 6px;
       font-size: 15px;
       line-height: 24px;
+      outline: none;
 
       &::placeholder {
         color: #BFBFBF;
@@ -67,6 +68,46 @@
     a {
       text-decoration: underline;
       color: $orange;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .recover {
+    width: 480px;
+
+    &__form {
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .recover {
+    width: 400px;
+  }
+}
+
+@media (max-width: 420px) {
+  .recover {
+    width: 300px;
+
+    &__title {
+      font-size: 21px;
+      line-height: 33px;
+    }
+
+    &__form {
+      button {
+        padding: 12px 60px;
+        margin-bottom: 40px;
+      }
+    }
+
+    &__link {
+      text-align: center;
     }
   }
 }
