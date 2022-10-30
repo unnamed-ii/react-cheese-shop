@@ -3,16 +3,7 @@ import './style.scss';
 import MainNav from "../../components/main-nav";
 import Wrapper from "../../components/wrapper";
 import Card from "../../components/card";
-
-const popularItems = {
-    ingredients: [Card,Card,Card],
-    equipment: [Card,Card,Card]
-};
-
-const discountItems = {
-    ingredients: [Card,Card,Card,Card,Card,Card],
-    equipment: [Card,Card,Card,Card,Card,Card]
-};
+import {discountItems, popularItems} from "./constants";
 
 const Products = () => {
     const [currentFilter, setCurrentFilter] = useState('filter-popular');
