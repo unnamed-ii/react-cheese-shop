@@ -10,7 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="" />
+    <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/qa/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/qa/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/qa/index.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +133,7 @@
       <workItem from="1666903110971" duration="1897000" />
       <workItem from="1666990714612" duration="1726000" />
       <workItem from="1667046287401" duration="442000" />
-      <workItem from="1667126501820" duration="1574000" />
+      <workItem from="1667126501820" duration="2404000" />
     </task>
     <servers />
   </component>
@@ -238,9 +241,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1664715091931" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1667127982033">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1667129280034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1667127982033" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1667129280034" />
   </component>
 </project>
