@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.scss';
+import {DropDownLinks} from "./drop-down-links";
 import {ReactComponent as ArrowRightIcon} from "../../images/icons/arrow-right-grey.svg";
 import {ReactComponent as IngredientsIcon} from "../../images/icons/main-nav/ingredients.svg";
 import {ReactComponent as EquipmentIcon} from "../../images/icons/main-nav/equipment.svg";
@@ -16,56 +17,12 @@ const MainNav = () => {
                         <div className="nav__ingredients-link">
                             Закваски для сыра
                             <ArrowRightIcon  class="link__arrow-right"/>
-                            <div className="nav__ingredients-link__dropdown">
-                                <div className="dropdown-link">
-                                    Вегетарианский химозин
-                                </div>
-                                <div className="dropdown-link">
-                                    Сычужный фермент
-                                </div>
-                                <div className="dropdown-link">
-                                    Липаза козья
-                                </div>
-                                <div className="dropdown-link">
-                                    Белая плесень
-                                </div>
-                                <div className="dropdown-link">
-                                    Голубая плесень
-                                </div>
-                                <div className="dropdown-link">
-                                    Дрожжи для сыров
-                                </div>
-                                <div className="dropdown-link">
-                                    Закваска для йогурта
-                                </div>
-                            </div>
+                            <DropDownLinks />
                         </div>
                         <div className="nav__ingredients-link">
                             Ферменты для сыра
                             <ArrowRightIcon  class="link__arrow-right"/>
-                            <div className="nav__ingredients-link__dropdown">
-                                <div className="dropdown-link">
-                                    Вегетарианский химозин
-                                </div>
-                                <div className="dropdown-link">
-                                    Сычужный фермент
-                                </div>
-                                <div className="dropdown-link">
-                                    Липаза козья
-                                </div>
-                                <div className="dropdown-link">
-                                    Белая плесень
-                                </div>
-                                <div className="dropdown-link">
-                                    Голубая плесень
-                                </div>
-                                <div className="dropdown-link">
-                                    Дрожжи для сыров
-                                </div>
-                                <div className="dropdown-link">
-                                    Закваска для йогурта
-                                </div>
-                            </div>
+                            <DropDownLinks />
                         </div>
                         <div className="nav__ingredients-link">
                             Хлористый кальций
@@ -73,56 +30,12 @@ const MainNav = () => {
                         <div className="nav__ingredients-link">
                             Плесень для сыра
                             <ArrowRightIcon  class="link__arrow-right"/>
-                            <div className="nav__ingredients-link__dropdown">
-                                <div className="dropdown-link">
-                                    Вегетарианский химозин
-                                </div>
-                                <div className="dropdown-link">
-                                    Сычужный фермент
-                                </div>
-                                <div className="dropdown-link">
-                                    Липаза козья
-                                </div>
-                                <div className="dropdown-link">
-                                    Белая плесень
-                                </div>
-                                <div className="dropdown-link">
-                                    Голубая плесень
-                                </div>
-                                <div className="dropdown-link">
-                                    Дрожжи для сыров
-                                </div>
-                                <div className="dropdown-link">
-                                    Закваска для йогурта
-                                </div>
-                            </div>
+                            <DropDownLinks />
                         </div>
                         <div className="nav__ingredients-link">
                             Кисломолочные закваски
                             <ArrowRightIcon  class="link__arrow-right"/>
-                            <div className="nav__ingredients-link__dropdown">
-                                <div className="dropdown-link">
-                                    Вегетарианский химозин
-                                </div>
-                                <div className="dropdown-link">
-                                    Сычужный фермент
-                                </div>
-                                <div className="dropdown-link">
-                                    Липаза козья
-                                </div>
-                                <div className="dropdown-link">
-                                    Белая плесень
-                                </div>
-                                <div className="dropdown-link">
-                                    Голубая плесень
-                                </div>
-                                <div className="dropdown-link">
-                                    Дрожжи для сыров
-                                </div>
-                                <div className="dropdown-link">
-                                    Закваска для йогурта
-                                </div>
-                            </div>
+                            <DropDownLinks />
                         </div>
                         <div className="nav__ingredients-link">
                             Красители для сыра
@@ -130,29 +43,7 @@ const MainNav = () => {
                         <div className="nav__ingredients-link">
                             Специи для сыра
                             <ArrowRightIcon  class="link__arrow-right"/>
-                            <div className="nav__ingredients-link__dropdown">
-                                <div className="dropdown-link">
-                                    Вегетарианский химозин
-                                </div>
-                                <div className="dropdown-link">
-                                    Сычужный фермент
-                                </div>
-                                <div className="dropdown-link">
-                                    Липаза козья
-                                </div>
-                                <div className="dropdown-link">
-                                    Белая плесень
-                                </div>
-                                <div className="dropdown-link">
-                                    Голубая плесень
-                                </div>
-                                <div className="dropdown-link">
-                                    Дрожжи для сыров
-                                </div>
-                                <div className="dropdown-link">
-                                    Закваска для йогурта
-                                </div>
-                            </div>
+                            <DropDownLinks />
                         </div>
                     </div>
                 </div>
@@ -164,29 +55,7 @@ const MainNav = () => {
                         <div className="nav__equipment-link">
                             Формы для сыра
                             <ArrowRightIcon  class="link__arrow-right"/>
-                            <div className="nav__ingredients-link__dropdown">
-                                <div className="dropdown-link">
-                                    Вегетарианский химозин
-                                </div>
-                                <div className="dropdown-link">
-                                    Сычужный фермент
-                                </div>
-                                <div className="dropdown-link">
-                                    Липаза козья
-                                </div>
-                                <div className="dropdown-link">
-                                    Белая плесень
-                                </div>
-                                <div className="dropdown-link">
-                                    Голубая плесень
-                                </div>
-                                <div className="dropdown-link">
-                                    Дрожжи для сыров
-                                </div>
-                                <div className="dropdown-link">
-                                    Закваска для йогурта
-                                </div>
-                            </div>
+                            <DropDownLinks />
                         </div>
                         <div className="nav__equipment-link">
                             Латексное покрытие
@@ -197,29 +66,7 @@ const MainNav = () => {
                         <div className="nav__equipment-link">
                             Термоусадочные пакеты
                             <ArrowRightIcon  class="link__arrow-right"/>
-                            <div className="nav__ingredients-link__dropdown">
-                                <div className="dropdown-link">
-                                    Вегетарианский химозин
-                                </div>
-                                <div className="dropdown-link">
-                                    Сычужный фермент
-                                </div>
-                                <div className="dropdown-link">
-                                    Липаза козья
-                                </div>
-                                <div className="dropdown-link">
-                                    Белая плесень
-                                </div>
-                                <div className="dropdown-link">
-                                    Голубая плесень
-                                </div>
-                                <div className="dropdown-link">
-                                    Дрожжи для сыров
-                                </div>
-                                <div className="dropdown-link">
-                                    Закваска для йогурта
-                                </div>
-                            </div>
+                            <DropDownLinks />
                         </div>
                         <div className="nav__equipment-link">
                             Дренажные коврики
