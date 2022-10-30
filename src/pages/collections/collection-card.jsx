@@ -1,8 +1,8 @@
+import React from "react";
 import {ReactComponent as HeartIcon} from "../../images/icons/heart.svg";
 import collection from "../../images/collections.png";
-import React from "react";
 
-export const CollectionCard = () => {
+export const CollectionCard = ({title, description, price}) => {
     return (
         <div className="collections__group-collection">
             <div className="collections__group-collection__top">
