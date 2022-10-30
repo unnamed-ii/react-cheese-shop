@@ -7,7 +7,7 @@
     display: flex;
 
     &-content {
-      width: 870px;
+      max-width: 870px;
       margin-left: 80px;
     }
   }
@@ -94,5 +94,31 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1260px) {
+  .collections__inner-content {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .collections {
+    padding: 0 15px;
+
+    &__title {
+      text-align: center;
+    }
+
+    &__inner-content {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .collections__group {
+    justify-content: center;
   }
 }
