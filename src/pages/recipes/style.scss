@@ -23,8 +23,10 @@
 
         .box {
           display: flex;
-          justify-content: space-between;
           flex-wrap: wrap;
+          justify-content: center;
+          gap: 15px;
+          width: 100%;
         }
       }
 
@@ -41,8 +43,10 @@
 
         .box {
           display: flex;
-          justify-content: space-between;
           flex-wrap: wrap;
+          justify-content: center;
+          gap: 15px;
+          width: 100%;
         }
       }
 
