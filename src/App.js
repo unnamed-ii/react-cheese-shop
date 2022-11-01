@@ -26,7 +26,7 @@ import RegistrationModal from "./components/modals/registration";
 function App() {
     return (
         <div className="app">
-            {/*<Header/>*/}
+            <Header/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="product-card" element={<ProductCard/>}/>
