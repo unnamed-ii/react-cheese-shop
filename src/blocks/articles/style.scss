@@ -35,6 +35,10 @@
   }
 
   &__list {
+    display: flex;
+    max-width: 780px;
+    flex-wrap: wrap;
+    gap: 20px;
 
     &-line {
       display: flex;
@@ -101,8 +105,7 @@
 }
 
 @media (max-width: 820px) {
-  .articles__list-line {
-    flex-wrap: wrap;
+  .articles__list {
     justify-content: center;
   }
 
