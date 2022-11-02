@@ -11,10 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/blocks/recommendations/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/recommendations/recommedation-card.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/equipment/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/equipment/equipment-slide.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/recommendations/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/recommendations/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/equipment/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/equipment/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +140,7 @@
       <workItem from="1667324645125" duration="5025000" />
       <workItem from="1667410618210" duration="343000" />
       <workItem from="1667412090995" duration="395000" />
-      <workItem from="1667419296303" duration="1007000" />
+      <workItem from="1667419296303" duration="2027000" />
     </task>
     <servers />
   </component>
@@ -160,10 +160,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="705" y="310" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1667325641644">
+    <state x="705" y="310" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1667421811030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="705" y="310" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1667325641644" />
+    <state x="705" y="310" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1667421811030" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1663674198611">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

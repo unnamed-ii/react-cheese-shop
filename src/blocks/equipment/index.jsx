@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {ReactComponent as ArrowRight} from "../../images/icons/slider/arrow-right.svg";
 import {ReactComponent as ArrowLeft} from "../../images/icons/slider/arrow-left.svg";
+import {SlidesData} from "./constants";
+import {EquipmentSlide} from "./equipment-slide";
 
 const SampleNextArrow = (props) => {
     const { className, style, onClick } = props;
@@ -53,48 +55,12 @@ const Equipment = () => {
                     наше оборудование
                 </div>
                 <Slider {...settings}>
-                    <div className="slide">
-                        <div className="slide__inner">
-                            <div className="slide__inner-title">
-                                Прессы для сыра
-                            </div>
-                            <div className="slide__inner-text">
-                                Пресс можно использовать для прессования твердых сыров. Он разбирается, и вы можете компактно
-                                его упаковать в коробку.
-                            </div>
-                            <a href="#" className="slide__inner-link">
-                                Узнать больше
-                            </a>
-                        </div>
-                    </div>
-                    <div className="slide">
-                        <div className="slide__inner">
-                            <div className="slide__inner-title">
-                                Прессы для сыра
-                            </div>
-                            <div className="slide__inner-text">
-                                Пресс можно использовать для прессования твердых сыров. Он разбирается, и вы можете компактно
-                                его упаковать в коробку.
-                            </div>
-                            <a href="#" className="slide__inner-link">
-                                Узнать больше
-                            </a>
-                        </div>
-                    </div>
-                    <div className="slide">
-                        <div className="slide__inner">
-                            <div className="slide__inner-title">
-                                Прессы для сыра
-                            </div>
-                            <div className="slide__inner-text">
-                                Пресс можно использовать для прессования твердых сыров. Он разбирается, и вы можете компактно
-                                его упаковать в коробку.
-                            </div>
-                            <a href="#" className="slide__inner-link">
-                                Узнать больше
-                            </a>
-                        </div>
-                    </div>
+                    {SlidesData.map(i =>
+                        <EquipmentSlide
+                            title={i.title}
+                            text={i.text}
+                        />
+                    )}
                 </Slider>
                 <div className="equipment__current-slide">
                     0{currentSlideIdx} / 03
