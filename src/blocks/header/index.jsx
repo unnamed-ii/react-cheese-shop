@@ -3,6 +3,7 @@ import './style.scss';
 import Basket from "../../components/basket";
 import Wrapper from "../../components/wrapper";
 import {Link} from "react-router-dom";
+import {DroppingItems} from "./constants";
 import {ReactComponent as LocationIcon} from '../../images/icons/location.svg';
 import {ReactComponent as ArrowDownIcon} from '../../images/icons/arrow-down.svg';
 import {ReactComponent as ClockIcon} from '../../images/icons/clock.svg';
@@ -22,8 +23,8 @@ const Header = () => {
     const [isBasketDropped, setIsBasketDropped] = useState(false);
 
     const toggleDroppingItem = (droppingItem) => {
-        if (droppingItem === "dropdown-list") setIsListDropped(!isListDropped);
-        if (droppingItem === "basket") setIsBasketDropped(!isBasketDropped);
+        if (droppingItem === DroppingItems.dropdownList) setIsListDropped(!isListDropped);
+        if (droppingItem === DroppingItems.basket) setIsBasketDropped(!isBasketDropped);
     }
 
     return (
@@ -102,7 +103,7 @@ const Header = () => {
                                 <span>1680 руб.</span>
                             </div>
                             <div className="basket-image">
-                                <BasketIcon onClick={() => toggleDroppingItem('basket')} className="svg"/>
+                                <BasketIcon onClick={() => toggleDroppingItem(DroppingItems.basket)} className="svg"/>
                                 <div className='basket-image__circle'>5</div>
                                 <Basket isActive={isBasketDropped}/>
                             </div>
@@ -112,12 +113,12 @@ const Header = () => {
                     <div className="header__nav">
                         <div className="header__nav-links">
                             <a className='header__nav-links__recipe'
-                               onClick={() => toggleDroppingItem('dropdown-list')}
+                               onClick={() => toggleDroppingItem(DroppingItems.dropdownList)}
                                href="#">
                                 Рецепты
                                 <ArrowDownIcon className="arrow-down"/>
                             </a>
-                            <div className={"header__nav-links__list " + (isListDropped && "dropdown-list")}>
+                            <div className={"header__nav-links__list " + (isListDropped && DroppingItems.dropdownList)}>
                                 <ul>
                                     <li><a href="#">Молодые сыры</a></li>
                                     <li><a href="#">Полутвердые сыры</a></li>

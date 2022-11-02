@@ -48,7 +48,7 @@ function App() {
                 <Route path="recovery" element={<Recovery/>}/>
                 <Route path="registration-modal" element={<RegistrationModal show/>}/>
             </Routes>
-            {/*<Footer/>*/}
+            <Footer/>
         </div>
     );
 }
