@@ -9,7 +9,7 @@ import Reviews from "./pages/reviews";
 import Contacts from "./blocks/contacts";
 import Checkout from "./pages/checkout";
 import QA from "./pages/qa";
-import Calculator from "./blocks/calculator";
+import Calculator from "./pages/calculator";
 import Collections from "./pages/collections";
 import Profile from "./blocks/profile";
 import About from "./pages/ about";
