@@ -1,26 +1,18 @@
 import React, {useState} from 'react';
 import './style.scss';
 import Wrapper from "../../components/wrapper";
+import {TabsData} from "./constants";
 import {ReactComponent as UserIcon} from '../../images/icons/profile/user.svg';
-import {ReactComponent as BagIcon} from '../../images/icons/profile/bag.svg';
-import {ReactComponent as HeartIcon} from '../../images/icons/profile/heart.svg';
-import {ReactComponent as CouponIcon} from '../../images/icons/profile/coupon.svg';
-import {ReactComponent as DirectionIcon} from '../../images/icons/profile/direction.svg';
-import {ReactComponent as LockIcon} from '../../images/icons/profile/lock.svg';
-import {ReactComponent as LogoutIcon} from '../../images/icons/profile/logout.svg';
 import {ReactComponent as HeartSolidIcon} from '../../images/icons/profile/heart-solid.svg';
 import productImage from '../../images/checkout-products-image.png';
 import favouriteProduct from '../../images/favourite-product.png';
 import couponActive from '../../images/profile-coupon-active.png';
-import couponNonActive from '../../images/profile-coupon-not-active.png';
-
-const setActiveTab = (tabId) => {
-    setActiveTab(tabId)
-}
 
 const Profile = () => {
-    const [activeTab, setActiveTab] = useState("user");
-
+    const [activeTab, setActiveTab] = useState(TabsData.titles[0].typeOfTab);
+    const handleChangeActiveTab = (tabId) => {
+        setActiveTab(tabId)
+    }
     return (
         <Wrapper>
             <div className="profile">
@@ -29,48 +21,14 @@ const Profile = () => {
                 </div>
                 <div className="profile__tabs">
                     <div className="profile__tabs-titles">
-                        <div className={"profile__tabs-title " + (activeTab === "user" && "active")}
-                             onClick={() => setActiveTab("user")}
-                        >
-                            <UserIcon className="icon"/>
-                            Мой профиль
-                        </div>
-                        <div className={"profile__tabs-title " + (activeTab === "orders" && "active")}
-                             onClick={() => setActiveTab("orders")}
-                        >
-                            <BagIcon className="icon"/>
-                            Мои заказы
-                        </div>
-                        <div className={"profile__tabs-title " + (activeTab === "favourite" && "active")}
-                             onClick={() => setActiveTab("favourite")}
-                        >
-                            <HeartIcon className="icon"/>
-                            Избранные товары
-                        </div>
-                        <div className={"profile__tabs-title " + (activeTab === "coupons" && "active")}
-                             onClick={() => setActiveTab("coupons")}
-                        >
-                            <CouponIcon className="icon"/>
-                            Мои купоны
-                        </div>
-                        <div className={"profile__tabs-title " + (activeTab === "address" && "active")}
-                             onClick={() => setActiveTab("address")}
-                        >
-                            <DirectionIcon className="icon"/>
-                            Адрес доставки
-                        </div>
-                        <div className={"profile__tabs-title " + (activeTab === "change-password" && "active")}
-                             onClick={() => setActiveTab("change-password")}
-                        >
-                            <LockIcon className="icon"/>
-                            Сменить пароль
-                        </div>
-                        <div className={"profile__tabs-title " + (activeTab === "exit" && "active")}
-                             onClick={() => setActiveTab("exit")}
-                        >
-                            <LogoutIcon className="icon"/>
-                            Выход
-                        </div>
+                        {TabsData.titles.map(i =>
+                            <div className={"profile__tabs-title " + (activeTab === i.typeOfTab && "active")}
+                                 onClick={() => handleChangeActiveTab(i.typeOfTab)}
+                            >
+                                <UserIcon className="icon"/>
+                                {i.title}
+                            </div>
+                        )}
                     </div>
                     <div className="profile__tabs-items">
                         <div className={"profile__tabs-item " + (activeTab === "user" && "active user")}>

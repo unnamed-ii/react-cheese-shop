@@ -1,14 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './style.scss';
-
-import {ReactComponent as ReviewIcon} from "../../images/icons/review.svg";
-import {ReactComponent as HeartIcon} from "../../images/icons/orange-empty-heart.svg";
-import collection from '../../images/collections.png';
 import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
 import ProductsSlider from "../../components/products-slider";
+import Counter from "../../components/counter";
+import {TabsData} from "./constants";
+import {ReactComponent as ReviewIcon} from "../../images/icons/review.svg";
+import {ReactComponent as HeartIcon} from "../../images/icons/orange-empty-heart.svg";
+import collection from '../../images/collections.png';
 
 const Collection = () => {
+    const [activeTab, setActiveTab] = useState(TabsData.titles[0].typeOfTab);
+    const handleChangeActiveTab = (tabId) => {
+        setActiveTab(tabId)
+    }
+
     return (
         <Wrapper>
             <div className="collection">
@@ -45,7 +51,7 @@ const Collection = () => {
                                         Количество
                                     </div>
                                     <div className="bottom__box">
-                                        <div className="counter">counter</div>
+                                        <Counter />
                                         <button className="to-basket">В корзину</button>
                                         <div className="to-favourite">
                                             <HeartIcon/>
@@ -56,9 +62,13 @@ const Collection = () => {
                         </div>
                         <div className="collection__tabs">
                             <div className="collection__tabs-titles">
-                                <div className="collection__tabs-titles__title active">Описание</div>
-                                <div className="collection__tabs-titles__title">Доставка и оплата</div>
-                                <div className="collection__tabs-titles__title">Отзывы (3)</div>
+                                {TabsData.titles.map(i =>
+                                    <div className={"profile__tabs-title " + (activeTab === i.typeOfTab && "active")}
+                                         onClick={() => handleChangeActiveTab(i.typeOfTab)}
+                                    >
+                                        {i.title}
+                                    </div>
+                                )}
                             </div>
                             <div className="collection__tabs-items">
                                 <div className="collection__tabs-item">

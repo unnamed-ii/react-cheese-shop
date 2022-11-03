@@ -22,6 +22,7 @@ import Recipe from "./pages/recipe";
 import ProductCard from "./pages/product-card";
 import Category from "./pages/category";
 import RegistrationModal from "./components/modals/registration";
+import Collection from "./blocks/collection";
 
 function App() {
     return (
@@ -43,6 +44,7 @@ function App() {
                 <Route path="questions-and-answers" element={<QA/>}/>
                 <Route path="calculator" element={<Calculator/>}/>
                 <Route path="collections" element={<Collections/>}/>
+                <Route path="collection" element={<Collection/>}/>
                 <Route path="registration" element={<Registration/>}/>
                 <Route path="authorization" element={<Authorization/>}/>
                 <Route path="recovery" element={<Recovery/>}/>
