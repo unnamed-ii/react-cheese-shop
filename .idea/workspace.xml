@@ -11,14 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/blocks/collection/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/profile/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/collection/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/collection/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/collection/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/collection/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/profile/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/counter/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/counter/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/delivery/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/delivery/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/delivery/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/payment-method/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/delivery/payment-method/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/payment-method/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/delivery/payment-method/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +45,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -149,7 +146,7 @@
       <workItem from="1667410618210" duration="343000" />
       <workItem from="1667412090995" duration="395000" />
       <workItem from="1667419296303" duration="6737000" />
-      <workItem from="1667498015572" duration="2590000" />
+      <workItem from="1667498015572" duration="3058000" />
     </task>
     <servers />
   </component>

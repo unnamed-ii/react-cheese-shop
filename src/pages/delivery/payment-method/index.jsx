@@ -1,20 +1,20 @@
 import React from 'react';
 import './style.scss'
 
-const PaymentMethod = (props) => {
+const PaymentMethodCard = ({image, title, text}) => {
     return (
         <div className="payment-method">
             <div className="payment-method__image">
-                {props.image}
+                {image}
             </div>
             <div className="payment-method__title">
-                {props.title}
+                {title}
             </div>
             <div className="payment-method__text">
-                {props.text}
+                {text}
             </div>
         </div>
     );
 };
 
-export default PaymentMethod;
+export default PaymentMethodCard;
