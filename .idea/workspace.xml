@@ -11,10 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/blocks/popular-recipes/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/popular-recipes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popular-recipes/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/popular-recipe-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/popular-recipe-card/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/added-recipe-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/added-recipe-card/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/analog-product-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/analog-product-card/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/master-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/master-card/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +147,7 @@
       <workItem from="1667419296303" duration="6737000" />
       <workItem from="1667498015572" duration="3356000" />
       <workItem from="1667509485100" duration="1771000" />
-      <workItem from="1667593813541" duration="667000" />
+      <workItem from="1667593813541" duration="1224000" />
     </task>
     <servers />
   </component>

@@ -1,20 +1,19 @@
 import React from 'react';
 import './style.scss'
-
 import {Link} from "react-router-dom";
 import {ReactComponent as ArrowRightIcon} from "../../images/icons/arrow-right.svg";
 import addedRecipe from "../../images/added-recipe.png";
 
-const AddedRecipe = () => {
+const AddedRecipe = ({title="Сырная тарелка", text="Особенно характерно наличие дырочек разных размеров в структуре швейцарских сортов..."}) => {
     return (
         <div className="added-recipe">
             <img src={addedRecipe} alt=""/>
             <div className="added-recipe__info">
                 <div className="added-recipe__info-title">
-                    Сырная тарелка
+                    {title}
                 </div>
                 <div className="added-recipe__info-text">
-                    Особенно характерно наличие дырочек разных размеров в структуре швейцарских сортов...
+                    {text}
                 </div>
             </div>
             <div className="added-recipe__link">
