@@ -8,65 +8,8 @@ import recipeDescription from '../../images/recipe-page-description.png';
 import recipeBenefit from '../../images/recipe-page-benefit.png';
 import {ReactComponent as BasketIcon} from '../../images/icons/recipe-page-basket.svg';
 import {ReactComponent as ArrowDownIcon} from '../../images/icons/recipe-page-arrow-down.svg';
+import {RecipeData} from "./constants";
 
-const ingredients = [
-    {
-        text: 'Фермент – 1/8 ч.л',
-        isAvailableToBuy: true
-    },
-    {
-        text: 'Термофильная закваска STI-12 (50U)',
-        isAvailableToBuy: true
-    },
-    {
-        text: 'Белая плесень – 10 грамм',
-        isAvailableToBuy: true
-    },
-    {
-        text: 'Молоко – 10 литров',
-        isAvailableToBuy: false
-    },
-    {
-        text: '20% солевой раствор: соль-1 кг, вода кипяченая-4 л, хлористый кальций- 1 ст.л, уксус столовый 9%- 1 ч.л.',
-        isAvailableToBuy: false
-    }
-];
-const equipment = [
-    {
-        text: 'Кастрюля из нержавейки',
-        isAvailableToBuy: true
-    },
-    {
-        text: 'Дуршлаг, шумовка и марля',
-        isAvailableToBuy: true
-    },
-    {
-        text: 'Термометр для молока',
-        isAvailableToBuy: true
-    },
-    {
-        text: 'Форма для сыра Бри',
-        isAvailableToBuy: true
-    },
-    {
-        text: 'Пищивой пульвилизатор',
-        isAvailableToBuy: true
-    }
-];
-const instruction = [
-    {
-        text: 'Поставьте на плиту кастрюлю и залейте в нее молоко (это нужно делать через марлю и дуршлаг, чтобы никакой мусор не попал). Установите термометр и нагрейте жидкость до температуры 32 градуса Цельсия.'
-    },
-    {
-        text: 'Внесите закваску и подождите пару минут пока она будет регидрироваться. Затем равномерно перемешайте смесь.'
-    },
-    {
-        text: 'Спустя 30 минут возьмите стакан с 15-20 мл воды и растворите в нем фермент. Вылейте жидкость в молоко и оставьте эту смесь на 90 минут.'
-    },
-    {
-        text: 'Поставьте на плиту кастрюлю и залейте в нее молоко (это нужно делать через марлю и дуршлаг, чтобы никакой мусор не попал). Установите термометр и нагрейте жидкость до температуры 32 градуса Цельсия.'
-    }
-];
 
 const Recipe = () => {
     const [isDropDown, setIsDropDown] = useState(true);
@@ -114,7 +57,7 @@ const Recipe = () => {
                                     Ингредиенты
                                 </div>
                                 <div className="description__ingredients-list">
-                                    {ingredients.map((i, idx) =>
+                                    {RecipeData.ingredients.map((i, idx) =>
                                         <div className="description__ingredients-list__item">
                                             <div className="text">
                                                 {i.text}
@@ -134,7 +77,7 @@ const Recipe = () => {
                                     Оборудование
                                 </div>
                                 <div className="description__equipments-list">
-                                    {equipment.map((i, idx) =>
+                                    {RecipeData.equipment.map((i, idx) =>
                                         <div className="description__ingredients-list__item">
                                             <div className="text">
                                                 {i.text}
@@ -170,7 +113,7 @@ const Recipe = () => {
                                     как приготовить в домашних условиях
                                 </div>
                                 <div className="benefit__instruction-steps">
-                                    {instruction.map((i, idx) =>
+                                    {RecipeData.instruction.map((i, idx) =>
                                         <InstructionStep
                                             number={'0' + (idx + 1)}
                                             text={i.text}
