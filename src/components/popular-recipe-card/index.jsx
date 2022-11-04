@@ -4,17 +4,16 @@ import {ReactComponent as ArrowRightIcon} from "../../images/icons/arrow-right.s
 import {Link} from "react-router-dom";
 import popularRecipe from "../../images/popular-recipe.png";
 
-const PopularRecipeCard = () => {
+const PopularRecipeCard = ({title="посол сырной головки", text="Особенно характерно наличие дырочек разных размеров в структуре швейцарских сортов сыра. Сначала люди думали, что эти"}) => {
     return (
         <div className="popular-recipe">
             <img src={popularRecipe} alt=""/>
             <div className="popular-recipe__info">
                 <div className="popular-recipe__info-title">
-                    посол сырной головки
+                    {title}
                 </div>
                 <div className="popular-recipe__info-text">
-                    Особенно характерно наличие дырочек разных размеров в структуре швейцарских сортов сыра. Сначала
-                    люди думали, что эти
+                    {text}
                 </div>
             </div>
             <div className="popular-recipe__link">

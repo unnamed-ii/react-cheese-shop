@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.scss';
 import PopularRecipeCard from "../../components/popular-recipe-card";
+import {PopularRecipesData} from "./constants";
 
 const PopularRecipes = () => {
     return (
@@ -9,9 +10,12 @@ const PopularRecipes = () => {
                 популярные рецепты
             </div>
             <div className="popular__recipes-list">
-                <PopularRecipeCard />
-                <PopularRecipeCard />
-                <PopularRecipeCard />
+                {PopularRecipesData.map(i =>
+                    <PopularRecipeCard
+                        title={i.title}
+                        text={i.text}
+                    />
+                )}
             </div>
         </div>
     );

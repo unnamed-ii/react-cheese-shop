@@ -11,10 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/blocks/delivery/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/delivery/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/delivery/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/payment-method/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/delivery/payment-method/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/payment-method/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/delivery/payment-method/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/popular-recipes/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/popular-recipes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popular-recipes/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/popular-recipe-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/popular-recipe-card/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,22 +38,22 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/blocks/calculator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="file.status.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\calculator" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\app\src\components" />
       <recent name="C:\Users\Isa\Desktop\react-cheese-shop\app\src\components" />
       <recent name="C:\Users\Isa\Desktop\react-cheese-shop\app\src\pages" />
-      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\app\src\blocks" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (1)">
@@ -146,7 +146,9 @@
       <workItem from="1667410618210" duration="343000" />
       <workItem from="1667412090995" duration="395000" />
       <workItem from="1667419296303" duration="6737000" />
-      <workItem from="1667498015572" duration="3058000" />
+      <workItem from="1667498015572" duration="3356000" />
+      <workItem from="1667509485100" duration="1771000" />
+      <workItem from="1667593813541" duration="667000" />
     </task>
     <servers />
   </component>
@@ -182,22 +184,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1666448279476" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1667498046544">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1667594028073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1667498046544" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1667498046544">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1667594028073" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1667594028072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1667498046544" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1667498046544">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1667594028072" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1667594028072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1667498046544" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1667498046544">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1667594028072" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1667594028072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1667498046544" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1667594028072" />
     <state width="1877" height="340" key="GridCell.Tab.1.bottom" timestamp="1663845774264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -254,9 +256,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1664715091931" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1667499682630">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1667594067205">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1667499682630" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1667594067205" />
   </component>
 </project>
