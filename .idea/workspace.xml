@@ -10,7 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="" />
+    <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/ about/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ about/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ about/index.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +147,7 @@
       <workItem from="1667419296303" duration="6737000" />
       <workItem from="1667498015572" duration="3356000" />
       <workItem from="1667509485100" duration="1771000" />
-      <workItem from="1667593813541" duration="1613000" />
+      <workItem from="1667593813541" duration="3324000" />
     </task>
     <servers />
   </component>
@@ -251,9 +255,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1664715091931" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1667594067205">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1667596731041">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1667594067205" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1667596731041" />
   </component>
 </project>

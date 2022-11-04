@@ -5,15 +5,10 @@ import MainNav from "../../components/main-nav";
 import MasterCard from "../../components/master-card";
 import Advantage from "../../components/advantage-card";
 import {Link} from "react-router-dom";
-
+import {AboutData} from "./constants";
+import {ReactComponent as LogoIcon} from '../../images/about/box/logo.svg';
 import cheese from '../../images/about/cheese.png';
 import cheeseStore from '../../images/about/store/cheese1.png';
-import {ReactComponent as PhoneIcon} from '../../images/icons/about/phone.svg';
-import {ReactComponent as ShieldIcon} from '../../images/icons/about/shield.svg';
-import {ReactComponent as PercentIcon} from '../../images/icons/about/percent.svg';
-import {ReactComponent as BoxIcon} from '../../images/icons/about/box.svg';
-import {ReactComponent as LogoIcon} from '../../images/about/box/logo.svg';
-
 
 const About = () => {
     return (
@@ -45,9 +40,13 @@ const About = () => {
                                 Наши мастера
                             </div>
                             <div className="masters">
-                                <MasterCard/>
-                                <MasterCard/>
-                                <MasterCard/>
+                                {AboutData.masters.map(i =>
+                                    <MasterCard
+                                        title={i.title}
+                                        subtitle={i.subtitle}
+                                        text={i.text}
+                                    />
+                                )}
                             </div>
                         </div>
                         <div className="about__inner-content__advantages">
@@ -55,22 +54,12 @@ const About = () => {
                                 Преимущества работы с нашим магазином
                             </div>
                             <div className="advantages">
-                                <Advantage
-                                    icon={<PhoneIcon/>}
-                                    text={"Профессиональная информационная поддержка, вы можете в любой момент связаться с нами"}
-                                />
-                                <Advantage
-                                    icon={<ShieldIcon/>}
-                                    text={"Гарантия качества всей продукции, при заказе товара вы можете увидеть сертификат"}
-                                />
-                                <Advantage
-                                    icon={<PercentIcon/>}
-                                    text={"Программа лояльности, бонусы, акции, лучшие предложения только у нас"}
-                                />
-                                <Advantage
-                                    icon={<BoxIcon/>}
-                                    text={"Вы покупаете всё в одном месте или оставить запрос и мы превезем под заказ"}
-                                />
+                                {AboutData.advantages.map(i =>
+                                    <Advantage
+                                        icon={i.icon}
+                                        text={"Вы покупаете всё в одном месте или оставить запрос и мы превезем под заказ"}
+                                    />
+                                )}
                             </div>
                         </div>
                     </div>
