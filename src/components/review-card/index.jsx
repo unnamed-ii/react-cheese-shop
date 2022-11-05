@@ -2,15 +2,15 @@ import React from "react";
 import './style.scss';
 import reviewImg from "../../images/review-image.png";
 
-const ReviewCard = ({userName="Светлана Петровна", text="Заказываю сама и рекомендую всем! Всегда в наличии все необходимое для моего хобби: закваски, ферменты и еще много чего. Доставка, оплата - быстро и четко. Для тех, кто только пробует себя в сыроделии - проконсультируют и помогут."}) => {
+const ReviewCard = ({name="Имя пользователя", address='г. Москва', text="Текст отзыва", date="24 октября 2020"}) => {
     return (
         <div className="review">
             <div className="review__top">
                 <div className="user">
                     <div className="user__name">
-                        {userName}
+                        {name}
                     </div>
-                    <div className="user__city">г. Москва</div>
+                    <div className="user__city">{address}</div>
                 </div>
                 <div className="rate">
                     5 звёзд
@@ -25,7 +25,7 @@ const ReviewCard = ({userName="Светлана Петровна", text="Зак�
                 <img src={reviewImg} alt=""/>
             </div>
             <div className="review__date">
-                24 октября 2020
+                {date}
             </div>
         </div>
     )

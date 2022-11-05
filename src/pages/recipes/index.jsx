@@ -4,6 +4,7 @@ import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
 import CheeseRecipeCard from "../../components/recipe-card";
 import AddedRecipe from "../../components/added-recipe-card";
+import {RecipesData} from "./constants";
 
 const Recipes = () => {
     return (
@@ -17,12 +18,11 @@ const Recipes = () => {
                                 рецепты сыров
                             </div>
                             <div className="box">
-                                <CheeseRecipeCard/>
-                                <CheeseRecipeCard/>
-                                <CheeseRecipeCard/>
-                                <CheeseRecipeCard/>
-                                <CheeseRecipeCard/>
-                                <CheeseRecipeCard/>
+                                {RecipesData.cheeseRecipes.map(i =>
+                                    <CheeseRecipeCard
+                                        title={i.title}
+                                    />
+                                )}
                             </div>
                         </div>
                         <div className="recipes__inner-content__added">
@@ -30,12 +30,11 @@ const Recipes = () => {
                                 Последние добавленные
                             </div>
                             <div className="box">
-                                <AddedRecipe />
-                                <AddedRecipe />
-                                <AddedRecipe />
-                                <AddedRecipe />
-                                <AddedRecipe />
-                                <AddedRecipe />
+                                {RecipesData.cheeseRecipes.map(i =>
+                                    <AddedRecipe
+                                        title={i.title}
+                                    />
+                                )}
                             </div>
                         </div>
                         <div className="recipes__inner-content__button">

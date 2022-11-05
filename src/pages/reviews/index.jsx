@@ -5,6 +5,7 @@ import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
 import ReviewCard from "../../components/review-card";
 import RegistrationModal from "../../components/modals/registration";
+import {ReviewsData} from "./constants";
 
 const Reviews = () => {
     const [isModalShowed, setIsModalShowed] = useState(false);
@@ -28,12 +29,14 @@ const Reviews = () => {
                             </div>
                         </div>
                         <div className="reviews__list">
-                            <ReviewCard/>
-                            <ReviewCard/>
-                            <ReviewCard/>
-                            <ReviewCard/>
-                            <ReviewCard/>
-                            <ReviewCard/>
+                            {ReviewsData.map(i =>
+                                <ReviewCard
+                                    name={i.name}
+                                    address={i.address}
+                                    text={i.text}
+                                    date={i.date}
+                                />
+                            )}
                         </div>
                     </div>
                 </div>
