@@ -39,7 +39,7 @@
         }
       }
 
-      .box {
+      .vendor {
         display: flex;
         justify-content: space-between;
         margin-bottom: 34px;
@@ -172,6 +172,7 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 16px;
+            align-items: center;
 
             &-calculator {
               width: 140px;
@@ -364,7 +365,7 @@
           }
         }
 
-        .box {
+        .vendor {
 
           &__images {
             opacity: .5;

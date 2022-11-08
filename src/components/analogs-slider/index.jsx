@@ -49,14 +49,26 @@ const AnalogsSlider = ({bigSize}) => {
                 <div className="analog-slider__title">
                     Аналогичные товары
                 </div>
-                <Slider {...settings}>
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                </Slider>
+                {bigSize
+                    ?
+                    <Slider {...settings}>
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                    </Slider>
+                    :
+                    <Slider {...settings}>
+                        <AnalogProductCard />
+                        <AnalogProductCard />
+                        <AnalogProductCard />
+                        <AnalogProductCard />
+                        <AnalogProductCard />
+                        <AnalogProductCard />
+                    </Slider>
+                }
             </div>
     );
 };
