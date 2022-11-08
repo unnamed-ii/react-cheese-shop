@@ -42,6 +42,32 @@ const ProductsSlider = ({title}) => {
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow/>,
         prevArrow: <SamplePrevArrow/>,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 670,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
     };
 
     return (
