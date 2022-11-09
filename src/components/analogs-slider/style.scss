@@ -1,7 +1,13 @@
 @import "src/styles/vars";
 
+.analog-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .analog-slider {
   margin-bottom: 40px;
+  max-width: 870px;
 
   &__title {
     font-weight: 700;
@@ -13,19 +19,49 @@
 
   .slick-prev {
     left: auto;
-    top: -50px;
+    top: -29px;
     right: 44px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .slick-next {
     left: auto;
-    top: -50px;
+    top: -29px;
     right: 12px;
+
+    &::before {
+      display: none;
+    }
   }
 
   &.big-size {
     background: #FFFFFF;
     border-radius: 8px;
     padding: 30px;
+  }
+}
+
+@media (max-width: 880px) {
+  .analog-slider {
+    max-width: 590px;
+  }
+}
+
+@media (max-width: 610px) {
+  .analog-slider {
+    max-width: 570px;
+  }
+}
+
+@media (max-width: 575px) {
+  .analog-slider {
+    max-width: 300px;
+
+    &__title {
+      margin-bottom: 39px;
+    }
   }
 }

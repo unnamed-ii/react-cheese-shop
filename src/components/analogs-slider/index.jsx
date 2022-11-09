@@ -4,9 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AnalogProductCard from "../analog-product-card";
+import Card from "../card";
 import {ReactComponent as ArrowRight} from "../../images/icons/slider/arrow-right.svg";
 import {ReactComponent as ArrowLeft} from "../../images/icons/slider/arrow-left.svg";
-import Card from "../card";
 
 const SampleNextArrow = (props) => {
     const {className, style, onClick} = props;
@@ -42,34 +42,50 @@ const AnalogsSlider = ({bigSize}) => {
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow/>,
         prevArrow: <SamplePrevArrow/>,
+        responsive: [
+            {
+                breakpoint: 880,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
     };
 
     return (
-            <div className={"analog-slider " + (bigSize && " big-size")}>
+        <div className="analog-wrapper">
+            <div className={"analog-slider " + (bigSize && "big-size")}>
                 <div className="analog-slider__title">
                     Аналогичные товары
                 </div>
                 {bigSize
                     ?
                     <Slider {...settings}>
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
                     </Slider>
                     :
                     <Slider {...settings}>
-                        <AnalogProductCard />
-                        <AnalogProductCard />
-                        <AnalogProductCard />
-                        <AnalogProductCard />
-                        <AnalogProductCard />
-                        <AnalogProductCard />
+                        <AnalogProductCard/>
+                        <AnalogProductCard/>
+                        <AnalogProductCard/>
+                        <AnalogProductCard/>
+                        <AnalogProductCard/>
+                        <AnalogProductCard/>
                     </Slider>
                 }
             </div>
+        </div>
     );
 };
 

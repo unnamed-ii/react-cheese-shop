@@ -43,11 +43,18 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 34px;
+        width: 100%;
+
+        .vendor-inner-wrapper {
+          display: flex;
+          justify-content: center;
+        }
 
         &__images {
           background: #FFFFFF;
           border-radius: 8px;
           padding: 20px 20px 15px 20px;
+          max-width: 360px;
 
           &-main {
 
@@ -247,6 +254,11 @@
         }
       }
 
+      .tabs-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+
       .tabs {
 
         &__titles {
@@ -439,6 +451,119 @@
               display: none;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 975px) {
+  .product-card__inner-content {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 935px) {
+  .product-card {
+    &__inner {
+      &-content {
+
+        .title {
+          display: flex;
+          justify-content: center;
+        }
+
+        .rate {
+          justify-content: center;
+        }
+
+        .vendor {
+          justify-content: center;
+          display: block;
+
+          &__images {
+            margin-bottom: 20px;
+          }
+        }
+
+        .tabs {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .product-card {
+    &__inner {
+      &-content {
+        .tabs {
+          &__items {
+
+            &-description,
+            &-deliveryPayment,
+            &-reviews{
+              max-width: 700px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 735px) {
+  .product-card {
+    &__inner {
+      &-content {
+        .tabs {
+          &__items {
+
+            &-description,
+            &-deliveryPayment,
+            &-reviews{
+              max-width: 528px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .product-card {
+    &__inner {
+      &-content {
+        .title {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .product-card {
+    &__inner {
+      &-content {
+        .tabs {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 495px) {
+  .product-card {
+    &__inner {
+      &-content {
+        .title {
+          font-size: 17px;
+          line-height: 23px;
         }
       }
     }
