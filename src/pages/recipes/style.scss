@@ -7,8 +7,8 @@
     display: flex;
 
     &-content {
-      margin-left: 30px;
       max-width: 870px;
+      margin-left: 30px;
 
       &__cheese {
         padding-bottom: 40px;
@@ -70,7 +70,6 @@
 }
 
 @media (max-width: 1200px) {
-
 
   .recipes__inner-content {
     margin-left: 0;
