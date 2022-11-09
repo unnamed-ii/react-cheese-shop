@@ -11,11 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/recipe/recipe-descriptoin.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/recipe/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipe/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/recipe/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipe/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/recipes/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipes/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,22 +37,22 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/product-card" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/recipe" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="file.status.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\recipe" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\product-card" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\reviews" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\calculator" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\app\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (1)">
@@ -156,7 +154,7 @@
       <workItem from="1667681634051" duration="1105000" />
       <workItem from="1667925059860" duration="5643000" />
       <workItem from="1667986163925" duration="5785000" />
-      <workItem from="1668016796672" duration="311000" />
+      <workItem from="1668016796672" duration="2866000" />
     </task>
     <servers />
   </component>

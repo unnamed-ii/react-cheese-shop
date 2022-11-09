@@ -24,7 +24,9 @@
         &__images {
           display: flex;
           justify-content: space-between;
+          flex-wrap: wrap;
           margin-bottom: 30px;
+          gap: 15px;
 
           img {
             border-radius: 5px;
@@ -106,7 +108,7 @@
         }
 
         img {
-          width: 820px;
+          width: 100%;
           height: 420px;
           margin-bottom: 40px;
         }
@@ -159,6 +161,79 @@
         &__text {
           margin-bottom: 40px;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .recipe-page {
+    &__inner {
+      justify-content: center;
+
+      &-content {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 845px) {
+  .recipe-page {
+    &__inner {
+      &-content {
+        max-width: 700px;
+
+        .benefit {
+          img {
+            height: 355px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 845px) {
+  .recipe-page {
+    &__inner {
+      &-content {
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .recipe-page {
+    &__inner {
+      &-content {
+        max-width: 500px;
+
+        .description__images {
+          justify-content: center;
+        }
+
+        .benefit {
+
+          &__instruction-title {
+            font-size: 22px;
+          }
+
+          img {
+            height: 280px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .recipe-page {
+    &__inner {
+      &-content {
+        max-width: 300px;
       }
     }
   }

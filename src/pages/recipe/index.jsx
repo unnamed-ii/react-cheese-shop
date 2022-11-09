@@ -7,7 +7,6 @@ import RecipeDescription from "./recipe-descriptoin";
 import RecipeBenefit from "./recipe-benefit";
 import RecipeRecommendation from "./recipe-recommendation";
 
-
 const Recipe = () => {
     return (
         <Wrapper>
