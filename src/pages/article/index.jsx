@@ -2,10 +2,10 @@ import React from 'react';
 import './style.scss';
 import MainNav from "../../components/main-nav";
 import Wrapper from "../../components/wrapper";
-import article from '../../images/article.png'
 import InstructionStep from "../../components/instruction-step";
 import PopularRecipes from "../../blocks/popular-recipes";
 import {ArticleData} from "./constants";
+import article from '../../images/article.png'
 
 const Article = () => {
     return (
