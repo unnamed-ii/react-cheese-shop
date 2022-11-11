@@ -9,20 +9,20 @@ import DeliveryMethods from "./delivery-methods";
 const Delivery = () => {
     return (
         <Wrapper>
-            <div>
-                <div className="delivery">
-                    <div className="delivery__inner">
+            <div className="delivery">
+                <div className="delivery__inner">
+                    <div className="delivery__inner-top">
                         <MainNav/>
                         <div className="delivery__inner-content">
                             <div className="delivery__title">
                                 Доставка и оплата
                             </div>
-                            <DeliveryPayment />
-                            <DeliveryMethods />
+                            <DeliveryPayment/>
+                            <DeliveryMethods/>
                         </div>
                     </div>
+                    <DeliveryTable/>
                 </div>
-                <DeliveryTable />
             </div>
         </Wrapper>
     )

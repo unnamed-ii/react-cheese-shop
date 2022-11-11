@@ -3,10 +3,13 @@
 .delivery {
 
   &__inner {
-    display: flex;
+
+    &-top {
+      display: flex;
+    }
 
     &-content {
-      width: 820px;
+      max-width: 820px;
       margin-left: 80px;
     }
   }
