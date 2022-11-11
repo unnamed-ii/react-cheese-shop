@@ -7,43 +7,46 @@
 
     &-content {
       margin-left: 80px;
-      width: 820px;
+      max-width: 820px;
 
-      &__title {
-        @include h2;
-        color: $brown;
-        margin-bottom: 30px;
-      }
+      &__company {
 
-      &__info {
-        display: flex;
-        padding-bottom: 40px;
-        margin-bottom: 50px;
-        border-bottom: 1px solid rgba($darkGrey, .3);
-
-        .box {
-          width: 380px;
-          margin-right: 40px;
-
-          .title {
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 32px;
-            color: $brown;
-            margin-bottom: 20px;
-          }
-
-          .text {
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 24px;
-            color: #666666;
-          }
+        .title {
+          @include h2;
+          color: $brown;
+          margin-bottom: 30px;
         }
 
-        img {
-          width: 400px;
-          height: 280px;
+        .info {
+          display: flex;
+          padding-bottom: 40px;
+          margin-bottom: 50px;
+          border-bottom: 1px solid rgba($darkGrey, .3);
+
+          &__box {
+            width: 380px;
+            margin-right: 40px;
+
+            &-title {
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 32px;
+              color: $brown;
+              margin-bottom: 20px;
+            }
+
+            &-text {
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 24px;
+              color: #666666;
+            }
+          }
+
+          img {
+            width: 400px;
+            height: 280px;
+          }
         }
       }
 
