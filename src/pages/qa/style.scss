@@ -55,3 +55,14 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .qa {
+    &__inner {
+      &-content {
+        margin-left: 0;
+        padding: 0 15px;
+      }
+    }
+  }
+}
