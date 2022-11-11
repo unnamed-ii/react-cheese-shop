@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import './style.scss';
-import {ReactComponent as UserIcon} from '../../images/icons/reviews-user.svg';
 import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
-import ReviewCard from "../../components/review-card";
+import ReviewCard from "./review-card";
 import RegistrationModal from "../../components/modals/registration";
 import {ReviewsData} from "./constants";
+import {ReactComponent as UserIcon} from '../../images/icons/reviews-user.svg';
 
 const Reviews = () => {
     const [isModalShowed, setIsModalShowed] = useState(false);

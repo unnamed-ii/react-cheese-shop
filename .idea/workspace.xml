@@ -12,8 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/delivery/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/delivery/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/delivery/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/delivery/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/review-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reviews/review-card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/review-card/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/reviews/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reviews/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/reviews/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reviews/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,23 +39,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/delivery" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/reviews" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\reviews" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\recipe" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\product-card" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\recipe" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\product-card" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\reviews" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (1)">
@@ -158,7 +160,7 @@
       <workItem from="1668016796672" duration="3271000" />
       <workItem from="1668073584852" duration="3750000" />
       <workItem from="1668115547401" duration="598000" />
-      <workItem from="1668158044967" duration="4407000" />
+      <workItem from="1668158044967" duration="5005000" />
     </task>
     <servers />
   </component>
