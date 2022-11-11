@@ -1,10 +1,10 @@
 import React from 'react';
 
-export const CalculatorInput = ({title}) => {
+export const CalculatorInput = ({text}) => {
     return (
         <div className="calculator__box-calculations__input">
             <div className="title">
-                На какой объем рассчитан весь пакет?
+                {text}
             </div>
             <input type="number"/>
         </div>
