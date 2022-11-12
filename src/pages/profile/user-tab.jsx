@@ -8,9 +8,9 @@ const UserTab = ({activeTab}) => {
             <div className="title">
                 Kristina Anfalova
             </div>
-            <div className="edit">
+            <button className="edit">
                 Редактировать информацию
-            </div>
+            </button>
             <div className="phone">
                 <div className="phone__title">
                     Телефон:
@@ -34,7 +34,7 @@ const UserTab = ({activeTab}) => {
                 <div className="address__text">
                     123333, Российская Федерация,
                     <br/>
-                    Карачаево-Черкеcсия, Kharkov, Московская 4 кв.4
+                    Карачаево-Черкесия, Kharkov, Московская 4 кв.4
                 </div>
             </div>
         </div>

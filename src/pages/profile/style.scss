@@ -15,6 +15,7 @@
 
     &-titles {
       display: flex;
+      flex-wrap: wrap;
     }
 
     &-title {
@@ -72,17 +73,21 @@
           line-height: 32px;
           top: 64px;
           right: 40px;
+          background-color: transparent;
+          border: none;
         }
 
         .phone,
         .email,
         .address {
           display: flex;
+          flex-wrap: wrap;
           font-size: 16px;
           line-height: 32px;
 
           &__title {
-            width: 140px;
+            max-width: 140px;
+            width: 100%;
             margin-right: 20px;
             color: $darkGrey;
           }
@@ -142,7 +147,8 @@
             }
 
             &-info {
-              width: 440px;
+              max-width: 440px;
+              width: 100%;
               margin-right: 40px;
 
               &__title {
@@ -157,17 +163,17 @@
             }
 
             &-price {
-              width: 85px;
+              max-width: 85px;
               margin-right: 32px;
             }
 
             &-amount {
-              width: 85px;
+              max-width: 85px;
               margin-right: 38px;
             }
 
             &-total {
-              width: 85px;
+              max-width: 85px;
               margin-right: 38px;
             }
 
@@ -196,13 +202,14 @@
 
         .favourite-cards {
           display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
 
           &__card {
             border: 1px solid #E7E7E7;
             border-radius: 6px;
             padding: 20px 20px 30px;
-            margin-right: 20px;
-            min-width: 260px;
+            max-width: 260px;
 
             &-top {
               display: flex;
@@ -442,6 +449,7 @@
           .inputs {
             display: flex;
             margin-bottom: 20px;
+            flex-wrap: wrap;
 
             &__input + &__input {
               margin-right: 20px;
@@ -483,7 +491,177 @@
         }
       }
     }
+  }
+}
 
+@media (max-width: 1200px) {
+  .profile {
+    padding: 0 15px;
   }
 
+  .profile__tabs-item.active.orders {
+    .table__headline {
+      display: none;
+    }
+
+    .table__item-info {
+      max-width: 220px;
+    }
+  }
+
+  .profile__tabs-item.active.favourite {
+    .favourite-cards {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  .profile__title {
+    text-align: center;
+  }
+
+  .profile__tabs-titles {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 895px) {
+  .profile__tabs-item.active.orders {
+    .table__item {
+
+      &-info {
+        margin: 0 12px 0 0;
+      }
+
+      &-price {
+        margin: 0 12px 0 0;
+      }
+
+      &-amount {
+        margin: 0 12px 0 0;
+      }
+
+      &-total {
+        margin: 0 12px 0 0;
+      }
+
+      &-button {
+        margin: 0
+      }
+    }
+  }
+}
+
+@media (max-width: 755px) {
+  .profile__tabs-item.active.orders {
+    .title,
+    .subtitle {
+      text-align: center;
+    }
+
+    .table__item {
+      display: block;
+      text-align: center;
+
+      &-image {
+        margin: 0;
+      }
+
+      &-info {
+        max-width: none;
+        margin: 0 0 12px 0;
+
+        &__title,
+        &__code {
+          text-align: center;
+        }
+      }
+
+      &-price,
+      &-amount,
+      &-total,
+      &-button {
+        max-width: none;
+        text-align: center;
+        margin: 0 0 12px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 635px) {
+  .profile__tabs-item.coupons {
+    .coupons__coupon {
+      display: block;
+
+      &-info {
+        margin-bottom: 12px;
+      }
+
+      &-scan {
+        .code {
+          text-align: left;
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .profile__tabs-item.active.user {
+    .title {
+      margin-bottom: 35px;
+    }
+
+    .edit {
+      top: 89px;
+      right: unset;
+      left: 40px;
+    }
+
+    .phone,
+    .email,
+    .address {
+      margin-bottom: 12px;
+    }
+  }
+
+  .profile__tabs-item.active.address {
+    .title {
+      margin-bottom: 35px;
+    }
+
+    .edit {
+      top: 89px;
+      right: unset;
+      left: 40px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .profile__tabs-item.coupons {
+    .coupons__coupon {
+      &-info {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .profile__tabs-item.change-password {
+    padding: 20px 0 94px 20px;
+
+    form {
+      .inputs__input {
+        input {
+          width: 240px;
+          margin: 0;
+        }
+      }
+    }
+  }
 }

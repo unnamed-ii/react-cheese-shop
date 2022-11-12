@@ -19,7 +19,7 @@ const AddressTab = ({activeTab}) => {
                     <div>Страна:</div>
                 </div>
                 <div className="box-texts">
-                    <div>Адрес: Московская 4 кв.4</div>
+                    <div>Московская 4 кв.4</div>
                     <div>Kharkov 123333</div>
                     <div>Карачаево-Черкеcсия</div>
                     <div>Российская Федерация</div>

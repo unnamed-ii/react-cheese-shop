@@ -1,3 +1,4 @@
+import React from "react";
 import {ReactComponent as UserIcon} from "../../images/icons/profile/user.svg";
 import {ReactComponent as BagIcon} from "../../images/icons/profile/bag.svg";
 import {ReactComponent as HeartIcon} from "../../images/icons/profile/heart.svg";

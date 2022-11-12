@@ -10,7 +10,7 @@ const OrdersTab = ({activeTab}) => {
                 Мои заказы
             </div>
             <div className="subtitle">
-                Список ваших прошлыз покупок
+                Список ваших прошлых покупок
             </div>
             <div className="table">
                 <div className="table__headline">

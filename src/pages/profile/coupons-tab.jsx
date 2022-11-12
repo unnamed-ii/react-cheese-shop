@@ -3,7 +3,6 @@ import './style.scss';
 import couponActive from "../../images/profile-coupon-active.png";
 
 const CouponsTab = ({activeTab}) => {
-
     return (
         <div className={"profile__tabs-item " + (activeTab === "coupons" && "active coupons")}>
             <div className="coupons__coupon active">
