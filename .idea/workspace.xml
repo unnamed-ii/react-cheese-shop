@@ -10,15 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/address-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/address-tab.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/coupons-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/coupons-tab.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/orders-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/orders-tab.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/user-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/user-tab.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,7 +156,7 @@
       <workItem from="1668115547401" duration="598000" />
       <workItem from="1668158044967" duration="7796000" />
       <workItem from="1668193832482" duration="5330000" />
-      <workItem from="1668253098251" duration="9802000" />
+      <workItem from="1668253098251" duration="10209000" />
     </task>
     <servers />
   </component>

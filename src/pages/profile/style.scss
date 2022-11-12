@@ -164,17 +164,17 @@
 
             &-price {
               max-width: 85px;
-              margin-right: 32px;
+              margin-right: 74px;
             }
 
             &-amount {
               max-width: 85px;
-              margin-right: 38px;
+              margin-right: 74px;
             }
 
             &-total {
               max-width: 85px;
-              margin-right: 38px;
+              margin-right: 74px;
             }
 
             &-button {
@@ -526,7 +526,7 @@
   }
 }
 
-@media (max-width: 895px) {
+@media (max-width: 1005px) {
   .profile__tabs-item.active.orders {
     .table__item {
 
