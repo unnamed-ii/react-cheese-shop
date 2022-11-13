@@ -10,7 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="" />
+    <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/profile/coupons-tab-item.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/profile/favourite-tab-item.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/profile/orders-tab-item.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/coupons-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/coupons-tab.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/favourite-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/favourite-tab.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/orders-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/orders-tab.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,17 +47,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\profile" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\calculator" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\ about" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\reviews" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (1)">
@@ -156,7 +164,8 @@
       <workItem from="1668115547401" duration="598000" />
       <workItem from="1668158044967" duration="7796000" />
       <workItem from="1668193832482" duration="5330000" />
-      <workItem from="1668253098251" duration="10209000" />
+      <workItem from="1668253098251" duration="10652000" />
+      <workItem from="1668350330622" duration="1431000" />
     </task>
     <servers />
   </component>
@@ -208,22 +217,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1666448279476" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1668273696658">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1668350347801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1668273696658" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1668273696658">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1668350347801" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1668350347801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1668273696658" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1668273696658">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1668350347801" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1668350347800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1668273696658" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1668273696658">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1668350347800" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1668350347801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1668273696658" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1668350347801" />
     <state width="1877" height="340" key="GridCell.Tab.1.bottom" timestamp="1663845774264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -280,10 +289,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1667682108715" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1668203263078">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1668351586361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1668203263078" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1668351586361" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1668271423145">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

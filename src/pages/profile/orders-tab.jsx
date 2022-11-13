@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.scss';
+import OrdersTabItem from "./orders-tab-item";
 import productImage from "../../images/checkout-products-image.png";
 
 const OrdersTab = ({activeTab}) => {
-
     return (
         <div className={"profile__tabs-item " + (activeTab === "orders" && "active orders")}>
             <div className="title">
@@ -28,75 +28,30 @@ const OrdersTab = ({activeTab}) => {
                     </div>
                 </div>
                 <div className="table__items">
-                    <div className="table__item">
-                        <img src={productImage} alt="" className="table__item-image"/>
-                        <div className="table__item-info">
-                            <div className="table__item-info__title">
-                                Кардамон молотый 50 г
-                            </div>
-                            <div className="table__item-info__code">
-                                Код товара: 323432
-                            </div>
-                        </div>
-                        <div className="table__item-price">
-                            300 ₽
-                        </div>
-                        <div className="table__item-amount">
-                            2 шт.
-                        </div>
-                        <div className="table__item-total">
-                            600 ₽
-                        </div>
-                        <button className="table__item-button">
-                            Добавить
-                        </button>
-                    </div>
-                    <div className="table__item">
-                        <img src={productImage} alt="" className="table__item-image"/>
-                        <div className="table__item-info">
-                            <div className="table__item-info__title">
-                                Кардамон молотый 50 г
-                            </div>
-                            <div className="table__item-info__code">
-                                Код товара: 323432
-                            </div>
-                        </div>
-                        <div className="table__item-price">
-                            300 ₽
-                        </div>
-                        <div className="table__item-amount">
-                            2 шт.
-                        </div>
-                        <div className="table__item-total">
-                            600 ₽
-                        </div>
-                        <button className="table__item-button">
-                            Добавить
-                        </button>
-                    </div>
-                    <div className="table__item">
-                        <img src={productImage} alt="" className="table__item-image"/>
-                        <div className="table__item-info">
-                            <div className="table__item-info__title">
-                                Кардамон молотый 50 г
-                            </div>
-                            <div className="table__item-info__code">
-                                Код товара: 323432
-                            </div>
-                        </div>
-                        <div className="table__item-price">
-                            300 ₽
-                        </div>
-                        <div className="table__item-amount">
-                            2 шт.
-                        </div>
-                        <div className="table__item-total">
-                            600 ₽
-                        </div>
-                        <button className="table__item-button">
-                            Добавить
-                        </button>
-                    </div>
+                    <OrdersTabItem
+                        image={productImage}
+                        title={"Кардамон молотый 50 г"}
+                        code={323432}
+                        priceForProduct={300}
+                        amount={2}
+                        totalPrice={600}
+                    />
+                    <OrdersTabItem
+                        image={productImage}
+                        title={"Кардамон молотый 50 г"}
+                        code={323432}
+                        priceForProduct={300}
+                        amount={2}
+                        totalPrice={600}
+                    />
+                    <OrdersTabItem
+                        image={productImage}
+                        title={"Кардамон молотый 50 г"}
+                        code={323432}
+                        priceForProduct={300}
+                        amount={2}
+                        totalPrice={600}
+                    />
                 </div>
             </div>
         </div>
