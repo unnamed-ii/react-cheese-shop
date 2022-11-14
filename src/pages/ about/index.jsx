@@ -22,7 +22,7 @@ const About = () => {
                 </div>
             </Wrapper>
             <AboutMotto />
-            <AboutStore />
+            {/*<AboutStore />*/}
         </div>
     );
 };

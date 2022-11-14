@@ -1,12 +1,11 @@
 @import "src/styles/vars";
 
 .advantage {
-  width: 400px;
+  max-width: 400px;
   background: #FFFFFF;
   border: 1px solid #E7E7E7;
   border-radius: 5px;
   padding: 20px 30px;
-  margin-top: 20px;
 
   svg {
     margin-bottom: 30px;
