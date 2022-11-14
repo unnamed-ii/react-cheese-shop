@@ -142,3 +142,66 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .contacts {
+    &__inner {
+      &-content {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .contacts {
+    padding: 0 15px;
+    width: 700px;
+
+    &__title {
+      text-align: center;
+    }
+
+    .contacts__info-row,
+    .contacts__feedback {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .contacts__info-row {
+      &__phone,
+      &__shedule,
+      &__mail,
+      &__address,
+      &__entity {
+        margin-bottom: 20px;
+      }
+    }
+
+    .contacts__feedback-map {
+      margin-top: 25px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .contacts {
+    width: 500px;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    margin: 0 10px;
+  }
+
+  .contacts {
+    width: 300px;
+    padding: 0;
+
+    .contacts__feedback-map {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}

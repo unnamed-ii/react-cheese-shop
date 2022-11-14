@@ -1,10 +1,8 @@
 import React from 'react';
 import './style.scss'
-
-import map from '../../images/contacts-map.png';
-
 import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
+import map from '../../images/contacts-map.png';
 
 const Contacts = () => {
     return (
