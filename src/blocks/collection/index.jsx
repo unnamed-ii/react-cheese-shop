@@ -4,13 +4,13 @@ import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
 import ProductsSlider from "../../components/products-slider";
 import Counter from "../../components/counter";
-import {TabsData} from "./constants";
+import {CollectionData} from "./constants";
 import {ReactComponent as ReviewIcon} from "../../images/icons/review.svg";
 import {ReactComponent as HeartIcon} from "../../images/icons/orange-empty-heart.svg";
 import collection from '../../images/collections.png';
 
 const Collection = () => {
-    const [activeTab, setActiveTab] = useState(TabsData.titles[0].typeOfTab);
+    const [activeTab, setActiveTab] = useState(CollectionData.tabsTitles[0].typeOfTab);
     const handleChangeActiveTab = (tabId) => {
         setActiveTab(tabId)
     }
@@ -62,7 +62,7 @@ const Collection = () => {
                         </div>
                         <div className="collection__tabs">
                             <div className="collection__tabs-titles">
-                                {TabsData.titles.map(i =>
+                                {CollectionData.tabsTitles.map(i =>
                                     <div className={"profile__tabs-title " + (activeTab === i.typeOfTab && "active")}
                                          onClick={() => handleChangeActiveTab(i.typeOfTab)}
                                     >

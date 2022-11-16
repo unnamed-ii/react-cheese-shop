@@ -1,5 +1,5 @@
-export const TabsData = {
-    titles: [
+export const CollectionData = {
+    tabsTitles: [
         {
             title: "Описание",
             typeOfTab: 'description'
@@ -13,7 +13,7 @@ export const TabsData = {
             typeOfTab: 'reviews'
         }
     ],
-    items: [
+    tabItems: [
 
     ]
 }
