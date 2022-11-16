@@ -11,10 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/blocks/collection/collection-info.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/collection/collection-tabs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/collection/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/collection/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/collection/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/collection/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/collection/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/collection/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/profile" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/blocks/collection" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -168,7 +168,7 @@
       <workItem from="1668462017799" duration="309000" />
       <workItem from="1668503355741" duration="364000" />
       <workItem from="1668527970841" duration="662000" />
-      <workItem from="1668591798002" duration="974000" />
+      <workItem from="1668591798002" duration="2139000" />
     </task>
     <servers />
   </component>
