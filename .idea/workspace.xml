@@ -11,10 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/blocks/collection/collection-info.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/collection/collection-tabs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/collection/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/collection/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +49,8 @@
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\reviews" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
     </key>
   </component>
@@ -168,7 +165,7 @@
       <workItem from="1668462017799" duration="309000" />
       <workItem from="1668503355741" duration="364000" />
       <workItem from="1668527970841" duration="662000" />
-      <workItem from="1668591798002" duration="2139000" />
+      <workItem from="1668591798002" duration="3069000" />
     </task>
     <servers />
   </component>

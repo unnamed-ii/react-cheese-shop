@@ -110,7 +110,7 @@ const Category = () => {
                                 <ArrowDownIcon />
                             </div>
                             <div className="dropdown-list active price-filter">
-                                <input type="range"/>
+                                <CustomInputRange />
                                 <div className="dropdown-list__filters">
                                     <div className="dropdown-list__filters-filter">
                                         <CheckBox />
