@@ -44,17 +44,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\collection" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\profile" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\calculator" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\ about" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\reviews" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (1)">

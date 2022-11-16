@@ -6,7 +6,7 @@ import Footer from "./blocks/footer";
 import Home from "./pages/home";
 import Delivery from "./pages/delivery";
 import Reviews from "./pages/reviews";
-import Contacts from "./blocks/contacts";
+import Contacts from "./pages/contacts";
 import Checkout from "./pages/checkout";
 import QA from "./pages/qa";
 import Calculator from "./pages/calculator";
@@ -22,7 +22,7 @@ import Recipe from "./pages/recipe";
 import ProductCard from "./pages/product-card";
 import Category from "./pages/category";
 import RegistrationModal from "./components/modals/registration";
-import Collection from "./blocks/collection";
+import Collection from "./pages/collection";
 
 function App() {
     return (
