@@ -40,7 +40,7 @@
     background: rgba(253, 147, 57, 0.1);
     border: 1px solid rgba(253, 147, 57, 0.2);
     border-radius: 5px;
-    padding: 16px 20px 16px 30px;
+    padding: 16px 20px 0 30px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
@@ -60,9 +60,16 @@
           line-height: 24px;
           display: flex;
           align-items: center;
+          padding-bottom: 16px;
 
           svg {
             margin-left: 9px;
+          }
+        }
+
+        &:hover {
+          .dropdown-list {
+            display: block;
           }
         }
 
@@ -76,6 +83,7 @@
           left: -20px;
           top: 35px;
           display: none;
+          transition: .3s;
 
           &.active {
             display: block;
@@ -142,6 +150,11 @@
     &-is__available {
       display: flex;
       align-items: center;
+      padding-bottom: 16px;
+
+      input[type=checkbox] {
+        background-color: transparent;
+      }
     }
   }
 
@@ -177,7 +190,7 @@
       &__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        gap: 15px;
 
         div {
           margin-bottom: 15px;

@@ -2,11 +2,11 @@ import React from 'react';
 import './style.scss'
 import {ReactComponent as CloseFilterIcon} from "../../images/icons/close-moduls-btn.svg";
 
-const FilterCard = () => {
+const FilterCard = ({title}) => {
     return (
         <div className="added-filter">
             <div className="added-filter__inner">
-                Закваски для йогурта
+                {title}
                 <CloseFilterIcon />
             </div>
         </div>

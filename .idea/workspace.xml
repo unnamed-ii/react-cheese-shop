@@ -12,8 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/checkout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/checkout/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/filter-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filter-card/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/input-range/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input-range/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/category/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/category/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +172,7 @@
       <workItem from="1668591798002" duration="3069000" />
       <workItem from="1668623276235" duration="318000" />
       <workItem from="1668671616180" duration="3770000" />
-      <workItem from="1668714060075" duration="1004000" />
+      <workItem from="1668714060075" duration="4457000" />
     </task>
     <servers />
   </component>
@@ -290,6 +292,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1668088817825" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1668718785433">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1668718785433" />
     <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1667682108715">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

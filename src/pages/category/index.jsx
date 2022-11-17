@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './style.scss';
 import MainNav from "../../components/main-nav";
 import Card from "../../components/card";
@@ -12,6 +12,8 @@ import FilterCard from "../../components/filter-card";
 import CustomInputRange from "../../components/input-range";
 
 const Category = () => {
+    const [addedFilters, setAddedFilters] = useState([])
+
     return (
         <Wrapper>
             <div className="category">
@@ -101,7 +103,42 @@ const Category = () => {
                                 <ArrowDownIcon />
                             </div>
                             <div className="dropdown-list">
-
+                                <div className="dropdown-list__title">
+                                    Выберите фильтр
+                                </div>
+                                <div className="dropdown-list__filters">
+                                    <div className="dropdown-list__filters-filter">
+                                        <CheckBox />
+                                        Закваски для йогурта
+                                    </div>
+                                    <div className="dropdown-list__filters-filter">
+                                        <CheckBox />
+                                        Закваски для творога
+                                    </div>
+                                    <div className="dropdown-list__filters-filter">
+                                        <CheckBox />
+                                        Закваска для ряженки
+                                    </div>
+                                    <div className="dropdown-list__filters-filter">
+                                        <CheckBox />
+                                        Закваски для йогурта
+                                    </div>
+                                    <div className="dropdown-list__filters-filter">
+                                        <CheckBox />
+                                        Закваски Скваска
+                                    </div>
+                                    <div className="dropdown-list__filters-filter">
+                                        <CheckBox />
+                                        Закваски Каприна
+                                    </div>
+                                    <div className="dropdown-list__filters-filter">
+                                        <CheckBox />
+                                        Закваски для кефира
+                                    </div>
+                                </div>
+                                <div className="dropdown-list__button">
+                                    <button>Применить</button>
+                                </div>
                             </div>
                         </div>
                         <div className="category__filters-list__filter">
@@ -109,7 +146,7 @@ const Category = () => {
                                 Цена
                                 <ArrowDownIcon />
                             </div>
-                            <div className="dropdown-list active price-filter">
+                            <div className="dropdown-list price-filter">
                                 <CustomInputRange />
                                 <div className="dropdown-list__filters">
                                     <div className="dropdown-list__filters-filter">
@@ -130,13 +167,14 @@ const Category = () => {
                 </div>
                 <div className="category__added-filters">
                     <div className="category__added-filters__list">
-                        <FilterCard />
-                        <FilterCard />
-                        <FilterCard />
+                        {addedFilters.map(i => (
+                            <FilterCard title={i}/>
+                        ))}
                     </div>
+                    {!!addedFilters.length &&
                     <div className="category__added-filters__reset">
                         <button>Очистить фильтр</button>
-                    </div>
+                    </div>}
                 </div>
                 <div className="category__inner">
                     <MainNav />
