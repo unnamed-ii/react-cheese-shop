@@ -5,10 +5,11 @@ import CheckoutOrder from "./checkout-order";
 import CheckoutDelivery from "./checkout-delivery";
 import CheckoutTotals from "./checkout-totals";
 import CheckoutPayment from "./checkout-payment";
+import Wrapper from "../../components/wrapper";
 
 const Checkout = () => {
     return (
-        <div className="wrapper-checkout">
+        <Wrapper>
             <div className="checkout">
                 <div className="checkout__info">
                     <div className="checkout__info-title">
@@ -21,7 +22,7 @@ const Checkout = () => {
                 </div>
                 <CheckoutTotals />
             </div>
-        </div>
+        </Wrapper>
     );
 };
 
