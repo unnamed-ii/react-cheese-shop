@@ -11,7 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-contact-info.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-delivery.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-order.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-payment.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-totals.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,23 +41,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/blocks/collection" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/checkout" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\collection" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\profile" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\calculator" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\ about" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\reviews" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\checkout" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\collection" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\profile" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\calculator" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\ about" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (1)">
@@ -166,6 +172,8 @@
       <workItem from="1668503355741" duration="364000" />
       <workItem from="1668527970841" duration="662000" />
       <workItem from="1668591798002" duration="3069000" />
+      <workItem from="1668623276235" duration="318000" />
+      <workItem from="1668671616180" duration="622000" />
     </task>
     <servers />
   </component>
@@ -217,22 +225,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1666448279476" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1668591830063">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1668671625444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1668591830063" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1668591830062">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1668671625444" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1668671625444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1668591830062" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1668591830062">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1668671625444" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1668671625444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1668591830062" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1668591830063">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1668671625444" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1668671625444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1668591830063" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1668671625444" />
     <state width="1877" height="340" key="GridCell.Tab.1.bottom" timestamp="1663845774264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -293,9 +301,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1668351586361" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1668462279809">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1668671743667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1668462279809" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1668671743667" />
   </component>
 </project>
