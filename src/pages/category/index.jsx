@@ -10,10 +10,13 @@ import {ReactComponent as ArrowDownIcon} from "../../images/icons/arrow-down.svg
 import {ReactComponent as CloseFilterIcon} from "../../images/icons/close-moduls-btn.svg";
 import FilterCard from "../../components/filter-card";
 import CustomInputRange from "../../components/input-range";
+import {CategoryFiltersData} from "./constanst";
+
+// create constants file for filters, so you can use data to render all filters in dropdown lists for each filter
+// after it you can easily set state of added filters and update list of returning array of products with all conditions
 
 const Category = () => {
-    const [addedFilters, setAddedFilters] = useState([])
-
+    const [addedFilters, setAddedFilters] = useState([]);
     return (
         <Wrapper>
             <div className="category">
@@ -39,14 +42,12 @@ const Category = () => {
                                     Выберите фильтр
                                 </div>
                                 <div className="dropdown-list__filters">
-                                    <div className="dropdown-list__filters-filter">
-                                        <CheckBox />
-                                        От дорогих к дешевым
-                                    </div>
-                                    <div className="dropdown-list__filters-filter">
-                                        <CheckBox />
-                                        От дешёвых к дорогим
-                                    </div>
+                                    {CategoryFiltersData.price.map(i => (
+                                        <div className="dropdown-list__filters-filter">
+                                            <CheckBox />
+                                            {i}
+                                        </div>
+                                    ))}
                                 </div>
                                 <div className="dropdown-list__button">
                                     <button>Применить</button>
@@ -63,34 +64,12 @@ const Category = () => {
                                     Выберите фильтр
                                 </div>
                                 <div className="dropdown-list__filters">
-                                    <div className="dropdown-list__filters-filter">
-                                        <CheckBox />
-                                        Закваски для йогурта
-                                    </div>
-                                    <div className="dropdown-list__filters-filter">
-                                        <CheckBox />
-                                        Закваски для творога
-                                    </div>
-                                    <div className="dropdown-list__filters-filter">
-                                        <CheckBox />
-                                        Закваска для ряженки
-                                    </div>
-                                    <div className="dropdown-list__filters-filter">
-                                        <CheckBox />
-                                        Закваски для йогурта
-                                    </div>
-                                    <div className="dropdown-list__filters-filter">
-                                        <CheckBox />
-                                        Закваски Скваска
-                                    </div>
-                                    <div className="dropdown-list__filters-filter">
-                                        <CheckBox />
-                                        Закваски Каприна
-                                    </div>
-                                    <div className="dropdown-list__filters-filter">
-                                        <CheckBox />
-                                        Закваски для кефира
-                                    </div>
+                                    {CategoryFiltersData.types.map(i => (
+                                        <div className="dropdown-list__filters-filter">
+                                            <CheckBox />
+                                            {i}
+                                        </div>
+                                    ))}
                                 </div>
                                 <div className="dropdown-list__button">
                                     <button>Применить</button>
@@ -107,34 +86,12 @@ const Category = () => {
                                     Выберите фильтр
                                 </div>
                                 <div className="dropdown-list__filters">
-                                    <div className="dropdown-list__filters-filter">
-                                        <CheckBox />
-                                        Закваски для йогурта
-                                    </div>
-                                    <div className="dropdown-list__filters-filter">
-                                        <CheckBox />
-                                        Закваски для творога
-                                    </div>
-                                    <div className="dropdown-list__filters-filter">
-                                        <CheckBox />
-                                        Закваска для ряженки
-                                    </div>
-                                    <div className="dropdown-list__filters-filter">
-                                        <CheckBox />
-                                        Закваски для йогурта
-                                    </div>
-                                    <div className="dropdown-list__filters-filter">
-                                        <CheckBox />
-                                        Закваски Скваска
-                                    </div>
-                                    <div className="dropdown-list__filters-filter">
-                                        <CheckBox />
-                                        Закваски Каприна
-                                    </div>
-                                    <div className="dropdown-list__filters-filter">
-                                        <CheckBox />
-                                        Закваски для кефира
-                                    </div>
+                                    {CategoryFiltersData.manufacturer.map(i => (
+                                        <div className="dropdown-list__filters-filter">
+                                            <CheckBox />
+                                            {i}
+                                        </div>
+                                    ))}
                                 </div>
                                 <div className="dropdown-list__button">
                                     <button>Применить</button>
