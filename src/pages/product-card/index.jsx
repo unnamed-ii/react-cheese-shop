@@ -25,10 +25,7 @@ const ProductCard = () => {
                         </div>
                         <Rate />
                         <Vendor />
-                        {isProductAvailable
-                            ? <AnalogsProductsSlider/>
-                            : <AnalogsProductsSlider bigSize={!isProductAvailable}/>
-                        }
+                        <AnalogsProductsSlider bigSize={!isProductAvailable}/>
                         <Tabs />
                     </div>
                 </div>
