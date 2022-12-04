@@ -18,9 +18,9 @@ const Recipes = () => {
                                 рецепты сыров
                             </div>
                             <div className="box">
-                                {RecipesData.cheeseRecipes.map(i =>
+                                {RecipesData.cheeseRecipes.map(recipe =>
                                     <CheeseRecipeCard
-                                        title={i.title}
+                                        title={recipe.title}
                                     />
                                 )}
                             </div>
@@ -30,9 +30,9 @@ const Recipes = () => {
                                 Последние добавленные
                             </div>
                             <div className="box">
-                                {RecipesData.cheeseRecipes.map(i =>
+                                {RecipesData.addedRecipes.map(recipe =>
                                     <AddedRecipe
-                                        title={i.title}
+                                        title={recipe.title}
                                     />
                                 )}
                             </div>

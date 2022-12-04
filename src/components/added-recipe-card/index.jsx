@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import {ReactComponent as ArrowRightIcon} from "../../images/icons/arrow-right.svg";
 import addedRecipe from "../../images/added-recipe.png";
 
-const AddedRecipe = ({title="Сырная тарелка", text="Особенно характерно наличие дырочек разных размеров в структуре швейцарских сортов..."}) => {
+const AddedRecipe = ({title, text}) => {
     return (
         <div className="added-recipe">
             <img src={addedRecipe} alt=""/>
