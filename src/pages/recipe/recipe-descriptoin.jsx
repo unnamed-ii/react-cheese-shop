@@ -37,12 +37,12 @@ const RecipeDescription = () => {
                     Ингредиенты
                 </div>
                 <div className="description__ingredients-list">
-                    {RecipeData.ingredients.map((i, idx) =>
+                    {RecipeData.ingredients.map(ingredient =>
                         <div className="description__ingredients-list__item">
                             <div className="text">
-                                {i.text}
+                                {ingredient.text}
                             </div>
-                            {i.isAvailableToBuy &&
+                            {ingredient.isAvailableToBuy &&
                             <button>
                                 <BasketIcon/>
                                 В корзину
@@ -57,12 +57,12 @@ const RecipeDescription = () => {
                     Оборудование
                 </div>
                 <div className="description__equipments-list">
-                    {RecipeData.equipment.map((i, idx) =>
+                    {RecipeData.equipment.map(equipment =>
                         <div className="description__ingredients-list__item">
                             <div className="text">
-                                {i.text}
+                                {equipment.text}
                             </div>
-                            {i.isAvailableToBuy &&
+                            {equipment.isAvailableToBuy &&
                             <button>
                                 <BasketIcon/>
                                 В корзину

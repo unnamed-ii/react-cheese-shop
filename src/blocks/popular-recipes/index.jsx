@@ -10,10 +10,10 @@ const PopularRecipes = () => {
                 популярные рецепты
             </div>
             <div className="popular__recipes-list">
-                {PopularRecipesData.map(i =>
+                {PopularRecipesData.map(popularRecipe =>
                     <PopularRecipeCard
-                        title={i.title}
-                        text={i.text}
+                        title={popularRecipe.title}
+                        text={popularRecipe.text}
                     />
                 )}
             </div>
