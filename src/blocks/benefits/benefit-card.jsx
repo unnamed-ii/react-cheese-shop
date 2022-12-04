@@ -2,7 +2,7 @@ import message from "../../images/benefits/message.png";
 import {ReactComponent as Clock} from "../../images/benefits/clock.svg";
 import React from "react";
 
-export const BenefitCard = ({typeOfBenefit, text}) => {
+export const BenefitCard = ({typeOfBenefit, text, icon}) => {
     return (
         <div className={"benefits__list-benefit " + typeOfBenefit}>
             <div className="plus">
@@ -12,7 +12,7 @@ export const BenefitCard = ({typeOfBenefit, text}) => {
             </div>
             <div className="box">
                 <img src={message} alt="" className="message-image"/>
-                <Clock className="icon"/>
+                {icon}
                 <div className="text">
                     {text}
                 </div>

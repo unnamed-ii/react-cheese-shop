@@ -26,6 +26,7 @@ const Benefits = () => {
                     {BenefitsData.map(i =>
                         <BenefitCard
                             typeOfBenefit={i.typeOfBenefit}
+                            icon={i.icon}
                             text={i.text}
                         />
                     )}
