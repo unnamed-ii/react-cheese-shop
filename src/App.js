@@ -27,7 +27,7 @@ import Collection from "./pages/collection";
 function App() {
     return (
         <div className="app">
-            {/*<Header/>*/}
+            <Header/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="product-card" element={<ProductCard/>}/>
@@ -50,7 +50,7 @@ function App() {
                 <Route path="recovery" element={<Recovery/>}/>
                 <Route path="registration-modal" element={<RegistrationModal show/>}/>
             </Routes>
-            {/*<Footer/>*/}
+            <Footer/>
         </div>
     );
 }

@@ -11,9 +11,7 @@ const Products = () => {
         setCurrentFilter(filterName);
     }
 
-    const showFilteredItems = () => {
-        return currentFilter === 'filter-popular' ? popularItems : discountItems
-    }
+    const showFilteredItems = () => currentFilter === 'filter-popular' ? popularItems : discountItems
 
     return (
         <div className="products">
