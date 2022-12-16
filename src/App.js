@@ -21,7 +21,6 @@ import Article from "./pages/article";
 import Recipe from "./pages/recipe";
 import ProductCard from "./pages/product-card";
 import Category from "./pages/category";
-import RegistrationModal from "./components/modals/registration";
 import Collection from "./pages/collection";
 
 function App() {
@@ -31,7 +30,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="product-card" element={<ProductCard/>}/>
-                <Route path="category" element={<Category/>}/>
+                <Route path="category" element={<Category/>}/> {/*add adaptive*/}
                 <Route path="recipes" element={<Recipes/>}/>
                 <Route path="recipe" element={<Recipe/>}/>
                 <Route path="article" element={<Article/>}/>
@@ -48,7 +47,6 @@ function App() {
                 <Route path="registration" element={<Registration/>}/>
                 <Route path="authorization" element={<Authorization/>}/>
                 <Route path="recovery" element={<Recovery/>}/>
-                <Route path="registration-modal" element={<RegistrationModal show/>}/>
             </Routes>
             <Footer/>
         </div>
