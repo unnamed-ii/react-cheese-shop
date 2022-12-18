@@ -7,7 +7,6 @@ import CheckBox from "../../components/checkbox";
 import {ReactComponent as FilterToggleIcon} from "../../images/icons/fitler-toggle.svg";
 import {ReactComponent as FilterToggleDisabledIcon} from "../../images/icons/fitler-toggle-disabled.svg";
 import {ReactComponent as ArrowDownIcon} from "../../images/icons/arrow-down.svg";
-import {ReactComponent as CloseFilterIcon} from "../../images/icons/close-moduls-btn.svg";
 import FilterCard from "../../components/filter-card";
 import CustomInputRange from "../../components/input-range";
 import {CategoryFiltersData} from "./constanst";
@@ -16,7 +15,18 @@ import {CategoryFiltersData} from "./constanst";
 // after it you can easily set state of added filters and update list of returning array of products with all conditions
 
 const Category = () => {
-    const [addedFilters, setAddedFilters] = useState([]);
+    const [addedFilters, setAddedFilters] = useState(['asd', 'asxcz', '12313']);
+    const [isFiltersActive, setIsFiltersActive] = useState(false);
+
+    const toggleFilters = () => setIsFiltersActive(!isFiltersActive);
+
+    const resetAddedFilters = () => setAddedFilters([]);
+
+    const removeSingleFilter = (filtersTitleUsedAsId) => {
+        const updatedFiltersArr = addedFilters.filter(i => i !== filtersTitleUsedAsId);
+        setAddedFilters(updatedFiltersArr);
+    }
+
     return (
         <Wrapper>
             <div className="category">
@@ -24,9 +34,13 @@ const Category = () => {
                     <div className="category__top-title">
                         Кисломолочные закваски
                     </div>
-                    <button className="category__top-filter__toggle">
-                        <FilterToggleDisabledIcon />
-                        {/*<FilterToggleIcon />*/}
+                    <button className={"category__top-filter__toggle " + (isFiltersActive && "active")}
+                            onClick={toggleFilters}>
+                        {!isFiltersActive ?
+                            <FilterToggleDisabledIcon/>
+                            :
+                            <FilterToggleIcon/>
+                        }
                         Фильтр
                     </button>
                 </div>
@@ -35,7 +49,7 @@ const Category = () => {
                         <div className="category__filters-list__filter">
                             <div className="title">
                                 От дорогих к дешевым
-                                <ArrowDownIcon />
+                                <ArrowDownIcon/>
                             </div>
                             <div className="dropdown-list quality-filter">
                                 <div className="dropdown-list__title">
@@ -44,7 +58,7 @@ const Category = () => {
                                 <div className="dropdown-list__filters">
                                     {CategoryFiltersData.price.map(i => (
                                         <div className="dropdown-list__filters-filter">
-                                            <CheckBox />
+                                            <CheckBox/>
                                             {i}
                                         </div>
                                     ))}
@@ -57,7 +71,7 @@ const Category = () => {
                         <div className="category__filters-list__filter">
                             <div className="title">
                                 Тип продукта
-                                <ArrowDownIcon />
+                                <ArrowDownIcon/>
                             </div>
                             <div className="dropdown-list">
                                 <div className="dropdown-list__title">
@@ -66,7 +80,7 @@ const Category = () => {
                                 <div className="dropdown-list__filters">
                                     {CategoryFiltersData.types.map(i => (
                                         <div className="dropdown-list__filters-filter">
-                                            <CheckBox />
+                                            <CheckBox/>
                                             {i}
                                         </div>
                                     ))}
@@ -79,7 +93,7 @@ const Category = () => {
                         <div className="category__filters-list__filter">
                             <div className="title">
                                 Производитель
-                                <ArrowDownIcon />
+                                <ArrowDownIcon/>
                             </div>
                             <div className="dropdown-list">
                                 <div className="dropdown-list__title">
@@ -88,7 +102,7 @@ const Category = () => {
                                 <div className="dropdown-list__filters">
                                     {CategoryFiltersData.manufacturer.map(i => (
                                         <div className="dropdown-list__filters-filter">
-                                            <CheckBox />
+                                            <CheckBox/>
                                             {i}
                                         </div>
                                     ))}
@@ -101,13 +115,13 @@ const Category = () => {
                         <div className="category__filters-list__filter">
                             <div className="title">
                                 Цена
-                                <ArrowDownIcon />
+                                <ArrowDownIcon/>
                             </div>
                             <div className="dropdown-list price-filter">
-                                <CustomInputRange />
+                                <CustomInputRange/>
                                 <div className="dropdown-list__filters">
                                     <div className="dropdown-list__filters-filter">
-                                        <CheckBox />
+                                        <CheckBox/>
                                         Товары со скидкой
                                     </div>
                                 </div>
@@ -118,32 +132,36 @@ const Category = () => {
                         </div>
                     </div>
                     <div className="category__filters-is__available">
-                        <CheckBox />
+                        <CheckBox/>
                         Показывать только товар в наличии
                     </div>
                 </div>
-                <div className="category__added-filters">
+                {!!addedFilters.length && <div className="category__added-filters">
                     <div className="category__added-filters__list">
                         {addedFilters.map(i => (
-                            <FilterCard title={i}/>
+                            <FilterCard
+                                key={Math.floor(Math.random() * 10000)}
+                                title={i}
+                                removeSingleFilter={removeSingleFilter}
+                            />
                         ))}
                     </div>
                     {!!addedFilters.length &&
                     <div className="category__added-filters__reset">
-                        <button>Очистить фильтр</button>
+                        <button onClick={resetAddedFilters}>Очистить фильтр</button>
                     </div>}
-                </div>
+                </div>}
                 <div className="category__inner">
-                    <MainNav />
+                    <MainNav/>
                     <div className="category__inner-content">
                         <div className="category__inner-content__list">
-                            <Card />
-                            <Card />
-                            <Card />
-                            <Card />
-                            <Card />
-                            <Card />
-                            <Card />
+                            <Card/>
+                            <Card/>
+                            <Card/>
+                            <Card/>
+                            <Card/>
+                            <Card/>
+                            <Card/>
                         </div>
                     </div>
                 </div>

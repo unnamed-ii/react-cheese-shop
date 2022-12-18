@@ -12,7 +12,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/filter-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filter-card/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/filter-card/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filter-card/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/category/constanst.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/constanst.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/category/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/category/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +44,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -182,7 +187,8 @@
       <workItem from="1669233190537" duration="447000" />
       <workItem from="1670185197259" duration="4000000" />
       <workItem from="1670247349362" duration="31000" />
-      <workItem from="1671220098369" duration="1262000" />
+      <workItem from="1671220098369" duration="1429000" />
+      <workItem from="1671376089562" duration="1905000" />
     </task>
     <servers />
   </component>
@@ -244,22 +250,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1670247378463" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1671220125464">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1671376118964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1671220125464" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1671220125464">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1671376118964" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1671376118964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1671220125464" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1671220125463">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1671376118964" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1671376118963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1671220125463" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1671220125464">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1671376118963" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1671376118964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1671220125464" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1671376118964" />
     <state width="1877" height="340" key="GridCell.Tab.1.bottom" timestamp="1663845774264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
