@@ -38,12 +38,12 @@ const Category = () => {
                         Фильтр
                     </button>
                 </div>
-                <Filters/>
-                <AddedFiltersList
+                {isFiltersActive && <Filters/>}
+                {isFiltersActive && <AddedFiltersList
                     addedFilters={addedFilters}
                     removeSingleFilter={removeSingleFilter}
                     resetAddedFilters={resetAddedFilters}
-                />
+                />}
                 <div className="category__inner">
                     <MainNav/>
                     <div className="category__inner-content">

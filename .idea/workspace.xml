@@ -11,8 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/category/added-filters-list.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/category/filters.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/category/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +183,7 @@
       <workItem from="1670185197259" duration="4000000" />
       <workItem from="1670247349362" duration="31000" />
       <workItem from="1671220098369" duration="1429000" />
-      <workItem from="1671376089562" duration="2244000" />
+      <workItem from="1671376089562" duration="2545000" />
     </task>
     <servers />
   </component>
