@@ -1,2 +1,47 @@
 @import "src/styles/vars";
 
+.custom-range {
+  padding: 20px 20px 16px 20px;
+
+  &__handle-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    input {
+      border: 1px solid #CCCCCC;
+      border-radius: 5px;
+      position: relative;
+      padding: 9px 8px 7px 10px;
+      width: 95px;
+
+      &::before {
+        content: 'руб';
+        position: absolute;
+        font-size: 14px;
+        line-height: 20px;
+        color: $darkGrey
+      }
+    }
+  }
+
+  label {
+    position: relative;
+
+    input {
+      width: 100%;
+
+      &::-webkit-slider-thumb {
+        background: #CCCCCC;
+        height: 2px;
+
+        -webkit-appearance: none;
+      }
+
+      &.range-max {
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+}
