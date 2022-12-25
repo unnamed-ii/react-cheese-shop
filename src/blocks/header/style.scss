@@ -177,21 +177,23 @@
           color: $brown;
         }
 
+        .phone-icon {
+          margin-right: 9px;
+        }
+
         button {
           background-color: transparent;
           font-size: 12px;
           line-height: 18px;
           border: 1px solid #FD9339;
           color: $orange;
-          padding: 0 0 0 26px;
+          padding-left: 8px;
           border-radius: 4px;
           cursor: pointer;
           width: 136px;
           height: 30px;
-
-          &::before {
-            content: '';
-          }
+          display: flex;
+          align-items: center;
         }
       }
     }
