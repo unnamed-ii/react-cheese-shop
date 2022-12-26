@@ -8,7 +8,8 @@ import {ReviewsData} from "./constants";
 import {ReactComponent as UserIcon} from '../../images/icons/reviews-user.svg';
 
 const Reviews = () => {
-    const [isModalShowed, setIsModalShowed] = useState(false);
+    const [isModalOpened, setIsModalOpened] = useState(false);
+    const toggleModal = () => setIsModalOpened(!isModalOpened);
 
     return (
         <Wrapper>
@@ -22,10 +23,15 @@ const Reviews = () => {
                             </div>
                             <div className="reviews__top-authorization">
                                 Что бы оставить отзыв необходимо
-                                <button onClick={() => setIsModalShowed(!isModalShowed)}>
-                                    <UserIcon className="user-icon" /> Авторизоваться
+                                <button onClick={toggleModal}>
+                                    <UserIcon className="user-icon"/> Авторизоваться
                                 </button>
-                                <RegistrationModal show={isModalShowed} />
+                                {isModalOpened &&
+                                    <RegistrationModal
+                                        toggleModal={toggleModal}
+                                        isModalOpened={isModalOpened}
+                                    />
+                                }
                             </div>
                         </div>
                         <div className="reviews__list">

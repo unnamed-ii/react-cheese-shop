@@ -2,20 +2,18 @@ import React from 'react';
 import './style.scss'
 import ModalWrapper from "../../modal-wrapper";
 import {ReactComponent as CloseBtnIcon} from '../../../images/icons/close-moduls-btn.svg'
+import {Link} from "react-router-dom";
 
-const RegistrationModal = ({show}) => {
-    if (!show) {
-        return null
-    }
+const RegistrationModal = ({toggleModal}) => {
 
     return (
-        <ModalWrapper>
+        <ModalWrapper toggleModal={toggleModal}>
             <div className="registration">
                 <div className="registration__title">
                     Регистрация
                 </div>
-                <div className="registration__close">
-                    <CloseBtnIcon />
+                <div className="registration__close" >
+                    <CloseBtnIcon onClick={toggleModal}/>
                 </div>
                 <div className="registration__form">
                     <form>
@@ -57,7 +55,7 @@ const RegistrationModal = ({show}) => {
                     </form>
                 </div>
                 <div className="registration__link">
-                    У вас есть профиль? <a href="#">Войти в аккаунт</a>
+                    У вас есть профиль? <Link to="/authorization">Войти в аккаунт</Link>
                 </div>
             </div>
         </ModalWrapper>
