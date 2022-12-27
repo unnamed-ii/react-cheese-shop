@@ -12,8 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modals/registration/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/registration/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/reviews/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reviews/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,17 +44,17 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\category" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\checkout" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\collection" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\profile" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\calculator" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (1)">
@@ -189,7 +189,7 @@
       <workItem from="1671899240414" duration="4565000" />
       <workItem from="1671970130401" duration="1125000" />
       <workItem from="1672064043630" duration="3429000" />
-      <workItem from="1672151950198" duration="293000" />
+      <workItem from="1672151950198" duration="2724000" />
     </task>
     <servers />
   </component>
@@ -335,9 +335,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1668351586361" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1670185520161">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1672153969933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1670185520161" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1672153969933" />
   </component>
 </project>

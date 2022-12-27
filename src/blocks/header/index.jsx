@@ -64,7 +64,7 @@ const Header = () => {
                                 <img src={delivery} alt=""/>
                                 Бесплатная доставка
                                 <div className="header__info-advantage__hover delivery">
-                                    <div className="fragment" />
+                                    <div className="fragment"/>
                                     Дарим бесплатную доставку в пределах России при заказе товара на сумму от 2500 руб.
                                 </div>
                             </div>
@@ -72,7 +72,7 @@ const Header = () => {
                                 <img src={discount} alt=""/>
                                 Скидка при оплате на сайте
                                 <div className="header__info-advantage__hover discount">
-                                    <div className="fragment" />
+                                    <div className="fragment"/>
                                     Дарим скидку при заказе товара на сумму от 2500 руб.
                                 </div>
                             </div>
@@ -80,7 +80,7 @@ const Header = () => {
                                 <img src={protection} alt=""/>
                                 Защита покупателей
                                 <div className="header__info-advantage__hover safety">
-                                    <div className="fragment" />
+                                    <div className="fragment"/>
                                     Дарим скидку при заказе товара на сумму от 2500 руб.
                                 </div>
                             </div>
@@ -116,22 +116,23 @@ const Header = () => {
                     <div className="horizontal"/>
                     <div className="header__nav">
                         <div className="header__nav-links">
-                            <a className='header__nav-links__recipe'
-                               onClick={() => toggleDroppingItem(DroppingItems.dropdownList)}
-                               href="#">
+                            <Link className='header__nav-links__recipe'
+                                  id="link-to-recipes"
+                                  onMouseEnter={() => toggleDroppingItem(DroppingItems.dropdownList)}
+                                  to="/recipes">
                                 Рецепты
                                 <ArrowDownIcon className="arrow-down"/>
-                            </a>
+                            </Link>
                             <div className={"header__nav-links__list " + (isListDropped && DroppingItems.dropdownList)}>
                                 <ul>
-                                    <li><a href="#">Молодые сыры</a></li>
-                                    <li><a href="#">Полутвердые сыры</a></li>
-                                    <li><a href="#">Паста Филата</a></li>
-                                    <li><a href="#">Сывороточные сыры</a></li>
-                                    <li><a href="#">Сыры с плесенью</a></li>
-                                    <li><a href="#">Твердые сыры</a></li>
-                                    <li><a href="#">Творожные сыры</a></li>
-                                    <li><a href="#">Кисломолочные продукты</a></li>
+                                    <li><Link to="/">Молодые сыры</Link></li>
+                                    <li><Link to="/">Полутвердые сыры</Link></li>
+                                    <li><Link to="/">Паста Филата</Link></li>
+                                    <li><Link to="/">Сывороточные сыры</Link></li>
+                                    <li><Link to="/">Сыры с плесенью</Link></li>
+                                    <li><Link to="/">Твердые сыры</Link></li>
+                                    <li><Link to="/">Творожные сыры</Link></li>
+                                    <li><Link to="/">Кисломолочные продукты</Link></li>
                                     <li><Link to="recipes">Все рецепты</Link></li>
                                 </ul>
                             </div>

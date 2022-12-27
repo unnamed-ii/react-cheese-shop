@@ -267,12 +267,6 @@
         left: 302px;
         display: none;
 
-        &:hover {
-          &.dropdown-list {
-            display: block;
-          }
-        }
-
         &.dropdown-list {
           display: block;
         }
@@ -339,7 +333,6 @@
     display: block;
   }
 }
-
 
 @media (max-width: 1200px) {
   .header {
@@ -444,6 +437,7 @@
 @media (max-width: 420px) {
   .header__info-basket {
     margin-left: 5px;
+
     .svg {
       width: 27px;
       height: 27px;
