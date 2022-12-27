@@ -30,12 +30,15 @@
       display: flex;
       align-items: center;
 
+      span {
+        margin-right: 10px;
+      }
+
       button {
         background-color: transparent;
         border: none;
         display: flex;
         align-items: center;
-        margin-left: 10px;
         cursor: pointer;
         font-size: 16px;
         line-height: 24px;
@@ -54,7 +57,6 @@
         color: $orange;
         display: flex;
         align-items: center;
-        margin-left: 10px;
 
         .user-icon {
           margin-right: 6px;

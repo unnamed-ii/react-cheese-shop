@@ -55,7 +55,7 @@ const RegistrationModal = ({toggleModal}) => {
                     </form>
                 </div>
                 <div className="registration__link">
-                    У вас есть профиль? <Link to="/authorization">Войти в аккаунт</Link>
+                    <span>У вас есть профиль?</span> <Link to="/authorization">Войти в аккаунт</Link>
                 </div>
             </div>
         </ModalWrapper>

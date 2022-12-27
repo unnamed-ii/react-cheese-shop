@@ -73,7 +73,6 @@
     }
 
     button {
-      margin-top: 6px;
       background-color: $orange;
       color: $white;
       padding: 12px 0;
@@ -83,6 +82,7 @@
       border: none;
       font-size: 16px;
       line-height: 24px;
+      display: block;
     }
   }
 
@@ -95,6 +95,7 @@
     a {
       color: $orange;
       text-decoration: underline;
+      display: block;
     }
   }
 }
