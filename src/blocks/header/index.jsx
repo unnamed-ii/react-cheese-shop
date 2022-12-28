@@ -13,7 +13,7 @@ import {ReactComponent as WhatsUpIcon} from '../../images/header-social/whatsup.
 import {ReactComponent as MessengerIcon} from '../../images/header-social/messenger.svg';
 import {ReactComponent as BasketIcon} from '../../images/basket.svg';
 import {ReactComponent as SearchIcon} from '../../images/icons/search.svg';
-import {ReactComponent as PhoneIcon} from '../../images/icons/header-icon.svg';
+import {ReactComponent as PhoneIcon} from '../../images/header-phone.svg';
 import darkLogo from '../../images/dark-logo.png';
 import delivery from '../../images/header-advantages/delivery.png';
 import discount from '../../images/header-advantages/discount.png';

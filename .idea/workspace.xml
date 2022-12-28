@@ -12,8 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +39,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/category" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -190,6 +189,8 @@
       <workItem from="1671970130401" duration="1125000" />
       <workItem from="1672064043630" duration="3429000" />
       <workItem from="1672151950198" duration="2724000" />
+      <workItem from="1672234389944" duration="358000" />
+      <workItem from="1672234792200" duration="147000" />
     </task>
     <servers />
   </component>
@@ -319,10 +320,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="737" y="139" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1668718885158" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1668088817825">
+    <state x="304" y="150" width="1041" height="761" key="SettingsEditor" timestamp="1672234941184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1668088817825" />
+    <state x="304" y="150" width="1041" height="761" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1672234941184" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1668719218749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
