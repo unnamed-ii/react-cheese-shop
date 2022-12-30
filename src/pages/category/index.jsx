@@ -30,10 +30,10 @@ const Category = () => {
                     </div>
                     <button className={"category__top-filter__toggle " + (isFiltersActive && "active")}
                             onClick={toggleFilters}>
-                        {!isFiltersActive ?
-                            <FilterToggleDisabledIcon/>
-                            :
+                        {isFiltersActive ?
                             <FilterToggleIcon/>
+                            :
+                            <FilterToggleDisabledIcon/>
                         }
                         Фильтр
                     </button>
