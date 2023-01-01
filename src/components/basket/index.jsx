@@ -32,8 +32,15 @@ const Basket = ({isActive, toggleDroppingItem}) => {
                         <div className="fragment" />
                     </div>
                     <div className="basket__items">
-                        {selectedProducts.map(i => (
-                            <BasketProductCard title={i.title} price={i.price}/>
+                        {selectedProducts.map((i, idx) => (
+                            <BasketProductCard
+                                key={i.title+idx}
+                                id={i.id}
+                                title={i.title}
+                                price={i.price}
+                                setSelectedProducts={setSelectedProducts}
+                                selectedProducts={selectedProducts}
+                            />
                         ))}
                     </div>
                     <div className="basket__total">

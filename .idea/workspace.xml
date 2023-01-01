@@ -12,10 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/basket/basket-product-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basket/basket-product-card.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/basket/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basket/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/basket/selected-product-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basket/basket-product-card.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/basket/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basket/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +197,7 @@
       <workItem from="1672481058541" duration="913000" />
       <workItem from="1672483747341" duration="1182000" />
       <workItem from="1672577055967" duration="5047000" />
-      <workItem from="1672590914480" duration="2098000" />
+      <workItem from="1672590914480" duration="3982000" />
     </task>
     <servers />
   </component>
