@@ -8,20 +8,13 @@ import {ReactComponent as BasketIcon} from "../../images/basket.svg";
 
 const Basket = ({isActive, toggleDroppingItem}) => {
     const selectedProducts = useSelector((state) => state.basket.products);
-
-    const calculateSumOfProducts = () => {
-        let sum = 0;
-        for (let i = 0; i < selectedProducts.length; i++){
-            sum += +selectedProducts[i].price
-        }
-        return sum
-    }
+    const sumOfProducts = useSelector((state) => state.basket.sum);
 
     return (
         <div className="header__info-basket">
             <div className="header__info-basket__price">
                 Ваша корзина
-                <span>{calculateSumOfProducts()} руб.</span>
+                <span>{sumOfProducts} руб.</span>
             </div>
             <div className="basket-image">
                 <BasketIcon onClick={() => toggleDroppingItem(DroppingItems.basket)} className="svg"/>
@@ -46,7 +39,7 @@ const Basket = ({isActive, toggleDroppingItem}) => {
                             Товаров в корзине: <span>{selectedProducts.length}шт</span>
                         </div>
                         <div className="basket__total-price">
-                            Общая стоимость: <span>{calculateSumOfProducts()} руб.</span>
+                            Общая стоимость: <span>{sumOfProducts} руб.</span>
                         </div>
                     </div>
                     <div className="basket__btn">

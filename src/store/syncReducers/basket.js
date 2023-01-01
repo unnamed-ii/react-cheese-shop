@@ -5,24 +5,31 @@ const CLEAR_BASKET = 'CLEAR_BASKET';
 const initState = {
     id: '11299889182',
     products: [
-        {title: 'Форма для твердого сыра 1 кг - 40 отверстий', price: '440', id: '3213123'},
-        {title: 'Форма для твердого сыра 1 кг - 40 отверстий', price: '650', id: '1231231'},
-    ]
+        {title: 'Форма для твердого сыра 1 кг - 40 отверстий', price: 440, id: '3213123'},
+        {title: 'Форма для твердого сыра 1 кг - 40 отверстий', price: 650, id: '1231231'},
+    ],
+    sum: 1090
 }
 
 export const basketReducer = (state = initState, action) => {
     switch (action.type) {
-        case ADD_PRODUCT:
+        case ADD_PRODUCT: {
+            const updatedProducts = [...state.products, action.payload];
             return {
                 ...state,
-                products: [...state.products, action.payload]
+                products: updatedProducts,
+                sum: updatedProducts.reduce((sum, product) => sum + product.price, 0)
             }
+        }
 
-        case REMOVE_PRODUCT:
+        case REMOVE_PRODUCT: {
+            const updatedProducts = state.products.filter(product => product.id !== action.payload);
             return {
                 ...state,
-                products: state.products.filter(product => product.id !== action.payload)
+                products: updatedProducts,
+                sum: updatedProducts.reduce((sum, product) => sum + product.price, 0)
             }
+        }
 
         case CLEAR_BASKET:
             return {}
