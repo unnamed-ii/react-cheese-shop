@@ -3,7 +3,7 @@ import Counter from "../counter";
 import {ReactComponent as RemoveBtnIcon} from '../../images/icons/close-btn.svg';
 import item1 from '../../images/basket/item-1.png';
 
-const SelectedProductCard = ({title = 'Форма для твердого сыра 1 кг - 40 отверстий', price = '440'}) => {
+const BasketProductCard = ({title, price}) => {
     return (
             <div className="basket__items-item">
                 <img className="basket__items-item__image" src={item1} alt=""/>
@@ -21,4 +21,4 @@ const SelectedProductCard = ({title = 'Форма для твердого сыр
         )
 };
 
-export default SelectedProductCard;
+export default BasketProductCard;

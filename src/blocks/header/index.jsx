@@ -11,7 +11,6 @@ import {ReactComponent as UserProfileIcon} from '../../images/icons/profile.svg'
 import {ReactComponent as TelegramIcon} from '../../images/header-social/telegram.svg';
 import {ReactComponent as WhatsUpIcon} from '../../images/header-social/whatsup.svg';
 import {ReactComponent as MessengerIcon} from '../../images/header-social/messenger.svg';
-import {ReactComponent as BasketIcon} from '../../images/basket.svg';
 import {ReactComponent as SearchIcon} from '../../images/icons/search.svg';
 import {ReactComponent as PhoneIcon} from '../../images/header-phone.svg';
 import darkLogo from '../../images/dark-logo.png';
@@ -101,17 +100,10 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="vertical"/>
-                        <div className="header__info-basket">
-                            <div className="header__info-basket__price">
-                                Ваша корзина
-                                <span>1680 руб.</span>
-                            </div>
-                            <div className="basket-image">
-                                <BasketIcon onClick={() => toggleDroppingItem(DroppingItems.basket)} className="svg"/>
-                                <div className='basket-image__circle'>5</div>
-                                <Basket isActive={isBasketDropped}/>
-                            </div>
-                        </div>
+                        <Basket
+                            isActive={isBasketDropped}
+                            toggleDroppingItem={toggleDroppingItem}
+                        />
                     </div>
                     <div className="horizontal"/>
                     <div className="header__nav">
@@ -149,7 +141,6 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <Basket/>
             </div>
         </Wrapper>
     );

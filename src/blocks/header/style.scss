@@ -197,41 +197,6 @@
         }
       }
     }
-
-    &-basket {
-      display: flex;
-      align-items: center;
-
-      &__price {
-        margin-right: 12px;
-
-        span {
-          display: block;
-          text-align: right;
-          color: $orange;
-          font-weight: 700;
-        }
-      }
-
-      .basket-image {
-        position: relative;
-        cursor: pointer;
-
-        &__circle {
-          position: absolute;
-          width: 16px;
-          height: 16px;
-          top: -4px;
-          right: -6px;
-          border-radius: 50%;
-          background-color: $orange;
-          font-size: 12px;
-          line-height: 16px;
-          color: $white;
-          text-align: center;
-        }
-      }
-    }
   }
 
   &__nav {
