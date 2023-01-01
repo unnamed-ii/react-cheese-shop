@@ -12,6 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/category/filters.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/filters.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/category/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,17 +44,17 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\category" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\checkout" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\collection" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\profile" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\calculator" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (1)">
@@ -191,7 +192,9 @@
       <workItem from="1672151950198" duration="2724000" />
       <workItem from="1672234389944" duration="358000" />
       <workItem from="1672234792200" duration="666000" />
-      <workItem from="1672406417038" duration="289000" />
+      <workItem from="1672406417038" duration="344000" />
+      <workItem from="1672481058541" duration="913000" />
+      <workItem from="1672483747341" duration="1182000" />
     </task>
     <servers />
   </component>
@@ -237,10 +240,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="705" y="310" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1667421811030" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1663674198611">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1663674198611" />
     <state x="664" y="189" key="#start" timestamp="1666448342153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -253,22 +252,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1670247378463" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1672235462378">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1672483767043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1672235462378" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1672235462378">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1672483767043" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1672483767043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1672235462378" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1672235462378">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1672483767043" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1672483767042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1672235462378" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1672235462378">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1672483767042" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1672483767043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1672235462378" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1672483767043" />
     <state width="1877" height="340" key="GridCell.Tab.1.bottom" timestamp="1663845774264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
