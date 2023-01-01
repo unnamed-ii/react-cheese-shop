@@ -1,13 +1,13 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './style.scss'
 import {Link} from "react-router-dom";
-import {SelectedProductsData} from "./constants";
 import {DroppingItems} from "../../blocks/header/constants";
+import {useSelector} from "react-redux";
 import BasketProductCard from './basket-product-card';
 import {ReactComponent as BasketIcon} from "../../images/basket.svg";
 
 const Basket = ({isActive, toggleDroppingItem}) => {
-    const [selectedProducts, setSelectedProducts] = useState(SelectedProductsData);
+    const selectedProducts = useSelector((state) => state.basket.products);
 
     const calculateSumOfProducts = () => {
         let sum = 0;
@@ -38,8 +38,6 @@ const Basket = ({isActive, toggleDroppingItem}) => {
                                 id={i.id}
                                 title={i.title}
                                 price={i.price}
-                                setSelectedProducts={setSelectedProducts}
-                                selectedProducts={selectedProducts}
                             />
                         ))}
                     </div>
