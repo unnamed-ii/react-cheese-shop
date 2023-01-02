@@ -7,10 +7,7 @@ import {discountItems, popularItems} from "./constants";
 
 const Products = () => {
     const [currentFilter, setCurrentFilter] = useState('filter-popular');
-    const toggleCurrentFilter = (filterName) => {
-        setCurrentFilter(filterName);
-    }
-
+    const toggleCurrentFilter = (filterName) => setCurrentFilter(filterName);
     const showFilteredItems = () => currentFilter === 'filter-popular' ? popularItems : discountItems
 
     return (
@@ -38,8 +35,13 @@ const Products = () => {
                                 </div>
                                 <div className="ingredients__products">
                                     <div className="ingredients__products-row">
-                                        {showFilteredItems().ingredients.map((i) =>
-                                            <Card/>
+                                        {showFilteredItems().ingredients.map((product, idx) =>
+                                            <Card
+                                                key={product.title+idx}
+                                                title={product.title}
+                                                discountPrice={product.discountPrice}
+                                                normalPrice={product.normalPrice}
+                                            />
                                         )}
                                     </div>
                                 </div>
@@ -49,8 +51,13 @@ const Products = () => {
                                     Оборудование
                                 </div>
                                 <div className="ingredients__products-row">
-                                    {showFilteredItems().equipment.map((i) =>
-                                        <Card/>
+                                    {showFilteredItems().equipment.map((product, idx) =>
+                                        <Card
+                                            key={product.title+idx}
+                                            title={product.title}
+                                            discountPrice={product.discountPrice}
+                                            normalPrice={product.normalPrice}
+                                        />
                                     )}
                                 </div>
                             </div>
