@@ -38,6 +38,7 @@ const Products = () => {
                                         {showFilteredItems().ingredients.map((product, idx) =>
                                             <Card
                                                 key={product.title+idx}
+                                                id={product.id}
                                                 title={product.title}
                                                 discountPrice={product.discountPrice}
                                                 normalPrice={product.normalPrice}
@@ -54,6 +55,7 @@ const Products = () => {
                                     {showFilteredItems().equipment.map((product, idx) =>
                                         <Card
                                             key={product.title+idx}
+                                            id={product.id}
                                             title={product.title}
                                             discountPrice={product.discountPrice}
                                             normalPrice={product.normalPrice}
