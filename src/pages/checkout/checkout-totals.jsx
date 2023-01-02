@@ -1,6 +1,10 @@
 import React from 'react';
+import {useSelector} from "react-redux";
 
 const CheckoutTotals = () => {
+    const basketSum = useSelector(state => state.basket.sum);
+    let promoCode = 300;
+
     return (
         <div className="checkout__totals">
             <div className="checkout__totals-title">
@@ -18,7 +22,7 @@ const CheckoutTotals = () => {
             <div className="checkout__totals-calculations">
                 <div className="checkout__totals-calculations__row">
                     <div>Сумма заказа</div>
-                    <div>2350 руб.</div>
+                    <div>{basketSum} руб.</div>
                 </div>
                 <div className="checkout__totals-calculations__row">
                     <div>Доставка</div>
@@ -26,13 +30,13 @@ const CheckoutTotals = () => {
                 </div>
                 <div className="checkout__totals-calculations__row">
                     <div>Промокод</div>
-                    <div>-300 руб.</div>
+                    <div>300 руб.</div>
                 </div>
             </div>
             <div className="checkout__totals-price">
                 <div className="checkout__totals-price__row">
                     <div>К оплате</div>
-                    <div>2050 руб.</div>
+                    <div>{basketSum - promoCode} руб.</div>
                 </div>
             </div>
             <button className="checkout__totals-btn">

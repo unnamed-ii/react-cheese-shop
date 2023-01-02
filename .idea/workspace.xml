@@ -11,11 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/card/checkout-order-product-card.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/products/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/products/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/products/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/products/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkout/checkout-order.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-order.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkout/checkout-totals.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-totals.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkout/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +199,7 @@
       <workItem from="1672483747341" duration="1182000" />
       <workItem from="1672577055967" duration="5047000" />
       <workItem from="1672590914480" duration="8046000" />
-      <workItem from="1672685281872" duration="1953000" />
+      <workItem from="1672685281872" duration="3351000" />
     </task>
     <servers />
   </component>
@@ -289,6 +289,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1667682108715" />
+    <state x="668" y="98" width="583" height="843" key="find.popup" timestamp="1672688267878">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="98" width="583" height="843" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1672688267878" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1672596677258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
