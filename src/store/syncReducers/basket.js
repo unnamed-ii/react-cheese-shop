@@ -5,8 +5,8 @@ const CLEAR_BASKET = 'CLEAR_BASKET';
 const initState = {
     id: '11299889182',
     products: [
-        {title: 'Форма для твердого сыра 1 кг - 40 отверстий', price: 440, id: '3213123'},
-        {title: 'Форма для твердого сыра 1 кг - 40 отверстий', price: 650, id: '1231231'},
+        {title: 'Форма для твердого сыра 1 кг - 40 отверстий', price: 440, id: '3213123', amount: 1},
+        {title: 'Форма для твердого сыра 1 кг - 40 отверстий', price: 650, id: '1231231', amount: 1},
     ],
     sum: 1090
 }
@@ -14,11 +14,24 @@ const initState = {
 export const basketReducer = (state = initState, action) => {
     switch (action.type) {
         case ADD_PRODUCT: {
-            const updatedProducts = [...state.products, action.payload];
-            return {
-                ...state,
-                products: updatedProducts,
-                sum: updatedProducts.reduce((sum, product) => sum + product.price, 0)
+            let updatedProducts;
+            let addingProductId = action.payload.id;
+            let isProductAlreadyInBasket = !!(state.products.filter(product => product.id === addingProductId).length);
+
+            if (isProductAlreadyInBasket) {
+                updatedProducts = [...state.products, state[addingProductId].amount+=1];
+                return {
+                    ...state,
+                    products: updatedProducts,
+                    sum: updatedProducts.reduce((sum, product) => sum + (product.price * product.amount), 0)
+                }
+            } else {
+                updatedProducts = [...state.products, action.payload];
+                return {
+                    ...state,
+                    products: updatedProducts,
+                    sum: updatedProducts.reduce((sum, product) => sum + (product.price * product.amount), 0)
+                }
             }
         }
 
@@ -41,4 +54,4 @@ export const basketReducer = (state = initState, action) => {
 
 export const addProductActionCreator = (payload) => ({type: ADD_PRODUCT, payload})
 export const removeProductActionCreator = (payload) => ({type: REMOVE_PRODUCT, payload})
-export const clearBasketActionCreator = (payload) => ({type: CLEAR_BASKET, payload})
+export const clearBasketActionCreator = (payload) => ({type: CLEAR_BASKET})

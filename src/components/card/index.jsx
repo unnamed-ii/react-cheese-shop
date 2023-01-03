@@ -4,9 +4,14 @@ import {useDispatch} from "react-redux";
 import {addProductActionCreator} from "../../store/syncReducers/basket";
 import card from '../../images/card.png'
 
-const Card = ({title = 'Мезофильная закваска Danisco CHOOZIT MM...', discountPrice = '1300₽', normalPrice = '1800₽', id}) => {
+const Card = ({
+                  title = 'Мезофильная закваска Danisco CHOOZIT MM...',
+                  discountPrice = 1300,
+                  normalPrice = 1800,
+                  id,
+                  amount }) => {
     const dispatch = useDispatch();
-    const addProduct = () => dispatch(addProductActionCreator({title, price: discountPrice, id}))
+    const addProduct = () => dispatch(addProductActionCreator({title, price: discountPrice, id, amount: 1}))
 
     return (
         <div className="card">
