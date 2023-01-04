@@ -1,12 +1,12 @@
+const ADD_USER = 'ADD_USER';
+const REMOVE_USER = 'REMOVE_USER';
+
 const defaultState = [
     {
         name: 'Vasya',
         id: Date.now(),
     },
 ]
-
-const ADD_USER = 'ADD_USER';
-const REMOVE_USER = 'REMOVE_USER';
 
 export const clientsReducer = (state = defaultState, action) => {
     switch (action.type) {
@@ -20,3 +20,6 @@ export const clientsReducer = (state = defaultState, action) => {
             return state
     }
 }
+
+export const addUserActionCreator = (payload) => ({type: ADD_USER, payload})
+export const removeUserActionCreator = (payload) => ({type: REMOVE_USER, payload})
