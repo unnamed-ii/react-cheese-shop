@@ -61,13 +61,27 @@
           display: flex;
           align-items: center;
           padding-bottom: 16px;
+          transition: all .3s;
 
           svg {
             margin-left: 9px;
+            transition: all .3s;
           }
         }
 
         &:hover {
+          .title {
+            color: $orange;
+          }
+
+          svg {
+            transform: rotate(180deg);
+
+            path {
+              stroke: #FD9339;
+            }
+          }
+
           .dropdown-list {
             display: block;
           }

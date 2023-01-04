@@ -1,11 +1,12 @@
 import React from 'react';
 import './style.scss';
-import {CategoryFiltersData} from "./constanst";
 import CheckBox from "../../components/checkbox";
 import CustomInputRange from "../../components/input-range";
+import {useSelector} from "react-redux";
 import {ReactComponent as ArrowDownIcon} from "../../images/icons/arrow-down.svg";
 
 const Filters = () => {
+    const filtersData = useSelector(state => state.filters)
 
     return (
             <div className="category__filters">
@@ -20,7 +21,7 @@ const Filters = () => {
                                 Выберите фильтр
                             </div>
                             <div className="dropdown-list__filters">
-                                {CategoryFiltersData.price.map(i => (
+                                {filtersData.price.map(i => (
                                     <div className="dropdown-list__filters-filter">
                                         <CheckBox/>
                                         {i}
@@ -42,7 +43,7 @@ const Filters = () => {
                                 Выберите фильтр
                             </div>
                             <div className="dropdown-list__filters">
-                                {CategoryFiltersData.types.map(i => (
+                                {filtersData.kinds.map(i => (
                                     <div className="dropdown-list__filters-filter">
                                         <CheckBox/>
                                         {i}
@@ -64,7 +65,7 @@ const Filters = () => {
                                 Выберите фильтр
                             </div>
                             <div className="dropdown-list__filters">
-                                {CategoryFiltersData.manufacturer.map(i => (
+                                {filtersData.manufacturer.map(i => (
                                     <div className="dropdown-list__filters-filter">
                                         <CheckBox/>
                                         {i}
