@@ -9,7 +9,7 @@ import {ReactComponent as BasketIcon} from "../../images/basket.svg";
 const Basket = ({isActive, toggleDroppingItem}) => {
     const selectedProducts = useSelector((state) => state.basket.products);
     const sumOfProducts = useSelector((state) => state.basket.sum);
-    console.log(selectedProducts)
+
     return (
         <div className="header__info-basket">
             <div className="header__info-basket__price">

@@ -6,7 +6,7 @@ import {useSelector} from "react-redux";
 import {ReactComponent as ArrowDownIcon} from "../../images/icons/arrow-down.svg";
 
 const Filters = () => {
-    const filtersData = useSelector(state => state.filters)
+    const filters = useSelector(state => state.filters)
 
     return (
             <div className="category__filters">
@@ -21,10 +21,10 @@ const Filters = () => {
                                 Выберите фильтр
                             </div>
                             <div className="dropdown-list__filters">
-                                {filtersData.price.map(i => (
+                                {filters.price.map(filter => (
                                     <div className="dropdown-list__filters-filter">
                                         <CheckBox/>
-                                        {i}
+                                        {filter}
                                     </div>
                                 ))}
                             </div>
@@ -43,10 +43,10 @@ const Filters = () => {
                                 Выберите фильтр
                             </div>
                             <div className="dropdown-list__filters">
-                                {filtersData.kinds.map(i => (
+                                {filters.kinds.map(filter => (
                                     <div className="dropdown-list__filters-filter">
                                         <CheckBox/>
-                                        {i}
+                                        {filter}
                                     </div>
                                 ))}
                             </div>
@@ -65,10 +65,10 @@ const Filters = () => {
                                 Выберите фильтр
                             </div>
                             <div className="dropdown-list__filters">
-                                {filtersData.manufacturer.map(i => (
+                                {filters.manufacturer.map(filter => (
                                     <div className="dropdown-list__filters-filter">
                                         <CheckBox/>
-                                        {i}
+                                        {filter}
                                     </div>
                                 ))}
                             </div>

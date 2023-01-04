@@ -1,6 +1,7 @@
 const ADD_FILTER = 'ADD_FILTER';
 const REMOVE_FILTER = 'REMOVE_FILTER';
-const CLEAR_FILTERS = 'CLEAR_FILTERS';
+const RESET_FILTERS = 'RESET_FILTERS';
+const TOGGLE_FILTERS = 'TOGGLE_FILTERS';
 
 const initState = {
     price: [
@@ -25,7 +26,9 @@ const initState = {
         "Производитель 6",
         "Производитель 7"
     ],
-    addedFilters: []
+    onlyAvailable: false,
+    showFilters: false,
+    addedFilters: ['some filter 1', 'some filter 2', 'some filter 3']
 }
 
 export const categoryFiltersReducer = (state = initState, action) => {
@@ -36,10 +39,16 @@ export const categoryFiltersReducer = (state = initState, action) => {
         case REMOVE_FILTER:
             return {
                 ...state,
-                addedFilters: []
+                addedFilters: state.addedFilters.filter((filter, idx) => idx !== action.payload)
             }
 
-        case CLEAR_FILTERS:
+        case TOGGLE_FILTERS:
+            return {
+                ...state,
+                showFilters: !state.showFilters
+            }
+
+        case RESET_FILTERS:
             return {...state, addedFilters: []}
 
         default:
@@ -49,4 +58,5 @@ export const categoryFiltersReducer = (state = initState, action) => {
 
 export const addFilterActionCreator = (payload) => ({type: ADD_FILTER, payload})
 export const removeFilterActionCreator = (payload) => ({type: REMOVE_FILTER, payload})
-export const clearFiltersActionCreator = (payload) => ({type: CLEAR_FILTERS})
+export const toggleFiltersActionCreator = () => ({type: TOGGLE_FILTERS})
+export const resetFiltersActionCreator = () => ({type: RESET_FILTERS})
