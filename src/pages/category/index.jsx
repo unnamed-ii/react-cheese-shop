@@ -22,15 +22,17 @@ const Category = () => {
                     <div className="category__top-title">
                         Кисломолочные закваски
                     </div>
-                    <button className={"category__top-filter__toggle " + (showFilters && "active")}
-                            onClick={toggleFilters}>
-                        {showFilters ?
-                            <FilterToggleIcon/>
-                            :
-                            <FilterToggleDisabledIcon/>
-                        }
-                        Фильтр
-                    </button>
+                   <div className="category__top-filter__toggle">
+                       <button className={"filters__toggle-button " + (showFilters && "active")}
+                               onClick={toggleFilters}>
+                           {showFilters ?
+                               <FilterToggleIcon/>
+                               :
+                               <FilterToggleDisabledIcon/>
+                           }
+                           Фильтр
+                       </button>
+                   </div>
                 </div>
                 {showFilters && <Filters/>}
                 {showFilters && <AddedFiltersList/>}

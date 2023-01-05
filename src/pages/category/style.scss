@@ -15,23 +15,28 @@
 
     &-filter__toggle {
       display: flex;
-      align-items: center;
-      border-radius: 5px;
-      border: 1px solid #292929;
-      background-color: transparent;
-      padding: 10px 20px 10px 12px;
-      font-size: 16px;
-      line-height: 24px;
-      cursor: pointer;
-      width: 144px;
+      justify-content: center;
 
-      &.active {
-        color: $white;
-        background-color: $brown;
-      }
+      .filters__toggle-button {
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid #292929;
+        background-color: transparent;
+        padding: 10px 20px 10px 12px;
+        font-size: 16px;
+        line-height: 24px;
+        cursor: pointer;
+        width: 144px;
 
-      svg {
-        margin-right: 24px;
+        &.active {
+          color: $white;
+          background-color: $brown;
+        }
+
+        svg {
+          margin-right: 24px;
+        }
       }
     }
   }
@@ -199,18 +204,98 @@
     display: flex;
 
     &-content {
-      width: 880px;
+      max-width: 880px;
+      width: 100%;
       margin-left: 20px;
 
       &__list {
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
+      }
+    }
+  }
+}
 
-        div {
-          //margin-bottom: 15px;
+@media (max-width: 1200px) {
+  .category {
+    padding: 30px 15px;
+
+    &__filters {
+      display: block;
+      text-align: center;
+
+      &-list {
+        justify-content: space-around;
+      }
+
+      &-is__available {
+        justify-content: center;
+      }
+    }
+
+    &__inner {
+      &-content {
+        margin-left: 0;
+
+        &__list {
+          justify-content: center;
         }
       }
     }
+  }
+}
+
+@media (max-width: 930px) {
+  .category {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .category {
+    &__filters {
+      padding: 8px 15px 0 15px;
+
+      &-list {
+        display: block;
+        text-align: center;
+
+        &__filter {
+          display: flex;
+          justify-content: center;
+          border-bottom: 1px solid #E7E7E7;
+
+          .title {
+            padding: 8px 0;
+          }
+
+          .dropdown-list {
+            left: unset;
+          }
+        }
+      }
+
+      &-is__available {
+        padding: 8px 0 16px;
+      }
+    }
+  }
+
+  .category__filters-list__filter + .category__filters-list__filter {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .category__top {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .category {
+    padding-top: 115px;
   }
 }
