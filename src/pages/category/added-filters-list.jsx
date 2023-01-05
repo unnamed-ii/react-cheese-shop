@@ -21,10 +21,9 @@ const AddedFiltersList = () => {
                         />
                     ))}
                 </div>
-                {!!addedFilters.length &&
                 <div className="category__added-filters__reset">
                     <button onClick={resetAddedFilters}>Очистить фильтр</button>
-                </div>}
+                </div>
             </div>}
         </>
     );

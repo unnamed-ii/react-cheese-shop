@@ -11,17 +11,17 @@ const MainNav = () => {
             <div className="nav">
                 <div className="nav__ingredients">
                     <div className="nav__ingredients-title">
-                        <IngredientsIcon class="title-icon" /> Ингредиенты
+                        <IngredientsIcon className="title-icon" /> Ингредиенты
                     </div>
                     <div className="nav__ingredients-links">
                         <div className="nav__ingredients-link">
                             Закваски для сыра
-                            <ArrowRightIcon  class="link__arrow-right"/>
+                            <ArrowRightIcon  className="link__arrow-right"/>
                             <DropDownLinks />
                         </div>
                         <div className="nav__ingredients-link">
                             Ферменты для сыра
-                            <ArrowRightIcon  class="link__arrow-right"/>
+                            <ArrowRightIcon  className="link__arrow-right"/>
                             <DropDownLinks />
                         </div>
                         <div className="nav__ingredients-link">
@@ -29,12 +29,12 @@ const MainNav = () => {
                         </div>
                         <div className="nav__ingredients-link">
                             Плесень для сыра
-                            <ArrowRightIcon  class="link__arrow-right"/>
+                            <ArrowRightIcon  className="link__arrow-right"/>
                             <DropDownLinks />
                         </div>
                         <div className="nav__ingredients-link">
                             Кисломолочные закваски
-                            <ArrowRightIcon  class="link__arrow-right"/>
+                            <ArrowRightIcon  className="link__arrow-right"/>
                             <DropDownLinks />
                         </div>
                         <div className="nav__ingredients-link">
@@ -42,19 +42,19 @@ const MainNav = () => {
                         </div>
                         <div className="nav__ingredients-link">
                             Специи для сыра
-                            <ArrowRightIcon  class="link__arrow-right"/>
+                            <ArrowRightIcon  className="link__arrow-right"/>
                             <DropDownLinks />
                         </div>
                     </div>
                 </div>
                 <div className="nav__equipment">
                     <div className="nav__equipment-title">
-                        <EquipmentIcon class="title-icon" /> Оборудование
+                        <EquipmentIcon className="title-icon" /> Оборудование
                     </div>
                     <div className="nav__equipment-links">
                         <div className="nav__equipment-link">
                             Формы для сыра
-                            <ArrowRightIcon  class="link__arrow-right"/>
+                            <ArrowRightIcon  className="link__arrow-right"/>
                             <DropDownLinks />
                         </div>
                         <div className="nav__equipment-link">
@@ -65,7 +65,7 @@ const MainNav = () => {
                         </div>
                         <div className="nav__equipment-link">
                             Термоусадочные пакеты
-                            <ArrowRightIcon  class="link__arrow-right"/>
+                            <ArrowRightIcon  className="link__arrow-right"/>
                             <DropDownLinks />
                         </div>
                         <div className="nav__equipment-link">
