@@ -4,16 +4,16 @@ import {CollectionData} from "./constants";
 
 const CollectionTabs = () => {
     const [activeTab, setActiveTab] = useState(CollectionData.tabsTitles[0].typeOfTab);
-    const handleChangeActiveTab = (tabId) => {
-        setActiveTab(tabId)
-    }
+    const handleChangeActiveTab = (tabId) => setActiveTab(tabId)
 
     return (
         <div className="collection__tabs">
             <div className="collection__tabs-titles">
                 {CollectionData.tabsTitles.map(i =>
-                    <div className={"profile__tabs-title " + (activeTab === i.typeOfTab && "active")}
-                         onClick={() => handleChangeActiveTab(i.typeOfTab)}
+                    <div
+                        key={Math.floor(Math.random() * 100000)}
+                        className={"profile__tabs-title " + (activeTab === i.typeOfTab && "active")}
+                        onClick={() => handleChangeActiveTab(i.typeOfTab)}
                     >
                         {i.title}
                     </div>

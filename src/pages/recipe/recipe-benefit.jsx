@@ -27,6 +27,7 @@ const RecipeBenefit = () => {
                 <div className="benefit__instruction-steps">
                     {RecipeData.instruction.map((i, idx) =>
                         <InstructionStep
+                            key={Math.floor(Math.random() * 100000)}
                             number={'0' + (idx + 1)}
                             text={i.text}
                         />

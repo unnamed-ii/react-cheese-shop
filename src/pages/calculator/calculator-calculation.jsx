@@ -10,7 +10,10 @@ const CalculatorCalculation = () => {
             </div>
             <div className="calculator__box-calculations__inputs">
                 {CalculatorData.inputs.map(i =>
-                    <CalculatorInput text={i.text}/>
+                    <CalculatorInput
+                        text={i.text}
+                        key={Math.floor(Math.random() * 100000)}
+                    />
                 )}
             </div>
             <div className="calculator__box-calculations__btn">

@@ -15,6 +15,7 @@ const Recommendations = () => {
                         text={i.text}
                         bgImage={i.backgroundImage}
                         isActive={i.isActive}
+                        key={Math.random() * 100000}
                     />
                 )}
             </div>

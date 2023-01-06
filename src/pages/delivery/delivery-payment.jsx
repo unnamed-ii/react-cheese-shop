@@ -9,11 +9,12 @@ const DeliveryPayment = () => {
                 Способы оплаты:
             </div>
             <div className="delivery__payment-methods">
-                {PaymentMethodsData.map(i =>
+                {PaymentMethodsData.map(paymentMethod =>
                     <PaymentMethodCard
-                        image={i.image}
-                        title={i.title}
-                        text={i.text}
+                        key={Math.floor(Math.random() * 100000)}
+                        image={paymentMethod.image}
+                        title={paymentMethod.title}
+                        text={paymentMethod.text}
                     />
                 )}
             </div>

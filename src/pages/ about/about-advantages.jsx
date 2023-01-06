@@ -12,6 +12,7 @@ const AboutAdvantages = () => {
             <div className="advantages">
                 {AboutData.advantages.map(i =>
                     <Advantage
+                        key={Math.floor(Math.random() * 100000)}
                         icon={i.icon}
                         text={"Вы покупаете всё в одном месте или оставить запрос и мы превезем под заказ"}
                     />

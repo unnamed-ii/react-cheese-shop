@@ -24,8 +24,10 @@ const Profile = () => {
                 <div className="profile__tabs">
                     <div className="profile__tabs-titles">
                         {TabsData.titles.map(i =>
-                            <div className={"profile__tabs-title " + (activeTab === i.typeOfTab && "active")}
-                                 onClick={() => handleChangeActiveTab(i.typeOfTab)}
+                            <div
+                                className={"profile__tabs-title " + (activeTab === i.typeOfTab && "active")}
+                                onClick={() => handleChangeActiveTab(i.typeOfTab)}
+                                key={Math.floor(Math.random() * 100000)}
                             >
                                 {i.icon}
                                 {i.title}

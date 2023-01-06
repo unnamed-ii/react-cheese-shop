@@ -19,6 +19,7 @@ const CheckoutOrder = () => {
             <div className="checkout__info-order__products">
                 {basketProducts.map(product =>
                     <CheckoutOrderProductCard
+                        key={Math.floor(Math.random() * 100000)}
                         title={product.title}
                         price={product.price}
                         id={product.id}

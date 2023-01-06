@@ -3,11 +3,7 @@ import {ReactComponent as ArrowDownIcon} from "../../images/icons/recipe-page-ar
 
 const RecipeRecommendation = () => {
     const [isDropDown, setIsDropDown] = useState(true);
-
-    function showIsDroppedDown() {
-        setIsDropDown(!isDropDown);
-        console.log(isDropDown);
-    }
+    const showIsDroppedDown = () => setIsDropDown(!isDropDown);
 
     return (
         <div className="recommendation">

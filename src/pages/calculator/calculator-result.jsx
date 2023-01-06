@@ -18,7 +18,10 @@ const CalculatorResult = () => {
                     Нужна помощь с расчетами?
                 </div>
                 {CalculatorData.questions.map(i =>
-                    <CalculatorInstructionStep text={i.text}/>
+                    <CalculatorInstructionStep
+                        key={Math.floor(Math.random() * 100000)}
+                        text={i.text}
+                    />
                 )}
             </div>
         </div>

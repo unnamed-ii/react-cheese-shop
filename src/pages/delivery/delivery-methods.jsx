@@ -19,7 +19,7 @@ const DeliveryMethods = () => {
                         <span>г. Новосибирск, ул. Котовского, д. 12/1, офис 1</span>
                     </div>
                     <div className="delivery__methods-method__courier">
-                        <CourierIcon class="courier-image"/>
+                        <CourierIcon className="courier-image"/>
                         <div className="text">
                             Или заказать курьерскую доставку. Стоимость доставки –
                             <span>150 рублей.</span>

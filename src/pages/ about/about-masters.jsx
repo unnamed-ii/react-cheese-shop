@@ -12,6 +12,7 @@ const AboutMasters = () => {
             <div className="masters">
                 {AboutData.masters.map(i =>
                     <MasterCard
+                        key={Math.floor(Math.random() * 100000)}
                         title={i.title}
                         subtitle={i.subtitle}
                         text={i.text}

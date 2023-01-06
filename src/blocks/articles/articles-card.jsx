@@ -15,7 +15,7 @@ export const ArticleCard = ({title, text, image}) => {
                 </div>
                 <Link className="articles__list-item__link" to="article">
                     Читать далее
-                    <ArrowRightIcon class="image"/>
+                    <ArrowRightIcon className="image"/>
                 </Link>
             </div>
         </div>

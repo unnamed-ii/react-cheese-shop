@@ -21,7 +21,7 @@ const CollectionInfo = () => {
                         5 stars
                     </div>
                     <div className="rating-reviews">
-                        <ReviewIcon class="review-icon"/>
+                        <ReviewIcon className="review-icon"/>
                         10 Отзывов
                     </div>
                 </div>

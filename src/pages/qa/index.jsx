@@ -15,20 +15,20 @@ const QA = () => {
                             Вопросы и ответы
                         </div>
                         <div className="qa__questions">
-                            {qaData.map((i, idx) =>
-                                <div className="qa__questions-question">
-                                    0{idx + 1}. {i.question}
+                            {qaData.map((question, idx) =>
+                                <div className="qa__questions-question" key={Math.floor(Math.random() * 100000)}>
+                                    0{idx + 1}. {question.question}
                                 </div>
                             )}
                         </div>
                         <div className="qa__answers">
-                            {qaData.map((i, idx) =>
-                                <div className="qa__answers-answer">
+                            {qaData.map((answer, idx) =>
+                                <div className="qa__answers-answer" key={Math.floor(Math.random() * 100000)}>
                                     <div className="qa__answers-answer__title">
-                                        0{idx + 1}. {i.question}
+                                        0{idx + 1}. {answer.question}
                                     </div>
                                     <div className="qa__answers-answer__text">
-                                        {i.answer}
+                                        {answer.answer}
                                     </div>
                                 </div>
                             )}

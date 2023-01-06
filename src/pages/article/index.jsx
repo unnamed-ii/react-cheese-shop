@@ -51,6 +51,7 @@ const Article = () => {
                             <div className="box">
                                 {ArticleData.map((i, idx) =>
                                     <InstructionStep
+                                        key={Math.floor(Math.random() * 100000)}
                                         number={'0' + (idx + 1)}
                                         text={i.text}
                                     />

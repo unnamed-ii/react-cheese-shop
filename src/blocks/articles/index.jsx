@@ -21,11 +21,12 @@ const Articles = () => {
                     </a>
                 </div>
                 <div className="articles__list">
-                    {ArticlesData.map(i =>
+                    {ArticlesData.map(article =>
                         <ArticleCard
-                            title={i.title}
-                            text={i.text}
-                            image={i.image}
+                            key={Math.random() * 100000}
+                            title={article.title}
+                            text={article.text}
+                            image={article.image}
                         />
                     )}
                 </div>

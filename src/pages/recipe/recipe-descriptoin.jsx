@@ -38,7 +38,7 @@ const RecipeDescription = () => {
                 </div>
                 <div className="description__ingredients-list">
                     {RecipeData.ingredients.map(ingredient =>
-                        <div className="description__ingredients-list__item">
+                        <div className="description__ingredients-list__item" key={Math.floor(Math.random() * 100000)}>
                             <div className="text">
                                 {ingredient.text}
                             </div>
@@ -58,7 +58,7 @@ const RecipeDescription = () => {
                 </div>
                 <div className="description__equipments-list">
                     {RecipeData.equipment.map(equipment =>
-                        <div className="description__ingredients-list__item">
+                        <div className="description__ingredients-list__item" key={Math.floor(Math.random() * 100000)}>
                             <div className="text">
                                 {equipment.text}
                             </div>

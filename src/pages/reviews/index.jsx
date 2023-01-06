@@ -35,12 +35,13 @@ const Reviews = () => {
                             </div>
                         </div>
                         <div className="reviews__list">
-                            {ReviewsData.map(i =>
+                            {ReviewsData.map(review =>
                                 <ReviewCard
-                                    name={i.name}
-                                    address={i.address}
-                                    text={i.text}
-                                    date={i.date}
+                                    key={Math.floor(Math.random() * 100000)}
+                                    name={review.name}
+                                    address={review.address}
+                                    text={review.text}
+                                    date={review.date}
                                 />
                             )}
                         </div>

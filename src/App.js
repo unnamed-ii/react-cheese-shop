@@ -30,7 +30,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="product-card" element={<ProductCard/>}/>
-                <Route path="category" element={<Category/>}/> {/*add adaptive*/}
+                <Route path="category" element={<Category/>}/>
                 <Route path="recipes" element={<Recipes/>}/>
                 <Route path="recipe" element={<Recipe/>}/>
                 <Route path="article" element={<Article/>}/>

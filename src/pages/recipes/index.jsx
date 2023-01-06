@@ -20,6 +20,7 @@ const Recipes = () => {
                             <div className="box">
                                 {RecipesData.cheeseRecipes.map(recipe =>
                                     <CheeseRecipeCard
+                                        key={Math.floor(Math.random() * 100000)}
                                         title={recipe.title}
                                     />
                                 )}
@@ -32,6 +33,7 @@ const Recipes = () => {
                             <div className="box">
                                 {RecipesData.addedRecipes.map(recipe =>
                                     <AddedRecipe
+                                        key={Math.floor(Math.random() * 100000)}
                                         title={recipe.title}
                                     />
                                 )}

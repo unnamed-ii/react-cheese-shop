@@ -4,7 +4,7 @@ import {ReactComponent as QuestionMarkIcon} from "../../images/icons/question-ma
 export const CalculatorInstructionStep = ({text}) => {
     return (
         <div className="line">
-            <QuestionMarkIcon class="question-mark"/>
+            <QuestionMarkIcon className="question-mark"/>
             <div className="line__text">
                 {text}
             </div>

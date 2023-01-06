@@ -55,10 +55,11 @@ const Equipment = () => {
                     наше оборудование
                 </div>
                 <Slider {...settings}>
-                    {SlidesData.map(i =>
+                    {SlidesData.map(slide =>
                         <EquipmentSlide
-                            title={i.title}
-                            text={i.text}
+                            key={Math.random() * 100000}
+                            title={slide.title}
+                            text={slide.text}
                         />
                     )}
                 </Slider>
