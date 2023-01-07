@@ -11,29 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/firebase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/syncReducers/is-auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/articles/articles-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/articles/articles-card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/articles/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/articles/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/benefits/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/benefits/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/equipment/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/equipment/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/popular-recipes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popular-recipes/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/products/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/products/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/recommendations/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/recommendations/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/selections/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/selections/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ about/about-advantages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ about/about-advantages.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ about/about-masters.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ about/about-masters.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/article/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/article/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/category/filters.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/filters.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/checkout/checkout-order.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-order.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/delivery/delivery-methods.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/delivery/delivery-methods.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/delivery/delivery-payment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/delivery/delivery-payment.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/recipe/recipe-benefit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipe/recipe-benefit.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/recipe/recipe-descriptoin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipe/recipe-descriptoin.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/recipe/recipe-recommendation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipe/recipe-recommendation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/recipes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipes/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/reviews/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reviews/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +207,8 @@
       <workItem from="1672865939501" duration="1441000" />
       <workItem from="1672907239404" duration="1734000" />
       <workItem from="1672910769366" duration="4463000" />
-      <workItem from="1673024265269" duration="2825000" />
+      <workItem from="1673024265269" duration="3477000" />
+      <workItem from="1673083097837" duration="3429000" />
     </task>
     <servers />
   </component>
@@ -286,22 +270,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1670247378463" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1673025412624">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1673087033740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1673025412624" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1673025412624">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1673087033740" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1673087033740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1673025412624" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1673025412624">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1673087033740" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1673087033740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1673025412624" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1673025412624">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1673087033740" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1673087033740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1673025412624" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1673087033740" />
     <state x="737" y="139" key="RollbackChangesDialog" timestamp="1672600715439">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
