@@ -3,10 +3,10 @@ const LOG_OUT = 'LOG_OUT';
 
 const initState = {
     isAuth: false,
-    data: {
+    userData: {
         name: '',
         email: '',
-        // password: '',
+        password: '',
         phone: '',
         address: '',
         coupons: [],
@@ -19,28 +19,19 @@ const initState = {
 export const userReducer = (state = initState, action) => {
     switch (action.type) {
         case LOG_IN: {
-
-
-            // const querySnapshot = await getDocs(collection(database, "cities"));
-            // querySnapshot.forEach((doc) => {
-            //     // doc.data() is never undefined for query doc snapshots
-            //     console.log(doc.id, " => ", doc.data());
-            // });
-
-            let responseFromServer = false;
-            if (responseFromServer) {
-                return {...state, isAuth: true}
+            if (action.payload) {
+                return action.payload
             }
             return state;
         }
 
         case LOG_OUT:
-            return {...state, isAuth: false}
+            return state
 
         default:
             return state
     }
 }
 
-const logInActionCreator = (payload) => ({type: LOG_IN, payload});
-const logOutActionCreator = () => ({type: LOG_OUT});
+export const logInActionCreator = (payload) => ({type: LOG_IN, payload});
+export const logOutActionCreator = () => ({type: LOG_OUT});

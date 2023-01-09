@@ -49,6 +49,12 @@
         width: 100%;
         padding: 12px 0;
         margin-bottom: 14px;
+        cursor: pointer;
+        transition: all .5s;
+
+        &:hover {
+          opacity: .8;
+        }
       }
     }
 
