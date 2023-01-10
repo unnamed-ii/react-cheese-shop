@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './style.scss'
 import {Link} from "react-router-dom";
 import Wrapper from "../../components/wrapper";
@@ -14,6 +14,32 @@ import {ReactComponent as YandexIcon} from '../../images/icons/sign-up/yandex.sv
 
 
 const Registration = () => {
+    const [form, setForm] = useState({
+        fullName: '',
+        email: '',
+        password: '',
+        passwordConfirmation: ''
+    });
+
+    const registerUser = (e) => {
+        e.preventDefault();
+        console.log(form)
+
+        setForm({
+            fullName: '',
+            email: '',
+            password: '',
+            passwordConfirmation: ''
+        })
+    }
+
+    const onFiledChange = (e) => {
+        setForm(p => ({
+            ...p,
+            [e.target.name]: e.target.value
+        }));
+    }
+
     return (
         <Wrapper>
             <div className="sign-up">
@@ -26,7 +52,7 @@ const Registration = () => {
                     </div>
                     <div className="sign-up__info-benefits">
                         <div className="sign-up__info-benefit">
-                            <CashbackIcon />
+                            <CashbackIcon/>
                             <div className="title">
                                 Возвращаем 10% бонусами
                             </div>
@@ -36,7 +62,7 @@ const Registration = () => {
                             </div>
                         </div>
                         <div className="sign-up__info-benefit">
-                            <QualityAssuranceIcon />
+                            <QualityAssuranceIcon/>
                             <div className="title">
                                 Гарантия качества
                             </div>
@@ -46,7 +72,7 @@ const Registration = () => {
                             </div>
                         </div>
                         <div className="sign-up__info-benefit">
-                            <PaymentMethodsIcon />
+                            <PaymentMethodsIcon/>
                             <div className="title">
                                 Удобные способы оплаты
                             </div>
@@ -58,23 +84,47 @@ const Registration = () => {
                     </div>
                 </div>
                 <div className="sign-up__form">
-                    <form>
+                    <form onSubmit={registerUser}>
                         <div className="name">
                             <div>Ваше имя и фамилия</div>
-                            <input type="text" placeholder="Владимир Иванов"/>
+                            <input
+                                type="text"
+                                placeholder="Владимир Иванов"
+                                value={form.fullName}
+                                onChange={onFiledChange}
+                                name={'fullName'}
+                            />
                         </div>
                         <div className="email">
                             <div>Электронная почта</div>
-                            <input type="email" placeholder="yourname@mail.com"/>
+                            <input
+                                type="email"
+                                placeholder="yourname@mail.com"
+                                value={form.email}
+                                onChange={onFiledChange}
+                                name={'email'}
+                            />
                         </div>
                         <div className="password">
                             <div className="password__enter">
                                 <div>Пароль для входа</div>
-                                <input type="password" placeholder="От 8 и более символов"/>
+                                <input
+                                    type="password"
+                                    placeholder="От 8 и более символов"
+                                    value={form.password}
+                                    onChange={onFiledChange}
+                                    name={'password'}
+                                />
                             </div>
                             <div className="password__confirmation">
                                 <div>Подтвердите пароль</div>
-                                <input type="password" placeholder="Повторите пароль"/>
+                                <input
+                                    type="password"
+                                    placeholder="Повторите пароль"
+                                    value={form.passwordConfirmation}
+                                    onChange={onFiledChange}
+                                    name={'passwordConfirmation'}
+                                />
                             </div>
                         </div>
                         <button>Создать аккаунт</button>

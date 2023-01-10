@@ -1,5 +1,6 @@
 const LOG_IN = 'LOG_IN';
 const LOG_OUT = 'LOG_OUT';
+const SIGN_UP = 'SIGN_UP';
 
 const initState = {
     isAuth: false,
@@ -26,7 +27,13 @@ export const userReducer = (state = initState, action) => {
         }
 
         case LOG_OUT:
-            return state
+            return initState;
+
+        case SIGN_UP:
+            if (action.payload) {
+                return action.payload
+            }
+            return state;
 
         default:
             return state
@@ -34,4 +41,5 @@ export const userReducer = (state = initState, action) => {
 }
 
 export const logInActionCreator = (payload) => ({type: LOG_IN, payload});
+export const signUpActionCreator = (payload) => ({type: SIGN_UP, payload});
 export const logOutActionCreator = () => ({type: LOG_OUT});
