@@ -11,30 +11,53 @@ import {ReactComponent as VkIcon} from '../../images/icons/sign-up/vk.svg';
 import {ReactComponent as TwitterIcon} from '../../images/icons/sign-up/twitter.svg';
 import {ReactComponent as MailRuIcon} from '../../images/icons/sign-up/mailRu.svg';
 import {ReactComponent as YandexIcon} from '../../images/icons/sign-up/yandex.svg';
+import {collection, getDocs, addDoc} from "firebase/firestore";
+import {database} from "../../firebase"
 
 
 const Registration = () => {
-    const [form, setForm] = useState({
+    const [userData, setUserData] = useState({
         fullName: '',
         email: '',
         password: '',
         passwordConfirmation: ''
     });
 
-    const registerUser = (e) => {
+    const registerUser = async (e) => {
         e.preventDefault();
-        console.log(form)
 
-        setForm({
+        setUserData({
             fullName: '',
             email: '',
             password: '',
             passwordConfirmation: ''
         })
+
+        try {
+            const querySnapshot = await getDocs(collection(database, "users"));
+            let isEmailRegistered = false;
+
+            querySnapshot.forEach((doc) => {
+                let currentUser = doc.data();
+
+                if (currentUser.email === userData.email) {
+                    alert('Account with this email is already registered')
+                    isEmailRegistered = true;
+                }
+            });
+
+            if (isEmailRegistered === false) {
+                await addDoc(collection(database, "users"), userData)
+            }
+
+        } catch (e) {
+            console.log(e)
+        }
+
     }
 
-    const onFiledChange = (e) => {
-        setForm(p => ({
+    const onFieldChange = (e) => {
+        setUserData(p => ({
             ...p,
             [e.target.name]: e.target.value
         }));
@@ -90,8 +113,8 @@ const Registration = () => {
                             <input
                                 type="text"
                                 placeholder="Владимир Иванов"
-                                value={form.fullName}
-                                onChange={onFiledChange}
+                                value={userData.fullName}
+                                onChange={onFieldChange}
                                 name={'fullName'}
                             />
                         </div>
@@ -100,8 +123,8 @@ const Registration = () => {
                             <input
                                 type="email"
                                 placeholder="yourname@mail.com"
-                                value={form.email}
-                                onChange={onFiledChange}
+                                value={userData.email}
+                                onChange={onFieldChange}
                                 name={'email'}
                             />
                         </div>
@@ -111,8 +134,8 @@ const Registration = () => {
                                 <input
                                     type="password"
                                     placeholder="От 8 и более символов"
-                                    value={form.password}
-                                    onChange={onFiledChange}
+                                    value={userData.password}
+                                    onChange={onFieldChange}
                                     name={'password'}
                                 />
                             </div>
@@ -121,8 +144,8 @@ const Registration = () => {
                                 <input
                                     type="password"
                                     placeholder="Повторите пароль"
-                                    value={form.passwordConfirmation}
-                                    onChange={onFiledChange}
+                                    value={userData.passwordConfirmation}
+                                    onChange={onFieldChange}
                                     name={'passwordConfirmation'}
                                 />
                             </div>
