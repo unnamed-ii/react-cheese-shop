@@ -13,6 +13,7 @@ import {ReactComponent as MailRuIcon} from '../../images/icons/sign-up/mailRu.sv
 import {ReactComponent as YandexIcon} from '../../images/icons/sign-up/yandex.svg';
 import {collection, getDocs, addDoc} from "firebase/firestore";
 import {database} from "../../firebase"
+import {useNavigate} from "react-router-dom";
 
 
 const Registration = () => {
@@ -22,6 +23,7 @@ const Registration = () => {
         password: '',
         passwordConfirmation: ''
     });
+    const navigate = useNavigate();
 
     const registerUser = async (e) => {
         e.preventDefault();
@@ -48,6 +50,7 @@ const Registration = () => {
 
             if (isEmailRegistered === false) {
                 await addDoc(collection(database, "users"), userData)
+                navigate("/authorization")
             }
 
         } catch (e) {

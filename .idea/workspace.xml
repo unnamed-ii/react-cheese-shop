@@ -13,7 +13,6 @@
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/registration/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/syncReducers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/syncReducers/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +211,7 @@
       <workItem from="1673276299755" duration="300000" />
       <workItem from="1673277090146" duration="1956000" />
       <workItem from="1673374910086" duration="642000" />
-      <workItem from="1673431943119" duration="3721000" />
+      <workItem from="1673431943119" duration="6423000" />
     </task>
     <servers />
   </component>
