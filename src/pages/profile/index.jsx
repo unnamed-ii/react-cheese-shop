@@ -8,15 +8,29 @@ import CouponsTab from "./coupons-tab";
 import AddressTab from "./address-tab";
 import ChangePasswordTab from "./change-password-tab";
 import {TabsData} from "./constants";
+import {useDispatch, useSelector} from "react-redux";
+import {EditingInfoForm} from "./editing-form";
 
 const Profile = () => {
     const [activeTab, setActiveTab] = useState(TabsData.titles[0].typeOfTab);
-    const handleChangeActiveTab = (tabId) => {
-        setActiveTab(tabId)
-    }
+    const [showEditingForm, setShowEditingForm] = useState(false);
+    const userInfo = useSelector(state => state.user.userData);
+    console.log(userInfo)
+    const handleChangeActiveTab = (tabId) => setActiveTab(tabId)
+
+    const toggleEditingForm = () => setShowEditingForm(!showEditingForm);
 
     return (
         <Wrapper>
+            {showEditingForm &&
+                <EditingInfoForm
+                    toggleEditingForm={toggleEditingForm}
+                    name={userInfo.name || "Empty"}
+                    phone={userInfo.phone || "Empty"}
+                    email={userInfo.email || "Empty"}
+                    address={userInfo.address || "Empty"}
+                />
+            }
             <div className="profile">
                 <div className="profile__title">
                     Личный кабинет
@@ -35,7 +49,10 @@ const Profile = () => {
                         )}
                     </div>
                     <div className="profile__tabs-items">
-                        <UserTab activeTab={activeTab}/>
+                        <UserTab
+                            activeTab={activeTab}
+                            toggleEditingForm={toggleEditingForm}
+                        />
                         <OrdersTab activeTab={activeTab}/>
                         <FavouriteTab activeTab={activeTab}/>
                         <CouponsTab activeTab={activeTab}/>

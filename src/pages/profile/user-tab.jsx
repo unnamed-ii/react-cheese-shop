@@ -1,14 +1,14 @@
 import React from 'react';
 import './style.scss';
 
-const UserTab = ({activeTab}) => {
+const UserTab = ({activeTab, toggleEditingForm}) => {
 
     return (
         <div className={"profile__tabs-item " + (activeTab === "user" && "active user")}>
             <div className="title">
                 Kristina Anfalova
             </div>
-            <button className="edit">
+            <button className="edit" onClick={toggleEditingForm}>
                 Редактировать информацию
             </button>
             <div className="phone">
