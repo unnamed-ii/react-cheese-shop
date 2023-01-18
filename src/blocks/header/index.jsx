@@ -21,6 +21,7 @@ import protection from '../../images/header-advantages/user-protection.png';
 const Header = () => {
     const [isListDropped, setIsListDropped] = useState(false);
     const [isBasketDropped, setIsBasketDropped] = useState(false);
+    const isAuth = localStorage.getItem('isUserAuthorized');
 
     const toggleDroppingItem = (droppingItem) => {
         if (droppingItem === DroppingItems.dropdownList) setIsListDropped(!isListDropped);
@@ -48,10 +49,17 @@ const Header = () => {
                                 <Link to="/about">О компании</Link>
                                 <Link to="/">Преимущества</Link>
                                 <Link to="/">Акционные товары</Link>
-                                <Link to="authorization" className="header__about-login">
-                                    <UserProfileIcon className='user-profile-icon'/>
-                                    Войти в аккаунт
-                                </Link>
+                                {isAuth ?
+                                    <Link to="profile" className="header__about-login">
+                                        <UserProfileIcon className='user-profile-icon'/>
+                                        Мой профиль
+                                    </Link>
+                                    :
+                                    <Link to="authorization" className="header__about-login">
+                                        <UserProfileIcon className='user-profile-icon'/>
+                                        Войти в аккаунт
+                                    </Link>
+                                }
                             </div>
                         </div>
                     </div>
