@@ -53,7 +53,6 @@ const AuthorizationForm = () => {
                         userData: authorizingUser,
                         id: authorizingUserId
                     }))
-                    localStorage.setItem('isUserAuthorized', 'true')
                     navigate('/');
                 } else {
                     alert('Invalid password')
