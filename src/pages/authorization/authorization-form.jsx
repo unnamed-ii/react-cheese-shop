@@ -22,7 +22,7 @@ const AuthorizationForm = () => {
     const navigate = useNavigate();
 
     const onFieldChange = (e) => {
-        setUserData(p =>( {
+        setUserData(p => ({
             ...p,
             [e.target.name]: e.target.value
         }))
@@ -33,30 +33,33 @@ const AuthorizationForm = () => {
 
         try {
             const querySnapshot = await getDocs(collection(database, "users"));
+            let authorizingUser = null;
+            let authorizingUserId = null;
 
             querySnapshot.forEach((doc) => {
                 let currentUser = doc.data();
                 let currentUserId = doc.id;
 
-                if (currentUser.email === userData.email){
-                    if (currentUser.password === userData.password){
-                        dispatch(logInActionCreator({
-                            isAuth: true,
-                            userData: currentUser,
-                            id: currentUserId
-                        }))
-                        navigate('/');
-                        console.log('SUCCESS')
-                    } else {
-                        console.log('INVALID PASSWORD')
-                    }
-                }
-
-                if (currentUser.email !== userData.email){
-                    alert('There is no user with this email');
-                    console.log('ERROR');
+                if (currentUser.email === userData.email) {
+                    authorizingUser = currentUser;
+                    authorizingUserId = currentUserId;
                 }
             });
+
+            if (authorizingUser) {
+                if (authorizingUser.password === userData.password) {
+                    dispatch(logInActionCreator({
+                        isAuth: true,
+                        userData: authorizingUser,
+                        id: authorizingUserId
+                    }))
+                    navigate('/');
+                } else {
+                    alert('Invalid password')
+                }
+            } else {
+                alert('Wrong email')
+            }
 
         } catch (e) {
             console.log(e)
