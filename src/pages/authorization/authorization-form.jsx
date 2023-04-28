@@ -2,10 +2,11 @@ import React, {useState} from 'react';
 import './style.scss'
 import {Link} from "react-router-dom";
 import {useDispatch} from "react-redux";
-import {collection, getDocs} from "firebase/firestore";
 import {database} from "../../firebase";
+import {collection, getDocs} from "firebase/firestore";
 import {useNavigate} from "react-router-dom";
 import {logInActionCreator} from "../../store/syncReducers/user";
+import {refreshPage} from "../../utils/refreshPage";
 import {ReactComponent as FacebookIcon} from "../../images/icons/sign-up/facebook.svg";
 import {ReactComponent as GoogleIcon} from "../../images/icons/sign-up/google.svg";
 import {ReactComponent as VkIcon} from "../../images/icons/sign-up/vk.svg";
@@ -54,6 +55,10 @@ const AuthorizationForm = () => {
                         id: authorizingUserId
                     }))
                     navigate('/');
+                    setTimeout(() => {
+                        refreshPage();
+                        alert(`Welcome ${userData.email}`)
+                    }, 500)
                 } else {
                     alert('Invalid password')
                 }

@@ -12,6 +12,7 @@ import {TabsData} from "./constants";
 import {useDispatch, useSelector} from "react-redux";
 import {logOutActionCreator} from "../../store/syncReducers/user";
 import {useNavigate} from "react-router-dom";
+import {refreshPage} from "../../utils/refreshPage";
 
 const Profile = () => {
     const [activeTab, setActiveTab] = useState(TabsData.titles[0].typeOfTab);
@@ -26,6 +27,7 @@ const Profile = () => {
                 localStorage.removeItem('isUserAuthorized');
                 dispatch(logOutActionCreator());
                 navigate('/');
+                refreshPage();
             }
         } else {
             setActiveTab(tabId);
