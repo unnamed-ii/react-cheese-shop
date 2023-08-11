@@ -1,6 +1,7 @@
 @import "../../styles/vars";
 
 .calculator {
+  width: 1180px;
   padding-bottom: 140px;
 
   &__inner {
@@ -140,6 +141,7 @@
 
 @media (max-width: 1200px) {
   .calculator {
+    width: unset;
     &__inner {
       &-content {
         margin-left: 0;
