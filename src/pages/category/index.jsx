@@ -6,7 +6,7 @@ import Wrapper from "../../components/wrapper";
 import Filters from "./filters";
 import AddedFiltersList from "./added-filters-list";
 import {useDispatch, useSelector} from "react-redux";
-import {toggleFiltersActionCreator} from "../../store/syncReducers/category-filters";
+import {toggleFiltersActionCreator} from "../../store/category-filters";
 import {ReactComponent as FilterToggleIcon} from "../../images/icons/fitler-toggle.svg";
 import {ReactComponent as FilterToggleDisabledIcon} from "../../images/icons/fitler-toggle-disabled.svg";
 

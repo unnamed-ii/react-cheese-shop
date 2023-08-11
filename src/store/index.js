@@ -1,8 +1,8 @@
 import {createStore, combineReducers, applyMiddleware} from "redux";
-import {clientsReducer} from "./syncReducers/clients";
-import {basketReducer} from "./syncReducers/basket";
-import {categoryFiltersReducer} from "./syncReducers/category-filters";
-import {userReducer} from "./syncReducers/user";
+import {clientsReducer} from "./clients";
+import {basketReducer} from "./basket";
+import {categoryFiltersReducer} from "./category-filters";
+import {userReducer} from "./user";
 import thunk from "redux-thunk";
 
 const rootReducer = combineReducers({

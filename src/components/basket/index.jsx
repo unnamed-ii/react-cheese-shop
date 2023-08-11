@@ -6,9 +6,9 @@ import {useSelector} from "react-redux";
 import BasketProductCard from './basket-product-card';
 import {ReactComponent as BasketIcon} from "../../images/basket.svg";
 
-const Basket = ({isActive, toggleDroppingItem}) => {
-    const selectedProducts = useSelector((state) => state.basket.products);
+const Basket = ({isBasketDropped, toggleDroppingItem}) => {
     const sumOfProducts = useSelector((state) => state.basket.sum);
+    const selectedProducts = useSelector((state) => state.basket.products);
 
     return (
         <div className="header__info-basket">
@@ -17,9 +17,12 @@ const Basket = ({isActive, toggleDroppingItem}) => {
                 <span>{sumOfProducts} руб.</span>
             </div>
             <div className="basket-image">
-                <BasketIcon onClick={() => toggleDroppingItem(DroppingItems.basket)} className="svg"/>
+                <BasketIcon
+                    onClick={() => toggleDroppingItem(DroppingItems.basket)}
+                    className="basket-icon"
+                />
                 <div className='basket-image__circle'>{selectedProducts.length}</div>
-                <div className={"basket " + (isActive && "active")}>
+                <div className={"basket " + (isBasketDropped && "active")}>
                     <div className="basket__title">
                         корзина ({selectedProducts.length})
                         <div className="fragment" />

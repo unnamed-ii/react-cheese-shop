@@ -3,7 +3,7 @@ import './style.scss';
 import CheckBox from "../../components/checkbox";
 import CustomInputRange from "../../components/input-range";
 import {useDispatch, useSelector} from "react-redux";
-import {addFilterActionCreator} from "../../store/syncReducers/category-filters";
+import {addFilterActionCreator} from "../../store/category-filters";
 import {ReactComponent as ArrowDownIcon} from "../../images/icons/arrow-down.svg";
 
 const Filters = () => {

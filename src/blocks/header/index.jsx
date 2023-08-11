@@ -24,8 +24,15 @@ const Header = () => {
     const isAuth = localStorage.getItem('isUserAuthorized');
 
     const toggleDroppingItem = (droppingItem) => {
-        if (droppingItem === DroppingItems.dropdownList) setIsListDropped(!isListDropped);
-        if (droppingItem === DroppingItems.basket) setIsBasketDropped(!isBasketDropped);
+        if (droppingItem === DroppingItems.dropdownList) {
+            setTimeout(() => {
+                setIsListDropped(!isListDropped);
+            }, 400);
+        }
+
+        if (droppingItem === DroppingItems.basket) {
+            setIsBasketDropped(!isBasketDropped);
+        }
     }
 
     return (
@@ -109,7 +116,7 @@ const Header = () => {
                         </div>
                         <div className="vertical"/>
                         <Basket
-                            isActive={isBasketDropped}
+                            isBasketDropped={isBasketDropped}
                             toggleDroppingItem={toggleDroppingItem}
                         />
                     </div>
@@ -119,6 +126,7 @@ const Header = () => {
                             <Link className='header__nav-links__recipe'
                                   id="link-to-recipes"
                                   onMouseEnter={() => toggleDroppingItem(DroppingItems.dropdownList)}
+                                  onMouseLeave={() => toggleDroppingItem(DroppingItems.dropdownList)}
                                   to="/recipes">
                                 Рецепты
                                 <ArrowDownIcon className="arrow-down"/>

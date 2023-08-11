@@ -232,6 +232,10 @@
         left: 302px;
         display: none;
 
+        &:hover {
+          display: block;
+        }
+
         &.dropdown-list {
           display: block;
         }
@@ -403,7 +407,7 @@
   .header__info-basket {
     margin-left: 5px;
 
-    .svg {
+    .basket-icon {
       width: 27px;
       height: 27px;
     }

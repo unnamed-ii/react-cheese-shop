@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss'
 import {useDispatch} from "react-redux";
-import {removeFilterActionCreator} from "../../store/syncReducers/category-filters";
+import {removeFilterActionCreator} from "../../store/category-filters";
 import {ReactComponent as CloseFilterIcon} from "../../images/icons/close-moduls-btn.svg";
 
 const FilterCard = ({title, idx}) => {

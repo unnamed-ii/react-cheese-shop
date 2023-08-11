@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import './style.scss';
+import {TabsData} from "./constants";
+import {useDispatch} from "react-redux";
 import Wrapper from "../../components/wrapper";
 import UserTab from "./user-tab";
 import OrdersTab from "./orders-tab";
@@ -8,16 +10,13 @@ import CouponsTab from "./coupons-tab";
 import AddressTab from "./address-tab";
 import ChangePasswordTab from "./change-password-tab";
 import {EditingInfoForm} from "./editing-form";
-import {TabsData} from "./constants";
-import {useDispatch, useSelector} from "react-redux";
-import {logOutActionCreator} from "../../store/syncReducers/user";
+import {logOutActionCreator} from "../../store/user";
 import {useNavigate} from "react-router-dom";
 import {refreshPage} from "../../utils/refreshPage";
 
 const Profile = () => {
     const [activeTab, setActiveTab] = useState(TabsData.titles[0].typeOfTab);
     const [showEditingForm, setShowEditingForm] = useState(false);
-    const userInfo = useSelector(state => state.user.userData);
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
@@ -38,15 +37,7 @@ const Profile = () => {
 
     return (
         <Wrapper>
-            {showEditingForm &&
-            <EditingInfoForm
-                toggleEditingForm={toggleEditingForm}
-                name={userInfo.name || "Empty"}
-                phone={userInfo.phone || "Empty"}
-                email={userInfo.email || "Empty"}
-                address={userInfo.address || "Empty"}
-            />
-            }
+            {showEditingForm && <EditingInfoForm toggleEditingForm={toggleEditingForm} />}
             <div className="profile">
                 <div className="profile__title">
                     Личный кабинет

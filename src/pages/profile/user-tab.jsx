@@ -2,11 +2,12 @@ import React from 'react';
 import './style.scss';
 
 const UserTab = ({activeTab, toggleEditingForm}) => {
+    let userInfo = JSON.parse(localStorage.getItem('userInfo')).userData;
 
     return (
         <div className={"profile__tabs-item " + (activeTab === "user" && "active user")}>
             <div className="title">
-                Kristina Anfalova
+                {userInfo.name}
             </div>
             <button className="edit" onClick={toggleEditingForm}>
                 Редактировать информацию
@@ -16,7 +17,7 @@ const UserTab = ({activeTab, toggleEditingForm}) => {
                     Телефон:
                 </div>
                 <div className="phone__text">
-                    +7 (380) 664-61-24
+                    {userInfo.phone}
                 </div>
             </div>
             <div className="email">
@@ -24,7 +25,7 @@ const UserTab = ({activeTab, toggleEditingForm}) => {
                     Email:
                 </div>
                 <div className="email__text">
-                    saraconet@gmail.com
+                    {userInfo.email}
                 </div>
             </div>
             <div className="address">
@@ -32,9 +33,7 @@ const UserTab = ({activeTab, toggleEditingForm}) => {
                     Адрес доставки:
                 </div>
                 <div className="address__text">
-                    123333, Российская Федерация,
-                    <br/>
-                    Карачаево-Черкесия, Kharkov, Московская 4 кв.4
+                    {userInfo.address}
                 </div>
             </div>
         </div>

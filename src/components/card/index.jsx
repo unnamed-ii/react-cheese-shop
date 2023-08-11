@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss'
 import {useDispatch} from "react-redux";
-import {addProductActionCreator} from "../../store/syncReducers/basket";
+import {addProductActionCreator} from "../../store/basket";
 import card from '../../images/card.png'
 
 const Card = ({

@@ -1,6 +1,6 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {removeProductActionCreator} from "../../store/syncReducers/basket";
+import {removeProductActionCreator} from "../../store/basket";
 import Counter from "../../components/counter";
 import productImage from "../../images/checkout-products-image.png";
 

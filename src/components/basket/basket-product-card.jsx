@@ -1,7 +1,7 @@
 import React from 'react';
 import Counter from "../counter";
 import {useDispatch} from "react-redux";
-import {removeProductActionCreator} from "../../store/syncReducers/basket";
+import {removeProductActionCreator} from "../../store/basket";
 import {ReactComponent as RemoveBtnIcon} from '../../images/icons/close-btn.svg';
 import item1 from '../../images/basket/item-1.png';
 

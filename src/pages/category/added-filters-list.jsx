@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 import FilterCard from "../../components/filter-card";
-import {resetFiltersActionCreator} from "../../store/syncReducers/category-filters";
+import {resetFiltersActionCreator} from "../../store/category-filters";
 import {useDispatch, useSelector} from "react-redux";
 
 const AddedFiltersList = () => {

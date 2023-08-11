@@ -496,7 +496,61 @@
 }
 
 .editing-form {
+  background: $white;
+  padding: 15px 15px 0 15px;
+  border-radius: 5px;
+  position: relative;
 
+  h1 {
+    color: $brown;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  form {
+    width: 410px;
+
+    input, button {
+      margin: 6px 0 20px;
+      border: 1px solid #E6E6E6;
+      border-radius: 6px;
+      outline: none;
+      padding: 13px 0 11px 14px;
+      width: 100%;
+
+      &::placeholder {
+        font-size: 15px;
+        line-height: 24px;
+        color: #BFBFBF;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      background-color: $orange;
+      color: #fff;
+      transition: all .3s;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: .5;
+    transition: all .3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 @media (max-width: 1200px) {
