@@ -1,0 +1,37 @@
+@import 'src/styles/vars';
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #151515;
+  opacity: .3;
+  z-index: 1000;
+
+  &__circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 6px  solid $orange;
+    border-top: 6px solid transparent;
+    animation: loading 1s linear infinite;
+
+    @keyframes loading {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  &.active {
+    display: flex;
+  }
+}
