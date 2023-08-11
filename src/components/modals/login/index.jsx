@@ -3,9 +3,9 @@ import './style.scss'
 import ModalWrapper from "../../modal-wrapper";
 import {ReactComponent as CloseBtnIcon} from '../../../images/icons/close-moduls-btn.svg'
 
-const LoginModal = () => {
+const LoginModal = ({toggleModal}) => {
     return (
-        <ModalWrapper>
+        <ModalWrapper toggleModal={toggleModal}>
             <div className="login">
                 <div className="login__title">
                     Вход в аккаунт

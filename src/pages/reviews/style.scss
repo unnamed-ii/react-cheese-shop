@@ -34,7 +34,7 @@
         margin-right: 10px;
       }
 
-      button {
+      &__button {
         background-color: transparent;
         border: none;
         display: flex;
@@ -51,12 +51,12 @@
       }
 
       a {
-        font-size: 16px;
-        line-height: 24px;
-        text-decoration-line: underline;
-        color: $orange;
-        display: flex;
-        align-items: center;
+          //font-size: 16px;
+          //line-height: 24px;
+          //text-decoration-line: underline;
+          //color: $orange;
+          //display: flex;
+          //align-items: center;
 
         .user-icon {
           margin-right: 6px;

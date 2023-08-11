@@ -12,27 +12,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/basket/basket-product-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basket/basket-product-card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/basket/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basket/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/filter-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filter-card/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authorization/authorization-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authorization/authorization-form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/category/added-filters-list.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/added-filters-list.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/category/filters.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/filters.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/category/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/checkout/checkout-order-product-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-order-product-card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/editing-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/editing-form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/user-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/user-tab.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/syncReducers/basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/syncReducers/category-filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/category-filters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/syncReducers/clients.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/clients.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/syncReducers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/login/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/reviews/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reviews/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/reviews/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reviews/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +225,7 @@
       <workItem from="1679086035121" duration="33000" />
       <workItem from="1682661617011" duration="16216000" />
       <workItem from="1682874795920" duration="1172000" />
-      <workItem from="1691750014217" duration="6410000" />
+      <workItem from="1691750014217" duration="7016000" />
     </task>
     <servers />
   </component>
@@ -305,9 +287,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1691752300747" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1691767365424">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1691770187975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1691767365424" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1691770187975" />
   </component>
 </project>

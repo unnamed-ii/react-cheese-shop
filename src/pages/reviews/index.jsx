@@ -6,6 +6,7 @@ import ReviewCard from "./review-card";
 import RegistrationModal from "../../components/modals/registration";
 import {ReviewsData} from "./constants";
 import {ReactComponent as UserIcon} from '../../images/icons/reviews-user.svg';
+import LoginModal from "../../components/modals/login";
 
 const Reviews = () => {
     const [isModalOpened, setIsModalOpened] = useState(false);
@@ -23,11 +24,11 @@ const Reviews = () => {
                             </div>
                             <div className="reviews__top-authorization">
                                 Что бы оставить отзыв необходимо
-                                <button onClick={toggleModal}>
+                                <button onClick={toggleModal} className="reviews__top-authorization__button">
                                     <UserIcon className="user-icon"/> Авторизоваться
                                 </button>
                                 {isModalOpened &&
-                                    <RegistrationModal
+                                    <LoginModal
                                         toggleModal={toggleModal}
                                         isModalOpened={isModalOpened}
                                     />
