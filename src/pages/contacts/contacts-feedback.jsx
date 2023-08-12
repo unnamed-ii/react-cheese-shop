@@ -1,7 +1,35 @@
-import React from 'react';
-import map from "../../images/contacts-map.png";
+import React, {useState} from 'react';
+import {addDoc, collection} from "firebase/firestore";
+import {database} from "../../firebase";
+import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
+import {refreshPage} from "../../utils/refreshPage";
 
 const ContactsFeedback = () => {
+    const [isLoading, setIsLoading] = useState(false);
+    const [form, setForm] = useState({
+       name: '',
+       email: '',
+       text: ''
+    });
+    const onFieldChange = (e) => {
+        setForm(p => ({
+            ...p,
+            [e.target.name]: e.target.value
+        }))
+    }
+    const messageFormSubmit = async (e) => {
+        e.preventDefault();
+        setIsLoading(true);
+        try {
+            await addDoc(collection(database, 'questions-messages'), form);
+            setTimeout(() => {
+                refreshPage();
+            }, 1000)
+        } catch (e) {
+            console.log(e);
+        }
+    }
+
     return (
         <div className="contacts__feedback">
             <div className="contacts__feedback-form">
@@ -11,10 +39,21 @@ const ContactsFeedback = () => {
                 <div className="contacts__feedback-form__subtitle">
                     Заполните форму и мы вам ответим
                 </div>
-                <form>
-                    <input type="text" placeholder="Ваше Имя"/>
-                    <input type="email" placeholder="Email"/>
-                    <textarea placeholder="Сообщение или вопрос"/>
+                <form onSubmit={messageFormSubmit}>
+                    <input
+                        type="text"
+                        placeholder="Ваше Имя"
+                        onChange={onFieldChange}
+                        name="name"/>
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        onChange={onFieldChange}
+                        name="email"/>
+                    <textarea
+                        placeholder="Сообщение или вопрос"
+                        onChange={onFieldChange}
+                        name="text"/>
                     <button>Отправить</button>
                 </form>
             </div>
@@ -24,6 +63,7 @@ const ContactsFeedback = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="contacts__feedback-map"/>
+            <LoadingAnimation isLoading={isLoading}/>
         </div>
     );
 };
