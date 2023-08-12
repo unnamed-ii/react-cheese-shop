@@ -33,4 +33,4 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Moving to individual article (Article cards)
 - Moving to individual recipe (Recipes page, recipe cards)
 - Loading more reicpes (Recipes page)
-- Scrolling to top of the page (Everywhere in project)
+- Scrolling to top of the page (Everywhere in project) +
