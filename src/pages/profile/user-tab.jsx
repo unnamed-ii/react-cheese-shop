@@ -2,7 +2,7 @@ import React from 'react';
 import './style.scss';
 
 const UserTab = ({activeTab, toggleEditingForm}) => {
-    let userInfo = JSON.parse(localStorage.getItem('userInfo')).userData;
+    const userInfo = JSON.parse(localStorage.getItem('userInfo')).userData;
 
     return (
         <div className={"profile__tabs-item " + (activeTab === "user" && "active user")}>

@@ -15,7 +15,6 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Ability to search product (Header)
 - Contact form (Contacts page)
 - Personal collection of previous orders (Portfolio page)
-- Rendering and editing users address (Portfolio page)
 - Changing password (Portfolio page)
 - Personal collection of favourite products. Therefore, user can manipulate with this collection (Portfolio page)
 - Adding review (Reviews page)
@@ -32,5 +31,6 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Moving to individual article (Article cards)
 - Moving to individual recipe (Recipes page, recipe cards)
 - Loading more recipes (Recipes page)
+- Rendering and editing users address (Portfolio page) +
 - Map (Contacts page) +
 - Scrolling to top of the page (Everywhere in project) +

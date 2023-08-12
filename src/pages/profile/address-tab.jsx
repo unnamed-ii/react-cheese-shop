@@ -1,14 +1,15 @@
 import React from 'react';
 import './style.scss';
 
-const AddressTab = ({activeTab}) => {
+const AddressTab = ({activeTab, toggleEditingForm}) => {
+    const userInfo = JSON.parse(localStorage.getItem('userInfo')).userData;
 
     return (
         <div className={"profile__tabs-item " + (activeTab === "address" && "active address")}>
             <div className="title">
-                Kristina Anfalova
+                {userInfo.name}
             </div>
-            <div className="edit">
+            <div className="edit" onClick={toggleEditingForm}>
                 Редактировать адрес
             </div>
             <div className="box">
@@ -19,10 +20,10 @@ const AddressTab = ({activeTab}) => {
                     <div>Страна:</div>
                 </div>
                 <div className="box-texts">
-                    <div>Московская 4 кв.4</div>
-                    <div>Kharkov 123333</div>
-                    <div>Карачаево-Черкеcсия</div>
-                    <div>Российская Федерация</div>
+                    <div>{userInfo.address}</div>
+                    <div>{userInfo.address}</div>
+                    <div>{userInfo.address}</div>
+                    <div>{userInfo.address}</div>
                 </div>
             </div>
         </div>

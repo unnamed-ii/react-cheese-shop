@@ -15,11 +15,11 @@ import {useNavigate} from "react-router-dom";
 import {refreshPage} from "../../utils/refreshPage";
 
 const Profile = () => {
-    const [activeTab, setActiveTab] = useState(TabsData.titles[0].typeOfTab);
-    const [showEditingForm, setShowEditingForm] = useState(false);
     const dispatch = useDispatch();
     const navigate = useNavigate();
-
+    const [activeTab, setActiveTab] = useState(TabsData.titles[0].typeOfTab);
+    const [showEditingForm, setShowEditingForm] = useState(false);
+    const toggleEditingForm = () => setShowEditingForm(!showEditingForm);
     const onClickOnTab = (tabId) => {
         if (tabId === 'exit') {
             if (window.confirm('Are you sure you want to exit?')) {
@@ -33,11 +33,14 @@ const Profile = () => {
         }
     }
 
-    const toggleEditingForm = () => setShowEditingForm(!showEditingForm);
-
     return (
         <Wrapper>
-            {showEditingForm && <EditingInfoForm toggleEditingForm={toggleEditingForm} />}
+            {showEditingForm &&
+                <EditingInfoForm
+                    activeTab={activeTab}
+                    toggleEditingForm={toggleEditingForm}
+                />
+            }
             <div className="profile">
                 <div className="profile__title">
                     Личный кабинет
@@ -63,7 +66,10 @@ const Profile = () => {
                         <OrdersTab activeTab={activeTab}/>
                         <FavouriteTab activeTab={activeTab}/>
                         <CouponsTab activeTab={activeTab}/>
-                        <AddressTab activeTab={activeTab}/>
+                        <AddressTab
+                            activeTab={activeTab}
+                            toggleEditingForm={toggleEditingForm}
+                        />
                         <ChangePasswordTab activeTab={activeTab}/>
                     </div>
                 </div>
