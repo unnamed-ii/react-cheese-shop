@@ -11,7 +11,7 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Users basket
 - Adaptive styles
 
-## What will be added to this pet project
+## Tasks, that have to be done
 - Searching product (Header)
 - Map (Contacts page) 
 - Contact form (Contacts page)
