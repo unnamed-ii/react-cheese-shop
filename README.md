@@ -7,24 +7,23 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 ## What realised in this pet project
 - Authorization
 - Registration
-- Fitlering products on main page
+- Filtering products on main page
 - Users basket
 - Adaptive styles
 
 ## Tasks, that have to be done
-- Searching product (Header)
-- Map (Contacts page) 
+- Ability to search product (Header)
 - Contact form (Contacts page)
 - Personal collection of previous orders (Portfolio page)
 - Rendering and editing users address (Portfolio page)
 - Changing password (Portfolio page)
-- Personal collection of favouirite products. Therefore user can manipulate with this collection (Portfolio page)
+- Personal collection of favourite products. Therefore, user can manipulate with this collection (Portfolio page)
 - Adding review (Reviews page)
 - Leaving order (Checkout page)
-- Form validtation (Modals, auth, recovery, registration pages)
+- Form validation (Modals, auth, recovery, registration pages)
 - Functionality (Calculator page)
 - Calculator component
-- Advanced fitlering products on (Category page)
+- Advanced filtering products on (Category page)
 - Moving to product page by clicking on product card (Product components)
 - Moving to collection page by clicking on collection card (Collections page, collection cards)
 - Product ratings (Products and collections)
@@ -32,5 +31,6 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Adding products and collections to basket (Products and collections)
 - Moving to individual article (Article cards)
 - Moving to individual recipe (Recipes page, recipe cards)
-- Loading more reicpes (Recipes page)
+- Loading more recipes (Recipes page)
+- Map (Contacts page) +
 - Scrolling to top of the page (Everywhere in project) +
