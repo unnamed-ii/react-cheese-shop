@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../src/styles/global.scss';
 import {Route, Routes} from "react-router-dom";
 import Header from "./blocks/header";
@@ -22,8 +22,17 @@ import Recipe from "./pages/recipe";
 import ProductCard from "./pages/product-card";
 import Category from "./pages/category";
 import Collection from "./pages/collection";
+import {useLocation} from "react-router-dom";
 
 function App() {
+    const {pathname} = useLocation();
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }, [pathname]);
+
     return (
         <div className="app">
             <Header/>
