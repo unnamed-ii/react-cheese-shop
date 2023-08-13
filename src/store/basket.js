@@ -1,3 +1,5 @@
+import productImage from '../images/basket/item-1.png';
+
 const ADD_PRODUCT = 'ADD_PRODUCT';
 const REMOVE_PRODUCT = 'REMOVE_PRODUCT';
 const CLEAR_BASKET = 'CLEAR_BASKET';
@@ -5,8 +7,8 @@ const CLEAR_BASKET = 'CLEAR_BASKET';
 const initState = {
     id: '11299889182',
     products: [
-        {title: 'Форма для твердого сыра 1 кг - 40 отверстий', price: 440, id: '3213123', amount: 1},
-        {title: 'Форма для твердого сыра 1 кг - 40 отверстий', price: 650, id: '1231231', amount: 1},
+        {title: 'Форма для твердого сыра 1 кг - 40 отверстий', price: 440, id: '3213123', amount: 1, image: productImage},
+        {title: 'Форма для твердого сыра 1 кг - 40 отверстий', price: 650, id: '1231231', amount: 1, image: productImage},
     ],
     sum: 1090
 }
@@ -14,19 +16,13 @@ const initState = {
 export const basketReducer = (state = initState, action) => {
     switch (action.type) {
         case ADD_PRODUCT: {
-            let updatedProducts;
-            let addingProductId = action.payload.id;
-            let isProductAlreadyInBasket = !!(state.products.filter(product => product.id === addingProductId).length);
-
+            const addingProductId = action.payload.id;
+            const isProductAlreadyInBasket = state.products.filter(product => product.id === addingProductId).length;
             if (isProductAlreadyInBasket) {
-                updatedProducts = [...state.products, state[addingProductId].amount+=1];
-                return {
-                    ...state,
-                    products: updatedProducts,
-                    sum: updatedProducts.reduce((sum, product) => sum + (product.price * product.amount), 0)
-                }
+                alert("Товар уже в корзине");
+                return state;
             } else {
-                updatedProducts = [...state.products, action.payload];
+                const updatedProducts = [...state.products, action.payload];
                 return {
                     ...state,
                     products: updatedProducts,
@@ -52,6 +48,6 @@ export const basketReducer = (state = initState, action) => {
     }
 }
 
-export const addProductActionCreator = (payload) => ({type: ADD_PRODUCT, payload})
-export const removeProductActionCreator = (payload) => ({type: REMOVE_PRODUCT, payload})
-export const clearBasketActionCreator = (payload) => ({type: CLEAR_BASKET})
+export const addProductActionCreator = (payload) => ({type: ADD_PRODUCT, payload});
+export const removeProductActionCreator = (payload) => ({type: REMOVE_PRODUCT, payload});
+export const clearBasketActionCreator = (payload) => ({type: CLEAR_BASKET});

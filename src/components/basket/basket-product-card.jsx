@@ -3,9 +3,8 @@ import Counter from "../counter";
 import {useDispatch} from "react-redux";
 import {removeProductActionCreator} from "../../store/basket";
 import {ReactComponent as RemoveBtnIcon} from '../../images/icons/close-btn.svg';
-import item1 from '../../images/basket/item-1.png';
 
-const BasketProductCard = ({title, price, id}) => {
+const BasketProductCard = ({title, price, id, image}) => {
     const dispatch = useDispatch()
     const removeProduct = () => dispatch(removeProductActionCreator(id));
 
@@ -13,7 +12,7 @@ const BasketProductCard = ({title, price, id}) => {
         <div className="basket__items-item">
             <img
                 className="basket__items-item__image"
-                src={item1}
+                src={image}
                 alt="image"
             />
             <div className="basket__items-item__box">

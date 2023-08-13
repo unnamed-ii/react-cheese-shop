@@ -35,6 +35,7 @@ const Basket = ({isBasketDropped, toggleDroppingItem}) => {
                                 title={i.title}
                                 price={i.price}
                                 amount={i.amount}
+                                image={i.image}
                             />
                         ))}
                     </div>

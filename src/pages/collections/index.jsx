@@ -3,6 +3,7 @@ import './style.scss'
 import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
 import {CollectionCard} from "./collection-card";
+import collectionImage from "../../images/collections.png";
 
 const Collections = () => {
     return (
@@ -15,10 +16,10 @@ const Collections = () => {
                             Наборы для сыра
                         </div>
                         <div className="collections__group">
-                            <CollectionCard />
-                            <CollectionCard />
-                            <CollectionCard />
-                            <CollectionCard />
+                            <CollectionCard id={"1"} image={collectionImage}/>
+                            <CollectionCard id={"2"} image={collectionImage}/>
+                            <CollectionCard id={"3"} image={collectionImage}/>
+                            <CollectionCard id={"4"} image={collectionImage}/>
                         </div>
                     </div>
                 </div>

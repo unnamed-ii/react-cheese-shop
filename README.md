@@ -26,10 +26,10 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Moving to collection page by clicking on collection card (Collections page, collection cards)
 - Product ratings (Products and collections)
 - Reviews for individual products (Products and collections)
-- Adding products and collections to basket (Products and collections)
 - Moving to individual article (Article cards)
 - Moving to individual recipe (Recipes page, recipe cards)
 - Loading more recipes (Recipes page)
+- Adding products and collections to basket (Products and collections) +
 - Contact form (Contacts page) +
 - Rendering and editing users address (Portfolio page) +
 - Map (Contacts page) +

@@ -23,6 +23,7 @@ const CheckoutOrder = () => {
                         title={product.title}
                         price={product.price}
                         id={product.id}
+                        image={product.image}
                     />
                 )}
             </div>

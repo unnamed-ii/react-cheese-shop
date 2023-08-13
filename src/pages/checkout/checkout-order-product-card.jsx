@@ -9,7 +9,7 @@ export const CheckoutOrderProductCard = ({
                                              title = "Универсальная форма 1 кг для приг отов ления сыра",
                                              price = 600,
                                              id,
-                                             code = 260521}) => {
+                                             code = 260521,}) => {
     const dispatch = useDispatch();
     const removeProduct = () => dispatch(removeProductActionCreator(id))
 

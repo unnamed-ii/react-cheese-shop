@@ -1,28 +1,36 @@
 import React from "react";
 import {ReactComponent as HeartIcon} from "../../images/icons/heart.svg";
-import collection from "../../images/collections.png";
+import {addProductActionCreator} from "../../store/basket";
+import {useDispatch} from "react-redux";
 
-export const CollectionCard = ({title, description, price}) => {
+export const CollectionCard = ({
+                                   title = 'Набор для начинающих на 100 л молока',
+                                   description = 'Набор ингредиентов для приготовления сыров Имеретинский, Моцарелла, Альметте,Качотта, Рикотта',
+                                   price = 2400,
+                                   id,
+                                   image
+                               }) => {
+    const dispatch = useDispatch();
+    const addProduct = () => dispatch(addProductActionCreator({title, price, id, amount: 1, image}))
+
     return (
         <div className="collections__group-collection">
             <div className="collections__group-collection__top">
                 <div className="text">Топ Продаж</div>
                 <HeartIcon/>
             </div>
-            <img src={collection} alt="" className="collections__group-collection__image"/>
+            <img src={image} alt="" className="collections__group-collection__image"/>
             <div className="collections__group-collection__title">
-                Набор для начинающих на 100 л молока
+                {title}
             </div>
             <div className="collections__group-collection__text">
-                Набор ингредиентов для приготовления сыров Имеретинский, Моцарелла, Альметте,
-                Качотта,
-                Рикотта
+                {description}
             </div>
             <div className="collections__group-collection__bottom">
                 <div className="price">
-                    2400₽
+                    {price}₽
                 </div>
-                <button>Добавить</button>
+                <button onClick={addProduct}>Добавить</button>
             </div>
         </div>
     )
