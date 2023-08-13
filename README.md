@@ -19,7 +19,6 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Adding review (Reviews page)
 - Leaving order (Checkout page)
 - Form validation (Modals, auth, recovery, registration pages)
-- Functionality (Calculator page)
 - Calculator component
 - Advanced filtering products on (Category page)
 - Moving to product page by clicking on product card (Product components)
@@ -29,6 +28,7 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Moving to individual article (Article cards)
 - Moving to individual recipe (Recipes page, recipe cards)
 - Loading more recipes (Recipes page)
+- Functionality (Calculator page) +
 - Adding products and collections to basket (Products and collections) +
 - Contact form (Contacts page) +
 - Rendering and editing users address (Portfolio page) +

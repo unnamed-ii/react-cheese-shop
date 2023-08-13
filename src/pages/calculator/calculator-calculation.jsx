@@ -1,25 +1,36 @@
 import React from 'react';
-import {CalculatorData} from "./constants";
 import {CalculatorInput} from "./calculator-input";
 
-const CalculatorCalculation = () => {
+const CalculatorCalculation = ({onCalculatorSubmit, onCalculatorInputChange, calculatorInputsForm}) => {
     return (
-        <div className="calculator__box-calculations">
+        <form className="calculator__box-calculations" onSubmit={onCalculatorSubmit}>
             <div className="calculator__box-calculations__title">
                 Расчет количества закваски
             </div>
             <div className="calculator__box-calculations__inputs">
-                {CalculatorData.inputs.map(i =>
-                    <CalculatorInput
-                        text={i.text}
-                        key={Math.floor(Math.random() * 100000)}
-                    />
-                )}
+                <CalculatorInput
+                    text={"На какой объем рассчитан весь пакет?"}
+                    onCalculatorInputChange={onCalculatorInputChange}
+                    value={calculatorInputsForm.estimatedMilkVolume}
+                    name={"estimatedMilkVolume"}
+                />
+                <CalculatorInput
+                    text={"Какой объем молока вы используете?"}
+                    onCalculatorInputChange={onCalculatorInputChange}
+                    value={calculatorInputsForm.usingMilkVolume}
+                    name={"usingMilkVolume"}
+                />
+                <CalculatorInput
+                    text={"Сколько весит вся закваска в пакете?"}
+                    onCalculatorInputChange={onCalculatorInputChange}
+                    value={calculatorInputsForm.fermentPackageWeight}
+                    name={"fermentPackageWeight"}
+                />
             </div>
-            <div className="calculator__box-calculations__btn">
+            <button className="calculator__box-calculations__btn">
                 Рассчитать
-            </div>
-        </div>
+            </button>
+        </form>
     );
 };
 

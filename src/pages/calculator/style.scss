@@ -78,6 +78,12 @@
         padding: 12px 0;
         text-align: center;
         cursor: pointer;
+        border: none;
+        transition: all .3s;
+
+        &:hover {
+          opacity: .8;
+        }
       }
     }
 
