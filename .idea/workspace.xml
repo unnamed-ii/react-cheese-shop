@@ -12,11 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/basket/basket-product-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basket/basket-product-card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/basket/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basket/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/collections/collection-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collections/collection-card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/collections/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collections/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +223,7 @@
       <workItem from="1682661617011" duration="16216000" />
       <workItem from="1682874795920" duration="1172000" />
       <workItem from="1691750014217" duration="25111000" />
-      <workItem from="1691881747481" duration="5157000" />
+      <workItem from="1691881747481" duration="6105000" />
     </task>
     <servers />
   </component>
@@ -294,9 +289,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1691880934610" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1691939687886">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1691939953657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1691939687886" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1691939953657" />
   </component>
 </project>

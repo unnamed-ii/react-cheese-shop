@@ -9,9 +9,11 @@ const Card = ({
                   discountPrice = 1300,
                   normalPrice = 1800,
                   id,
-                  amount }) => {
+                  amount = 1,
+                  image = card
+              }) => {
     const dispatch = useDispatch();
-    const addProduct = () => dispatch(addProductActionCreator({title, price: discountPrice, id, amount: 1}))
+    const addProduct = () => dispatch(addProductActionCreator({title, price: discountPrice, id, amount, image}))
 
     return (
         <div className="card">
