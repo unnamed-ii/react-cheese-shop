@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './style.scss';
 import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
@@ -7,6 +7,8 @@ import RegistrationModal from "../../components/modals/registration";
 import {ReviewsData} from "./constants";
 import {ReactComponent as UserIcon} from '../../images/icons/reviews-user.svg';
 import LoginModal from "../../components/modals/login";
+import {database} from "../../firebase";
+import {collection, getDocs} from "firebase/firestore";
 
 const Reviews = () => {
     const [isModalOpened, setIsModalOpened] = useState(false);

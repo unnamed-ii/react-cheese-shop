@@ -7,7 +7,7 @@ import {ReactComponent as CloseIcon} from "../../images/icons/close-moduls-btn.s
 export const EditingInfoForm = ({toggleEditingForm, activeTab}) => {
     const userInfo = JSON.parse(localStorage.getItem('userInfo'));
     const [form, setForm] = useState({
-        name: userInfo.userData.name,
+        fullName: userInfo.userData.name,
         phone: userInfo.userData.phone,
         email: userInfo.userData.email,
         address: userInfo.userData.address,
@@ -36,7 +36,7 @@ export const EditingInfoForm = ({toggleEditingForm, activeTab}) => {
         try {
             const userDataRef = doc(database, 'users', userInfo.id);
             const userData = {
-                name: form.name,
+                fullName: form.fullName,
                 phone: form.phone,
                 email: form.email,
                 address: form.address,
@@ -66,7 +66,7 @@ export const EditingInfoForm = ({toggleEditingForm, activeTab}) => {
                 {activeTab === 'user'
                     ?
                     <form onSubmit={editForm}>
-                        <input type="text" value={form.name} onChange={onChangeField} name="name"/>
+                        <input type="text" value={form.name} onChange={onChangeField} name="fullName"/>
                         <input type="text" value={form.phone} onChange={onChangeField} name="phone"/>
                         <input type="email" value={form.email} onChange={onChangeField} name="email"/>
                         <input type="text" value={form.address} onChange={onChangeField} name="address"/>

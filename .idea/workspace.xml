@@ -12,7 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/change-password-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/change-password-tab.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/editing-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/editing-form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/reviews/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reviews/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,19 +44,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\loadingAnimation" />
-      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\article" />
-      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\contacts" />
-      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\qa" />
-      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\authorization" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\store" />
       <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\store\syncReducers" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\loadingAnimation" />
+      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\article" />
+      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\contacts" />
+      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\qa" />
+      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\authorization" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (1)">
@@ -224,7 +225,7 @@
       <workItem from="1682661617011" duration="16216000" />
       <workItem from="1682874795920" duration="1172000" />
       <workItem from="1691750014217" duration="25111000" />
-      <workItem from="1691881747481" duration="19622000" />
+      <workItem from="1691881747481" duration="22589000" />
     </task>
     <servers />
   </component>
@@ -270,29 +271,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1691750657558" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1691933527322">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1692008583674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1691933527322" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1691933527322">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1692008583674" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1692008583673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1691933527322" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1691933527322">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1692008583673" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1692008583673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1691933527322" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1691933527322">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1692008583673" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1692008583673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1691933527322" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1692008583673" />
     <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1691880934610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1691880934610" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1691970251827">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1692027084330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1691970251827" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1692027084330" />
   </component>
 </project>

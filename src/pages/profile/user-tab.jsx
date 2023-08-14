@@ -7,7 +7,7 @@ const UserTab = ({activeTab, toggleEditingForm}) => {
     return (
         <div className={"profile__tabs-item " + (activeTab === "user" && "active user")}>
             <div className="title">
-                {userInfo.name}
+                {userInfo.fullName}
             </div>
             <button className="edit" onClick={toggleEditingForm}>
                 Редактировать информацию
