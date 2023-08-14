@@ -2,7 +2,7 @@ import React from "react";
 import './style.scss';
 import reviewImg from "../../images/review-image.png";
 
-const ReviewCard = ({name="Имя пользователя", address='г. Москва', text="Текст отзыва", date="24 октября 2020"}) => {
+const ReviewCard = ({name="Имя пользователя", address='г. Москва', text="Текст отзыва", createdAt="24 октября 2020", rate = 5}) => {
     return (
         <div className="review">
             <div className="review__top">
@@ -13,7 +13,7 @@ const ReviewCard = ({name="Имя пользователя", address='г. Мос
                     <div className="user__city">{address}</div>
                 </div>
                 <div className="rate">
-                    5 звёзд
+                    {rate} звёзд
                 </div>
             </div>
             <div className="review__text">
@@ -25,7 +25,7 @@ const ReviewCard = ({name="Имя пользователя", address='г. Мос
                 <img src={reviewImg} alt=""/>
             </div>
             <div className="review__date">
-                {date}
+                {createdAt}
             </div>
         </div>
     )

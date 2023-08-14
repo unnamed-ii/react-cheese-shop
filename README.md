@@ -12,10 +12,11 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Adaptive styles
 
 ## Tasks, that have to be done
+- Instead of using LoadingAnimation in multiple components, try to create and use context  
+- Breadcrumbs
 - Ability to search product (Header)
 - Personal collection of previous orders (Portfolio page)
 - Personal collection of favourite products. Therefore, user can manipulate with this collection (Portfolio page)
-- Adding review (Reviews page)
 - Leaving order (Checkout page)
 - Form validation (Modals, auth, recovery, registration pages)
 - Calculator component
@@ -27,6 +28,7 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Moving to individual article (Article cards)
 - Moving to individual recipe (Recipes page, recipe cards)
 - Loading more recipes (Recipes page)
+- Adding review (Reviews page) +
 - Changing password (Portfolio page) + 
 - Functionality (Calculator page) +
 - Adding products and collections to basket (Products and collections) +
