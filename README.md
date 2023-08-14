@@ -14,7 +14,6 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 ## Tasks, that have to be done
 - Ability to search product (Header)
 - Personal collection of previous orders (Portfolio page)
-- Changing password (Portfolio page)
 - Personal collection of favourite products. Therefore, user can manipulate with this collection (Portfolio page)
 - Adding review (Reviews page)
 - Leaving order (Checkout page)
@@ -28,6 +27,7 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Moving to individual article (Article cards)
 - Moving to individual recipe (Recipes page, recipe cards)
 - Loading more recipes (Recipes page)
+- Changing password (Portfolio page) + 
 - Functionality (Calculator page) +
 - Adding products and collections to basket (Products and collections) +
 - Contact form (Contacts page) +
