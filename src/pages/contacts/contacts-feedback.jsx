@@ -1,11 +1,12 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import {addDoc, collection} from "firebase/firestore";
 import {database} from "../../firebase";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
 import {refreshPage} from "../../utils/refreshPage";
+import {LoadingAnimationContext} from "../../Context";
 
 const ContactsFeedback = () => {
-    const [isLoading, setIsLoading] = useState(false);
+    const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
     const [form, setForm] = useState({
        name: '',
        email: '',

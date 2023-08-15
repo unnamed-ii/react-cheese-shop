@@ -1,12 +1,13 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import './style.scss';
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
 import {collection, getDocs, doc, updateDoc} from "firebase/firestore";
 import {database} from "../../firebase";
+import {LoadingAnimationContext} from "../../Context";
 
 const ChangePasswordTab = ({activeTab}) => {
     const userId = JSON.parse(localStorage.getItem('userInfo')).id;
-    const [isLoading, setIsLoading] = useState(false);
+    const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
     const [oldPassword, setOldPassword] = useState('');
     const [newPassword, setNewPassword] = useState('');
     const onOldPassChange = (e) => setOldPassword(e.target.value);

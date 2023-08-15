@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import '../src/styles/global.scss';
 import {Route, Routes} from "react-router-dom";
 import Header from "./blocks/header";
@@ -23,8 +23,11 @@ import ProductCard from "./pages/product-card";
 import Category from "./pages/category";
 import Collection from "./pages/collection";
 import {useLocation} from "react-router-dom";
+import LoadingAnimation from "./components/loadingAnimation/loadingAnimation";
+import {LoadingAnimationContext} from "./Context";
 
 function App() {
+    const [isLoading, setIsLoading] = useState(false);
     const {pathname} = useLocation();
     useEffect(() => {
         window.scrollTo({
@@ -34,31 +37,33 @@ function App() {
     }, [pathname]);
 
     return (
-        <div className="app">
-            <Header/>
-            <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="product-card" element={<ProductCard/>}/>
-                <Route path="category" element={<Category/>}/>
-                <Route path="recipes" element={<Recipes/>}/>
-                <Route path="recipe" element={<Recipe/>}/>
-                <Route path="article" element={<Article/>}/>
-                <Route path="delivery" element={<Delivery/>}/>
-                <Route path="reviews" element={<Reviews/>}/>
-                <Route path="about" element={<About/>}/>
-                <Route path="contacts" element={<Contacts/>}/>
-                <Route path="checkout" element={<Checkout/>}/>
-                <Route path="profile" element={<Profile/>}/>
-                <Route path="questions-and-answers" element={<QA/>}/>
-                <Route path="calculator" element={<Calculator/>}/>
-                <Route path="collections" element={<Collections/>}/>
-                <Route path="collection" element={<Collection/>}/>
-                <Route path="registration" element={<Registration/>}/>
-                <Route path="authorization" element={<Authorization/>}/>
-                <Route path="recovery" element={<Recovery/>}/>
-            </Routes>
-            <Footer/>
-        </div>
+        <LoadingAnimationContext.Provider value={{isLoading, setIsLoading}}>
+            <div className="app">
+                <Header/>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="product-card" element={<ProductCard/>}/>
+                    <Route path="category" element={<Category/>}/>
+                    <Route path="recipes" element={<Recipes/>}/>
+                    <Route path="recipe" element={<Recipe/>}/>
+                    <Route path="article" element={<Article/>}/>
+                    <Route path="delivery" element={<Delivery/>}/>
+                    <Route path="reviews" element={<Reviews/>}/>
+                    <Route path="about" element={<About/>}/>
+                    <Route path="contacts" element={<Contacts/>}/>
+                    <Route path="checkout" element={<Checkout/>}/>
+                    <Route path="profile" element={<Profile/>}/>
+                    <Route path="questions-and-answers" element={<QA/>}/>
+                    <Route path="calculator" element={<Calculator/>}/>
+                    <Route path="collections" element={<Collections/>}/>
+                    <Route path="collection" element={<Collection/>}/>
+                    <Route path="registration" element={<Registration/>}/>
+                    <Route path="authorization" element={<Authorization/>}/>
+                    <Route path="recovery" element={<Recovery/>}/>
+                </Routes>
+                <Footer/>
+            </div>
+        </LoadingAnimationContext.Provider>
     );
 }
 

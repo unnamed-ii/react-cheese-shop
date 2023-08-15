@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import './style.scss';
 import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
@@ -10,12 +10,13 @@ import {addDoc, collection, getDocs} from "firebase/firestore";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
 import {ReactComponent as CloseBtnIcon} from '../../images/icons/close-moduls-btn.svg'
 import ModalWrapper from "../../components/modal-wrapper";
+import {LoadingAnimationContext} from "../../Context";
 
 const Reviews = () => {
     const isAuth = JSON.parse(localStorage.getItem('isUserAuthorized'));
     const userFullName = JSON.parse(localStorage.getItem('userInfo')).userData.fullName;
     const [isModalOpened, setIsModalOpened] = useState(false);
-    const [isLoading, setIsLoading] = useState(false);
+    const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
     const [reviewsList, setReviewsList] = useState([]);
     const [sendingReviewInputs, setSendingReviewInputs] = useState({
         rate: 5,

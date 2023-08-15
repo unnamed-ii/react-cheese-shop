@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import './style.scss'
 import {Link, useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux";
@@ -7,6 +7,7 @@ import {collection, getDocs} from "firebase/firestore";
 import {logInActionCreator} from "../../store/user";
 import {refreshPage} from "../../utils/refreshPage";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
+import {LoadingAnimationContext} from "../../Context";
 import {ReactComponent as FacebookIcon} from "../../images/icons/sign-up/facebook.svg";
 import {ReactComponent as GoogleIcon} from "../../images/icons/sign-up/google.svg";
 import {ReactComponent as VkIcon} from "../../images/icons/sign-up/vk.svg";
@@ -17,7 +18,7 @@ import {ReactComponent as YandexIcon} from "../../images/icons/sign-up/yandex.sv
 const AuthorizationForm = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    const [isLoading, setIsLoading] = useState(false);
+    const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
     const [userData, setUserData] = useState({
         email: '',
         password: ''
