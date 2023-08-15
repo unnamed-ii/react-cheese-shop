@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './style.scss';
 import Basket from "../../components/basket";
 import Wrapper from "../../components/wrapper";
@@ -22,6 +22,10 @@ const Header = () => {
     const [isListDropped, setIsListDropped] = useState(false);
     const [isBasketDropped, setIsBasketDropped] = useState(false);
     const isAuth = localStorage.getItem('isUserAuthorized');
+
+    useEffect(() => {
+        setIsBasketDropped(false);
+    }, [window.location.pathname])
 
     const toggleDroppingItem = (droppingItem) => {
         if (droppingItem === DroppingItems.dropdownList) {

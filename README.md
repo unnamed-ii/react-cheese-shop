@@ -13,21 +13,23 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 
 ## Tasks, that have to be done
 - Breadcrumbs
+- Calculator component
+- Leaving order (Checkout page)
+- Custom radio button (Checkout page)
+- Loading more recipes (Recipes page)
 - Ability to search product (Header)
 - Personal collection of previous orders (Portfolio page)
 - Personal collection of favourite products. Therefore, user can manipulate with this collection (Portfolio page)
-- Leaving order (Checkout page)
 - Form validation (Modals, auth, recovery, registration pages)
-- Calculator component
 - Advanced filtering products on (Category page)
-- Moving to product page by clicking on product card (Product components)
-- Moving to collection page by clicking on collection card (Collections page, collection cards)
 - Product ratings (Products and collections)
 - Reviews for individual products (Products and collections)
 - Moving to individual article (Article cards)
 - Moving to individual recipe (Recipes page, recipe cards)
-- Loading more recipes (Recipes page)
+- Moving to product page by clicking on product card (Product components)
+- Moving to collection page by clicking on collection card (Collections page, collection cards)
 
+- FIX: basket isn't closing when page is changing +
 - Instead of using LoadingAnimation in multiple components, try to create and use context +
 - Adding review (Reviews page) +
 - Changing password (Portfolio page) + 
