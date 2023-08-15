@@ -15,7 +15,7 @@ const AddedFiltersList = () => {
                 <div className="category__added-filters__list">
                     {addedFilters.map((filter, idx) => (
                         <FilterCard
-                            key={Math.floor(Math.random() * 10000)}
+                            key={filter + idx}
                             title={filter}
                             idx={idx}
                         />

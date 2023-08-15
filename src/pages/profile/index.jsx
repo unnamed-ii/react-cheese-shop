@@ -51,7 +51,7 @@ const Profile = () => {
                             <div
                                 className={"profile__tabs-title " + (activeTab === tab.typeOfTab && "active")}
                                 onClick={() => onClickOnTab(tab.typeOfTab)}
-                                key={Math.floor(Math.random() * 100000)}
+                                key={tab.id}
                             >
                                 {tab.icon}
                                 {tab.title}

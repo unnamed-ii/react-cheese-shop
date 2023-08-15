@@ -68,8 +68,8 @@ const Filters = () => {
                             Выберите фильтр
                         </div>
                         <div className="dropdown-list__filters">
-                            {filters.manufacturer.map(filter => (
-                                <div className="dropdown-list__filters-filter" key={Math.random() * 100000}>
+                            {filters.manufacturer.map((filter, idx) => (
+                                <div className="dropdown-list__filters-filter" key={filter.name + idx}>
                                     <CheckBox />
                                     {filter}
                                 </div>

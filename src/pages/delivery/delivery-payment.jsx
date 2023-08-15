@@ -11,7 +11,7 @@ const DeliveryPayment = () => {
             <div className="delivery__payment-methods">
                 {PaymentMethodsData.map(paymentMethod =>
                     <PaymentMethodCard
-                        key={Math.floor(Math.random() * 100000)}
+                        key={paymentMethod.id}
                         image={paymentMethod.image}
                         title={paymentMethod.title}
                         text={paymentMethod.text}

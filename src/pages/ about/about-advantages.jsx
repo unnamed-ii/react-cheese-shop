@@ -10,11 +10,11 @@ const AboutAdvantages = () => {
                 Преимущества работы с нашим магазином
             </div>
             <div className="advantages">
-                {AboutData.advantages.map(i =>
+                {AboutData.advantages.map(advantage =>
                     <Advantage
-                        key={Math.floor(Math.random() * 100000)}
-                        icon={i.icon}
-                        text={"Вы покупаете всё в одном месте или оставить запрос и мы превезем под заказ"}
+                        key={advantage.id}
+                        icon={advantage.icon}
+                        text={advantage.text}
                     />
                 )}
             </div>

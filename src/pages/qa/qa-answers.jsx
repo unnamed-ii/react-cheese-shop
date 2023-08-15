@@ -4,13 +4,13 @@ import {qaData} from "./constants";
 const QaAnswers = () => {
     return (
         <div className="qa__answers">
-            {qaData.map((answer, idx) =>
-                <div className="qa__answers-answer" key={Math.floor(Math.random() * 100000)}>
+            {qaData.map((qa, idx) =>
+                <div className="qa__answers-answer" key={qa.id}>
                     <div className="qa__answers-answer__title">
-                        0{idx + 1}. {answer.question}
+                        0{idx + 1}. {qa.question}
                     </div>
                     <div className="qa__answers-answer__text">
-                        {answer.answer}
+                        {qa.answer}
                     </div>
                 </div>
             )}

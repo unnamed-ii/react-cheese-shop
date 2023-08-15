@@ -8,14 +8,14 @@ const Recommendations = () => {
     return (
         <Wrapper>
             <div className="recommendations">
-                {RecommendationItemsData.map(i =>
+                {RecommendationItemsData.map(recommendation =>
                     <RecommendationCard
-                        title={i.title}
-                        subtitle={i.subtitle}
-                        text={i.text}
-                        bgImage={i.backgroundImage}
-                        isActive={i.isActive}
-                        key={Math.random() * 100000}
+                        key={recommendation.id}
+                        title={recommendation.title}
+                        subtitle={recommendation.subtitle}
+                        text={recommendation.text}
+                        bgImage={recommendation.backgroundImage}
+                        isActive={recommendation.isActive}
                     />
                 )}
             </div>

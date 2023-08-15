@@ -7,13 +7,15 @@ export const SelectionsData = [
         image: recipes,
         text: 'Мы собрали для Вас большую базу рецептов.',
         linkTo: 'recipes',
-        selectionsName: 'recipes'
+        selectionsName: 'recipes',
+        id: '1'
     },
     {
         title: 'крутые Наборы для сыра',
         image: sets,
         text: 'Готовые наборы сэкономят время, мы всё сделали за Вас.',
         linkTo: 'collections',
-        selectionsName: 'sets'
+        selectionsName: 'sets',
+        id: '2'
     },
 ]

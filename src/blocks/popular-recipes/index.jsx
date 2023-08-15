@@ -12,7 +12,7 @@ const PopularRecipes = () => {
             <div className="popular__recipes-list">
                 {PopularRecipesData.map(popularRecipe =>
                     <PopularRecipeCard
-                        key={Math.floor(Math.random() * 100000)}
+                        key={popularRecipe.id}
                         title={popularRecipe.title}
                         text={popularRecipe.text}
                     />

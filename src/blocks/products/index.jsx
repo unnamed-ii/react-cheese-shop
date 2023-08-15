@@ -35,9 +35,9 @@ const Products = () => {
                                 </div>
                                 <div className="ingredients__products">
                                     <div className="ingredients__products-row">
-                                        {showFilteredItems().ingredients.map((product, idx) =>
+                                        {showFilteredItems().ingredients.map((product) =>
                                             <Card
-                                                key={product.title+idx}
+                                                key={product.title+product.id}
                                                 id={product.id}
                                                 title={product.title}
                                                 discountPrice={product.discountPrice}
@@ -52,9 +52,9 @@ const Products = () => {
                                     Оборудование
                                 </div>
                                 <div className="ingredients__products-row">
-                                    {showFilteredItems().equipment.map((product, idx) =>
+                                    {showFilteredItems().equipment.map((product) =>
                                         <Card
-                                            key={product.title+idx}
+                                            key={product.title+product.id}
                                             id={product.id}
                                             title={product.title}
                                             discountPrice={product.discountPrice}

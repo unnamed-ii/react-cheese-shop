@@ -12,7 +12,38 @@
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/articles/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/articles/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/articles/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/articles/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/benefits/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/benefits/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/benefits/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/benefits/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/equipment/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/equipment/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/equipment/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/equipment/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/popular-recipes/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popular-recipes/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/popular-recipes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popular-recipes/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/products/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/products/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/products/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/products/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/recommendations/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/recommendations/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/recommendations/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/recommendations/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/selections/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/selections/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/selections/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/selections/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/checkbox/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkbox/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ about/about-advantages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ about/about-advantages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ about/about-masters.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ about/about-masters.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ about/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ about/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/article/article-advices.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/article/article-advices.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/article/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/article/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/category/added-filters-list.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/added-filters-list.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/category/filters.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/filters.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/delivery/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/delivery/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/delivery/delivery-payment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/delivery/delivery-payment.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recipe/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipe/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recipe/recipe-benefit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipe/recipe-benefit.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recipe/recipe-descriptoin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipe/recipe-descriptoin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recipes/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipes/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recipes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipes/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration/registration-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/registration-form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/reviews/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reviews/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +256,7 @@
       <workItem from="1682874795920" duration="1172000" />
       <workItem from="1691750014217" duration="25111000" />
       <workItem from="1691881747481" duration="30462000" />
-      <workItem from="1692129409561" duration="1898000" />
+      <workItem from="1692129409561" duration="4975000" />
     </task>
     <servers />
   </component>
@@ -291,9 +322,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1691880934610" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1692129548517">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1692131979636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1692129548517" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1692131979636" />
   </component>
 </project>

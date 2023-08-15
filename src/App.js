@@ -1,6 +1,6 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../src/styles/global.scss';
-import {Route, Routes} from "react-router-dom";
+import {Route, Routes, useLocation} from "react-router-dom";
 import Header from "./blocks/header";
 import Footer from "./blocks/footer";
 import Home from "./pages/home";
@@ -22,8 +22,6 @@ import Recipe from "./pages/recipe";
 import ProductCard from "./pages/product-card";
 import Category from "./pages/category";
 import Collection from "./pages/collection";
-import {useLocation} from "react-router-dom";
-import LoadingAnimation from "./components/loadingAnimation/loadingAnimation";
 import {LoadingAnimationContext} from "./Context";
 
 function App() {

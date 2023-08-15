@@ -3,6 +3,7 @@ import './style.scss'
 import {Link, useNavigate} from "react-router-dom";
 import {database} from "../../firebase";
 import {addDoc, collection, getDocs} from "firebase/firestore";
+import CheckBox from "../../components/checkbox";
 import {ReactComponent as FacebookIcon} from "../../images/icons/sign-up/facebook.svg";
 import {ReactComponent as GoogleIcon} from "../../images/icons/sign-up/google.svg";
 import {ReactComponent as VkIcon} from "../../images/icons/sign-up/vk.svg";
@@ -121,11 +122,11 @@ const RegistrationForm = () => {
                 </div>
                 <div className="agreements">
                     <div className="agreements__agreement">
-                        <input type="checkbox"/>
+                        <CheckBox />
                         Получать письма с новостями и акциями
                     </div>
                     <div className="agreements__agreement">
-                        <input type="checkbox"/>
+                        <CheckBox />
                         Я прочитал и соглашаюсь с условиями <a href="#">Политики конфиденциальности</a>
                     </div>
                 </div>

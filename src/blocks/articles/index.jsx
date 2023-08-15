@@ -23,7 +23,7 @@ const Articles = () => {
                 <div className="articles__list">
                     {ArticlesData.map(article =>
                         <ArticleCard
-                            key={Math.random() * 100000}
+                            key={article.id}
                             title={article.title}
                             text={article.text}
                             image={article.image}

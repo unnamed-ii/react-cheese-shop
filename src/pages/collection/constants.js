@@ -2,15 +2,18 @@ export const CollectionData = {
     tabsTitles: [
         {
             title: "Описание",
-            typeOfTab: 'description'
+            typeOfTab: 'description',
+            id: '1'
         },
         {
             title: "Доставка и оплата",
-            typeOfTab: 'delivery-and-payment'
+            typeOfTab: 'delivery-and-payment',
+            id: '2'
         },
         {
             title: "Отзывы",
-            typeOfTab: 'reviews'
+            typeOfTab: 'reviews',
+            id: '3'
         }
     ],
     tabItems: [

@@ -120,7 +120,7 @@ const Reviews = () => {
                             {!reviewsList.length && <h2>Отзывов пока нет</h2>}
                             {reviewsList?.map(review =>
                                 <ReviewCard
-                                    key={Math.floor(Math.random() * 100000)}
+                                    key={review.email+review.name}
                                     name={review.name}
                                     address={review.address}
                                     text={review.text}

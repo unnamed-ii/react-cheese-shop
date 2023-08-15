@@ -9,20 +9,23 @@ export const RecommendationItemsData = [
         subtitle: 'Наборы для сыроделия',
         text: 'Все что вам нужно для приготовления сыра в домашних условиях',
         backgroundImage: setsBg,
-        isActive: true
+        isActive: true,
+        id: 1
     },
     {
         title: 'Наборы',
         subtitle: 'Наборы для сыроделия',
         text: 'Все что вам нужно для приготовления сыра в домашних условиях',
         backgroundImage: recipesBg,
-        isActive: false
+        isActive: false,
+        id: 2
     },
     {
         title: 'Наборы',
         subtitle: 'Наборы для сыроделия',
         text: 'Все что вам нужно для приготовления сыра в домашних условиях',
         backgroundImage: discountsBg,
-        isActive: false
+        isActive: false,
+        id: 3
     }
 ]

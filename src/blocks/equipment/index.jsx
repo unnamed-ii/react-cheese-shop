@@ -57,7 +57,7 @@ const Equipment = () => {
                 <Slider {...settings}>
                     {SlidesData.map(slide =>
                         <EquipmentSlide
-                            key={Math.random() * 100000}
+                            key={slide.id}
                             title={slide.title}
                             text={slide.text}
                         />

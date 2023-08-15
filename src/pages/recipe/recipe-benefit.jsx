@@ -25,11 +25,11 @@ const RecipeBenefit = () => {
                     как приготовить в домашних условиях
                 </div>
                 <div className="benefit__instruction-steps">
-                    {RecipeData.instruction.map((i, idx) =>
+                    {RecipeData.instruction.map((step, idx) =>
                         <InstructionStep
-                            key={Math.floor(Math.random() * 100000)}
+                            key={step.id}
                             number={'0' + (idx + 1)}
-                            text={i.text}
+                            text={step.text}
                         />
                     )}
                 </div>

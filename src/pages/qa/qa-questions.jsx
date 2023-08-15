@@ -4,9 +4,9 @@ import {qaData} from "./constants";
 const QaQuestions = () => {
     return (
         <div className="qa__questions">
-            {qaData.map((question, idx) =>
-                <div className="qa__questions-question" key={Math.floor(Math.random() * 100000)}>
-                    0{idx + 1}. {question.question}
+            {qaData.map((qa, idx) =>
+                <div className="qa__questions-question" key={qa.id}>
+                    0{idx + 1}. {qa.question}
                 </div>
             )}
         </div>

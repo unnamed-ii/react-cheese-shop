@@ -9,11 +9,11 @@ const ArticleAdvices = () => {
                 Советы по подбору вин и сыров
             </div>
             <div className="box">
-                {ArticleData.map((i, idx) =>
+                {ArticleData.map((step, idx) =>
                     <InstructionStep
-                        key={Math.floor(Math.random() * 100000)}
+                        key={step.id}
                         number={'0' + (idx + 1)}
-                        text={i.text}
+                        text={step.text}
                     />
                 )}
             </div>

@@ -25,10 +25,10 @@ const Benefits = () => {
                 <div className="benefits__list">
                     {BenefitsData.map(benefit =>
                         <BenefitCard
+                            key={benefit.id}
                             typeOfBenefit={benefit.typeOfBenefit}
                             icon={benefit.icon}
                             text={benefit.text}
-                            key={Math.random() * 100000}
                         />
                     )}
                 </div>

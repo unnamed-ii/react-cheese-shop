@@ -9,13 +9,13 @@ const CollectionTabs = () => {
     return (
         <div className="collection__tabs">
             <div className="collection__tabs-titles">
-                {CollectionData.tabsTitles.map(i =>
+                {CollectionData.tabsTitles.map(collection =>
                     <div
-                        key={Math.floor(Math.random() * 100000)}
-                        className={"profile__tabs-title " + (activeTab === i.typeOfTab && "active")}
-                        onClick={() => handleChangeActiveTab(i.typeOfTab)}
+                        key={collection.id}
+                        className={"profile__tabs-title " + (activeTab === collection.typeOfTab && "active")}
+                        onClick={() => handleChangeActiveTab(collection.typeOfTab)}
                     >
-                        {i.title}
+                        {collection.title}
                     </div>
                 )}
             </div>

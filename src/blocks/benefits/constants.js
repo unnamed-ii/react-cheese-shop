@@ -10,26 +10,31 @@ export const BenefitsData = [
     {
         typeOfBenefit: 'clock',
         icon: <ClockIcon className="icon"/>,
-        text: 'Прием заказов круглостуточно'
+        text: 'Прием заказов круглостуточно',
+        id: '1'
     },
     {
         typeOfBenefit: 'quality',
         icon: <ApprovedIcon className="icon"/>,
-        text: 'Наивысшее качество продукции'
+        text: 'Наивысшее качество продукции',
+        id: '2'
     },
     {
         typeOfBenefit: 'discounts',
         icon: <AwardIcon className="icon"/>,
-        text: 'Выгодные скидки при оплате'
+        text: 'Выгодные скидки при оплате',
+        id: '3'
     },
     {
         typeOfBenefit: 'prices',
         icon: <DollarIcon className="icon"/>,
-        text: 'Выгодные цены и условия'
+        text: 'Выгодные цены и условия',
+        id: '4'
     },
     {
         typeOfBenefit: 'service',
         icon: <PercentIcon className="icon"/>,
-        text: 'Обеспечиваем высокий уровень сервиса'
+        text: 'Обеспечиваем высокий уровень сервиса',
+        id: '5'
     },
 ]

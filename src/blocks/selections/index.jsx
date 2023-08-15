@@ -14,7 +14,7 @@ const Selections = () => {
                 <div className="selections__items">
                     {SelectionsData.map(selection => (
                         <Selection
-                            key={Math.random() * 100000}
+                            key={selection.id}
                             title={selection.title}
                             image={selection.image}
                             text={selection.text}

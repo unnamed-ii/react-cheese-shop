@@ -10,12 +10,12 @@ const AboutMasters = () => {
                 Наши мастера
             </div>
             <div className="masters">
-                {AboutData.masters.map(i =>
+                {AboutData.masters.map(master =>
                     <MasterCard
-                        key={Math.floor(Math.random() * 100000)}
-                        title={i.title}
-                        subtitle={i.subtitle}
-                        text={i.text}
+                        key={master.id}
+                        title={master.title}
+                        subtitle={master.subtitle}
+                        text={master.text}
                     />
                 )}
             </div>

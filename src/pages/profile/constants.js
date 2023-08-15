@@ -12,37 +12,44 @@ export const TabsData = {
         {
             title: "Мой профиль",
             typeOfTab: 'user',
-            icon: <UserIcon />
+            icon: <UserIcon />,
+            id: '1'
         },
         {
             title: "Мои заказы",
             typeOfTab: 'orders',
-            icon: <BagIcon />
+            icon: <BagIcon />,
+            id: '2'
         },
         {
             title: "Избранные товары",
             typeOfTab: 'favourite',
-            icon: <HeartIcon />
+            icon: <HeartIcon />,
+            id: '3'
         },
         {
             title: "Мои купоны",
             typeOfTab: 'coupons',
-            icon: <CouponIcon />
+            icon: <CouponIcon />,
+            id: '4'
         },
         {
             title: "Адрес доставки",
             typeOfTab: 'address',
-            icon: <DirectionIcon />
+            icon: <DirectionIcon />,
+            id: '5'
         },
         {
             title: "Сменить пароль",
             typeOfTab: 'change-password',
-            icon: <LockIcon />
+            icon: <LockIcon />,
+            id: '6'
         },
         {
             title: "Выход",
             typeOfTab: 'exit',
-            icon: <LogoutIcon />
+            icon: <LogoutIcon />,
+            id: '7'
         }
     ],
     items: [
