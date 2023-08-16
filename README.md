@@ -12,6 +12,7 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Adaptive styles
 
 ## Tasks, that have to be done
+- Render all data not from constants but from server 
 - Breadcrumbs
 - Calculator component
 - Leaving order (Checkout page)

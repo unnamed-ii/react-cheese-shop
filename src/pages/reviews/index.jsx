@@ -48,7 +48,7 @@ const Reviews = () => {
     useEffect(() => {
         const getReviews = async () => {
             await setIsLoading(true);
-            const querySnapshot = await getDocs(collection(database, "users"));
+            const querySnapshot = await getDocs(collection(database, "reviews"));
             querySnapshot.forEach((review) => {
                 const addingReview = review.data();
                 setReviewsList(prevState => ([
@@ -124,7 +124,7 @@ const Reviews = () => {
                                     name={review.name}
                                     address={review.address}
                                     text={review.text}
-                                    date={review.createdAt}
+                                    createdAt={review.createdAt}
                                     rate={review.rate}
                                 />
                             )}

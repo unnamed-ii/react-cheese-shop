@@ -13,13 +13,8 @@
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/articles/articles-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/articles/articles-card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/articles/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/articles/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/recipe-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/recipe-card/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/recipes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipes/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/recipe-card/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/recipe-card/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/reviews/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reviews/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +227,7 @@
       <workItem from="1682874795920" duration="1172000" />
       <workItem from="1691750014217" duration="25111000" />
       <workItem from="1691881747481" duration="30462000" />
-      <workItem from="1692129409561" duration="9336000" />
+      <workItem from="1692129409561" duration="15849000" />
     </task>
     <servers />
   </component>
@@ -298,9 +293,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1691880934610" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1692202761822">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1692214253327">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1692202761822" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1692214253327" />
   </component>
 </project>
