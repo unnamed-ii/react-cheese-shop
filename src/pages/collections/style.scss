@@ -63,15 +63,26 @@
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 6px;
+        transition: all 1s;
+
+        &:hover {
+          color: $orange;
+        }
       }
 
       &__text {
+        display: block;
         font-size: 14px;
         line-height: 22px;
         color: $darkGrey;
         padding-bottom: 16px;
         border-bottom: 1px solid rgba(230, 230, 230, 1);
         margin-bottom: 16px;
+        transition: all 1s;
+
+        &:hover {
+          color: $orange;
+        }
       }
 
       &__bottom {

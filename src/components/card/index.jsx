@@ -3,6 +3,7 @@ import './style.scss'
 import {useDispatch} from "react-redux";
 import {addProductActionCreator} from "../../store/basket";
 import card from '../../images/card.png'
+import {Link} from "react-router-dom";
 
 const Card = ({
                   title = 'Мезофильная закваска Danisco CHOOZIT MM...',
@@ -18,9 +19,9 @@ const Card = ({
     return (
         <div className="card">
             <img className="card__image" src={card} alt=""/>
-            <div className="card__description">
+            <Link className="card__description" to={`product-card/${id}`}>
                 {title}
-            </div>
+            </Link>
             <div className="horizontal"/>
             <div className="card__bottom">
                 <div className="card__price">

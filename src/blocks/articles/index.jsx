@@ -23,6 +23,7 @@ const Articles = () => {
                 <div className="articles__list">
                     {ArticlesData.map(article =>
                         <ArticleCard
+                            id={article.id}
                             key={article.id}
                             title={article.title}
                             text={article.text}

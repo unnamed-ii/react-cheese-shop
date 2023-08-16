@@ -2,6 +2,7 @@ import React from "react";
 import {ReactComponent as HeartIcon} from "../../images/icons/heart.svg";
 import {addProductActionCreator} from "../../store/basket";
 import {useDispatch} from "react-redux";
+import {Link} from "react-router-dom";
 
 export const CollectionCard = ({
                                    title = 'Набор для начинающих на 100 л молока',
@@ -20,12 +21,12 @@ export const CollectionCard = ({
                 <HeartIcon/>
             </div>
             <img src={image} alt="" className="collections__group-collection__image"/>
-            <div className="collections__group-collection__title">
+            <Link className="collections__group-collection__title" to={id}>
                 {title}
-            </div>
-            <div className="collections__group-collection__text">
+            </Link>
+            <Link className="collections__group-collection__text" to={id}>
                 {description}
-            </div>
+            </Link>
             <div className="collections__group-collection__bottom">
                 <div className="price">
                     {price}₽

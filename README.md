@@ -24,11 +24,12 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Advanced filtering products on (Category page)
 - Product ratings (Products and collections)
 - Reviews for individual products (Products and collections)
-- Moving to individual article (Article cards)
-- Moving to individual recipe (Recipes page, recipe cards)
-- Moving to product page by clicking on product card (Product components)
-- Moving to collection page by clicking on collection card (Collections page, collection cards)
 
+
+- Moving to individual article (Article cards) +
+- Moving to individual recipe (Recipes page, recipe cards) +
+- Moving to product page by clicking on product card (Product components) +
+- Moving to collection page by clicking on collection card (Collections page, collection cards) +
 - FIX: basket isn't closing when page is changing +
 - Instead of using LoadingAnimation in multiple components, try to create and use context +
 - Adding review (Reviews page) +

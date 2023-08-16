@@ -40,11 +40,11 @@ function App() {
                 <Header/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
-                    <Route path="product-card" element={<ProductCard/>}/>
+                    <Route path="product-card/:id" element={<ProductCard/>}/>
                     <Route path="category" element={<Category/>}/>
                     <Route path="recipes" element={<Recipes/>}/>
-                    <Route path="recipe" element={<Recipe/>}/>
-                    <Route path="article" element={<Article/>}/>
+                    <Route path="recipes/:id" element={<Recipe/>}/>
+                    <Route path="articles/:id" element={<Article/>}/>
                     <Route path="delivery" element={<Delivery/>}/>
                     <Route path="reviews" element={<Reviews/>}/>
                     <Route path="about" element={<About/>}/>
@@ -54,7 +54,7 @@ function App() {
                     <Route path="questions-and-answers" element={<QA/>}/>
                     <Route path="calculator" element={<Calculator/>}/>
                     <Route path="collections" element={<Collections/>}/>
-                    <Route path="collection" element={<Collection/>}/>
+                    <Route path="collections/:id" element={<Collection/>}/>
                     <Route path="registration" element={<Registration/>}/>
                     <Route path="authorization" element={<Authorization/>}/>
                     <Route path="recovery" element={<Recovery/>}/>

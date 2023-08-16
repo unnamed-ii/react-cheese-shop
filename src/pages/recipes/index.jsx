@@ -21,6 +21,7 @@ const Recipes = () => {
                                 {RecipesData.cheeseRecipes.map(recipe =>
                                     <CheeseRecipeCard
                                         key={recipe.id}
+                                        id={recipe.id}
                                         title={recipe.title}
                                     />
                                 )}

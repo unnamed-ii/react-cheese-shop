@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {ReactComponent as ArrowRightIcon} from "../../images/icons/arrow-right.svg";
 
-export const ArticleCard = ({title, text, image}) => {
+export const ArticleCard = ({title, text, image, id}) => {
     return (
         <div className="articles__list-item">
             <img className="articles__list-item__image" src={image} alt=""/>
@@ -13,7 +13,7 @@ export const ArticleCard = ({title, text, image}) => {
                 <div className="articles__list-item__text">
                     {text}
                 </div>
-                <Link className="articles__list-item__link" to="article">
+                <Link className="articles__list-item__link" to={`articles/${id}`}>
                     Читать далее
                     <ArrowRightIcon className="image"/>
                 </Link>
