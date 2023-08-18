@@ -11,6 +11,7 @@ import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation
 import {ReactComponent as CloseBtnIcon} from '../../images/icons/close-moduls-btn.svg'
 import ModalWrapper from "../../components/modal-wrapper";
 import {LoadingAnimationContext} from "../../Context";
+import {refreshPage} from "../../utils/refreshPage";
 
 const Reviews = () => {
     const isAuth = JSON.parse(localStorage.getItem('isUserAuthorized'));
@@ -30,8 +31,22 @@ const Reviews = () => {
             [e.target.name]: e.target.value
         }));
     }
+
+    const getReviews = async () => {
+        await setIsLoading(true);
+        const querySnapshot = await getDocs(collection(database, "reviews"));
+        querySnapshot.forEach((review) => {
+            const addingReview = review.data();
+            setReviewsList(prevState => ([
+                ...prevState,
+                addingReview
+            ]))
+        });
+    }
+
     const sendReview = async (e) => {
         e.preventDefault();
+        setIsLoading(true);
         try {
             const reviewData = {
                 fullName: userFullName,
@@ -40,23 +55,14 @@ const Reviews = () => {
                 createdAt: new Date().toDateString()
             }
             await addDoc(collection(database, "reviews"), reviewData);
-            await toggleModal();
+            refreshPage();
+            toggleModal();
         } catch (e) {
             console.log(e);
         }
+        setIsLoading(false);
     }
     useEffect(() => {
-        const getReviews = async () => {
-            await setIsLoading(true);
-            const querySnapshot = await getDocs(collection(database, "reviews"));
-            querySnapshot.forEach((review) => {
-                const addingReview = review.data();
-                setReviewsList(prevState => ([
-                    ...prevState,
-                    addingReview
-                ]))
-            });
-        }
         getReviews();
         setTimeout(() => setIsLoading(false), 1000)
     }, []);
@@ -118,9 +124,9 @@ const Reviews = () => {
                         </div>
                         <div className="reviews__list">
                             {!reviewsList.length && <h2>Отзывов пока нет</h2>}
-                            {reviewsList?.map(review =>
+                            {reviewsList?.map((review, idx) =>
                                 <ReviewCard
-                                    key={review.email+review.name}
+                                    key={idx}
                                     name={review.name}
                                     address={review.address}
                                     text={review.text}

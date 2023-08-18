@@ -13,17 +13,17 @@ export const RecommendationItemsData = [
         id: 1
     },
     {
-        title: 'Наборы',
-        subtitle: 'Наборы для сыроделия',
-        text: 'Все что вам нужно для приготовления сыра в домашних условиях',
+        title: 'Сыры с плесенью',
+        subtitle: 'Рецепты',
+        text: 'Рецепты для множества различных видов сыров',
         backgroundImage: recipesBg,
         isActive: false,
         id: 2
     },
     {
-        title: 'Наборы',
-        subtitle: 'Наборы для сыроделия',
-        text: 'Все что вам нужно для приготовления сыра в домашних условиях',
+        title: 'Закваски для сыра',
+        subtitle: 'Акции',
+        text: 'Отличные закваски для сыра в нашей сегодняшней акции',
         backgroundImage: discountsBg,
         isActive: false,
         id: 3

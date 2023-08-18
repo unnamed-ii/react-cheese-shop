@@ -27,6 +27,8 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Render all data not from constants but from server 
 - Create all 'products' on firestore
 - Create admin account, so owner could create and change data on a server from app
+- Add setting active block (Home page, recommendations block)
+- Add rendering image of product's from server
 
 - Moving to individual article (Article cards) +
 - Moving to individual recipe (Recipes page, recipe cards) +
