@@ -1,16 +1,10 @@
-import productImage from '../images/basket/item-1.png';
-
 const ADD_PRODUCT = 'ADD_PRODUCT';
 const REMOVE_PRODUCT = 'REMOVE_PRODUCT';
 const CLEAR_BASKET = 'CLEAR_BASKET';
 
 const initState = {
-    id: '11299889182',
-    products: [
-        {title: 'Форма для твердого сыра 1 кг - 40 отверстий', price: 440, id: '3213123', amount: 1, image: productImage},
-        {title: 'Форма для твердого сыра 1 кг - 40 отверстий', price: 650, id: '1231231', amount: 1, image: productImage},
-    ],
-    sum: 1090
+    products: [],
+    sum: 0
 }
 
 export const basketReducer = (state = initState, action) => {

@@ -15,6 +15,7 @@ const Card = ({
               }) => {
     const dispatch = useDispatch();
     const addProduct = () => dispatch(addProductActionCreator({title, price: discountPrice, id, amount, image}))
+    title = `${title.split('').splice(0,35).join('')}...`;
 
     return (
         <div className="card">
