@@ -1,0 +1,35 @@
+@import "src/styles/vars";
+
+.input-radio {
+  input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    color: currentColor;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #c1bfb9;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input[type="radio"]::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $orange;
+    display: none;
+  }
+
+  input[type="radio"]:checked {
+    border-color: $orange;
+
+    &::before {
+      display: block;
+    }
+  }
+}

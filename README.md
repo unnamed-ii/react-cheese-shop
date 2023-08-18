@@ -15,7 +15,6 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Breadcrumbs
 - Calculator component
 - Leaving order (Checkout page)
-- Custom radio button (Checkout page)
 - Loading more recipes (Recipes page)
 - Ability to search product (Header)
 - Personal collection of previous orders (Portfolio page)
@@ -27,9 +26,10 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Add setting active block (Home page, recommendations block)
 - Render all data not from constants but from server 
 - Add rendering image of products from server
-- Fill the 'products' fields with different data on firestore
-- Fix drop down list (Header) +
 
+- Custom radio button (Checkout page) +
+- Fill the 'products' fields with different data on firestore +
+- Fix drop down list (Header) +
 - Moving to individual article (Article cards) +
 - Moving to individual recipe (Recipes page, recipe cards) +
 - Moving to product page by clicking on product card (Product components) +

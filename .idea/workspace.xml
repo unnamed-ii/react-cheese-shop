@@ -11,11 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/radio-button/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/radio-button/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/basket/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basket/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkout/checkout-payment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-payment.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,26 +39,26 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components" />
+      <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\loadingAnimation" />
+      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\article" />
+      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\contacts" />
+      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\qa" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\store" />
       <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\store\syncReducers" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\blocks\delivery" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\loadingAnimation" />
-      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\article" />
-      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\contacts" />
-      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\qa" />
-      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\authorization" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (1)">
@@ -228,7 +228,7 @@
       <workItem from="1682874795920" duration="1172000" />
       <workItem from="1691750014217" duration="25111000" />
       <workItem from="1691881747481" duration="30462000" />
-      <workItem from="1692129409561" duration="35539000" />
+      <workItem from="1692129409561" duration="40473000" />
     </task>
     <servers />
   </component>
@@ -270,6 +270,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1692387953216">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1692387953216" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1692129390129">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -290,10 +294,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1692129446655" />
-    <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1691880934610">
+    <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1692397572319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1691880934610" />
+    <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1692397572319" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1692318325299">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
