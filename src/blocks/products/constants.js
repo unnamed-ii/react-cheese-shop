@@ -1,6 +1,6 @@
 export const popularItems = {
     ingredients: [
-        {title: 'Мезофильная закваска Danisco CHOOZIT MM...', discountPrice: 1300, normalPrice: '1800₽', id: '158934'},
+        {title: 'Мезофильная закваска Danisco CHOOZIT MM...', discountPrice: 1300, normalPrice: '1800₽', id: '1sRFkm1AWOM6LeBHzBMI'},
         {title: 'Мезофильная закваска Danisco CHOOZIT MM...', discountPrice: 1200, normalPrice: '1800₽', id: '185402'},
         {title: 'Мезофильная закваска Danisco CHOOZIT MM...', discountPrice: 1394, normalPrice: '1800₽', id: '105799'},
         // {

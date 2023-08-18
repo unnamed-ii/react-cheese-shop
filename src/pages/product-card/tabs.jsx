@@ -1,85 +1,56 @@
 import React, {useState} from 'react';
 
-const Tabs = () => {
-    const [activeTab, setActiveTab] = useState("description");
-
-    const handleToggleTab = (id) => {
-        setActiveTab(id)
+const TABS__TITLES = [
+    {
+        name: 'Описание',
+        id: 'description',
+    },
+    {
+        name: 'Доставка и оплата',
+        id: 'deliveryPayment',
+    },
+    {
+        name: 'Отзывы',
+        id: 'reviews',
     }
+]
+
+const Tabs = ({description, reviews, characteristics}) => {
+    const [activeTab, setActiveTab] = useState("description");
+    const handleToggleTab = (id) => setActiveTab(id);
 
     return (
         <div className="tabs-wrapper">
             <div className="tabs">
                 <div className="tabs__titles">
-                    <button className={"tabs__titles-title " + (activeTab === "description" && "active")}
-                            onClick={(e) => handleToggleTab(e.target.id)}
-                            id="description">
-                        Описание
-                    </button>
-                    <button className={"tabs__titles-title " + (activeTab === "deliveryPayment" && "active")}
-                            onClick={(e) => handleToggleTab(e.target.id)}
-                            id="deliveryPayment">
-                        Доставка и оплата
-                    </button>
-                    <button className={"tabs__titles-title " + (activeTab === "reviews" && "active")}
-                            onClick={(e) => handleToggleTab(e.target.id)}
-                            id="reviews">
-                        Отзывы (3)
-                    </button>
+                    {TABS__TITLES.map(tabTitle => (
+                        <button className={"tabs__titles-title " + (activeTab === tabTitle.id && "active")}
+                                onClick={(e) => handleToggleTab(e.target.id)}
+                                id={tabTitle.id}
+                                key={tabTitle.id}
+                        >
+                            {tabTitle.name}
+                            &nbsp;
+                            {tabTitle.id === "reviews" && `(${reviews?.length})`}
+                        </button>
+                    ))}
                 </div>
                 <div className="tabs__items">
                     <div className={"tabs__items-description " + (activeTab === "description" && "active")}>
                         <div className="tabs__items-description__text">
-                            P00802 Эта форма небольших размеров предназначена для получения маленьких
-                            головок сыра Рикотта и других мягких сыров в условиях домашнего или фермерского
-                            производства. Наличие хорошего дренажа обеспечивает ее использование для
-                            прессования сыров с плесенью, в том числе сорта Французский нешатель. Размер
-                            сырной головки, которую удается получить при использовании этой формы – до 80 г.
-                            Это аккуратный, готовый к подаче кусочек сыра, который не придется нарезать.
-                            Изготовлена форма из специального высококачественного пищевого пластика, который
-                            хорошо адаптирован к агрессивной молочнокислой среде.
+                            {description}
                         </div>
                         <div className="tabs__items-description__rows">
-                            <div className="row">
-                                <div className="row__title">
-                                    Выход сыра
+                            {characteristics?.map(characteristic => (
+                                <div className="row" key={characteristic.name + characteristic.value}>
+                                    <div className="row__title">
+                                        {characteristic.name}
+                                    </div>
+                                    <div className="row__text">
+                                        {characteristic.value}
+                                    </div>
                                 </div>
-                                <div className="row__text">
-                                    до 5-6 кг
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="row__title">
-                                    Материал
-                                </div>
-                                <div className="row__text">
-                                    высококачественный пищевой пластик
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="row__title">
-                                    Наличие дна
-                                </div>
-                                <div className="row__text">
-                                    есть
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="row__title">
-                                    Наличие ножек
-                                </div>
-                                <div className="row__text">
-                                    нет
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="row__title">
-                                    Размеры
-                                </div>
-                                <div className="row__text">
-                                    высота - 22 см, диаметр верха - 27 см
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                     <div className={"tabs__items-deliveryPayment " + (activeTab === "deliveryPayment" && "active")}>
@@ -141,6 +112,12 @@ const Tabs = () => {
                         </div>
                     </div>
                     <div className={"tabs__items-reviews " + (activeTab === "reviews" && "active")}>
+                        {reviews?.map((review) => (
+                            <div key={review.userId} className="tabs__items-reviews__review">
+                                <h3>{review.userName}</h3>
+                                <p>{review.userReview}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

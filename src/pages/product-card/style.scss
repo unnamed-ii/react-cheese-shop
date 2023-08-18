@@ -3,8 +3,10 @@
 .product-card {
   padding-bottom: 70px;
 
+
   &__inner {
     display: flex;
+    margin-bottom: 60px;
 
     &-content {
       margin-left: 30px;
@@ -200,6 +202,11 @@
               width: 320px;
               padding: 10px 0;
               cursor: pointer;
+              transition: all .3s;
+
+              &:hover {
+                opacity: .5;
+              }
             }
 
             .not-available {
@@ -354,6 +361,32 @@
               }
             }
           }
+
+          &-reviews {
+            padding: 30px 30px 20px 30px;
+            background: #FFFFFF;
+            border-radius: 8px;
+            display: none;
+            width: 870px;
+
+            &__review {
+              width: 100%;
+              color: $brown;
+
+              & + & {
+                border-top: 1px solid #BFBFBF;
+              }
+
+              h3 {
+                font-size: 20px;
+                margin-bottom: 5px;
+              }
+            }
+
+            &.active {
+              display: block;
+            }
+          }
         }
       }
     }
@@ -503,7 +536,7 @@
 
             &-description,
             &-deliveryPayment,
-            &-reviews{
+            &-reviews {
               max-width: 700px;
             }
           }
@@ -522,7 +555,7 @@
 
             &-description,
             &-deliveryPayment,
-            &-reviews{
+            &-reviews {
               max-width: 528px;
             }
           }

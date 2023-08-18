@@ -12,7 +12,6 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Adaptive styles
 
 ## Tasks, that have to be done
-- Render all data not from constants but from server 
 - Breadcrumbs
 - Calculator component
 - Leaving order (Checkout page)
@@ -22,10 +21,12 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Personal collection of previous orders (Portfolio page)
 - Personal collection of favourite products. Therefore, user can manipulate with this collection (Portfolio page)
 - Form validation (Modals, auth, recovery, registration pages)
-- Advanced filtering products on (Category page)
+- Advanced filtering products (Category page)
 - Product ratings (Products and collections)
 - Reviews for individual products (Products and collections)
-
+- Render all data not from constants but from server 
+- Create all 'products' on firestore
+- Create admin account, so owner could create and change data on a server from app
 
 - Moving to individual article (Article cards) +
 - Moving to individual recipe (Recipes page, recipe cards) +

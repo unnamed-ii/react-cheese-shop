@@ -9,7 +9,8 @@ import {ReactComponent as MedalIcon} from "../../images/icons/product-card-page/
 import productCart from "../../images/product-card-page.png";
 import productCart2 from "../../images/product-card-page2.png";
 
-const Vendor = () => {
+const Vendor = ({price, discountPrice, code, manufacturer, addProductToBasket}) => {
+
     return (
         <div className="vendor">
             <div className="vendor-inner-wrapper">
@@ -33,8 +34,8 @@ const Vendor = () => {
                     </div>
                     <div className="vendor__info-title">
                         <div className="vendor__info-title__price">
-                            950 руб.
-                            <span>1200&nbsp;руб.</span>
+                            {discountPrice} руб.
+                            <span>{price}&nbsp;руб.</span>
                         </div>
                         <div className="vendor__info-title__favourite">
                             <SolidHeartIcon/>
@@ -46,15 +47,15 @@ const Vendor = () => {
                     </div>
                     <div className="vendor__info-details">
                         <div className="vendor__info-details__detail">
-                            Артикул: <span>23006</span>
+                            Артикул: <span>{code}</span>
                         </div>
                         <div className="vendor__info-details__detail">
-                            Производитель: <span>Lactofarm ECO, Италия</span>
+                            Производитель: <span>{manufacturer}</span>
                         </div>
                     </div>
                     <div className="vendor__info-adding">
                         <Counter/>
-                        <button className="available">
+                        <button className="available" onClick={addProductToBasket}>
                             В корзину
                         </button>
                         <button className="not-available">
