@@ -24,11 +24,11 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Advanced filtering products (Category page)
 - Product ratings (Products and collections)
 - Reviews for individual products (Products and collections)
-- Render all data not from constants but from server 
-- Create all 'products' on firestore
-- Create admin account, so owner could create and change data on a server from app
 - Add setting active block (Home page, recommendations block)
-- Add rendering image of product's from server
+- Render all data not from constants but from server 
+- Add rendering image of products from server
+- Fill the 'products' fields with different data on firestore
+- Fix drop down list (Header) +
 
 - Moving to individual article (Article cards) +
 - Moving to individual recipe (Recipes page, recipe cards) +
@@ -44,3 +44,7 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Rendering and editing users address (Portfolio page) +
 - Map (Contacts page) +
 - Scrolling to top of the page (Everywhere in project) +
+
+
+## TODO? 
+- Create admin account, so owner could create and change data on a server from app

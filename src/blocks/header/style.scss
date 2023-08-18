@@ -203,7 +203,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0;
+    //padding: 16px 0;
+
+    a {
+      display: inline-block;
+      padding: 16px 0;
+    }
 
     &-links {
       position: relative;
@@ -212,9 +217,13 @@
         position: relative;
         margin-right: 34px;
 
+        &:hover ~ .header__nav-links__list{
+          display: block;
+        }
+
         .arrow-down {
           position: absolute;
-          top: 6px;
+          top: 24px;
           right: -17px;
         }
       }
@@ -228,7 +237,7 @@
         border-radius: 5px;
         width: 220px;
         position: fixed;
-        top: 200px;
+        top: 190px;
         left: 302px;
         display: none;
 

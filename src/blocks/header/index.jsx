@@ -1,9 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import './style.scss';
 import Basket from "../../components/basket";
 import Wrapper from "../../components/wrapper";
 import {Link} from "react-router-dom";
-import {DroppingItems} from "./constants";
 import {ReactComponent as LocationIcon} from '../../images/icons/location.svg';
 import {ReactComponent as ArrowDownIcon} from '../../images/icons/arrow-down.svg';
 import {ReactComponent as ClockIcon} from '../../images/icons/clock.svg';
@@ -19,25 +18,7 @@ import discount from '../../images/header-advantages/discount.png';
 import protection from '../../images/header-advantages/user-protection.png';
 
 const Header = () => {
-    const [isListDropped, setIsListDropped] = useState(false);
-    const [isBasketDropped, setIsBasketDropped] = useState(false);
     const isAuth = localStorage.getItem('isUserAuthorized');
-
-    useEffect(() => {
-        setIsBasketDropped(false);
-    }, [window.location.pathname])
-
-    const toggleDroppingItem = (droppingItem) => {
-        if (droppingItem === DroppingItems.dropdownList) {
-            setTimeout(() => {
-                setIsListDropped(!isListDropped);
-            }, 400);
-        }
-
-        if (droppingItem === DroppingItems.basket) {
-            setIsBasketDropped(!isBasketDropped);
-        }
-    }
 
     return (
         <Wrapper>
@@ -119,23 +100,18 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="vertical"/>
-                        <Basket
-                            isBasketDropped={isBasketDropped}
-                            toggleDroppingItem={toggleDroppingItem}
-                        />
+                        <Basket />
                     </div>
                     <div className="horizontal"/>
                     <div className="header__nav">
                         <div className="header__nav-links">
                             <Link className='header__nav-links__recipe'
                                   id="link-to-recipes"
-                                  onMouseEnter={() => toggleDroppingItem(DroppingItems.dropdownList)}
-                                  onMouseLeave={() => toggleDroppingItem(DroppingItems.dropdownList)}
                                   to="/recipes">
                                 Рецепты
                                 <ArrowDownIcon className="arrow-down"/>
                             </Link>
-                            <div className={"header__nav-links__list " + (isListDropped && DroppingItems.dropdownList)}>
+                            <div className="header__nav-links__list">
                                 <ul>
                                     <li><Link to="/">Молодые сыры</Link></li>
                                     <li><Link to="/">Полутвердые сыры</Link></li>

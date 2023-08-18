@@ -18,8 +18,17 @@
   .basket-image {
     position: relative;
 
-    svg {
+    .basket-icon {
       cursor: pointer;
+      transition: all .3s;
+
+      &:hover {
+        opacity: .3;
+      }
+
+      &:hover ~ .basket {
+        display: block;
+      }
     }
 
     &__circle {
@@ -43,12 +52,13 @@
   background-color: $white;
   padding-bottom: 30px;
   position: absolute;
-  top: 66px;
+  top: 36px;
   right: -70px;
   border-radius: 6px;
   display: none;
+  transition: all .3s;
 
-  &.active {
+  &:hover {
     display: block;
   }
 
