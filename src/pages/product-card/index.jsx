@@ -7,7 +7,7 @@ import ProductAddedAlert from "../../components/product-added-alert";
 import ProductsSlider from "../../components/products-slider";
 import Tabs from "./tabs";
 import Vendor from "./vendor";
-import Rate from "./rate";
+import Rating from "@mui/material/Rating";
 import {database} from "../../firebase";
 import {getDoc, doc} from "firebase/firestore";
 import {useLocation} from "react-router-dom";
@@ -24,6 +24,8 @@ const ProductCard = () => {
     const [showAlert, setShowAlert] = useState(false);
     const [productData, setProductData] = useState({});
     const currentShowingProductId = pathname.split('/')[pathname.split('/').length - 1];
+    const productsRating = +JSON.stringify(productData?.rate).split(":")[1].replace("}", "");
+
 
     useEffect(async () => {
         setIsLoading(true);
@@ -69,7 +71,13 @@ const ProductCard = () => {
                         <div className="title">
                             {productData?.name}
                         </div>
-                        <Rate/>
+                        <Rating
+                            name="size-medium"
+                            defaultValue={5}
+                            value={productsRating}
+                            precision={0.5}
+                            readOnly
+                        />
                         <Vendor
                             price={productData.price}
                             discountPrice={productData.discountPrice}
