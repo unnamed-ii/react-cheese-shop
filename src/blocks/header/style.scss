@@ -11,8 +11,8 @@
   justify-content: center;
   margin: 0 auto;
 
-  &__inner {
-
+  a:hover {
+    color: $orange;
   }
 
   .vertical {
@@ -68,6 +68,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      &:hover {
+        svg path{
+          stroke: $orange;
+        }
+      }
 
       .user-profile-icon {
         margin-right: 4px;
@@ -219,6 +225,13 @@
 
         &:hover ~ .header__nav-links__list{
           display: block;
+        }
+
+        &:hover svg {
+          transform: rotate(180deg);
+          path {
+            stroke: $orange;
+          }
         }
 
         .arrow-down {
