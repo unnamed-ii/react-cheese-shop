@@ -209,7 +209,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //padding: 16px 0;
 
     a {
       display: inline-block;
@@ -222,8 +221,9 @@
       &__recipe {
         position: relative;
         margin-right: 34px;
+        display: inline-block;
 
-        &:hover ~ .header__nav-links__list{
+        &:hover .header__nav-links__list{
           display: block;
         }
 
@@ -249,16 +249,13 @@
         background-color: $white;
         border-radius: 5px;
         width: 220px;
-        position: fixed;
-        top: 190px;
-        left: 302px;
+        position: absolute;
+        top: 50px;
+        left: -50px;
+        right: 0;
         display: none;
 
         &:hover {
-          display: block;
-        }
-
-        &.dropdown-list {
           display: block;
         }
 

@@ -100,19 +100,17 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="vertical"/>
-                        <Basket />
+                        <Basket/>
                     </div>
                     <div className="horizontal"/>
                     <div className="header__nav">
                         <div className="header__nav-links">
-                            <Link className='header__nav-links__recipe'
-                                  id="link-to-recipes"
-                                  to="/recipes">
-                                Рецепты
+                            <div className='header__nav-links__recipe' id="link-to-recipes">
+                                <Link to="/recipes">
+                                    Рецепты
+                                </Link>
                                 <ArrowDownIcon className="arrow-down"/>
-                            </Link>
-                            <div className="header__nav-links__list">
-                                <ul>
+                                <ul className="header__nav-links__list">
                                     <li><Link to="/">Молодые сыры</Link></li>
                                     <li><Link to="/">Полутвердые сыры</Link></li>
                                     <li><Link to="/">Паста Филата</Link></li>
