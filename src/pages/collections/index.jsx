@@ -1,13 +1,38 @@
-import React from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import './style.scss'
 import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
 import {CollectionCard} from "./collection-card";
 import collectionImage from "../../images/collections.png";
+import {collection, getDocs} from "firebase/firestore";
+import {database} from "../../firebase";
+import {useLocation} from "react-router-dom";
+import {LoadingAnimationContext} from "../../Context";
+import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
 
 const Collections = () => {
+    const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
+    const [collections, setCollections] = useState([]);
+
+    useEffect(async () => {
+        setIsLoading(true);
+        try {
+            const querySnapshot = await getDocs(collection(database, 'collections'));
+            await querySnapshot.forEach((doc) => {
+                const id = doc.id;
+                const data = doc.data();
+                const newCollection = {...JSON.parse(JSON.stringify(data)), id};
+                setCollections(p => ([...p, newCollection]));
+            })
+        } catch (e) {
+            console.log(e);
+        }
+        setIsLoading(false);
+    }, []);
+
     return (
         <Wrapper>
+            <LoadingAnimation isLoading={isLoading}/>
             <div className="collections">
                 <div className="collections__inner">
                     <MainNav/>
@@ -16,10 +41,15 @@ const Collections = () => {
                             Наборы для сыра
                         </div>
                         <div className="collections__group">
-                            <CollectionCard id={"1"} image={collectionImage}/>
-                            <CollectionCard id={"2"} image={collectionImage}/>
-                            <CollectionCard id={"3"} image={collectionImage}/>
-                            <CollectionCard id={"4"} image={collectionImage}/>
+                            {collections.map((collection) => (
+                                <CollectionCard
+                                    key={collection.id}
+                                    title={collection.name}
+                                    description={collection.shortDescription}
+                                    price={collection.price}
+                                    id={collection.id}
+                                    image={collectionImage}/>
+                            ))}
                         </div>
                     </div>
                 </div>

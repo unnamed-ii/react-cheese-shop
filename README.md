@@ -12,6 +12,7 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Adaptive styles
 
 ## Tasks, that have to be done
+- Fix the position of dropdown list (Header)
 - Breadcrumbs
 - Calculator component
 - Leaving order (Checkout page)
@@ -21,12 +22,12 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Personal collection of favourite products. Therefore, user can manipulate with this collection (Portfolio page)
 - Form validation (Modals, auth, recovery, registration pages)
 - Advanced filtering products (Category page)
-- Product ratings (Products and collections)
 - Reviews for individual products (Products and collections)
 - Add setting active block (Home page, recommendations block)
 - Render all data not from constants but from server 
 - Add rendering image of products from server
 
+- Product ratings (Products and collections) +
 - Custom radio button (Checkout page) +
 - Fill the 'products' fields with different data on firestore +
 - Fix drop down list (Header) +

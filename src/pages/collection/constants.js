@@ -16,7 +16,4 @@ export const CollectionData = {
             id: '3'
         }
     ],
-    tabItems: [
-
-    ]
 }

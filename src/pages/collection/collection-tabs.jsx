@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './style.scss';
 import {CollectionData} from "./constants";
 
-const CollectionTabs = () => {
+const CollectionTabs = ({description, reviews}) => {
     const [activeTab, setActiveTab] = useState(CollectionData.tabsTitles[0].typeOfTab);
     const handleChangeActiveTab = (tabId) => setActiveTab(tabId)
 
@@ -21,32 +21,16 @@ const CollectionTabs = () => {
             </div>
             <div className="collection__tabs-items">
                 <div className="collection__tabs-item">
-                    <div className="collection__tabs-item__line">
-                        <div className="title">
-                            Что входит в набор:
+                    {description?.map((i,idx) => (
+                        <div className="collection__tabs-item__line" key={idx}>
+                            <div className="title">
+                                {i.subtitle}:
+                            </div>
+                            <div className="text">
+                                {i.text}
+                            </div>
                         </div>
-                        <div className="text">
-                            Мезофильная закваска, Термофильная закваска , Сычужный фермент 20мл, Хлористый
-                            кальций 10г, Форма для самопрессующихся сыров Д12, Весы ювелирные, Термометр
-                            механический с щупом, Дренажный коврик, Лавсановый мешочек
-                        </div>
-                    </div>
-                    <div className="collection__tabs-item__line">
-                        <div className="title">
-                            Транспортировкa
-                        </div>
-                        <div className="text">
-                            2 недели с соблюдением температуры.
-                        </div>
-                    </div>
-                    <div className="collection__tabs-item__line">
-                        <div className="title">
-                            Размер упаковки и хранение
-                        </div>
-                        <div className="text">
-                            Поможет приготовить вам вкусный творог в домашних условиях.
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </div>

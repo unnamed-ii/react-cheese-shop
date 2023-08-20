@@ -5,14 +5,15 @@ import {useDispatch} from "react-redux";
 import {Link} from "react-router-dom";
 
 export const CollectionCard = ({
-                                   title = 'Набор для начинающих на 100 л молока',
-                                   description = 'Набор ингредиентов для приготовления сыров Имеретинский, Моцарелла, Альметте,Качотта, Рикотта',
-                                   price = 2400,
+                                   title,
+                                   description,
+                                   price,
                                    id,
-                                   image
+                                   image,
+                                   amount = 1
                                }) => {
     const dispatch = useDispatch();
-    const addProduct = () => dispatch(addProductActionCreator({title, price, id, amount: 1, image}))
+    const addProduct = () => dispatch(addProductActionCreator({title, price, id, amount, image}))
 
     return (
         <div className="collections__group-collection">

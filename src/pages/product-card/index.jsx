@@ -24,8 +24,7 @@ const ProductCard = () => {
     const [showAlert, setShowAlert] = useState(false);
     const [productData, setProductData] = useState({});
     const currentShowingProductId = pathname.split('/')[pathname.split('/').length - 1];
-    const productsRating = +JSON.stringify(productData?.rate).split(":")[1].replace("}", "");
-
+    let productsRating;
 
     useEffect(async () => {
         setIsLoading(true);
@@ -38,6 +37,7 @@ const ProductCard = () => {
                     ...productSnap.data()
                 });
             }
+            productsRating = +JSON.stringify(productData?.rate).split(":")[1].replace("}", "");
         } catch (e) {
             console.log(e);
         }
