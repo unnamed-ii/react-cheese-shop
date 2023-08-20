@@ -2,9 +2,10 @@
 
 .recipe {
   width: 280px;
-  padding: 84px 126px 10px 16px;
+  padding: 55px 126px 10px 16px;
   border-radius: 5px;
   margin-top: 15px;
+  margin-bottom: 10px;
   position: relative;
 
   &::before {
@@ -25,11 +26,14 @@
     color: $white;
     margin-bottom: 2px;
     width: 203px;
+    text-shadow: 2px 2px 4px black;
   }
 
   &__link {
     display: flex;
     align-items: center;
+    position: absolute;
+    bottom: -15px;
 
     a {
       color: $orange;

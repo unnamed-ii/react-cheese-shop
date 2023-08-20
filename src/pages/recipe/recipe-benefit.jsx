@@ -1,13 +1,12 @@
 import React from 'react';
-import {RecipeData} from "./constants";
 import InstructionStep from "../../components/instruction-step";
 import recipeBenefit from "../../images/recipe-page-benefit.png";
 
-const RecipeBenefit = () => {
+const RecipeBenefit = ({instruction}) => {
     return (
         <div className="benefit">
             <div className="benefit__title">
-                польза сыра
+                Польза сыра
             </div>
             <div className="benefit__text">
                 Который значительно укрепляет костную ткань. В сыре содержится много других минералов –
@@ -22,14 +21,14 @@ const RecipeBenefit = () => {
             <img src={recipeBenefit} alt=""/>
             <div className="benefit__instruction">
                 <div className="benefit__instruction-title">
-                    как приготовить в домашних условиях
+                    Как приготовить в домашних условиях
                 </div>
                 <div className="benefit__instruction-steps">
-                    {RecipeData.instruction.map((step, idx) =>
+                    {instruction?.map((step, idx) =>
                         <InstructionStep
                             key={step.id}
                             number={'0' + (idx + 1)}
-                            text={step.text}
+                            text={step}
                         />
                     )}
                 </div>

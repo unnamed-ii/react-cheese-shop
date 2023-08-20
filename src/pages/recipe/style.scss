@@ -15,22 +15,10 @@
         margin-bottom: 30px;
 
         &__title {
-          @include h3;
+          @include h2;
           text-transform: uppercase;
           color: $brown;
           margin-bottom: 20px;
-        }
-
-        &__images {
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-          margin-bottom: 30px;
-          gap: 15px;
-
-          img {
-            border-radius: 5px;
-          }
         }
 
         &__text {
@@ -142,11 +130,6 @@
         &__info {
           height: 0;
           display: none;
-
-          &.dropped {
-            height: auto;
-            display: block;
-          }
         }
 
         &__list {
@@ -160,6 +143,17 @@
 
         &__text {
           margin-bottom: 40px;
+        }
+
+        &.active {
+          .recommendation__title svg {
+            transform: rotate(180deg);
+          }
+
+          .recommendation__info {
+            height: auto;
+            display: block;
+          }
         }
       }
     }
@@ -215,7 +209,6 @@
         }
 
         .benefit {
-
           &__instruction-title {
             font-size: 22px;
           }

@@ -6,12 +6,12 @@ const RecipeRecommendation = () => {
     const showIsDroppedDown = () => setIsDropDown(!isDropDown);
 
     return (
-        <div className="recommendation">
+        <div className={"recommendation " + (isDropDown && "active")}>
             <div className="recommendation__title" onClick={showIsDroppedDown}>
                 Рекомендации по рецептам:
                 <ArrowDownIcon/>
             </div>
-            <div className={"recommendation__info " + (isDropDown && "dropped")}>
+            <div className="recommendation__info">
                 <ul className="recommendation__list">
                     <li>
                         Пастеризация молока при +68 °C в течение 10 мин дает возможность достичь нужной нам
