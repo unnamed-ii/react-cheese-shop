@@ -1,10 +1,28 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './style.scss';
 import Wrapper from "../../components/wrapper";
 import {ArticleCard} from "./articles-card";
-import {ArticlesData} from "./constants";
+import {collection, getDocs} from "firebase/firestore";
+import {database} from "../../firebase";
+import articleDefaultImage from '../../images/articles/article1.png';
 
 const Articles = () => {
+    const [articles, setArticles] = useState([]);
+
+    useEffect(async () => {
+        try {
+            const querySnapshot = await getDocs(collection(database, 'articles'));
+            await querySnapshot.forEach((doc) => {
+                const id = doc.id;
+                const data = doc.data();
+                const article = {...JSON.parse(JSON.stringify(data)), id};
+                setArticles(p => ([...p, article]));
+            })
+        } catch (e) {
+            console.log(e);
+        }
+    }, []);
+
     return (
         <Wrapper>
             <div className="articles">
@@ -16,18 +34,15 @@ const Articles = () => {
                     <div className="articles__compilation-text">
                         Мы собрали самые интересные и полезные новости о акциях, скидках и мире сыроделия.
                     </div>
-                    <a className="articles__compilation-link" href="#">
-                        Читать все статьи
-                    </a>
                 </div>
                 <div className="articles__list">
-                    {ArticlesData.map(article =>
+                    {articles?.map(article =>
                         <ArticleCard
                             id={article.id}
                             key={article.id}
-                            title={article.title}
-                            text={article.text}
-                            image={article.image}
+                            title={article.name}
+                            text={article.paragraph?.text}
+                            image={articleDefaultImage}
                         />
                     )}
                 </div>

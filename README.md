@@ -12,7 +12,6 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Adaptive styles
 
 ## Tasks, that have to be done
-- Fix the position of dropdown list (Header)
 - Breadcrumbs
 - Calculator component
 - Leaving order (Checkout page)
@@ -24,9 +23,10 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Advanced filtering products (Category page)
 - Reviews for individual products (Products and collections)
 - Add setting active block (Home page, recommendations block)
-- Render all data not from constants but from server 
 - Add rendering image of products from server
 
+- Fix the position of dropdown list (Header) +
+- Render all data not from constants but from the server +
 - Product ratings (Products and collections) +
 - Custom radio button (Checkout page) +
 - Fill the 'products' fields with different data on firestore +

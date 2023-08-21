@@ -2,7 +2,9 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {ReactComponent as ArrowRightIcon} from "../../images/icons/arrow-right.svg";
 
-export const ArticleCard = ({title, text, image, id}) => {
+export const ArticleCard = ({title, text = '...', image, id}) => {
+    text = text.slice(0, 85) + '...';
+
     return (
         <div className="articles__list-item">
             <img className="articles__list-item__image" src={image} alt=""/>
