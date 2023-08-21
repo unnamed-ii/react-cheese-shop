@@ -12,19 +12,19 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Adaptive styles
 
 ## Tasks, that have to be done
+- Directories and files renaming, using some methodology
 - Breadcrumbs
 - Calculator component
 - Leaving order (Checkout page)
-- Loading more recipes (Recipes page)
 - Ability to search product (Header)
 - Personal collection of previous orders (Portfolio page)
 - Personal collection of favourite products. Therefore, user can manipulate with this collection (Portfolio page)
 - Form validation (Modals, auth, recovery, registration pages)
 - Advanced filtering products (Category page)
-- Reviews for individual products (Products and collections)
 - Add setting active block (Home page, recommendations block)
-- Add rendering image of products from server
+- Add rendering image of products/collections/articles/recipes from server
 
+- Reviews for individual products (Products and collections) +
 - Fix the position of dropdown list (Header) +
 - Render all data not from constants but from the server +
 - Product ratings (Products and collections) +

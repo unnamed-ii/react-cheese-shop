@@ -1,24 +1,33 @@
-import React from 'react';
+import React, {useState} from 'react';
+import RadioButton from "../../components/radio-button";
 
 const CheckoutDelivery = () => {
+    const [activeRadioInput, setActiveRadioInput] = useState(null);
+
     return (
         <div className="checkout__info-delivery">
             <div className="checkout__info-delivery__title">
                 Выберите способ доставки:
             </div>
             <div className="checkout__info-delivery__types">
-                <div className="checkout__info-delivery__type free">
-                    <div className="input-radio">
-                        <input type="radio"/>
+                <form>
+                    <div className="checkout__info-delivery__type free">
+                        <RadioButton
+                            id={"delivery-free"}
+                            activeRadioInput={activeRadioInput}
+                            setActiveRadioInput={setActiveRadioInput}
+                        />
+                        Бесплатная доставка <span>(0 руб.)</span>
                     </div>
-                    Бесплатная доставка <span>(0 руб.)</span>
-                </div>
-                <div className="checkout__info-delivery__type courier">
-                    <div className="input-radio">
-                        <input type="radio"/>
+                    <div className="checkout__info-delivery__type courier">
+                        <RadioButton
+                            id={"delivery-courier"}
+                            activeRadioInput={activeRadioInput}
+                            setActiveRadioInput={setActiveRadioInput}
+                        />
+                        Курьер <span>(0 руб.)</span>
                     </div>
-                    Курьер <span>(0 руб.)</span>
-                </div>
+                </form>
             </div>
             <div className="checkout__info-delivery__data">
                 <div className="title">
