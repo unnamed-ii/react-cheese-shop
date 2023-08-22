@@ -3,13 +3,12 @@ import './style.scss'
 import {ReactComponent as CashbackIcon} from "../../images/icons/sign-up-benefits/cashback.svg";
 import {ReactComponent as QualityAssuranceIcon} from "../../images/icons/sign-up-benefits/quality-assurance.svg";
 import {ReactComponent as PaymentMethodsIcon} from "../../images/icons/sign-up-benefits/payment-methods.svg";
+import PageTitle from "../../components/page-title";
 
 const RegistrationInfo = () => {
     return (
         <div className="sign-up__info">
-            <div className="sign-up__info-title">
-                Регистрация аккаунта
-            </div>
+            <PageTitle title={"Регистрация аккаунта"}/>
             <div className="sign-up__info-text">
                 Делайте покупки быстро и удобно, отслеживайте статус заказа и получайте скидки.
             </div>

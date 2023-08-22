@@ -12,6 +12,7 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Adaptive styles
 
 ## Tasks, that have to be done
+- Create skeletons 
 - FSD Architecture
 - Breadcrumbs
 - Calculator component

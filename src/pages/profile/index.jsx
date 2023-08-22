@@ -13,6 +13,7 @@ import {EditingInfoForm} from "./editing-form";
 import {logOutActionCreator} from "../../store/user";
 import {useNavigate} from "react-router-dom";
 import {refreshPage} from "../../utils/refreshPage";
+import PageTitle from "../../components/page-title";
 
 const Profile = () => {
     const dispatch = useDispatch();
@@ -42,9 +43,7 @@ const Profile = () => {
                 />
             }
             <div className="profile">
-                <div className="profile__title">
-                    Личный кабинет
-                </div>
+                <PageTitle title={"Личный кабинет"}/>
                 <div className="profile__tabs">
                     <div className="profile__tabs-titles">
                         {TabsData.titles.map(tab =>

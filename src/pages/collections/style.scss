@@ -12,12 +12,6 @@
     }
   }
 
-  &__title {
-    @include h2;
-    margin-bottom: 10px;
-    color: $brown;
-  }
-
   &__group {
     display: flex;
     flex-wrap: wrap;

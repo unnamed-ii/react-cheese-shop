@@ -9,6 +9,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {toggleFiltersActionCreator} from "../../store/category-filters";
 import {ReactComponent as FilterToggleIcon} from "../../images/icons/fitler-toggle.svg";
 import {ReactComponent as FilterToggleDisabledIcon} from "../../images/icons/fitler-toggle-disabled.svg";
+import PageTitle from "../../components/page-title";
 
 const Category = () => {
     const dispatch = useDispatch();
@@ -19,10 +20,8 @@ const Category = () => {
         <Wrapper>
             <div className="category">
                 <div className="category__top">
-                    <div className="category__top-title">
-                        Кисломолочные закваски
-                    </div>
-                   <div className="category__top-filter__toggle">
+                    <PageTitle title={"Кисломолочные закваски"}/>
+                    <div className="category__top-filter__toggle">
                        <button className={"filters__toggle-button " + (showFilters && "active")}
                                onClick={toggleFilters}>
                            {showFilters ?

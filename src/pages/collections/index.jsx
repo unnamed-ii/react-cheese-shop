@@ -9,6 +9,7 @@ import {database} from "../../firebase";
 import {useLocation} from "react-router-dom";
 import {LoadingAnimationContext} from "../../Context";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
+import PageTitle from "../../components/page-title";
 
 const Collections = () => {
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
@@ -37,9 +38,7 @@ const Collections = () => {
                 <div className="collections__inner">
                     <MainNav/>
                     <div className="collections__inner-content">
-                        <div className="collections__title">
-                            Наборы для сыра
-                        </div>
+                        <PageTitle title={"Наборы для сыра"}/>
                         <div className="collections__group">
                             {collections.map((collection) => (
                                 <CollectionCard

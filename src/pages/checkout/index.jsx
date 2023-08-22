@@ -6,15 +6,14 @@ import CheckoutDelivery from "./checkout-delivery";
 import CheckoutTotals from "./checkout-totals";
 import CheckoutPayment from "./checkout-payment";
 import Wrapper from "../../components/wrapper";
+import PageTitle from "../../components/page-title";
 
 const Checkout = () => {
     return (
         <Wrapper>
             <div className="checkout">
                 <div className="checkout__info">
-                    <div className="checkout__info-title">
-                        Оформление заказа
-                    </div>
+                    <PageTitle title={"Оформление заказа"}/>
                     <CheckoutContactInfo />
                     <CheckoutOrder />
                     <CheckoutDelivery />

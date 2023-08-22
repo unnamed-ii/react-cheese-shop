@@ -12,12 +12,6 @@
     }
   }
 
-  &__title {
-    @include h2;
-    color: $brown;
-    padding-bottom: 30px;
-  }
-
   &__info {
     padding-bottom: 50px;
 

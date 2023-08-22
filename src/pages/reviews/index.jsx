@@ -12,6 +12,7 @@ import {ReactComponent as CloseBtnIcon} from '../../images/icons/close-moduls-bt
 import ModalWrapper from "../../components/modal-wrapper";
 import {LoadingAnimationContext} from "../../Context";
 import {refreshPage} from "../../utils/refreshPage";
+import PageTitle from "../../components/page-title";
 
 const Reviews = () => {
     const isAuth = JSON.parse(localStorage.getItem('isUserAuthorized'));
@@ -74,9 +75,7 @@ const Reviews = () => {
                     <MainNav/>
                     <div className="reviews__inner-content">
                         <div className="reviews__top">
-                            <div className="reviews__top-title">
-                                отзывы покупателей
-                            </div>
+                            <PageTitle title={"Отзывы покупателей"}/>
                             {isAuth
                                 ?
                                 <div className="review__form">

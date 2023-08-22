@@ -9,12 +9,6 @@
     max-width: 780px;
     margin-right: 20px;
 
-    &-title {
-      @include h2;
-      margin-bottom: 24px;
-      color: $brown;
-    }
-
     &-contacts {
       padding: 30px 30px 40px;
       background: $white;

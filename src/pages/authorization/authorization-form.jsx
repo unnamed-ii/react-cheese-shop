@@ -14,6 +14,7 @@ import {ReactComponent as VkIcon} from "../../images/icons/sign-up/vk.svg";
 import {ReactComponent as TwitterIcon} from "../../images/icons/sign-up/twitter.svg";
 import {ReactComponent as MailRuIcon} from "../../images/icons/sign-up/mailRu.svg";
 import {ReactComponent as YandexIcon} from "../../images/icons/sign-up/yandex.svg";
+import PageTitle from "../../components/page-title";
 
 const AuthorizationForm = () => {
     const dispatch = useDispatch();
@@ -86,9 +87,7 @@ const AuthorizationForm = () => {
 
     return (
         <div className="sign-in__form">
-            <div className="sign-in__form-title">
-                Постоянный покупатель
-            </div>
+            <PageTitle title={"Постоянный покупатель"}/>
             <form onSubmit={logIn}>
                 <div className="email">
                     <div>Электронная почта</div>

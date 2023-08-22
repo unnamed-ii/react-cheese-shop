@@ -11,12 +11,6 @@
     }
   }
 
-  &__title {
-    @include h2;
-    margin-bottom: 20px;
-    color: $brown;
-  }
-
   &__questions {
     background: #FEF0C2;
     border: 1px solid #FAE9B3;

@@ -15,12 +15,6 @@
         margin-bottom: 40px;
         border-bottom: 1px solid rgba($darkGrey, .1);
 
-        .title {
-          @include h2;
-          color: $brown;
-          margin-bottom: 15px;
-        }
-
         .box {
           display: flex;
           flex-wrap: wrap;

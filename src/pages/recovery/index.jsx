@@ -2,14 +2,13 @@ import React from 'react';
 import './style.scss'
 import {Link} from "react-router-dom";
 import Wrapper from "../../components/wrapper";
+import PageTitle from "../../components/page-title";
 
 const Recovery = () => {
     return (
         <Wrapper>
             <div className="recover">
-                <div className="recover__title">
-                    Восстановить пароль
-                </div>
+                <PageTitle title={"Восстановить пароль"}/>
                 <div className="recover__text">
                     Введите адрес электронной почты Вашей учетной записи. Нажмите кнопку продолжить, чтобы получить
                     пароль по электронной почте.

@@ -4,6 +4,7 @@ import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
 import ContactsInfo from "./contacts-info";
 import ContactsFeedback from "./contacts-feedback";
+import PageTitle from "../../components/page-title";
 
 const Contacts = () => {
     return (
@@ -12,9 +13,7 @@ const Contacts = () => {
                 <div className="contacts__inner">
                     <MainNav/>
                     <div className="contacts__inner-content">
-                        <div className="contacts__title">
-                            Контакты
-                        </div>
+                        <PageTitle title={"Контакты"}/>
                         <ContactsInfo />
                         <ContactsFeedback />
                     </div>
