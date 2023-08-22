@@ -69,6 +69,7 @@
       justify-content: center;
       align-items: center;
 
+      &.active,
       &:hover {
         svg path{
           stroke: $orange;
@@ -222,6 +223,10 @@
         position: relative;
         margin-right: 34px;
         display: inline-block;
+
+        a.active {
+          color: $orange;
+        }
 
         &:hover .header__nav-links__list{
           display: block;

@@ -11,12 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/not-found/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/not-found/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Context.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authorization/authorization-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authorization/authorization-form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppRoutes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppRoutes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Layout" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
@@ -55,11 +57,11 @@
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\Layout" />
       <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components" />
       <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\loadingAnimation" />
       <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\article" />
       <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\contacts" />
-      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\qa" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (1)">
@@ -230,7 +232,7 @@
       <workItem from="1691750014217" duration="25111000" />
       <workItem from="1691881747481" duration="30462000" />
       <workItem from="1692129409561" duration="64834000" />
-      <workItem from="1692551253511" duration="19143000" />
+      <workItem from="1692551253511" duration="22606000" />
     </task>
     <servers />
   </component>
@@ -272,10 +274,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1692401718768">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1692713409775">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1692401718768" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1692713409775" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1692129390129">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -300,13 +302,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1692706613761" />
-    <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1692397572319">
+    <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1692713728063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1692397572319" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1692707326633">
+    <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1692713728063" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1692712628968">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1692707326633" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1692712628968" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1692713125505">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1692713125505" />
   </component>
 </project>

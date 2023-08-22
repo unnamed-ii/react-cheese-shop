@@ -1,6 +1,7 @@
 import {useRoutes} from "react-router-dom";
 import React, {lazy} from "react";
-import Layout from "./components/Layout/Layout";
+import Layout from "./components/Layout";
+import NotFound from "./pages/not-found";
 
 const Home = lazy(() => import("./pages/home"));
 const Delivery = lazy(() => import("./pages/delivery"));
@@ -49,6 +50,7 @@ function AppRoutes() {
                 {path: "recovery", element: <Recovery/>},
             ]
         },
+        {path: "*", element: <NotFound/>},
     ]);
 
     return element;

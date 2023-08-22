@@ -2,7 +2,7 @@ import React from 'react';
 import './style.scss';
 import Basket from "../../components/basket";
 import Wrapper from "../../components/wrapper";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import {ReactComponent as LocationIcon} from '../../images/icons/location.svg';
 import {ReactComponent as ArrowDownIcon} from '../../images/icons/arrow-down.svg';
 import {ReactComponent as ClockIcon} from '../../images/icons/clock.svg';
@@ -38,19 +38,19 @@ const Header = () => {
                         </div>
                         <div className="header__about-block">
                             <div className="header__about-links">
-                                <Link to="/about">О компании</Link>
-                                <Link to="/">Преимущества</Link>
-                                <Link to="/">Акционные товары</Link>
+                                <NavLink to="/about">О компании</NavLink>
+                                <NavLink to="/advantages">Преимущества</NavLink>
+                                <NavLink to="/promotion-products">Акционные товары</NavLink>
                                 {isAuth ?
-                                    <Link to="profile" className="header__about-login">
+                                    <NavLink to="profile" className="header__about-login">
                                         <UserProfileIcon className='user-profile-icon'/>
                                         Мой профиль
-                                    </Link>
+                                    </NavLink>
                                     :
-                                    <Link to="authorization" className="header__about-login">
+                                    <NavLink to="authorization" className="header__about-login">
                                         <UserProfileIcon className='user-profile-icon'/>
                                         Войти в аккаунт
-                                    </Link>
+                                    </NavLink>
                                 }
                             </div>
                         </div>
@@ -106,9 +106,9 @@ const Header = () => {
                     <div className="header__nav">
                         <div className="header__nav-links">
                             <div className='header__nav-links__recipe' id="link-to-recipes">
-                                <Link to="/recipes">
+                                <NavLink to="/recipes">
                                     Рецепты
-                                </Link>
+                                </NavLink>
                                 <ArrowDownIcon className="arrow-down"/>
                                 <ul className="header__nav-links__list">
                                     <li><Link to="/">Молодые сыры</Link></li>
@@ -122,11 +122,11 @@ const Header = () => {
                                     <li><Link to="recipes">Все рецепты</Link></li>
                                 </ul>
                             </div>
-                            <Link to="delivery">Доставка и оплата</Link>
-                            <Link to="calculator">Калькулятор Сыродела</Link>
-                            <Link to="reviews">Отзывы</Link>
-                            <Link to="questions-and-answers">Вопросы и ответы</Link>
-                            <Link to="contacts">Контакты</Link>
+                            <NavLink to="delivery">Доставка и оплата</NavLink>
+                            <NavLink to="calculator">Калькулятор Сыродела</NavLink>
+                            <NavLink to="reviews">Отзывы</NavLink>
+                            <NavLink to="questions-and-answers">Вопросы и ответы</NavLink>
+                            <NavLink to="contacts">Контакты</NavLink>
                         </div>
                         <div className="header__nav-search">
                             <div className="vertical"/>
