@@ -1,5 +1,6 @@
-import { useRoutes } from "react-router-dom";
+import {useRoutes} from "react-router-dom";
 import React, {lazy} from "react";
+import Layout from "./components/Layout/Layout";
 
 const Home = lazy(() => import("./pages/home"));
 const Delivery = lazy(() => import("./pages/delivery"));
@@ -25,79 +26,28 @@ function AppRoutes() {
     const element = useRoutes([
         {
             path: "/",
-            element: <Home/>
-        },
-        {
-            path: "product-card/:id",
-            element: <ProductCard/>
-        },
-        {
-            path: "category",
-            element: <Category/>
-        },
-        {
-            path: "recipes",
-            element: <Recipes/>,
-        },
-        {
-            path: "recipes/:id",
-            element: <Recipe/>
-        },
-        {
-            path: "articles/:id",
-            element: <Article/>
-        },
-        {
-            path: "delivery",
-            element: <Delivery/>
-        },
-        {
-            path: "reviews",
-            element: <Reviews/>
-        },
-        {
-            path: "about",
-            element: <About/>
-        },
-        {
-            path: "contacts",
-            element: <Contacts/>
-        },
-        {
-            path: "checkout",
-            element: <Checkout/>
-        },
-        {
-            path: "profile",
-            element: <Profile/>
-        },
-        {
-            path: "questions-and-answers",
-            element: <QA/>
-        },
-        {
-            path: "calculator",
-            element: <Calculator/>
-        },
-        {
-            path: "collections",
-            element: <Collections/>
-        },
-        {
-            path: "collections/:id",
-            element: <Collection/>
-        },
-        {
-            path: "registration",
-            element: <Registration/>
-        },
-        {
-            path: "authorization",
-            element: <Authorization/>
-        },
-        {
-            path: "recovery",
-            element: <Recovery/>
+            element: <Layout/>,
+            children: [
+                {path: "/", element: <Home/>},
+                {path: "product-card/:id", element: <ProductCard/>},
+                {path: "category", element: <Category/>},
+                {path: "recipes", element: <Recipes/>,},
+                {path: "recipes/:id", element: <Recipe/>},
+                {path: "articles/:id", element: <Article/>},
+                {path: "delivery", element: <Delivery/>},
+                {path: "reviews",element: <Reviews/>},
+                {path: "about", element: <About/>},
+                {path: "contacts", element: <Contacts/>},
+                {path: "checkout", element: <Checkout/>},
+                {path: "profile", element: <Profile/>},
+                {path: "questions-and-answers", element: <QA/>},
+                {path: "calculator", element: <Calculator/>},
+                {path: "collections", element: <Collections/>},
+                {path: "collections/:id", element: <Collection/>},
+                {path: "registration", element: <Registration/>},
+                {path: "authorization", element: <Authorization/>},
+                {path: "recovery", element: <Recovery/>},
+            ]
         },
     ]);
 
