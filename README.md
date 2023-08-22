@@ -12,7 +12,7 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Adaptive styles
 
 ## Tasks, that have to be done
-- Directories and files renaming, using some methodology
+- FSD Architecture
 - Breadcrumbs
 - Calculator component
 - Leaving order (Checkout page)
