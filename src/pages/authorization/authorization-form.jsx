@@ -58,6 +58,7 @@ const AuthorizationForm = () => {
                         id: authorizingUserId
                     }));
                     // saving data locally on users computer
+                    localStorage.setItem('isUserAuthorized', 'true');
                     localStorage.setItem('userInfo', JSON.stringify({
                         userData: authorizingUser,
                         id: authorizingUserId

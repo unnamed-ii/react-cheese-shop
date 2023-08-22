@@ -10,14 +10,6 @@ import ProductsSlider from "../../components/products-slider";
 import {useSelector} from "react-redux";
 
 const Home = () => {
-    const isAuth = useSelector(state => state.user.isAuth);
-
-    useEffect(() => {
-        if (isAuth) {
-            localStorage.setItem('isUserAuthorized', 'true');
-        }
-    }, [])
-
     return (
         <div className="home">
             <Recommendations/>
