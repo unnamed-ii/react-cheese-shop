@@ -1,8 +1,7 @@
-import React, {Suspense, useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../src/styles/global.scss';
 import {useLocation} from "react-router-dom";
 import {LoadingAnimationContext} from "./Context";
-import LoadingAnimation from "./components/loadingAnimation/loadingAnimation";
 import AppRoutes from "./AppRoutes";
 
 function App() {
@@ -17,9 +16,7 @@ function App() {
 
     return (
         <LoadingAnimationContext.Provider value={{isLoading, setIsLoading}}>
-            <Suspense fallback={<LoadingAnimation isLoading={isLoading}/>}>
-                <AppRoutes/>
-            </Suspense>
+            <AppRoutes/>
         </LoadingAnimationContext.Provider>
     );
 }

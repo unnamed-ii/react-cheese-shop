@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './style.scss';
 import Recommendations from "../../blocks/recommendations";
 import Benefits from "../../blocks/benefits";
@@ -7,7 +7,6 @@ import Equipment from "../../blocks/equipment";
 import Articles from "../../blocks/articles";
 import Products from "../../blocks/products";
 import ProductsSlider from "../../components/products-slider";
-import {useSelector} from "react-redux";
 
 const Home = () => {
     return (

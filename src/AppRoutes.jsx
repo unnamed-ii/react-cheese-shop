@@ -1,7 +1,8 @@
+import React, {lazy, Suspense} from "react";
 import {useRoutes} from "react-router-dom";
-import React, {lazy} from "react";
 import Layout from "./components/Layout";
 import NotFound from "./pages/not-found";
+import LoadingAnimation from "./components/loadingAnimation/loadingAnimation";
 
 const Home = lazy(() => import("./pages/home"));
 const Delivery = lazy(() => import("./pages/delivery"));
@@ -24,19 +25,19 @@ const Collection = lazy(() => import("./pages/collection"));
 const Contacts = lazy(() => import('./pages/contacts'));
 
 function AppRoutes() {
-    const element = useRoutes([
+    const routes = useRoutes([
         {
             path: "/",
             element: <Layout/>,
             children: [
-                {path: "/", element: <Home/>},
+                {index: true, element: <Home/>},
                 {path: "product-card/:id", element: <ProductCard/>},
                 {path: "category", element: <Category/>},
                 {path: "recipes", element: <Recipes/>,},
                 {path: "recipes/:id", element: <Recipe/>},
                 {path: "articles/:id", element: <Article/>},
                 {path: "delivery", element: <Delivery/>},
-                {path: "reviews",element: <Reviews/>},
+                {path: "reviews", element: <Reviews/>},
                 {path: "about", element: <About/>},
                 {path: "contacts", element: <Contacts/>},
                 {path: "checkout", element: <Checkout/>},
@@ -53,7 +54,11 @@ function AppRoutes() {
         {path: "*", element: <NotFound/>},
     ]);
 
-    return element;
+    return (
+        <Suspense fallback={<LoadingAnimation isLoading={true}/>}>
+            {routes}
+        </Suspense>
+    );
 }
 
 export default AppRoutes;
