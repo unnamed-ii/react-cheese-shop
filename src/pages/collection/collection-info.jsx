@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './style.scss';
 import Counter from "../../components/counter";
 import {ReactComponent as ReviewIcon} from "../../images/icons/review.svg";
@@ -12,14 +12,16 @@ const CollectionInfo = ({
                             title,
                             shortDescription,
                             id,
-                            image
+                            image,
+                            amount = 1
                         }) => {
     const dispatch = useDispatch();
+    const [productsNumber, setProductsNumber] = useState(amount);
     const addProductToBasket = () => dispatch(addProductActionCreator({
         title,
         price,
         id,
-        amount: 1,
+        amount: productsNumber,
         image
     }))
 
@@ -54,7 +56,10 @@ const CollectionInfo = ({
                         Количество
                     </div>
                     <div className="bottom__box">
-                        <Counter/>
+                        <Counter
+                            productsNumber={productsNumber}
+                            setProductsNumber={setProductsNumber}
+                        />
                         <button className="to-basket" onClick={addProductToBasket}>
                             В корзину
                         </button>
