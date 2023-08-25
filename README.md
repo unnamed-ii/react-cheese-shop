@@ -12,10 +12,9 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Adaptive styles
 
 ## Tasks, that have to be done
-- firebase authorization 
+- firebase authentication 
 - Create skeletons 
 - FSD Architecture
-- Breadcrumbs
 - Calculator component
 - Leaving order (Checkout page)
 - Ability to search product (Header)
@@ -26,6 +25,7 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Add setting active block (Home page, recommendations block)
 - Add rendering image of products/collections/articles/recipes from server
 
+- Breadcrumbs + 
 - Reviews for individual products (Products and collections) +
 - Fix the position of dropdown list (Header) +
 - Render all data not from constants but from the server +

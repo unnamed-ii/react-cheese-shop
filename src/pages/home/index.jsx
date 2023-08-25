@@ -10,7 +10,7 @@ import ProductsSlider from "../../components/products-slider";
 
 const Home = () => {
     return (
-        <div className="home">
+        <>
             <Recommendations/>
             <Products/>
             <Benefits/>
@@ -18,7 +18,7 @@ const Home = () => {
             <Equipment/>
             <Articles/>
             <ProductsSlider title={'Просмотренные товары'}/>
-        </div>
+        </>
     );
 };
 

@@ -1,0 +1,32 @@
+@import "src/styles/vars";
+
+.breadcrumb {
+  margin-bottom: 15px;
+  max-width: 1180px;
+  width: 100%;
+
+  ol {
+    display: flex;
+    list-style: none;
+
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        color: $darkGrey;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+
+      &.active {
+        color: $orange;
+      }
+
+      svg {
+        margin: 0 12px;
+      }
+    }
+  }
+}
