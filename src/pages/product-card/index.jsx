@@ -24,6 +24,7 @@ const ProductCard = () => {
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
     const [showAlert, setShowAlert] = useState(false);
     const [productData, setProductData] = useState({});
+    const [productsNumber, setProductsNumber] = useState(1);
     const currentShowingProductId = pathname.split('/')[pathname.split('/').length - 1];
     let productsRating;
 
@@ -51,10 +52,11 @@ const ProductCard = () => {
             title: productData.name,
             id: productData.collectionId,
             price: productData.discountPrice,
-            amount: 1,
+            amount: productsNumber,
             image: card,
         }));
         setShowAlert(true);
+        console.log(productsNumber)
     }
 
     return (
@@ -83,6 +85,8 @@ const ProductCard = () => {
                             code={productData.code}
                             manufacturer={productData.manufacturer}
                             addProductToBasket={addProductToBasket}
+                            productsNumber={productsNumber}
+                            setProductsNumber={setProductsNumber}
                         />
                         <AnalogsProductsSlider bigSize={!productData.inStock}/>
                         <Tabs

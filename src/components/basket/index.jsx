@@ -24,14 +24,14 @@ const Basket = () => {
                         <div className="fragment" />
                     </div>
                     <div className="basket__items">
-                        {selectedProducts.map((i, idx) => (
+                        {selectedProducts.map((product, idx) => (
                             <BasketProductCard
-                                key={i.title+idx}
-                                id={i.id}
-                                title={i.title}
-                                price={i.price}
-                                amount={i.amount}
-                                image={i.image}
+                                key={product.title+idx}
+                                id={product.id}
+                                title={product.title}
+                                price={product.price}
+                                amount={product.amount}
+                                image={product.image}
                             />
                         ))}
                     </div>

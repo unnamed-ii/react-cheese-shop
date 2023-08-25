@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Counter from "../../components/counter";
 import {ReactComponent as FullViewIcon} from "../../images/icons/360.svg";
 import {ReactComponent as SolidHeartIcon} from "../../images/icons/profile/heart-solid.svg";
@@ -9,7 +9,7 @@ import {ReactComponent as MedalIcon} from "../../images/icons/product-card-page/
 import productCart from "../../images/product-card-page.png";
 import productCart2 from "../../images/product-card-page2.png";
 
-const Vendor = ({price, discountPrice, code, manufacturer, addProductToBasket}) => {
+const Vendor = ({price, discountPrice, code, manufacturer, addProductToBasket, productsNumber, setProductsNumber}) => {
 
     return (
         <div className="vendor">
@@ -54,7 +54,10 @@ const Vendor = ({price, discountPrice, code, manufacturer, addProductToBasket}) 
                         </div>
                     </div>
                     <div className="vendor__info-adding">
-                        <Counter/>
+                        <Counter
+                            productsNumber={productsNumber}
+                            setProductsNumber={setProductsNumber}
+                        />
                         <button className="available" onClick={addProductToBasket}>
                             В корзину
                         </button>

@@ -24,6 +24,7 @@ const CheckoutOrder = () => {
                         price={product.price}
                         id={product.id}
                         image={product.image}
+                        amount={product.amount}
                     />
                 )}
             </div>
