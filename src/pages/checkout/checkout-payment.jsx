@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import RadioButton from "../../components/radio-button";
 
-const CheckoutPayment = () => {
-    const [activeRadioInput, setActiveRadioInput] = useState(null);
+const CheckoutPayment = ({setPaymentMethod, paymentMethod}) => {
 
     return (
         <div className="checkout__info-payment">
@@ -12,9 +11,9 @@ const CheckoutPayment = () => {
             <form className="checkout__info-payment__methods">
                 <div className="checkout__info-payment__method online">
                     <RadioButton
-                        id={"checkoutPayment1"}
-                        activeRadioInput={activeRadioInput}
-                        setActiveRadioInput={setActiveRadioInput}
+                        id={"Онлайн оплата"}
+                        activeRadioInput={paymentMethod}
+                        onChange={setPaymentMethod}
                     />
                     <div className="text">
                         Онлайн оплата
@@ -22,9 +21,9 @@ const CheckoutPayment = () => {
                 </div>
                 <div className="checkout__info-payment__method cash">
                     <RadioButton
-                        id={"checkoutPayment2"}
-                        activeRadioInput={activeRadioInput}
-                        setActiveRadioInput={setActiveRadioInput}
+                        id={"Оплата наличными"}
+                        activeRadioInput={paymentMethod}
+                        onChange={setPaymentMethod}
                     />
                     <div className="text">
                         Оплата наличными
@@ -32,9 +31,9 @@ const CheckoutPayment = () => {
                 </div>
                 <div className="checkout__info-payment__method other">
                     <RadioButton
-                        id={"checkoutPayment3"}
-                        activeRadioInput={activeRadioInput}
-                        setActiveRadioInput={setActiveRadioInput}
+                        id={"Кредитные карты / Интернет банкинг / QIWI / Yandex"}
+                        activeRadioInput={paymentMethod}
+                        onChange={setPaymentMethod}
                     />
                     <div className="text">
                         Кредитные карты / Интернет банкинг / QIWI / Yandex

@@ -44,6 +44,7 @@
           margin-top: 6px;
           padding: 13px 0 11px 14px;
           width: 350px;
+          outline: none;
         }
       }
     }
@@ -219,6 +220,7 @@
             }
 
             select {
+              outline: none;
               padding: 13px 0 11px 14px;
               border: 1px solid #E6E6E6;
               border-radius: 6px;
@@ -388,6 +390,11 @@
       width: 100%;
       padding: 16px 0;
       cursor: pointer;
+
+      &:disabled {
+        cursor: not-allowed;
+        background-color: $lightGrey;
+      }
     }
   }
 }

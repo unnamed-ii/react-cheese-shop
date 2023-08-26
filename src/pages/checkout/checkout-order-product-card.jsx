@@ -1,6 +1,6 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {useDispatch} from "react-redux";
-import {removeProductActionCreator} from "../../store/basket";
+import {removeProductActionCreator, setProductNumberActionCreator} from "../../store/basket";
 import Counter from "../../components/counter";
 import productImage from "../../images/checkout-products-image.png";
 
@@ -15,6 +15,14 @@ export const CheckoutOrderProductCard = ({
     const dispatch = useDispatch();
     const [productsNumber, setProductsNumber] = useState(amount);
     const removeProduct = () => dispatch(removeProductActionCreator(id))
+
+    useEffect(() => {
+        dispatch(setProductNumberActionCreator({
+            id: id,
+            amount: productsNumber,
+            price: price
+        }));
+    }, [productsNumber]);
 
     return (
         <div className="checkout__info-order__product">
@@ -35,7 +43,7 @@ export const CheckoutOrderProductCard = ({
                 setProductsNumber={setProductsNumber}
             />
             <div className="price">
-                {price} ₽ x {amount}шт
+                {price} ₽ x {productsNumber}шт
             </div>
         </div>
     )

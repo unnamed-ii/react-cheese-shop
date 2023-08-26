@@ -11,18 +11,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/checkout/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/basket/basket-product-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basket/basket-product-card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/basket/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basket/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/counter/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/counter/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/counter/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/counter/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/product-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product-card/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/radio-button/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/radio-button/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkout/checkout-delivery.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-delivery.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkout/checkout-order-product-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-order-product-card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkout/checkout-payment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-payment.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkout/checkout-totals.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-totals.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkout/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -237,7 +246,7 @@
       <workItem from="1691750014217" duration="25111000" />
       <workItem from="1691881747481" duration="30462000" />
       <workItem from="1692129409561" duration="64834000" />
-      <workItem from="1692551253511" duration="68203000" />
+      <workItem from="1692551253511" duration="72949000" />
     </task>
     <servers />
   </component>
@@ -279,22 +288,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1692129390129" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1693059234443">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1693076210842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1693059234443" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1693059234443">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1693076210842" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1693076210842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1693059234443" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1693059234442">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1693076210842" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1693076210842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1693059234442" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1693059234443">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1693076210842" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1693076210842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1693059234443" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1693076210842" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1692718982270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -311,9 +320,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1692712628968" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1693059713517">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1693089560021">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693059713517" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693089560021" />
   </component>
 </project>

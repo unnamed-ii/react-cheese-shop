@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import RadioButton from "../../components/radio-button";
+import CheckBox from "../../components/checkbox";
+import {russianRegions} from "./constants";
 
-const CheckoutDelivery = () => {
-    const [activeRadioInput, setActiveRadioInput] = useState(null);
+const CheckoutDelivery = ({setRegion, setDeliveryMethod, deliveryMethod, setField, userInfo}) => {
 
     return (
         <div className="checkout__info-delivery">
@@ -13,19 +14,19 @@ const CheckoutDelivery = () => {
                 <form>
                     <div className="checkout__info-delivery__type free">
                         <RadioButton
-                            id={"delivery-free"}
-                            activeRadioInput={activeRadioInput}
-                            setActiveRadioInput={setActiveRadioInput}
+                            id={"Бесплатная доставка\n"}
+                            activeRadioInput={deliveryMethod}
+                            onChange={setDeliveryMethod}
                         />
                         Бесплатная доставка <span>(0 руб.)</span>
                     </div>
                     <div className="checkout__info-delivery__type courier">
                         <RadioButton
-                            id={"delivery-courier"}
-                            activeRadioInput={activeRadioInput}
-                            setActiveRadioInput={setActiveRadioInput}
+                            id={"Курьер"}
+                            activeRadioInput={deliveryMethod}
+                            onChange={setDeliveryMethod}
                         />
-                        Курьер <span>(0 руб.)</span>
+                        Курьер <span>(350 руб.)</span>
                     </div>
                 </form>
             </div>
@@ -36,11 +37,23 @@ const CheckoutDelivery = () => {
                 <div className="inputs">
                     <div className="input">
                         <div className="text">Имя и фамилия</div>
-                        <input type="text" placeholder="Иванов Андрей"/>
+                        <input
+                            type="text"
+                            placeholder="Иванов Андрей"
+                            value={userInfo.fullName}
+                            name={"fullName"}
+                            onChange={(e) => setField(e)}
+                        />
                     </div>
                     <div className="input">
                         <div className="text">Номер телефона</div>
-                        <input type="text" placeholder="+7 000 000 00 00"/>
+                        <input
+                            type="text"
+                            placeholder="+7 000 000 00 00"
+                            value={userInfo.phoneNumber}
+                            name={"phoneNumber"}
+                            onChange={(e) => setField(e)}
+                        />
                     </div>
                 </div>
                 <div className="selects">
@@ -52,28 +65,42 @@ const CheckoutDelivery = () => {
                     </div>
                     <div className="select">
                         <div className="text">Выберите регион</div>
-                        <select>
-                            <option value="">Нижний Новгород</option>
+                        <select onChange={(e) => setRegion(e)}>
+                            {russianRegions.map((region, idx) => (
+                                <option value={region} key={idx}>
+                                    {region}
+                                </option>
+                            ))}
                         </select>
                     </div>
                 </div>
                 <div className="inputs">
                     <div className="input">
                         <div className="text">Улица, дом и квартира</div>
-                        <input type="text" placeholder="Ивановская 34, кв.12"/>
+                        <input
+                            type="text"
+                            placeholder="Ивановская 34, кв.12"
+                            value={userInfo.address}
+                            name={"address"}
+                            onChange={(e) => setField(e)}
+                        />
                     </div>
                     <div className="input">
                         <div className="text">Индекс</div>
-                        <input type="text" placeholder="02100"/>
+                        <input
+                            type="text"
+                            placeholder="02100"
+                            value={userInfo.index}
+                            name={"index"}
+                            onChange={(e) => setField(e)}
+                        />
                     </div>
                 </div>
             </div>
             <div className="checkout__info-delivery__privacy">
-                <div className="checkbox">
-                    <input type="checkbox"/>
-                </div>
+                <CheckBox/>
                 <div className="text">
-                    Cогласен на обработку персональных данных в соответствии с <a href="#">политикой
+                    Согласен на обработку персональных данных в соответствии с <a href="#">политикой
                     конфиденциальности</a>
                 </div>
             </div>

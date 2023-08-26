@@ -39,7 +39,7 @@ const CheckoutTotals = () => {
                     <div>{basketSum - promoCode} руб.</div>
                 </div>
             </div>
-            <button className="checkout__totals-btn">
+            <button className="checkout__totals-btn" disabled={basketSum <= 0}>
                 Подтвердить заказ
             </button>
         </div>
