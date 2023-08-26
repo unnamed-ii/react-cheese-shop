@@ -15,7 +15,6 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - firebase authentication 
 - Create skeletons 
 - FSD Architecture
-- Leaving order (Checkout page)
 - Ability to search product (Header)
 - Personal collection of previous orders (Portfolio page)
 - Personal collection of favourite products. Therefore, user can manipulate with this collection (Portfolio page)
@@ -24,6 +23,7 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Add setting active block (Home page, recommendations block)
 - Add rendering image of products/collections/articles/recipes from server
 
+- Leaving order (Checkout page) +
 - Calculator component +
 - Breadcrumbs + 
 - Reviews for individual products (Products and collections) +

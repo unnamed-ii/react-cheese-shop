@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import './style.scss';
 import CheckoutContactInfo from "./checkout-contact-info";
 import CheckoutOrder from "./checkout-order";
@@ -9,9 +9,16 @@ import Wrapper from "../../components/wrapper";
 import PageTitle from "../../components/page-title";
 import {russianRegions} from "./constants";
 import {useSelector} from "react-redux";
+import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
+import {LoadingAnimationContext} from "../../Context";
+import {addDoc, collection} from "firebase/firestore";
+import {database} from "../../firebase";
+import {useNavigate} from "react-router-dom";
 
 const Checkout = () => {
-    const selectedProduct = useSelector(state => state.basket.products)
+    const navigate = useNavigate();
+    const selectedProduct = useSelector(state => state.basket.products);
+    const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
     const [order, setOrder] = useState({
         products: [...selectedProduct],
         deliveryMethod: "Курьер",
@@ -60,8 +67,17 @@ const Checkout = () => {
         }))
     }
 
+    const leaveOrder = async () => {
+        setIsLoading(true);
+        await addDoc(collection(database, "orders"), order);
+        alert("Ваш заказ принят!")
+        navigate("/");
+        setIsLoading(false);
+    }
+
     return (
         <Wrapper>
+            <LoadingAnimation isLoading={isLoading}/>
             <div className="checkout">
                 <div className="checkout__info">
                     <PageTitle title={"Оформление заказа"}/>
@@ -79,7 +95,9 @@ const Checkout = () => {
                         paymentMethod={order.paymentMethod}
                     />
                 </div>
-                <CheckoutTotals/>
+                <CheckoutTotals
+                    leaveOrder={leaveOrder}
+                />
             </div>
         </Wrapper>
     );
