@@ -1,13 +1,22 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Counter from "../counter";
 import {useDispatch} from "react-redux";
-import {removeProductActionCreator} from "../../store/basket";
+import {removeProductActionCreator, setProductNumberActionCreator} from "../../store/basket";
 import {ReactComponent as RemoveBtnIcon} from '../../images/icons/close-btn.svg';
 
 const BasketProductCard = ({title, price, id, image, amount = 1}) => {
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
     const [productsNumber, setProductsNumber] = useState(amount);
+
     const removeProduct = () => dispatch(removeProductActionCreator(id));
+
+    useEffect(() => {
+        dispatch(setProductNumberActionCreator({
+            id: id,
+            amount: productsNumber,
+            price: price
+        }));
+    }, [productsNumber]);
 
     return (
         <div className="basket__items-item">
@@ -27,7 +36,7 @@ const BasketProductCard = ({title, price, id, image, amount = 1}) => {
             </div>
             <RemoveBtnIcon className="basket__items-item__remove" onClick={removeProduct}/>
             <div className="basket__items-item__price">
-                {price}руб x {amount}шт
+                {price}руб x {productsNumber}шт
             </div>
         </div>
     )

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './style.scss'
 import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
@@ -16,17 +16,17 @@ const Basket = () => {
                 <span>{sumOfProducts} руб.</span>
             </div>
             <div className="basket-image">
-                <BasketIcon className="basket-icon" />
+                <BasketIcon className="basket-icon"/>
                 <div className='basket-image__circle'>{selectedProducts.length}</div>
                 <div className="basket">
                     <div className="basket__title">
                         корзина ({selectedProducts.length})
-                        <div className="fragment" />
+                        <div className="fragment"/>
                     </div>
                     <div className="basket__items">
-                        {selectedProducts.map((product, idx) => (
+                        {selectedProducts.map((product) => (
                             <BasketProductCard
-                                key={product.title+idx}
+                                key={product.id}
                                 id={product.id}
                                 title={product.title}
                                 price={product.price}

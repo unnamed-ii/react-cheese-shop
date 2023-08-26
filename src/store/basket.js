@@ -1,6 +1,7 @@
 const ADD_PRODUCT = 'ADD_PRODUCT';
 const REMOVE_PRODUCT = 'REMOVE_PRODUCT';
 const CLEAR_BASKET = 'CLEAR_BASKET';
+const SET_PRODUCT_NUMBER = 'SET_PRODUCT_NUMBER';
 
 const initState = {
     products: [],
@@ -25,6 +26,23 @@ export const basketReducer = (state = initState, action) => {
             }
         }
 
+        case SET_PRODUCT_NUMBER: {
+            const updatedProducts = state.products.map(product => {
+                if (product.id === action.payload.id) {
+                    return {
+                        ...product,
+                        amount: action.payload.amount
+                    }
+                }
+                return product;
+            });
+            return {
+                ...state,
+                products: updatedProducts,
+                sum: updatedProducts.reduce((sum, product) => sum + (product.price * product.amount), 0)
+            }
+        }
+
         case REMOVE_PRODUCT: {
             const updatedProducts = state.products.filter(product => product.id !== action.payload);
             return {
@@ -43,5 +61,6 @@ export const basketReducer = (state = initState, action) => {
 }
 
 export const addProductActionCreator = (payload) => ({type: ADD_PRODUCT, payload});
+export const setProductNumberActionCreator = (payload) => ({type: SET_PRODUCT_NUMBER, payload});
 export const removeProductActionCreator = (payload) => ({type: REMOVE_PRODUCT, payload});
 export const clearBasketActionCreator = (payload) => ({type: CLEAR_BASKET});

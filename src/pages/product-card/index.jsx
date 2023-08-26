@@ -56,7 +56,6 @@ const ProductCard = () => {
             image: card,
         }));
         setShowAlert(true);
-        console.log(productsNumber)
     }
 
     return (
