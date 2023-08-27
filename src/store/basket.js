@@ -63,4 +63,4 @@ export const basketReducer = (state = initState, action) => {
 export const addProductActionCreator = (payload) => ({type: ADD_PRODUCT, payload});
 export const setProductNumberActionCreator = (payload) => ({type: SET_PRODUCT_NUMBER, payload});
 export const removeProductActionCreator = (payload) => ({type: REMOVE_PRODUCT, payload});
-export const clearBasketActionCreator = (payload) => ({type: CLEAR_BASKET});
+export const clearBasketActionCreator = () => ({type: CLEAR_BASKET});

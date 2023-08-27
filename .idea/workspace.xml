@@ -11,7 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/checkout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/favourite-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/favourite-tab.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -238,7 +241,7 @@
       <workItem from="1691750014217" duration="25111000" />
       <workItem from="1691881747481" duration="30462000" />
       <workItem from="1692129409561" duration="64834000" />
-      <workItem from="1692551253511" duration="73259000" />
+      <workItem from="1692551253511" duration="77685000" />
     </task>
     <servers />
   </component>
@@ -280,26 +283,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1692129390129" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1693076210842">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1693138358585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1693076210842" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1693076210842">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1693138358585" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1693138358584">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1693076210842" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1693076210842">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1693138358584" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1693138358584">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1693076210842" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1693076210842">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1693138358584" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1693138358585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1693076210842" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1692718982270">
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1693138358585" />
+    <state x="478" y="169" key="SettingsEditor" timestamp="1693136318973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1692718982270" />
+    <state x="478" y="169" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1693136318973" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1692893071527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -312,9 +315,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1692712628968" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1693090413268">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1693138283866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693090413268" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693138283866" />
   </component>
 </project>

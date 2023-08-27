@@ -8,14 +8,16 @@ import CheckoutPayment from "./checkout-payment";
 import Wrapper from "../../components/wrapper";
 import PageTitle from "../../components/page-title";
 import {russianRegions} from "./constants";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
 import {LoadingAnimationContext} from "../../Context";
 import {addDoc, collection} from "firebase/firestore";
 import {database} from "../../firebase";
 import {useNavigate} from "react-router-dom";
+import {clearBasketActionCreator} from "../../store/basket";
 
 const Checkout = () => {
+    const dispatch = useDispatch();
     const navigate = useNavigate();
     const selectedProduct = useSelector(state => state.basket.products);
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
@@ -70,8 +72,9 @@ const Checkout = () => {
     const leaveOrder = async () => {
         setIsLoading(true);
         await addDoc(collection(database, "orders"), order);
-        alert("Ваш заказ принят!")
         navigate("/");
+        alert("Ваш заказ принят!")
+        dispatch(clearBasketActionCreator());
         setIsLoading(false);
     }
 
