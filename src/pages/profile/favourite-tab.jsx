@@ -43,12 +43,13 @@ const FavouriteTab = ({activeTab}) => {
                     {favouriteProducts.map(product => (
                         <FavouriteTabItem
                             key={product.id}
-                            image={favouriteProductImage}
-                            status={product.status}
-                            title={product.title}
-                            subtitle={product.subtitle}
-                            discountPrice={product.discountPrice}
+                            title={product.name}
+                            productId={product.id}
+                            status={product.inStock}
                             normalPrice={product.price}
+                            image={favouriteProductImage}
+                            manufacturer={product.manufacturer}
+                            discountPrice={product.discountPrice}
                         />
                     ))}
                 </div>

@@ -46,7 +46,7 @@ const Collection = () => {
                             inStock={collectionData.inStock}
                             title={collectionData.name}
                             shortDescription={collectionData.shortDescription}
-                            id={collectionData.id}
+                            id={collectionData.collectionId}
                             image={collectionImage}
                         />
                         <CollectionTabs

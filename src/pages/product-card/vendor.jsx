@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Counter from "../../components/counter";
 import {ReactComponent as FullViewIcon} from "../../images/icons/360.svg";
 import {ReactComponent as SolidHeartIcon} from "../../images/icons/profile/heart-solid.svg";
@@ -8,8 +8,11 @@ import {ReactComponent as CreditCardsIcon} from "../../images/icons/product-card
 import {ReactComponent as MedalIcon} from "../../images/icons/product-card-page/medals.svg";
 import productCart from "../../images/product-card-page.png";
 import productCart2 from "../../images/product-card-page2.png";
+import AddToFavouriteButton from "../../components/add-to-favourite-button";
+import {doc, getDoc} from "firebase/firestore";
+import {database} from "../../firebase";
 
-const Vendor = ({price, discountPrice, code, manufacturer, addProductToBasket, productsNumber, setProductsNumber}) => {
+const Vendor = ({price, discountPrice, code, manufacturer, addProductToBasket, productsNumber, setProductsNumber, productId}) => {
 
     return (
         <div className="vendor">
@@ -37,10 +40,10 @@ const Vendor = ({price, discountPrice, code, manufacturer, addProductToBasket, p
                             {discountPrice} руб.
                             <span>{price}&nbsp;руб.</span>
                         </div>
-                        <div className="vendor__info-title__favourite">
-                            <SolidHeartIcon/>
-                            В избранное
-                        </div>
+                        <AddToFavouriteButton
+                            productId={productId}
+                            collectionName={"products"}
+                        />
                     </div>
                     <div className="vendor__info-bonus">
                         <span>+95</span>бонусных рублей <QuestionIcon/>

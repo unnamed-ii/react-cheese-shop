@@ -11,10 +11,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/add-to-favourite-button/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/add-to-favourite-button/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/checkout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/collection/collection-info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collection/collection-info.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/collection/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collection/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/collection/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collection/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/collections/collection-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collections/collection-card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/product-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product-card/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/product-card/vendor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product-card/vendor.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/favourite-tab-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/favourite-tab-item.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/profile/favourite-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/favourite-tab.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/add-to-favourite-button" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -66,11 +74,11 @@
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\add-to-favourite-button" />
       <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components" />
       <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\Layout" />
       <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\loadingAnimation" />
       <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\article" />
-      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\contacts" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (1)">
@@ -241,7 +249,7 @@
       <workItem from="1691750014217" duration="25111000" />
       <workItem from="1691881747481" duration="30462000" />
       <workItem from="1692129409561" duration="64834000" />
-      <workItem from="1692551253511" duration="77685000" />
+      <workItem from="1692551253511" duration="85721000" />
     </task>
     <servers />
   </component>
@@ -315,9 +323,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1692712628968" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1693138283866">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1693145368609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693138283866" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693145368609" />
   </component>
 </project>

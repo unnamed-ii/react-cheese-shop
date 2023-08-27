@@ -12,17 +12,18 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Adaptive styles
 
 ## Tasks, that have to be done
+- TO FIX: if product is in favourite list, render the solid heart icon at addToFavourite button 
 - firebase authentication 
 - Create skeletons 
 - FSD Architecture
 - Ability to search product (Header)
 - Personal collection of previous orders (Portfolio page)
-- Personal collection of favourite products. Therefore, user can manipulate with this collection (Portfolio page)
 - Form validation (Modals, auth, recovery, registration pages)
 - Advanced filtering products (Category page)
 - Add setting active block (Home page, recommendations block)
 - Add rendering image of products/collections/articles/recipes from server
 
+- Personal collection of favourite products. Therefore, user can manipulate with this collection (Portfolio page) +
 - Leaving order (Checkout page) +
 - Calculator component +
 - Breadcrumbs + 

@@ -1,22 +1,26 @@
 import React from 'react';
 import './style.scss';
-import {ReactComponent as HeartSolidIcon} from "../../images/icons/profile/heart-solid.svg";
+import AddToFavouriteButton from "../../components/add-to-favourite-button";
 
-const FavouriteTabItem = ({status = "", image, title, subtitle, discountPrice, normalPrice}) => {
+const FavouriteTabItem = ({status, image, title, manufacturer, discountPrice, normalPrice, productId}) => {
     return (
-        <div className={"favourite-cards__card " + status}>
+        <div className={"favourite-cards__card " + (!status ? "out-of-stock" : "")}>
             <div className="favourite-cards__card-top">
                 <div className="text">
-                    {status === "out-of-stock" ? "Нет в наличии" : "В наличии"}
+                    {status ? "В наличии" : "Нет в наличии"}
                 </div>
-                <HeartSolidIcon/>
+                <AddToFavouriteButton
+                    productId={productId}
+                    collectionName={"products"}
+                    isAlreadyAdded={true}
+                />
             </div>
             <img src={image} alt="" className="favourite-cards__card-image"/>
             <div className="favourite-cards__card-title">
                 {title}
             </div>
-            <div className="favourite-cards__card-subtitle">
-                {subtitle}
+            <div className="favourite-cards__card-manufacturer">
+                {manufacturer}
             </div>
             <div className="favourite-cards__card-bottom">
                 <div className="price">

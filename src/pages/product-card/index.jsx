@@ -39,7 +39,7 @@ const ProductCard = () => {
                     ...productSnap.data()
                 });
             }
-            productsRating = +JSON.stringify(productData?.rate).split(":")[1].replace("}", "");
+            // productsRating = +JSON.stringify(productData?.rate).split(":")[1].replace("}", "");
         } catch (e) {
             console.log(e);
         }
@@ -86,6 +86,7 @@ const ProductCard = () => {
                             addProductToBasket={addProductToBasket}
                             productsNumber={productsNumber}
                             setProductsNumber={setProductsNumber}
+                            productId={productData?.collectionId}
                         />
                         <AnalogsProductsSlider bigSize={!productData.inStock}/>
                         <Tabs

@@ -5,6 +5,7 @@ import {ReactComponent as ReviewIcon} from "../../images/icons/review.svg";
 import {ReactComponent as HeartIcon} from "../../images/icons/orange-empty-heart.svg";
 import {useDispatch} from "react-redux";
 import {addProductActionCreator} from "../../store/basket";
+import AddToFavouriteButton from "../../components/add-to-favourite-button";
 
 const CollectionInfo = ({
                             price,
@@ -23,7 +24,7 @@ const CollectionInfo = ({
         id,
         amount: productsNumber,
         image
-    }))
+    }));
 
     return (
         <div className="collection__box">
@@ -63,9 +64,10 @@ const CollectionInfo = ({
                         <button className="to-basket" onClick={addProductToBasket}>
                             В корзину
                         </button>
-                        <div className="to-favourite">
-                            <HeartIcon/>
-                        </div>
+                        <AddToFavouriteButton
+                            productId={id}
+                            collectionName={"collections"}
+                        />
                     </div>
                 </div>
             </div>

@@ -3,6 +3,7 @@ import {ReactComponent as HeartIcon} from "../../images/icons/heart.svg";
 import {addProductActionCreator} from "../../store/basket";
 import {useDispatch} from "react-redux";
 import {Link} from "react-router-dom";
+import AddToFavouriteButton from "../../components/add-to-favourite-button";
 
 export const CollectionCard = ({
                                    title,
@@ -19,7 +20,10 @@ export const CollectionCard = ({
         <div className="collections__group-collection">
             <div className="collections__group-collection__top">
                 <div className="text">Топ Продаж</div>
-                <HeartIcon/>
+                <AddToFavouriteButton
+                    productId={id}
+                    collectionName={"collections"}
+                />
             </div>
             <img src={image} alt="" className="collections__group-collection__image"/>
             <Link className="collections__group-collection__title" to={id}>
