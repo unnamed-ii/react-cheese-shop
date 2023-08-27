@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.scss';
 import AddToFavouriteButton from "../../components/add-to-favourite-button";
+import {Link} from "react-router-dom";
 
 const FavouriteTabItem = ({status, image, title, manufacturer, discountPrice, normalPrice, productId}) => {
     return (
@@ -16,12 +17,14 @@ const FavouriteTabItem = ({status, image, title, manufacturer, discountPrice, no
                 />
             </div>
             <img src={image} alt="" className="favourite-cards__card-image"/>
-            <div className="favourite-cards__card-title">
-                {title}
-            </div>
-            <div className="favourite-cards__card-manufacturer">
-                {manufacturer}
-            </div>
+            <Link to={`/product-card/${productId}`}>
+                <div className="favourite-cards__card-title">
+                    {title}
+                </div>
+                <div className="favourite-cards__card-manufacturer">
+                    {manufacturer}
+                </div>
+            </Link>
             <div className="favourite-cards__card-bottom">
                 <div className="price">
                     <div className="price__discount">

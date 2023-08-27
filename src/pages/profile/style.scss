@@ -244,6 +244,10 @@
               line-height: 22px;
               margin-bottom: 6px;
               width: 220px;
+
+              &:hover {
+                color: $orange;
+              }
             }
 
             &-manufacturer {
@@ -251,6 +255,10 @@
               line-height: 24px;
               color: $darkGrey;
               margin-bottom: 18px;
+
+              &:hover {
+                color: $orange;
+              }
             }
 
             &-bottom {
