@@ -2,6 +2,7 @@ import React from 'react';
 import './style.scss';
 import AddToFavouriteButton from "../../components/add-to-favourite-button";
 import {Link} from "react-router-dom";
+import Button from "../../components/button";
 
 const FavouriteTabItem = ({status, image, title, manufacturer, discountPrice, normalPrice, productId}) => {
     return (
@@ -34,9 +35,10 @@ const FavouriteTabItem = ({status, image, title, manufacturer, discountPrice, no
                         {discountPrice} руб.
                     </div>
                 </div>
-                <button>
-                    В корзину
-                </button>
+                <Button
+                    text={"В корзину"}
+                    className={"profile-favourites-product-card"}
+                />
             </div>
         </div>
     )

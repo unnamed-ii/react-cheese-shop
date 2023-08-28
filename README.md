@@ -12,6 +12,7 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Adaptive styles
 
 ## Tasks, that have to be done
+- TO FIX: .basket className for button component isn't working for some reason
 - TO FIX: if product is in favourite list, render the solid heart icon at addToFavourite button 
 - firebase authentication 
 - Create skeletons 

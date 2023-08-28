@@ -19,7 +19,7 @@ const Recovery = lazy(() => import("./pages/recovery"));
 const Recipes = lazy(() => import("./pages/recipes"));
 const Article = lazy(() => import("./pages/article"));
 const Recipe = lazy(() => import("./pages/recipe"));
-const ProductCard = lazy(() => import("./pages/product-card"));
+const ProductPage = lazy(() => import("./pages/product-page"));
 const Category = lazy(() => import("./pages/category"));
 const Collection = lazy(() => import("./pages/collection"));
 const Contacts = lazy(() => import('./pages/contacts'));
@@ -31,7 +31,7 @@ function AppRoutes() {
             element: <Layout/>,
             children: [
                 {index: true, element: <Home/>},
-                {path: "product-card/:id", element: <ProductCard/>},
+                {path: "product-page/:id", element: <ProductPage/>},
                 {path: "category", element: <Category/>},
                 {path: "recipes", element: <Recipes/>,},
                 {path: "recipes/:id", element: <Recipe/>},

@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.scss';
+import Button from "../../components/button";
 
 const OrdersTabItem = ({image, title, code, priceForProduct, amount, totalPrice}) => {
     return (
@@ -22,9 +23,10 @@ const OrdersTabItem = ({image, title, code, priceForProduct, amount, totalPrice}
             <div className="table__item-total">
                 {totalPrice} ₽
             </div>
-            <button className="table__item-button">
-                Добавить
-            </button>
+            <Button
+                text={"Добавить"}
+                className={"profile-orders-product-card"}
+            />
         </div>
     )
 }

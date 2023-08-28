@@ -3,6 +3,7 @@ import './style.scss'
 import {Link} from "react-router-dom";
 import Wrapper from "../../components/wrapper";
 import PageTitle from "../../components/page-title";
+import Button from "../../components/button";
 
 const Recovery = () => {
     return (
@@ -20,7 +21,10 @@ const Recovery = () => {
                         </div>
                         <input type="email" placeholder="yourname@mail.com"/>
                         <br/>
-                        <button>Продолжить</button>
+                        <Button
+                            text={"Продолжить"}
+                            className={"recover-page"}
+                        />
                     </form>
                 </div>
                 <div className="recover__link">

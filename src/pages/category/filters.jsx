@@ -5,6 +5,7 @@ import CustomInputRange from "../../components/input-range";
 import {useDispatch, useSelector} from "react-redux";
 import {addFilterActionCreator} from "../../store/category-filters";
 import {ReactComponent as ArrowDownIcon} from "../../images/icons/arrow-down.svg";
+import Button from "../../components/button";
 
 const Filters = () => {
     const dispatch = useDispatch();
@@ -24,16 +25,17 @@ const Filters = () => {
                             Выберите фильтр
                         </div>
                         <div className="dropdown-list__filters">
-                            {filters.price.map(filter => (
-                                <div className="dropdown-list__filters-filter" key={Math.random() * 100000}>
+                            {filters.price.map((filter, idx) => (
+                                <div className="dropdown-list__filters-filter" key={idx}>
                                     <CheckBox/>
                                     {filter}
                                 </div>
                             ))}
                         </div>
-                        <div className="dropdown-list__button">
-                            <button>Применить</button>
-                        </div>
+                        <Button
+                            text={"Применить"}
+                            className={"filter"}
+                        />
                     </div>
                 </div>
                 <div className="category__filters-list__filter">
@@ -46,16 +48,17 @@ const Filters = () => {
                             Выберите фильтр
                         </div>
                         <div className="dropdown-list__filters">
-                            {filters.kinds.map(filter => (
-                                <div className="dropdown-list__filters-filter" key={Math.random() * 100000}>
+                            {filters.kinds.map((filter, idx) => (
+                                <div className="dropdown-list__filters-filter" key={idx}>
                                     <CheckBox/>
                                     {filter}
                                 </div>
                             ))}
                         </div>
-                        <div className="dropdown-list__button">
-                            <button>Применить</button>
-                        </div>
+                        <Button
+                            text={"Применить"}
+                            className={"filter"}
+                        />
                     </div>
                 </div>
                 <div className="category__filters-list__filter">
@@ -69,15 +72,16 @@ const Filters = () => {
                         </div>
                         <div className="dropdown-list__filters">
                             {filters.manufacturer.map((filter, idx) => (
-                                <div className="dropdown-list__filters-filter" key={filter.name + idx}>
+                                <div className="dropdown-list__filters-filter" key={idx}>
                                     <CheckBox />
                                     {filter}
                                 </div>
                             ))}
                         </div>
-                        <div className="dropdown-list__button">
-                            <button>Применить</button>
-                        </div>
+                        <Button
+                            text={"Применить"}
+                            className={"filter"}
+                        />
                     </div>
                 </div>
                 <div className="category__filters-list__filter">
@@ -93,9 +97,10 @@ const Filters = () => {
                                 Товары со скидкой
                             </div>
                         </div>
-                        <div className="dropdown-list__button">
-                            <button>Применить</button>
-                        </div>
+                        <Button
+                            text={"Применить"}
+                            className={"filter"}
+                        />
                     </div>
                 </div>
             </div>

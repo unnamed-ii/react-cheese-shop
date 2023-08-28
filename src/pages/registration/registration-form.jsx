@@ -10,6 +10,7 @@ import {ReactComponent as VkIcon} from "../../images/icons/sign-up/vk.svg";
 import {ReactComponent as TwitterIcon} from "../../images/icons/sign-up/twitter.svg";
 import {ReactComponent as MailRuIcon} from "../../images/icons/sign-up/mailRu.svg";
 import {ReactComponent as YandexIcon} from "../../images/icons/sign-up/yandex.svg";
+import Button from "../../components/button";
 
 const RegistrationForm = () => {
     const [userData, setUserData] = useState({
@@ -106,7 +107,11 @@ const RegistrationForm = () => {
                         />
                     </div>
                 </div>
-                <button>Создать аккаунт</button>
+                <Button
+                    text={"Создать аккаунт"}
+                    onClick={registerUser}
+                    className={"registration-page"}
+                />
             </form>
             <div className="sign-up__form-accounts">
                 <div className="top">

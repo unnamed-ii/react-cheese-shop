@@ -11,9 +11,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/button/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/button/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppRoutes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppRoutes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/basket/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basket/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/basket/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basket/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/authorization/authorization-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authorization/authorization-form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/authorization/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authorization/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/calculator/calculator-calculation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/calculator/calculator-calculation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/calculator/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/calculator/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/category/filters.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/filters.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/category/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkout/checkout-totals.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-totals.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkout/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/collection/collection-info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collection/collection-info.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/collection/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collection/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/collections/collection-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collections/collection-card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/collections/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collections/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contacts/contacts-feedback.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts/contacts-feedback.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contacts/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/product-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product-page/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/product-card/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product-page/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/product-card/tabs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product-page/tabs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/product-card/vendor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product-page/vendor.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/change-password-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/change-password-tab.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/coupons-tab-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/coupons-tab-item.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/profile/favourite-tab-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/favourite-tab-item.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/orders-tab-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/orders-tab-item.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/profile/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration/registration-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/registration-form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +75,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/add-to-favourite-button" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/button" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -65,11 +96,11 @@
       <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\button" />
       <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\add-to-favourite-button" />
       <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components" />
       <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\Layout" />
       <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\loadingAnimation" />
-      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\pages\article" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (1)">
@@ -240,7 +271,7 @@
       <workItem from="1691750014217" duration="25111000" />
       <workItem from="1691881747481" duration="30462000" />
       <workItem from="1692129409561" duration="64834000" />
-      <workItem from="1692551253511" duration="88101000" />
+      <workItem from="1692551253511" duration="95522000" />
     </task>
     <servers />
   </component>
@@ -282,22 +313,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1692129390129" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1693138358585">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1693178787610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1693138358585" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1693138358584">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1693178787610" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1693178787610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1693138358584" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1693138358584">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1693178787610" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1693178787609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1693138358584" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1693138358585">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1693178787609" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1693178787610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1693138358585" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1693178787610" />
     <state x="478" y="169" key="SettingsEditor" timestamp="1693136318973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -314,9 +345,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1692712628968" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1693168823750">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1693181848096">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693168823750" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693181848096" />
   </component>
 </project>

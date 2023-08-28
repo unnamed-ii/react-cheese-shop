@@ -4,6 +4,7 @@ import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation
 import {collection, getDocs, doc, updateDoc} from "firebase/firestore";
 import {database} from "../../firebase";
 import {LoadingAnimationContext} from "../../Context";
+import Button from "../../components/button";
 
 const ChangePasswordTab = ({activeTab}) => {
     const userId = JSON.parse(localStorage.getItem('userInfo')).id;
@@ -86,7 +87,10 @@ const ChangePasswordTab = ({activeTab}) => {
                         />
                     </div>
                 </div>
-                <button>Подтвердить</button>
+                <Button
+                    text={"Подтвердить"}
+                    className={"profile-password-change-password"}
+                />
             </form>
             <LoadingAnimation isLoading={isLoading}/>
         </div>

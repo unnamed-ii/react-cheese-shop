@@ -129,28 +129,8 @@
             }
           }
 
-          &__button {
-            padding: 0 20px 20px 20px;
-
-            button {
-              background: $white;
-              border: 1px solid #4E2D2D;
-              border-radius: 5px;
-              padding: 6px 0;
-              width: 100%;
-              cursor: pointer;
-              font-weight: 700;
-              font-size: 14px;
-              line-height: 24px;
-              text-align: center;
-              color: $brown;
-            }
-          }
-
           &.price-filter {
-
             .dropdown-list__filters {
-
               &-filter {
                 padding-top: 16px;
                 border-top: 1px solid rgba($darkGrey, .1);

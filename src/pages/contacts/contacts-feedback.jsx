@@ -4,6 +4,7 @@ import {database} from "../../firebase";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
 import {refreshPage} from "../../utils/refreshPage";
 import {LoadingAnimationContext} from "../../Context";
+import Button from "../../components/button";
 
 const ContactsFeedback = () => {
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
@@ -55,7 +56,10 @@ const ContactsFeedback = () => {
                         placeholder="Сообщение или вопрос"
                         onChange={onFieldChange}
                         name="text"/>
-                    <button>Отправить</button>
+                    <Button
+                        text={"Отправить"}
+                        className={"contacts-page"}
+                    />
                 </form>
             </div>
             <iframe

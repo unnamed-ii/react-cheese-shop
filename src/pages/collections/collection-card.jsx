@@ -4,6 +4,7 @@ import {addProductActionCreator} from "../../store/basket";
 import {useDispatch} from "react-redux";
 import {Link} from "react-router-dom";
 import AddToFavouriteButton from "../../components/add-to-favourite-button";
+import Button from "../../components/button";
 
 export const CollectionCard = ({
                                    title,
@@ -36,7 +37,11 @@ export const CollectionCard = ({
                 <div className="price">
                     {price}₽
                 </div>
-                <button onClick={addProduct}>Добавить</button>
+                <Button
+                    text={"Добавить"}
+                    onClick={addProduct}
+                    className={"collection-card"}
+                />
             </div>
         </div>
     )

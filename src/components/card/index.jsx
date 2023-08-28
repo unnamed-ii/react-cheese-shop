@@ -4,6 +4,7 @@ import {useDispatch} from "react-redux";
 import {addProductActionCreator} from "../../store/basket";
 import card from '../../images/card.png'
 import {Link} from "react-router-dom";
+import Button from "../button";
 
 const Card = ({
                   title = 'Мезофильная закваска Danisco CHOOZIT MM...',
@@ -20,7 +21,7 @@ const Card = ({
     return (
         <div className="card">
             <img className="card__image" src={card} alt=""/>
-            <Link className="card__description" to={`product-card/${id}`}>
+            <Link className="card__description" to={`product-page/${id}`}>
                 {title}
             </Link>
             <div className="horizontal"/>
@@ -29,9 +30,11 @@ const Card = ({
                     {discountPrice}₽/<span> 1 шт.</span>
                     <div className="discount">{normalPrice}₽</div>
                 </div>
-                <button className="card__select-btn" onClick={addProduct}>
-                    Добавить
-                </button>
+                <Button
+                    text={"Добавить"}
+                    className={"product-card"}
+                    onClick={addProduct}
+                />
             </div>
 
         </div>

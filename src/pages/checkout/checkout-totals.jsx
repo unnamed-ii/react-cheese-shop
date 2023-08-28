@@ -1,5 +1,6 @@
 import React from 'react';
 import {useSelector} from "react-redux";
+import Button from "../../components/button";
 
 const CheckoutTotals = ({leaveOrder}) => {
     const basketSum = useSelector(state => state.basket.sum);
@@ -39,13 +40,12 @@ const CheckoutTotals = ({leaveOrder}) => {
                     <div>{basketSum - promoCode} руб.</div>
                 </div>
             </div>
-            <button
+            <Button
+                text={"Подтвердить заказ"}
+                className={"checkout-page"}
                 disabled={basketSum <= 0}
                 onClick={leaveOrder}
-                className="checkout__totals-btn"
-            >
-                Подтвердить заказ
-            </button>
+            />
         </div>
     );
 };

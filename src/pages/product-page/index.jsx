@@ -18,7 +18,7 @@ import {addProductActionCreator} from "../../store/basket";
 import card from '../../images/card.png'
 import PageTitle from "../../components/page-title";
 
-const ProductCard = () => {
+const ProductPage = () => {
     const dispatch = useDispatch();
     const {pathname} = useLocation();
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
@@ -61,7 +61,7 @@ const ProductCard = () => {
     return (
         <Wrapper>
             <LoadingAnimation isLoading={isLoading}/>
-            <div className={"product-card " + (productData.inStock === false && "not-available")}>
+            <div className={"product-page " + (productData.inStock === false && "not-available")}>
                 <ProductAddedAlert
                     productName={productData.name}
                     showAlert={showAlert}
@@ -87,6 +87,7 @@ const ProductCard = () => {
                             productsNumber={productsNumber}
                             setProductsNumber={setProductsNumber}
                             productId={productData?.collectionId}
+                            isInStock={productData?.inStock}
                         />
                         <AnalogsProductsSlider bigSize={!productData.inStock}/>
                         <Tabs
@@ -102,4 +103,4 @@ const ProductCard = () => {
     );
 };
 
-export default ProductCard;
+export default ProductPage;

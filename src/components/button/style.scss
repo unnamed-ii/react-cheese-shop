@@ -1,0 +1,123 @@
+@import "src/styles/vars";
+
+.button {
+  color: $white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: 700;
+  background-color: $orange;
+  font-family: Circe Rounded, sans-serif;
+
+
+  &:hover {
+    opacity: .5;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: $lightGrey;
+
+    &:hover {
+      opacity: unset;
+    }
+  }
+
+  &.product-card {
+    font-size: 14px;
+    padding: 7px 10px;
+    font-weight: 400;
+  }
+
+  &.product-page {
+    font-size: 16px;
+    padding: 10px 123px;
+  }
+
+  &.product-page-disabled {
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #FF4F4F;
+  }
+
+  &.basket {
+    font-size: 16px;
+    padding: 16px 0;
+    width: 100%;
+  }
+
+  &.filter {
+    width: 100%;
+    font-size: 14px;
+    padding: 6px 0;
+    background-color: #fff;
+    border: 1px solid $brown;
+    color: $brown;
+  }
+
+  &.contacts-page {
+    font-size: 16px;
+    padding: 16px 67px;
+  }
+
+  &.checkout-page {
+    font-size: 18px;
+    padding: 16px 0;
+    width: 100%;
+  }
+
+  &.profile-orders-product-card,
+  &.profile-favourites-product-card {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  &.coupon {
+    border: 1px solid $black;
+    background-color: #fff;
+    color: $black;
+    font-size: 16px;
+    padding: 10px;
+
+    &:disabled {
+      display: none;
+    }
+  }
+
+  &.profile-password-change-password {
+    font-size: 16px;
+    padding: 12px 58px;
+  }
+
+  &.modal {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 0;
+  }
+
+  &.calculator-page {
+    font-size: 16px;
+    padding: 8px 83px;
+  }
+
+  &.collection-card {
+    font-size: 14px;
+    padding: 7px 30px;
+  }
+
+  &.authorization-page,
+  &.registration-page {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 0;
+  }
+
+  &.recover-page {
+    font-size: 16px;
+    padding: 12px 70px;
+    margin-bottom: 80px;
+  }
+}

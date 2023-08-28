@@ -171,19 +171,6 @@
               max-width: 85px;
               margin-right: 74px;
             }
-
-            &-button {
-              background: #FD9339;
-              border-radius: 5px;
-              color: $white;
-              border: none;
-              padding: 10px 20px;
-              font-weight: 700;
-              font-size: 16px;
-              line-height: 24px;
-              cursor: pointer;
-              margin-left: 40px;
-            }
           }
         }
       }
@@ -277,18 +264,6 @@
                   margin-bottom: 4px;
                 }
               }
-
-              button {
-                padding: 10px 20px;
-                color: $white;
-                background-color: $orange;
-                border: none;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 24px;
-                border-radius: 5px;
-                cursor: pointer;
-              }
             }
 
             &.out-of-stock {
@@ -376,7 +351,6 @@
           }
 
           &-scan {
-
             .code {
               text-align: right;
               font-weight: 600;
@@ -384,17 +358,6 @@
               line-height: 24px;
               color: $darkGrey;
               margin-bottom: 28px;
-            }
-
-            button {
-              background-color: transparent;
-              border: 1px solid #292929;
-              border-radius: 5px;
-              padding: 10px;
-              font-size: 16px;
-              line-height: 24px;
-              cursor: pointer;
-              display: none;
             }
           }
         }
@@ -477,19 +440,6 @@
                 }
               }
             }
-          }
-
-          button {
-            background: $orange;
-            border-radius: 5px;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 24px;
-            text-align: center;
-            color: $white;
-            padding: 12px 59px;
-            border: none;
-            cursor: pointer;
           }
         }
       }

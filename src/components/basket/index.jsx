@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './style.scss'
 import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
 import BasketProductCard from './basket-product-card';
 import {ReactComponent as BasketIcon} from "../../images/basket.svg";
+import Button from "../button";
 
 const Basket = () => {
     const sumOfProducts = useSelector((state) => state.basket.sum);
@@ -43,9 +44,12 @@ const Basket = () => {
                             Общая стоимость: <span>{sumOfProducts} руб.</span>
                         </div>
                     </div>
-                    <div className="basket__btn">
-                        <Link to="/checkout">Оформить заказ</Link>
-                    </div>
+                    <Link to="/checkout">
+                        <Button
+                            text={"Оформить заказ"}
+                            className={"checkout-page"}
+                        />
+                    </Link>
                 </div>
             </div>
         </div>

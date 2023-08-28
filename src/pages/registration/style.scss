@@ -47,7 +47,6 @@
     padding: 40px 55px 0;
 
     form {
-
       .name,
       .email {
         font-size: 16px;
@@ -85,20 +84,6 @@
           width: 232px;
           margin-top: 6px;
         }
-      }
-
-      button {
-        background-color: $orange;
-        border-radius: 5px;
-        color: $white;
-        border: none;
-        width: 100%;
-        padding: 12px 0;
-        cursor: pointer;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 24px;
-        margin-bottom: 14px;
       }
     }
 

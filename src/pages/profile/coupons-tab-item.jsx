@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.scss';
+import Button from "../../components/button";
 
 const CouponsTabItem = ({image, status, title, date, code}) => {
     return (
@@ -22,7 +23,11 @@ const CouponsTabItem = ({image, status, title, date, code}) => {
                 <div className="code">
                     №{code}
                 </div>
-                <button>Скопировать код</button>
+                <Button
+                    text={"Скопировать код"}
+                    className={"coupon"}
+                    disabled={!status}
+                />
             </div>
         </div>
     )

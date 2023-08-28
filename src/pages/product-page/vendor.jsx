@@ -11,8 +11,19 @@ import productCart2 from "../../images/product-card-page2.png";
 import AddToFavouriteButton from "../../components/add-to-favourite-button";
 import {doc, getDoc} from "firebase/firestore";
 import {database} from "../../firebase";
+import Button from "../../components/button";
 
-const Vendor = ({price, discountPrice, code, manufacturer, addProductToBasket, productsNumber, setProductsNumber, productId}) => {
+const Vendor = ({
+                    price,
+                    discountPrice,
+                    code,
+                    manufacturer,
+                    addProductToBasket,
+                    productsNumber,
+                    setProductsNumber,
+                    productId,
+                    isInStock
+                }) => {
 
     return (
         <div className="vendor">
@@ -61,12 +72,18 @@ const Vendor = ({price, discountPrice, code, manufacturer, addProductToBasket, p
                             productsNumber={productsNumber}
                             setProductsNumber={setProductsNumber}
                         />
-                        <button className="available" onClick={addProductToBasket}>
-                            В корзину
-                        </button>
-                        <button className="not-available">
-                            Товар закончился
-                        </button>
+                        {isInStock ?
+                            <Button
+                                text={"В корзину"}
+                                className={"product-page"}
+                                onClick={addProductToBasket}
+                            />
+                            :
+                            <Button
+                                text={"Товар закончился"}
+                                className={"product-page-disabled"}
+                            />
+                        }
                     </div>
                     <div className="vendor__info-address">
                         <div className="box__info-address__title">

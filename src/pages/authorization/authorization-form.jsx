@@ -15,6 +15,7 @@ import {ReactComponent as TwitterIcon} from "../../images/icons/sign-up/twitter.
 import {ReactComponent as MailRuIcon} from "../../images/icons/sign-up/mailRu.svg";
 import {ReactComponent as YandexIcon} from "../../images/icons/sign-up/yandex.svg";
 import PageTitle from "../../components/page-title";
+import Button from "../../components/button";
 
 const AuthorizationForm = () => {
     const dispatch = useDispatch();
@@ -109,7 +110,11 @@ const AuthorizationForm = () => {
                         name={"password"}
                     />
                 </div>
-                <button>Войти</button>
+                <Button
+                    text={"Войти"}
+                    onClick={logIn}
+                    className={"authorization-page"}
+                />
             </form>
             <div className="sign-in__form-accounts">
                 <div className="title">

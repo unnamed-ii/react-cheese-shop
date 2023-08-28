@@ -6,6 +6,8 @@ import {ReactComponent as HeartIcon} from "../../images/icons/orange-empty-heart
 import {useDispatch} from "react-redux";
 import {addProductActionCreator} from "../../store/basket";
 import AddToFavouriteButton from "../../components/add-to-favourite-button";
+import Button from "../../components/button";
+import Rating from "@mui/material/Rating";
 
 const CollectionInfo = ({
                             price,
@@ -38,9 +40,10 @@ const CollectionInfo = ({
                     {title}
                 </div>
                 <div className="rating">
-                    <div className="rating-stars">
-                        5 stars
-                    </div>
+                    <Rating
+                        defaultValue={5}
+                        readOnly
+                    />
                     <div className="rating-reviews">
                         <ReviewIcon className="review-icon"/>
                         10 Отзывов
@@ -61,9 +64,11 @@ const CollectionInfo = ({
                             productsNumber={productsNumber}
                             setProductsNumber={setProductsNumber}
                         />
-                        <button className="to-basket" onClick={addProductToBasket}>
-                            В корзину
-                        </button>
+                        <Button
+                            text={"В корзину"}
+                            onClick={addProductToBasket}
+                            className={"calculator-page"}
+                        />
                         <AddToFavouriteButton
                             productId={id}
                             collectionName={"collections"}

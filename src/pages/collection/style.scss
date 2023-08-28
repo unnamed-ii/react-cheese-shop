@@ -61,10 +61,6 @@
         margin-bottom: 18px;
         align-items: center;
 
-        &-stars {
-          margin-right: 12px;
-        }
-
         &-reviews {
           display: flex;
           align-items: center;
@@ -108,18 +104,6 @@
         &__box {
           display: flex;
           justify-content: space-between;
-
-          .to-basket {
-            background: #FD9339;
-            border-radius: 5px;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 24px;
-            border: none;
-            color: $white;
-            padding: 8px 84px;
-            cursor: pointer;
-          }
         }
       }
     }

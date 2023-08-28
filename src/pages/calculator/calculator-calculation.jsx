@@ -1,5 +1,6 @@
 import React from 'react';
 import {CalculatorInput} from "./calculator-input";
+import Button from "../../components/button";
 
 const CalculatorCalculation = ({onCalculatorSubmit, onCalculatorInputChange, calculatorInputsForm}) => {
     return (
@@ -27,9 +28,10 @@ const CalculatorCalculation = ({onCalculatorSubmit, onCalculatorInputChange, cal
                     name={"fermentPackageWeight"}
                 />
             </div>
-            <button className="calculator__box-calculations__btn">
-                Рассчитать
-            </button>
+            <Button
+                text={"Рассчитать"}
+                className={"calculator-page"}
+            />
         </form>
     );
 };
