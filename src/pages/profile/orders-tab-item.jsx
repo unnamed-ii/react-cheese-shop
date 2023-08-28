@@ -2,7 +2,8 @@ import React from 'react';
 import './style.scss';
 import Button from "../../components/button";
 
-const OrdersTabItem = ({image, title, code, priceForProduct, amount, totalPrice}) => {
+const OrdersTabItem = ({image, title, code = 323432, price, amount}) => {
+
     return (
         <div className="table__item">
             <img src={image} alt="" className="table__item-image"/>
@@ -15,13 +16,13 @@ const OrdersTabItem = ({image, title, code, priceForProduct, amount, totalPrice}
                 </div>
             </div>
             <div className="table__item-price">
-                {priceForProduct} ₽
+                {price} ₽
             </div>
             <div className="table__item-amount">
                 {amount} шт.
             </div>
             <div className="table__item-total">
-                {totalPrice} ₽
+                {price * amount} ₽
             </div>
             <Button
                 text={"Добавить"}

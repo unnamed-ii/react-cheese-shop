@@ -78,7 +78,7 @@ const Checkout = () => {
             const userDoc = await getDoc(userRef);
             const userPreviousOrders = [...userDoc.data().orders];
             await updateDoc(userRef, {
-                orders: [...userPreviousOrders, order]
+                orders: [...userPreviousOrders, ...order.products]
             })
             navigate("/");
             alert("Ваш заказ принят!")
