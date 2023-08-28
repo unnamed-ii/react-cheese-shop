@@ -1,17 +1,22 @@
 import React from 'react';
 import './style.scss';
+import Button from "../../components/button";
+import Title from "../../components/title";
 
 const AddressTab = ({activeTab, toggleEditingForm}) => {
     const userInfo = JSON.parse(localStorage.getItem('userInfo')).userData;
 
     return (
         <div className={"profile__tabs-item " + (activeTab === "address" && "active address")}>
-            <div className="title">
-                {userInfo.name}
-            </div>
-            <div className="edit" onClick={toggleEditingForm}>
-                Редактировать адрес
-            </div>
+            <Title
+                title={userInfo.fullName}
+                className={"profile-page__tab-title"}
+            />
+            <Button
+                text={"Редактировать адрес"}
+                className={"profile-page__address-tab"}
+                onClick={toggleEditingForm}
+            />
             <div className="box">
                 <div className="box-titles">
                     <div>Адрес доставки:</div>

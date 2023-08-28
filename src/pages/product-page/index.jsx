@@ -16,7 +16,7 @@ import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation
 import {useDispatch} from "react-redux";
 import {addProductActionCreator} from "../../store/basket";
 import card from '../../images/card.png'
-import PageTitle from "../../components/page-title";
+import Title from "../../components/title";
 
 const ProductPage = () => {
     const dispatch = useDispatch();
@@ -70,7 +70,10 @@ const ProductPage = () => {
                 <div className="product-card__inner">
                     <MainNav/>
                     <div className="product-card__inner-content">
-                        <PageTitle title={productData?.name}/>
+                        <Title
+                            title={productData?.name}
+                            className={"page"}
+                        />
                         <Rating
                             name="size-medium"
                             defaultValue={5}

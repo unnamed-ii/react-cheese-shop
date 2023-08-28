@@ -5,6 +5,7 @@ import {useDispatch} from "react-redux";
 import {Link} from "react-router-dom";
 import AddToFavouriteButton from "../../components/add-to-favourite-button";
 import Button from "../../components/button";
+import Title from "../../components/title";
 
 export const CollectionCard = ({
                                    title,
@@ -27,8 +28,11 @@ export const CollectionCard = ({
                 />
             </div>
             <img src={image} alt="" className="collections__group-collection__image"/>
-            <Link className="collections__group-collection__title" to={id}>
-                {title}
+            <Link to={id}>
+                <Title
+                    title={title}
+                    className={"collection-card"}
+                />
             </Link>
             <Link className="collections__group-collection__text" to={id}>
                 {description}

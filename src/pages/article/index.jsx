@@ -11,7 +11,7 @@ import {LoadingAnimationContext} from "../../Context";
 import {doc, getDoc} from "firebase/firestore";
 import {database} from "../../firebase";
 import articleDefaultImage from '../../images/article.png'
-import PageTitle from "../../components/page-title";
+import Title from "../../components/title";
 
 const Article = () => {
     const {pathname} = useLocation()
@@ -43,7 +43,10 @@ const Article = () => {
                 <div className="article__inner">
                     <MainNav/>
                     <div className="article__inner-content">
-                        <PageTitle title={"Вино и сыр – поговорим об этом вечном сочетании"}/>
+                        <Title
+                            title={"Вино и сыр – поговорим об этом вечном сочетании"}
+                            className={"page"}
+                        />
                         <img src={articleDefaultImage} alt="Image"/>
                         <ArticleInfo paragraph={article.paragraph}/>
                         <ArticleAdvices advices={article.advices}/>

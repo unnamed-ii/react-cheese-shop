@@ -7,6 +7,7 @@ import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation
 import {LoadingAnimationContext} from "../../Context";
 import {database} from "../../firebase";
 import {collection, getDocs} from "firebase/firestore";
+import Title from "../../components/title";
 
 const Products = () => {
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
@@ -24,10 +25,10 @@ const Products = () => {
                 const id = doc.id;
                 const data = doc.data();
                 const product = {...JSON.parse(JSON.stringify(data)), id};
-                if (product.type === 'ingredient'){
+                if (product.type === 'ingredient') {
                     setIngredientProducts(p => ([...p, product]));
                 }
-                if (product.type === 'equipment'){
+                if (product.type === 'equipment') {
                     setEquipmentProducts(p => ([...p, product]));
                 }
             })
@@ -42,7 +43,7 @@ const Products = () => {
             <LoadingAnimation isLoading={isLoading}/>
             <Wrapper>
                 <div className="products__inner">
-                    <MainNav />
+                    <MainNav/>
                     <div className="products__inner-content">
                         <div className="products__inner-content__filters">
                             <div className={"filter " + (currentShowingProductsFilter === "populars" ? "active" : "")}
@@ -57,9 +58,10 @@ const Products = () => {
                         </div>
                         <div className="products__inner-content__groups">
                             <div className="ingredients">
-                                <div className="ingredients__title">
-                                    Ингредиенты
-                                </div>
+                                <Title
+                                    title={"Ингредиенты"}
+                                    className={"home-page__products-list"}
+                                />
                                 <div className="ingredients__products">
                                     <div className="ingredients__products-row">
                                         {ingredientProducts.map((product) =>
@@ -75,9 +77,10 @@ const Products = () => {
                                 </div>
                             </div>
                             <div className="equipment">
-                                <div className="equipment__title">
-                                    Оборудование
-                                </div>
+                                <Title
+                                    title={"Оборудование"}
+                                    className={"home-page__products-list"}
+                                />
                                 <div className="ingredients__products-row">
                                     {equipmentProducts.map((product) =>
                                         <Card

@@ -1,13 +1,15 @@
 import React from 'react';
 import InstructionStep from "../../components/instruction-step";
 import recipeBenefit from "../../images/recipe-page-benefit.png";
+import Title from "../../components/title";
 
 const RecipeBenefit = ({instruction}) => {
     return (
         <div className="benefit">
-            <div className="benefit__title">
-                Польза сыра
-            </div>
+            <Title
+                title={"Польза сыра"}
+                className={"recipe-page__block-title"}
+            />
             <div className="benefit__text">
                 Который значительно укрепляет костную ткань. В сыре содержится много других минералов –
                 магний, фосфор кадий, натрий, сера, хлор и др. Но при этом практически отсутствует
@@ -20,9 +22,10 @@ const RecipeBenefit = ({instruction}) => {
             </div>
             <img src={recipeBenefit} alt=""/>
             <div className="benefit__instruction">
-                <div className="benefit__instruction-title">
-                    Как приготовить в домашних условиях
-                </div>
+                <Title
+                    title={"Как приготовить в домашних условиях"}
+                    className={"recipe-page__block-title"}
+                />
                 <div className="benefit__instruction-steps">
                     {instruction?.map((step, idx) =>
                         <InstructionStep

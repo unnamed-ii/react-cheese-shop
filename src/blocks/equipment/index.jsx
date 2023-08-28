@@ -8,6 +8,7 @@ import {ReactComponent as ArrowRight} from "../../images/icons/slider/arrow-righ
 import {ReactComponent as ArrowLeft} from "../../images/icons/slider/arrow-left.svg";
 import {SlidesData} from "./constants";
 import {EquipmentSlide} from "./equipment-slide";
+import Title from "../../components/title";
 
 const SampleNextArrow = (props) => {
     const { className, style, onClick } = props;
@@ -51,9 +52,10 @@ const Equipment = () => {
     return (
         <Wrapper>
             <div className="equipment">
-                <div className="equipment__title">
-                    наше оборудование
-                </div>
+                <Title
+                    title={"Наше оборудование"}
+                    className={"home-page__equipment-block"}
+                />
                 <Slider {...settings}>
                     {SlidesData.map(slide =>
                         <EquipmentSlide

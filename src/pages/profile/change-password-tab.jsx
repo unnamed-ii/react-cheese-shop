@@ -5,6 +5,7 @@ import {collection, getDocs, doc, updateDoc} from "firebase/firestore";
 import {database} from "../../firebase";
 import {LoadingAnimationContext} from "../../Context";
 import Button from "../../components/button";
+import Title from "../../components/title";
 
 const ChangePasswordTab = ({activeTab}) => {
     const userId = JSON.parse(localStorage.getItem('userInfo')).id;
@@ -62,9 +63,10 @@ const ChangePasswordTab = ({activeTab}) => {
 
     return (
         <div className={"profile__tabs-item " + (activeTab === "change-password" && "active change-password")}>
-            <div className="title">
-                Сменить пароль
-            </div>
+            <Title
+                title={"Сменить пароль"}
+                className={"profile-page__tab-title"}
+            />
             <div className="subtitle">
                 После смены пароля мы пришлем подтверждение на ваш электронный адрес
             </div>

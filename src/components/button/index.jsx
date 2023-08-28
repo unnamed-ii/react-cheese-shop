@@ -1,9 +1,9 @@
 import React from 'react';
 import "./style.scss";
 
-const Button = ({className, text, onClick, disabled = false}) => {
+const Button = ({className, text, onClick, disabled = false, ...props}) => {
     return (
-        <button className={`button ${className}`} onClick={onClick} disabled={disabled}>
+        <button className={`custom-button ${className}`} onClick={onClick} disabled={disabled} {...props}>
             {text}
         </button>
     );

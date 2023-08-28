@@ -3,6 +3,7 @@ import './style.scss';
 import {BenefitCard} from "./benefit-card";
 import {BenefitsData} from "./constants";
 import backgroundImage from '../../images/benefits/bg.png';
+import Title from "../../components/title";
 
 const Benefits = () => {
     return (
@@ -14,9 +15,10 @@ const Benefits = () => {
         }}>
             <div className="benefits">
                 <div className="benefits__info">
-                    <div className="benefits__info-title">
-                        Наши преимущества
-                    </div>
+                    <Title
+                        title={"Наши преимущества"}
+                        className={"home-page__benefits-block"}
+                    />
                     <div className="benefits__info-text">
                         Мы лично отвечаем за качество товара и всегда
                         с радостью поможем Вам с выбором

@@ -21,6 +21,10 @@
       padding: 14px 16px;
       cursor: pointer;
 
+      svg {
+        margin-right: 5px;
+      }
+
       &.active {
         background-color: $white;
       }
@@ -38,12 +42,6 @@
         display: block;
       }
 
-      .title {
-        font-size: 24px;
-        line-height: 32px;
-        color: $brown;
-      }
-
       .subtitle {
         font-weight: 600;
         font-size: 16px;
@@ -57,19 +55,6 @@
 
         .title {
           margin-bottom: 20px;
-        }
-
-        .edit {
-          text-decoration: underline;
-          color: $orange;
-          position: absolute;
-          font-size: 16px;
-          line-height: 32px;
-          top: 64px;
-          right: 40px;
-          background-color: transparent;
-          border: none;
-          cursor: pointer;
         }
 
         .phone,
@@ -91,10 +76,6 @@
 
       &.orders {
         padding: 40px 40px 30px;
-
-        .title {
-          margin-bottom: 4px;
-        }
 
         .subtitle {
           margin-bottom: 30px;
@@ -369,17 +350,6 @@
 
         .title {
           margin-bottom: 20px;
-        }
-
-        .edit {
-          position: absolute;
-          top: 60px;
-          right: 40px;
-          color: $orange;
-          text-decoration: underline;
-          font-size: 16px;
-          line-height: 32px;
-          cursor: pointer;
         }
 
         .box {

@@ -11,40 +11,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/button/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/button/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppRoutes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppRoutes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/basket/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basket/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/basket/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basket/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/articles/articles-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/articles/articles-card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/articles/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/articles/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/articles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/articles/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/benefits/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/benefits/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/benefits/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/benefits/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/equipment/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/equipment/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/equipment/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/equipment/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/popular-recipes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popular-recipes/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/popular-recipes/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popular-recipes/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/products/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/products/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/products/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/products/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/recommendations/recommedation-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/recommendations/recommedation-card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/recommendations/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/recommendations/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/selections/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/selections/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/selections/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/selections/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page-title/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/title/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page-title/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/title/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/products-slider/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products-slider/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/products-slider/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products-slider/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ about/about-company.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ about/about-company.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/article/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/article/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/authorization/authorization-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authorization/authorization-form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authorization/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authorization/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/calculator/calculator-calculation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/calculator/calculator-calculation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/calculator/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/calculator/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/category/filters.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/filters.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/category/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/checkout/checkout-totals.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-totals.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/checkout/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/authorization/authorization-register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authorization/authorization-register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/calculator/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/calculator/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/category/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/collection/collection-info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collection/collection-info.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/collection/collection-tabs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collection/collection-tabs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/collection/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collection/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/collections/collection-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collections/collection-card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/collections/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collections/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/collections/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collections/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contacts/contacts-feedback.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts/contacts-feedback.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contacts/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/product-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product-page/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/product-card/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product-page/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/product-card/tabs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product-page/tabs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/product-card/vendor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product-page/vendor.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contacts/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/delivery/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/delivery/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/not-found/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/not-found/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/not-found/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/not-found/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/product-page/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product-page/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/address-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/address-tab.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/profile/change-password-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/change-password-tab.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/coupons-tab-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/coupons-tab-item.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/favourite-tab-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/favourite-tab-item.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/orders-tab-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/orders-tab-item.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/favourite-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/favourite-tab.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/orders-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/orders-tab.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/profile/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration/registration-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/registration-form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/user-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/user-tab.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/qa/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/qa/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recipe/recipe-benefit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipe/recipe-benefit.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recipe/recipe-descriptoin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipe/recipe-descriptoin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recipe/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipe/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recipes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipes/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recovery/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recovery/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration/registration-info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/registration-info.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/reviews/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reviews/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +292,7 @@
       <workItem from="1691750014217" duration="25111000" />
       <workItem from="1691881747481" duration="30462000" />
       <workItem from="1692129409561" duration="64834000" />
-      <workItem from="1692551253511" duration="95522000" />
+      <workItem from="1692551253511" duration="103867000" />
     </task>
     <servers />
   </component>
@@ -313,22 +334,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1692129390129" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1693178787610">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1693252350739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1693178787610" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1693178787610">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1693252350739" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1693252350739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1693178787610" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1693178787609">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1693252350739" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1693252350739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1693178787609" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1693178787610">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1693252350739" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1693252350739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1693178787610" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1693252350739" />
     <state x="478" y="169" key="SettingsEditor" timestamp="1693136318973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -345,9 +366,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1692712628968" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1693181848096">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1693257694031">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693181848096" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693257694031" />
   </component>
 </project>

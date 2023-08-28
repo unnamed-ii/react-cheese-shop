@@ -36,20 +36,9 @@
       }
 
       &__groups {
-
         .ingredients,
         .equipment {
-
-          &__title {
-            font-weight: 700;
-            font-size: 22px;
-            line-height: 24px;
-            color: $brown;
-            margin: 40px 0 20px;
-          }
-
           &__products {
-
             &-row {
               display: flex;
               flex-wrap: wrap;

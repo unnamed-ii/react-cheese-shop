@@ -4,7 +4,7 @@ import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
 import QaQuestions from "./qa-questions";
 import QaAnswers from "./qa-answers";
-import PageTitle from "../../components/page-title";
+import Title from "../../components/title";
 
 const QA = () => {
     return (
@@ -13,7 +13,10 @@ const QA = () => {
                 <div className="qa__inner">
                     <MainNav/>
                     <div className="qa__inner-content">
-                        <PageTitle title={"Вопросы и ответы"}/>
+                        <Title
+                            title={"Вопросы и ответы"}
+                            className={"page"}
+                        />
                         <QaQuestions />
                         <QaAnswers />
                     </div>

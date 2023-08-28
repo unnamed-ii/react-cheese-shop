@@ -1,12 +1,15 @@
 import React from 'react';
 import './style.scss';
 import cheese from "../../images/about/cheese.png";
-import PageTitle from "../../components/page-title";
+import Title from "../../components/title";
 
 const AboutCompany = () => {
     return (
         <div className="about__inner-content__company">
-            <PageTitle title={"О нашей компании"}/>
+            <Title
+                title={"О нашей компании"}
+                className={"page"}
+            />
             <div className="info">
                 <div className="info__box">
                     <div className="info__box-title">

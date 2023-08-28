@@ -4,7 +4,7 @@ import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
 import CalculatorCalculation from "./calculator-calculation";
 import CalculatorResult from "./calculator-result";
-import PageTitle from "../../components/page-title";
+import Title from "../../components/title";
 
 const Calculator = () => {
     const [isCalculated, setIsCalculated] = useState(false);
@@ -43,7 +43,10 @@ const Calculator = () => {
                 <div className="calculator__inner">
                     <MainNav/>
                     <div className="calculator__inner-content">
-                        <PageTitle title={"Калькулятор сыродела"}/>
+                        <Title
+                            title={"Калькулятор сыродела"}
+                            className={"page"}
+                        />
                         <div className="calculator__box">
                             <CalculatorCalculation
                                 onCalculatorSubmit={onCalculatorSubmit}

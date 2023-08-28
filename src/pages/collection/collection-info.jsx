@@ -8,6 +8,7 @@ import {addProductActionCreator} from "../../store/basket";
 import AddToFavouriteButton from "../../components/add-to-favourite-button";
 import Button from "../../components/button";
 import Rating from "@mui/material/Rating";
+import Title from "../../components/title";
 
 const CollectionInfo = ({
                             price,
@@ -33,12 +34,12 @@ const CollectionInfo = ({
             <img src={image} alt="" className="collection__box-img"/>
             <div className="collection__box-info">
                 <div className="is-available">
-                    {inStock && "В наличии"}
-                    {!inStock && "Нет в наличии"}
+                    {inStock ? "В наличии" : "Нет в наличии"}
                 </div>
-                <div className="title">
-                    {title}
-                </div>
+                <Title
+                    title={title}
+                    className={"collection-page"}
+                />
                 <div className="rating">
                     <Rating
                         defaultValue={5}

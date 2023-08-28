@@ -3,14 +3,16 @@ import './style.scss';
 import Wrapper from "../../components/wrapper";
 import Selection from "./selection-card";
 import {SelectionsData} from "./constants";
+import Title from "../../components/title";
 
 const Selections = () => {
     return (
         <Wrapper>
             <div className="selections">
-                <div className="selections__title">
-                    Мы подобрали для вас
-                </div>
+                <Title
+                    title={"Мы подобрали для вас"}
+                    className={"home-page__selection-block"}
+                />
                 <div className="selections__items">
                     {SelectionsData.map(selection => (
                         <Selection

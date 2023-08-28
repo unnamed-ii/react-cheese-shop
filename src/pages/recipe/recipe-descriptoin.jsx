@@ -2,6 +2,7 @@ import React from 'react';
 import {RecipeData} from "./constants";
 import {ReactComponent as BasketIcon} from "../../images/icons/recipe-page-basket.svg";
 import recipeDescription from "../../images/recipe-page-description.png";
+import Title from "../../components/title";
 
 const RecipeDescription = ({
                                name,
@@ -11,9 +12,10 @@ const RecipeDescription = ({
                            }) => {
     return (
         <div className="description">
-            <div className="description__title">
-                {name}
-            </div>
+            <Title
+                title={name}
+                className={"recipe-page-title"}
+            />
             <div className="description__text">
                 {description}
             </div>

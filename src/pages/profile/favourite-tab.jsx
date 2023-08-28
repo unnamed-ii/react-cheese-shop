@@ -6,6 +6,7 @@ import {database} from "../../firebase";
 import {doc, getDoc} from "firebase/firestore";
 import {LoadingAnimationContext} from "../../Context";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
+import Title from "../../components/title";
 
 const FavouriteTab = ({activeTab}) => {
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
@@ -31,9 +32,10 @@ const FavouriteTab = ({activeTab}) => {
     return (
         <div className={"profile__tabs-item " + (activeTab === "favourite" && "active favourite")}>
             <LoadingAnimation isLoading={isLoading}/>
-            <div className="title">
-                Избранные товары
-            </div>
+            <Title
+                title={"Избранные товары"}
+                className={"profile-page__tab-title"}
+            />
             <div className="subtitle">
                 Товары, которые вы добавили в список будуших покупок
             </div>

@@ -6,7 +6,7 @@ import CheckoutDelivery from "./checkout-delivery";
 import CheckoutTotals from "./checkout-totals";
 import CheckoutPayment from "./checkout-payment";
 import Wrapper from "../../components/wrapper";
-import PageTitle from "../../components/page-title";
+import Title from "../../components/title";
 import {russianRegions} from "./constants";
 import {useDispatch, useSelector} from "react-redux";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
@@ -83,7 +83,10 @@ const Checkout = () => {
             <LoadingAnimation isLoading={isLoading}/>
             <div className="checkout">
                 <div className="checkout__info">
-                    <PageTitle title={"Оформление заказа"}/>
+                    <Title
+                        title={"Оформление заказа"}
+                        className={"page"}
+                    />
                     <CheckoutContactInfo/>
                     <CheckoutOrder/>
                     <CheckoutDelivery

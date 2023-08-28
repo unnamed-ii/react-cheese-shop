@@ -2,12 +2,6 @@
 
 .popular__recipes {
 
-  &-title {
-    @include h2;
-    color: $brown;
-    margin-bottom: 20px;
-  }
-
   &-list {
     display: flex;
     justify-content: space-between;
@@ -36,11 +30,6 @@
 
 @media (max-width: 430px) {
   .popular__recipes {
-
-    &-title {
-      text-align: center;
-    }
-
     &-list {
       .popular-recipe {
         margin-right: 0;

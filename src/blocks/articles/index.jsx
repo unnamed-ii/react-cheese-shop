@@ -5,6 +5,7 @@ import {ArticleCard} from "./articles-card";
 import {collection, getDocs} from "firebase/firestore";
 import {database} from "../../firebase";
 import articleDefaultImage from '../../images/articles/article1.png';
+import Title from "../../components/title";
 
 const Articles = () => {
     const [articles, setArticles] = useState([]);
@@ -27,10 +28,13 @@ const Articles = () => {
         <Wrapper>
             <div className="articles">
                 <div className="articles__compilation">
-                    <img src="" alt=""/>
                     <div className="articles__compilation-title">
                         Статьи про&nbsp;сыроделие
                     </div>
+                    <Title
+                        title={`Статьи про сыроделие`}
+                        className={"home-page__articles-block"}
+                    />
                     <div className="articles__compilation-text">
                         Мы собрали самые интересные и полезные новости о акциях, скидках и мире сыроделия.
                     </div>

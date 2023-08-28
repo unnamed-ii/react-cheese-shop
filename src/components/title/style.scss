@@ -1,0 +1,173 @@
+@import "src/styles/vars";
+
+.custom-title {
+  color: $brown;
+  font-size: 28px;
+  font-style: normal;
+  line-height: 40px;
+  letter-spacing: 0.28px;
+  font-family: Circe Rounded, sans-serif;
+
+  &.page {
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+
+  &.registration,
+  &.authorization {
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  &.collection-page {
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 12px;
+  }
+
+  &.collections-page {
+    margin-bottom: 10px;
+    font-weight: 800;
+  }
+
+  &.collection-card {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 6px;
+    transition: all 1s;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  &.recommendations__item-title {
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 14px;
+    color: $white;
+  }
+
+  &.home-page__products-list {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    margin: 40px 0 20px;
+  }
+
+  &.home-page__benefits-block {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 64px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &.home-page__selection-block,
+  &.home-page__equipment-block,
+  &.home-page__articles-block {
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  &.article-card {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+
+  &.products-slider__title {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  &.not-found-page {
+    width: 100%;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &.profile-page__tab-title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+
+  &.recipe-page-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &.recipe-page__block-title {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  &.popular-recipes__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  &.popular-recipe__card-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+
+  &.recipes-page,
+  &.recovery-page {
+    font-weight: 800;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .custom-title {
+    &.home-page__selection-block,
+    &.popular-recipes__title {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .custom-title {
+    &.recipe-page__block-title {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 435px) {
+  .custom-title {
+    &.home-page__articles-block {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .custom-title {
+    &.home-page__articles-block {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .custom-title {
+    &.home-page__selection-block {
+      font-size: 24px;
+    }
+  }
+}

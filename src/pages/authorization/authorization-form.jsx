@@ -14,7 +14,7 @@ import {ReactComponent as VkIcon} from "../../images/icons/sign-up/vk.svg";
 import {ReactComponent as TwitterIcon} from "../../images/icons/sign-up/twitter.svg";
 import {ReactComponent as MailRuIcon} from "../../images/icons/sign-up/mailRu.svg";
 import {ReactComponent as YandexIcon} from "../../images/icons/sign-up/yandex.svg";
-import PageTitle from "../../components/page-title";
+import Title from "../../components/title";
 import Button from "../../components/button";
 
 const AuthorizationForm = () => {
@@ -88,7 +88,10 @@ const AuthorizationForm = () => {
 
     return (
         <div className="sign-in__form">
-            <PageTitle title={"Постоянный покупатель"}/>
+            <Title
+                title={"Постоянный покупатель"}
+                className={"authorization"}
+            />
             <form onSubmit={logIn}>
                 <div className="email">
                     <div>Электронная почта</div>

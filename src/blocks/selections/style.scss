@@ -3,11 +3,6 @@
 .selections {
   padding-bottom: 160px;
 
-  &__title {
-    @include h2;
-    color: $brown;
-  }
-
   &__items {
     display: flex;
     justify-content: space-between;
@@ -72,11 +67,6 @@
   .selections {
     padding: 0 15px 160px 15px;
 
-    &__title {
-      text-align: center;
-      margin-bottom: 15px;
-    }
-
     &__items {
       max-width: 1180px;
       justify-content: center;
@@ -111,13 +101,15 @@
     width: 300px;
   }
 
-  .selections__items-recipes__title, .selections__items-sets__title {
+  .selections__items-recipes__title,
+  .selections__items-sets__title {
     margin: -177px 0 0px 20px;
     max-width: 245px;
     font-size: 20px;
   }
 
-  .selections__items-recipes__text, .selections__items-sets__text {
+  .selections__items-recipes__text,
+  .selections__items-sets__text {
     margin-bottom: 13px;
     margin-left: 20px;
   }
@@ -125,11 +117,5 @@
   .selections__items-recipes__link,
   .selections__items-sets__link {
     margin-left: 20px;
-  }
-}
-
-@media (max-width: 360px) {
-  .selections__title {
-    font-size: 24px;
   }
 }

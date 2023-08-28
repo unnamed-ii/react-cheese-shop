@@ -1,12 +1,16 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import Title from "../../components/title";
 
 export const RecommendationCard = ({subtitle, title, text, bgImage, isActive}) => {
     return (
         <div className={"recommendations__item " + (isActive && "active")}>
             <img src={bgImage} alt=""/>
             <div className="recommendations__item-subtitle">{subtitle}</div>
-            <div className="recommendations__item-title">{title}</div>
+            <Title
+                title={title}
+                className={"recommendations__item-title"}
+            />
             <div className="recommendations__item-text">
                 {text}
             </div>

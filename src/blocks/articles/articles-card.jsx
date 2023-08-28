@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {ReactComponent as ArrowRightIcon} from "../../images/icons/arrow-right.svg";
+import Title from "../../components/title";
 
 export const ArticleCard = ({title, text = '...', image, id}) => {
     text = text.slice(0, 85) + '...';
@@ -9,9 +10,10 @@ export const ArticleCard = ({title, text = '...', image, id}) => {
         <div className="articles__list-item">
             <img className="articles__list-item__image" src={image} alt=""/>
             <div className="articles__list-item__box">
-                <div className="articles__list-item__title">
-                    {title}
-                </div>
+                <Title
+                    title={title}
+                    className={"article-card"}
+                />
                 <div className="articles__list-item__text">
                     {text}
                 </div>

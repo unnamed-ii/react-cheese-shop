@@ -1,6 +1,6 @@
 @import "src/styles/vars";
 
-.button {
+.custom-button {
   color: $white;
   border: none;
   cursor: pointer;
@@ -119,5 +119,19 @@
     font-size: 16px;
     padding: 12px 70px;
     margin-bottom: 80px;
+  }
+
+  &.profile-page__user-tab,
+  &.profile-page__address-tab {
+    text-decoration: underline;
+    color: $orange;
+    position: absolute;
+    font-size: 16px;
+    line-height: 32px;
+    top: 64px;
+    right: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
 }

@@ -12,7 +12,7 @@ const CollectionTabs = ({description, reviews}) => {
                 {CollectionData.tabsTitles.map(collection =>
                     <div
                         key={collection.id}
-                        className={"profile__tabs-title " + (activeTab === collection.typeOfTab && "active")}
+                        className={"collection__tabs-titles__title " + (activeTab === collection.typeOfTab && "active")}
                         onClick={() => handleChangeActiveTab(collection.typeOfTab)}
                     >
                         {collection.title}

@@ -5,7 +5,7 @@ import MainNav from "../../components/main-nav";
 import DeliveryTable from "./delivery-table";
 import DeliveryPayment from "./delivery-payment";
 import DeliveryMethods from "./delivery-methods";
-import PageTitle from "../../components/page-title";
+import Title from "../../components/title";
 
 const Delivery = () => {
     return (
@@ -15,7 +15,10 @@ const Delivery = () => {
                     <div className="delivery__inner-top">
                         <MainNav/>
                         <div className="delivery__inner-content">
-                            <PageTitle title={"Доставка и оплата"}/>
+                            <Title
+                                title={"Доставка и оплата"}
+                                className={"page"}
+                            />
                             <DeliveryPayment/>
                             <DeliveryMethods/>
                         </div>

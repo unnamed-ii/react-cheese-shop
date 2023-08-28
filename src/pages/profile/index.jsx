@@ -13,7 +13,7 @@ import {EditingInfoForm} from "./editing-form";
 import {logOutActionCreator} from "../../store/user";
 import {useNavigate} from "react-router-dom";
 import {refreshPage} from "../../utils/refreshPage";
-import PageTitle from "../../components/page-title";
+import Title from "../../components/title";
 
 const Profile = () => {
     const dispatch = useDispatch();
@@ -43,7 +43,10 @@ const Profile = () => {
                 />
             }
             <div className="profile">
-                <PageTitle title={"Личный кабинет"}/>
+                <Title
+                    title={"Личный кабинет"}
+                    className={"page"}
+                />
                 <div className="profile__tabs">
                     <div className="profile__tabs-titles">
                         {TabsData.titles.map(tab =>
@@ -62,14 +65,22 @@ const Profile = () => {
                             activeTab={activeTab}
                             toggleEditingForm={toggleEditingForm}
                         />
-                        <OrdersTab activeTab={activeTab}/>
-                        <FavouriteTab activeTab={activeTab}/>
-                        <CouponsTab activeTab={activeTab}/>
+                        <OrdersTab
+                            activeTab={activeTab}
+                        />
+                        <FavouriteTab
+                            activeTab={activeTab}
+                        />
+                        <CouponsTab
+                            activeTab={activeTab}
+                        />
                         <AddressTab
                             activeTab={activeTab}
                             toggleEditingForm={toggleEditingForm}
                         />
-                        <ChangePasswordTab activeTab={activeTab}/>
+                        <ChangePasswordTab
+                            activeTab={activeTab}
+                        />
                     </div>
                 </div>
             </div>

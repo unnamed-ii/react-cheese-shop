@@ -8,7 +8,7 @@ import {LoadingAnimationContext} from "../../Context";
 import {collection, getDocs} from "firebase/firestore";
 import {database} from "../../firebase";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
-import PageTitle from "../../components/page-title";
+import Title from "../../components/title";
 
 const Recipes = () => {
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
@@ -45,7 +45,10 @@ const Recipes = () => {
                     <MainNav/>
                     <div className="recipes__inner-content">
                         <div className="recipes__inner-content__cheese">
-                            <PageTitle title={"Рецепты сыров"}/>
+                            <Title
+                                title={"Рецепты сыров"}
+                                className={"recipes-page"}
+                            />
                             <div className="box">
                                 {recipes?.map(recipe =>
                                     <CheeseRecipeCard
@@ -57,7 +60,10 @@ const Recipes = () => {
                             </div>
                         </div>
                         <div className="recipes__inner-content__added">
-                            <PageTitle title={"Последние добавленные"}/>
+                            <Title
+                                title={"Последние добавленные"}
+                                className={"recipes-page"}
+                            />
                             <div className="box">
                                 {recentAddedRecipes?.map(recipe =>
                                     <AddedRecipe
