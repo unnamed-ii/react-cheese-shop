@@ -11,7 +11,7 @@ import {russianRegions} from "./constants";
 import {useDispatch, useSelector} from "react-redux";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
 import {LoadingAnimationContext} from "../../Context";
-import {addDoc, collection} from "firebase/firestore";
+import {addDoc, collection, doc, updateDoc, getDoc} from "firebase/firestore";
 import {database} from "../../firebase";
 import {useNavigate} from "react-router-dom";
 import {clearBasketActionCreator} from "../../store/basket";
@@ -21,6 +21,7 @@ const Checkout = () => {
     const navigate = useNavigate();
     const selectedProduct = useSelector(state => state.basket.products);
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
+    const userId = JSON.parse(localStorage.getItem("userInfo")).id;
     const [order, setOrder] = useState({
         products: [...selectedProduct],
         deliveryMethod: "Курьер",
@@ -70,12 +71,22 @@ const Checkout = () => {
     }
 
     const leaveOrder = async () => {
-        setIsLoading(true);
-        await addDoc(collection(database, "orders"), order);
-        navigate("/");
-        alert("Ваш заказ принят!")
-        dispatch(clearBasketActionCreator());
-        setIsLoading(false);
+        try {
+            setIsLoading(true);
+            await addDoc(collection(database, "orders"), order);
+            const userRef = await doc(database, "users", userId);
+            const userDoc = await getDoc(userRef);
+            const userPreviousOrders = [...userDoc.data().orders];
+            await updateDoc(userRef, {
+                orders: [...userPreviousOrders, order]
+            })
+            navigate("/");
+            alert("Ваш заказ принят!")
+            dispatch(clearBasketActionCreator());
+            setIsLoading(false);
+        } catch (e) {
+            console.log(e)
+        }
     }
 
     return (

@@ -7,8 +7,8 @@ import {ReactComponent as BasketIcon} from "../../images/basket.svg";
 import Button from "../button";
 
 const Basket = () => {
-    const sumOfProducts = useSelector((state) => state.basket.sum);
-    const selectedProducts = useSelector((state) => state.basket.products);
+    const sumOfProducts = useSelector((state) => state.basket.sum || 0);
+    const selectedProducts = useSelector((state) => state.basket.products || []);
 
     return (
         <div className="header__info-basket">

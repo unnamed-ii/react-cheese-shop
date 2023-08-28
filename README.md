@@ -18,12 +18,12 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Create skeletons 
 - FSD Architecture
 - Ability to search product (Header)
-- Personal collection of previous orders (Portfolio page)
 - Form validation (Modals, auth, recovery, registration pages)
 - Advanced filtering products (Category page)
 - Add setting active block (Home page, recommendations block)
 - Add rendering image of products/collections/articles/recipes from server
 
+- Personal collection of previous orders (Portfolio page) +
 - Personal collection of favourite products. Therefore, user can manipulate with this collection (Portfolio page) +
 - Leaving order (Checkout page) +
 - Calculator component +
