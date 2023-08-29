@@ -12,8 +12,8 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Adaptive styles
 
 ## Tasks, that have to be done
-- ADD : on main-nav components links clicked navigate to category page wit changing title
-- TO FIX: if product is in favourite list, render the solid heart icon at addToFavourite button 
+- ADD : 3d view of product
+- ADD : on main-nav components links clicked navigate to category page wit changing title 
 - firebase authentication
 - FSD Architecture
 - Ability to search product (Header) (Check input search)

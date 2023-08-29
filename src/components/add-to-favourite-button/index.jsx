@@ -5,13 +5,18 @@ import {ReactComponent as HeartIcon} from "../../images/icons/orange-empty-heart
 import {LoadingAnimationContext} from "../../Context";
 import LoadingAnimation from "../loadingAnimation/loadingAnimation";
 import {database} from "../../firebase";
-import {doc, updateDoc, getDoc} from "firebase/firestore";
+import {doc, getDoc, updateDoc} from "firebase/firestore";
 
-const AddToFavouriteButton = ({productId, collectionName, isAlreadyAdded = false}) => {
+const AddToFavouriteButton = ({
+                                  productId,
+                                  collectionName,
+                                  isAlreadyAdded = false,
+                                  updateShowingFavouriteProductsList,
+                                  ...props
+                              }) => {
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
     const [isAdded, setIsAdded] = useState(isAlreadyAdded);
     const userId = JSON.parse(localStorage.getItem("userInfo")).id;
-
     const getProductData = async () => {
         try {
             const productRef = doc(database, collectionName, productId)
@@ -28,16 +33,16 @@ const AddToFavouriteButton = ({productId, collectionName, isAlreadyAdded = false
     }
 
     const addProductToFavourites = async () => {
-        setIsLoading(true);
         try {
+            setIsLoading(true);
             const userRef = doc(database, "users", userId);
             const userSnap = await getDoc(userRef);
             if (isAdded) {
-                // remove from favourites collection
                 const updatedFavouriteProducts = userSnap.data().favourite.filter(product => product.id !== productId);
                 await updateDoc(userRef, {
                     favourite: updatedFavouriteProducts
                 })
+                updateShowingFavouriteProductsList(productId);
             }
             if (!isAdded) {
                 const currentProduct = await getProductData();
@@ -46,15 +51,15 @@ const AddToFavouriteButton = ({productId, collectionName, isAlreadyAdded = false
                     favourite: updatedFavouriteProducts
                 })
             }
+            setIsLoading(false);
+            setIsAdded(!isAdded);
         } catch (e) {
             console.log(e);
         }
-        setIsLoading(false);
-        setIsAdded(!isAdded);
     }
 
     return (
-        <button className="to-favourite" onClick={addProductToFavourites}>
+        <button className="to-favourite" onClick={addProductToFavourites} {...props}>
             <LoadingAnimation isLoading={isLoading}/>
             {isAdded ? <SolidHeartIcon/> : <HeartIcon/>}
         </button>

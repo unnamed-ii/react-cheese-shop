@@ -4,7 +4,16 @@ import AddToFavouriteButton from "../../components/add-to-favourite-button";
 import {Link} from "react-router-dom";
 import Button from "../../components/button";
 
-const FavouriteTabItem = ({status, image, title, manufacturer, discountPrice, normalPrice, productId}) => {
+const FavouriteTabItem = ({
+                              status,
+                              image,
+                              title,
+                              manufacturer,
+                              discountPrice,
+                              normalPrice,
+                              productId,
+                              updateShowingFavouriteProductsList
+                          }) => {
     return (
         <div className={"favourite-cards__card " + (!status ? "out-of-stock" : "")}>
             <div className="favourite-cards__card-top">
@@ -15,6 +24,7 @@ const FavouriteTabItem = ({status, image, title, manufacturer, discountPrice, no
                     productId={productId}
                     collectionName={"products"}
                     isAlreadyAdded={true}
+                    updateShowingFavouriteProductsList={updateShowingFavouriteProductsList}
                 />
             </div>
             <img src={image} alt="" className="favourite-cards__card-image"/>

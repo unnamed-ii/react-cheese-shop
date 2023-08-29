@@ -13,6 +13,11 @@ const FavouriteTab = ({activeTab}) => {
     const [favouriteProducts, setFavouriteProducts] = useState([]);
     const userId = JSON.parse(localStorage.getItem("userInfo")).id;
 
+    const updateShowingFavouriteProductsList = (id) => {
+        const updatedFavouriteProductsList = favouriteProducts.filter(product => product.id !== id);
+        setFavouriteProducts(updatedFavouriteProductsList);
+    }
+
     useEffect(() => {
         const getFavouriteProducts = async () => {
             try {
@@ -26,6 +31,9 @@ const FavouriteTab = ({activeTab}) => {
             }
         }
         getFavouriteProducts();
+        return () => {
+            setFavouriteProducts([]);
+        }
     }, []);
 
 
@@ -52,6 +60,7 @@ const FavouriteTab = ({activeTab}) => {
                             image={favouriteProductImage}
                             manufacturer={product.manufacturer}
                             discountPrice={product.discountPrice}
+                            updateShowingFavouriteProductsList={updateShowingFavouriteProductsList}
                         />
                     ))}
                 </div>
