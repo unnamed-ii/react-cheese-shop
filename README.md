@@ -12,17 +12,17 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Adaptive styles
 
 ## Tasks, that have to be done
-- TO FIX: .basket className for button component isn't working for some reason
+- ADD : on main-nav components links clicked navigate to category page wit changing title
 - TO FIX: if product is in favourite list, render the solid heart icon at addToFavourite button 
-- firebase authentication 
-- Create skeletons 
+- firebase authentication
 - FSD Architecture
-- Ability to search product (Header)
+- Ability to search product (Header) (Check input search)
 - Form validation (Modals, auth, recovery, registration pages)
 - Advanced filtering products (Category page)
 - Add setting active block (Home page, recommendations block)
 - Add rendering image of products/collections/articles/recipes from server
 
+- TO FIX: .basket className for button component isn't working for some reason +
 - Personal collection of previous orders (Portfolio page) +
 - Personal collection of favourite products. Therefore, user can manipulate with this collection (Portfolio page) +
 - Leaving order (Checkout page) +

@@ -47,7 +47,7 @@ const Basket = () => {
                     <Link to="/checkout">
                         <Button
                             text={"Оформить заказ"}
-                            className={"checkout-page"}
+                            className={"basket-button"}
                         />
                     </Link>
                 </div>
