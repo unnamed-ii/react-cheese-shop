@@ -4,6 +4,8 @@ import {DropDownLinks} from "./drop-down-links";
 import {ReactComponent as ArrowRightIcon} from "../../images/icons/arrow-right-grey.svg";
 import {ReactComponent as IngredientsIcon} from "../../images/icons/main-nav/ingredients.svg";
 import {ReactComponent as EquipmentIcon} from "../../images/icons/main-nav/equipment.svg";
+import {MainNavConstants} from "./constants";
+import {Link} from "react-router-dom";
 
 const MainNav = () => {
     return (
@@ -11,72 +13,40 @@ const MainNav = () => {
             <div className="nav">
                 <div className="nav__ingredients">
                     <div className="nav__ingredients-title">
-                        <IngredientsIcon className="title-icon" /> Ингредиенты
+                        <IngredientsIcon className="title-icon"/> Ингредиенты
                     </div>
                     <div className="nav__ingredients-links">
-                        <div className="nav__ingredients-link">
-                            Закваски для сыра
-                            <ArrowRightIcon  className="link__arrow-right"/>
-                            <DropDownLinks />
-                        </div>
-                        <div className="nav__ingredients-link">
-                            Ферменты для сыра
-                            <ArrowRightIcon  className="link__arrow-right"/>
-                            <DropDownLinks />
-                        </div>
-                        <div className="nav__ingredients-link">
-                            Хлористый кальций
-                        </div>
-                        <div className="nav__ingredients-link">
-                            Плесень для сыра
-                            <ArrowRightIcon  className="link__arrow-right"/>
-                            <DropDownLinks />
-                        </div>
-                        <div className="nav__ingredients-link">
-                            Кисломолочные закваски
-                            <ArrowRightIcon  className="link__arrow-right"/>
-                            <DropDownLinks />
-                        </div>
-                        <div className="nav__ingredients-link">
-                            Красители для сыра
-                        </div>
-                        <div className="nav__ingredients-link">
-                            Специи для сыра
-                            <ArrowRightIcon  className="link__arrow-right"/>
-                            <DropDownLinks />
-                        </div>
+                        {MainNavConstants.ingredients.map((i, idx) => (
+                            <div className="nav__ingredients-link" key={idx}>
+                                <Link to="/category">
+                                    {i.title}
+                                </Link>
+                                {i.isListIncluded &&
+                                <>
+                                    <ArrowRightIcon className="link__arrow-right"/>
+                                    <DropDownLinks/>
+                                </>}
+                            </div>
+                        ))}
                     </div>
                 </div>
                 <div className="nav__equipment">
                     <div className="nav__equipment-title">
-                        <EquipmentIcon className="title-icon" /> Оборудование
+                        <EquipmentIcon className="title-icon"/> Оборудование
                     </div>
                     <div className="nav__equipment-links">
-                        <div className="nav__equipment-link">
-                            Формы для сыра
-                            <ArrowRightIcon  className="link__arrow-right"/>
-                            <DropDownLinks />
-                        </div>
-                        <div className="nav__equipment-link">
-                            Латексное покрытие
-                        </div>
-                        <div className="nav__equipment-link">
-                            Воск для сыра
-                        </div>
-                        <div className="nav__equipment-link">
-                            Термоусадочные пакеты
-                            <ArrowRightIcon  className="link__arrow-right"/>
-                            <DropDownLinks />
-                        </div>
-                        <div className="nav__equipment-link">
-                            Дренажные коврики
-                        </div>
-                        <div className="nav__equipment-link">
-                            Дренажные мешки и салфетки для прессования
-                        </div>
-                        <div className="nav__equipment-link">
-                            Дренажные контейнеры
-                        </div>
+                        {MainNavConstants.equipment.map((i, idx) => (
+                            <div className="nav__equipment-link" key={idx}>
+                                <Link to="/category-page">
+                                    {i.title}
+                                </Link>
+                                {i.isListIncluded &&
+                                <>
+                                    <ArrowRightIcon className="link__arrow-right"/>
+                                    <DropDownLinks/>
+                                </>}
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

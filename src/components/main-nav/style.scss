@@ -40,6 +40,10 @@
       position: relative;
 
       &:hover {
+        a {
+          color: $orange;
+        }
+
         .nav__ingredients-link__dropdown {
           display: block;
         }
@@ -54,7 +58,7 @@
         z-index: 1000;
         cursor: pointer;
         top: -75px;
-        right: -225px;
+        right: -205px;
         transition: all .4s;
         display: none;
 
@@ -63,9 +67,11 @@
           font-size: 16px;
           line-height: 24px;
           transition: all .4s;
+          display: block;
+          color: $black !important;
 
           &:hover {
-            color: $orange;
+            color: $orange !important;
             background: #FFF1DB;
           }
         }

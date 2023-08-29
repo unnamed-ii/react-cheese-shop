@@ -13,7 +13,6 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 
 ## Tasks, that have to be done
 - ADD : 3d view of product
-- ADD : on main-nav components links clicked navigate to category page wit changing title 
 - firebase authentication
 - FSD Architecture
 - Ability to search product (Header) (Check input search)
@@ -22,6 +21,7 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Add setting active block (Home page, recommendations block)
 - Add rendering image of products/collections/articles/recipes from server
 
+- ADD : on main-nav components links clicked navigate to category page wit changing title +
 - TO FIX: .basket className for button component isn't working for some reason +
 - Personal collection of previous orders (Portfolio page) +
 - Personal collection of favourite products. Therefore, user can manipulate with this collection (Portfolio page) +
