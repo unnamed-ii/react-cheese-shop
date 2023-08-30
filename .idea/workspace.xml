@@ -11,13 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/modals/review-modal/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/modals/review-modal/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/recommendations/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/recommendations/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/recommendations/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/recommendations/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/recommendations/recommedation-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/recommendations/recommedation-card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/recommendations/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/recommendations/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/recommendations/discounts-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/recommendations/discounts-bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/recommendations/recipes-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/recommendations/recipes-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modal-wrapper/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal-wrapper/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modal-wrapper/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal-wrapper/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/login/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/login/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/login/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/reviews/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reviews/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/reviews/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reviews/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,19 +64,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src" />
-      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\store" />
-      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\store\syncReducers" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
-      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\button" />
       <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\add-to-favourite-button" />
       <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components" />
       <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\Layout" />
       <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\loadingAnimation" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src" />
+      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\store" />
+      <recent name="C:\Users\Isa\Desktop\react-cheese-shop\src\store\syncReducers" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages" />
+      <recent name="C:\Users\Isa\Desktop\front-end\react-cheese-shop\src\pages\delivery" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (1)">
@@ -246,7 +249,7 @@
       <workItem from="1692129409561" duration="64834000" />
       <workItem from="1692551253511" duration="107085000" />
       <workItem from="1693306130691" duration="1148000" />
-      <workItem from="1693317160427" duration="7368000" />
+      <workItem from="1693317160427" duration="14808000" />
     </task>
     <servers />
   </component>
@@ -288,22 +291,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1692129390129" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1693343223478">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1693416949342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1693343223478" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1693343223478">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1693416949342" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1693416949342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1693343223478" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1693343223477">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1693416949342" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1693416949342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1693343223477" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1693343223478">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1693416949342" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1693416949342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1693343223478" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1693416949342" />
     <state x="478" y="169" key="SettingsEditor" timestamp="1693136318973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -316,13 +319,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1693263644161" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1692712628968">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1693417760193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1692712628968" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1693352715256">
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693417760193" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1693417587902">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693352715256" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693417587902" />
   </component>
 </project>

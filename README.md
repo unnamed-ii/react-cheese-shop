@@ -12,12 +12,12 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Adaptive styles
 
 ## Tasks, that have to be done
-- ADD : 3d view of product
+- ADD : 3d view of product "three.js"
 - firebase authentication
 - FSD Architecture
 - Ability to search product (Header) (Check input search)
-- Form validation (Modals, auth, recovery, registration pages)
 - Advanced filtering products (Category page)
+- Form validation (Modals, auth, recovery, registration pages)
 - Add rendering image of products/collections/articles/recipes from server
 
 - Add setting active block (Home page, recommendations block) +

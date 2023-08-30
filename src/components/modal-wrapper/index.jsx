@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.scss';
 
-const ModalWrapper = ({children, toggleModal}) => {
+const ModalWrapper = ({children, isModalOpened}) => {
     return (
-        <div className="modal-wrapper" onClick={toggleModal}>
+        <div className={"modal-wrapper " + (isModalOpened ? "active" : "")}>
             {children}
         </div>
     );

@@ -8,11 +8,10 @@ import LoginModal from "../../components/modals/login";
 import {database} from "../../firebase";
 import {addDoc, collection, getDocs} from "firebase/firestore";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
-import {ReactComponent as CloseBtnIcon} from '../../images/icons/close-moduls-btn.svg'
-import ModalWrapper from "../../components/modal-wrapper";
 import {LoadingAnimationContext} from "../../Context";
 import {refreshPage} from "../../utils/refreshPage";
 import Title from "../../components/title";
+import ReviewModal from "../../components/modals/review-modal";
 
 const Reviews = () => {
     const isAuth = JSON.parse(localStorage.getItem('isUserAuthorized'));
@@ -79,48 +78,28 @@ const Reviews = () => {
                                 title={"Отзывы покупателей"}
                                 className={"page"}
                             />
-                            {isAuth
-                                ?
-                                <div className="review__form">
+                            {isAuth ?
+                                <>
                                     <button onClick={toggleModal} className="reviews__top-authorization__button">
                                         <UserIcon className="user-icon"/> Оставить отзыв
                                     </button>
-                                    {isModalOpened &&
-                                    <ModalWrapper>
-                                        <form>
-                                            <h3>Оставьте ваш отзыв</h3>
-                                            <input
-                                                type="number"
-                                                placeholder="Ваша оценка от 0 до 5"
-                                                name="rate"
-                                                onChange={onSendingReviewInputChange}
-                                            />
-                                            <textarea
-                                                placeholder="Ваш отзыв..."
-                                                cols="30"
-                                                rows="10"
-                                                name="text"
-                                                onChange={onSendingReviewInputChange}
-                                            />
-                                            <button onClick={sendReview} className="send-review__btn">Отправить</button>
-                                            <button onClick={toggleModal} className="close-review__btn"><CloseBtnIcon/>
-                                            </button>
-                                        </form>
-                                    </ModalWrapper>
-                                    }
-                                </div>
+                                    <ReviewModal
+                                        sendReview={sendReview}
+                                        toggleModal={toggleModal}
+                                        isModalOpened={isModalOpened}
+                                        onSendingReviewInputChange={onSendingReviewInputChange}
+                                    />
+                                </>
                                 :
                                 <div className="reviews__top-authorization">
                                     Что бы оставить отзыв необходимо
                                     <button onClick={toggleModal} className="reviews__top-authorization__button">
                                         <UserIcon className="user-icon"/> Авторизоваться
                                     </button>
-                                    {isModalOpened &&
                                     <LoginModal
                                         toggleModal={toggleModal}
                                         isModalOpened={isModalOpened}
                                     />
-                                    }
                                 </div>
                             }
                         </div>

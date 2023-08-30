@@ -1,0 +1,71 @@
+@import "src/styles/vars";
+
+.reviews-form {
+  width: 410px;
+  padding: 20px;
+  background: $white;
+  border: 1px solid rgba(229, 229, 229, 0.5);
+  border-radius: 5px;
+  position: relative;
+
+  h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $brown;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  input,
+  textarea{
+    margin: 6px 0 20px;
+    border: 1px solid #E6E6E6;
+    border-radius: 6px;
+    outline: none;
+    padding: 13px 0 11px 14px;
+    width: 100%;
+
+    &::placeholder {
+      font-size: 15px;
+      line-height: 24px;
+      color: #BFBFBF;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .send-review__btn {
+    background: $orange;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 12px 0;
+    transition: all .3s;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+
+  .close-review__btn {
+    top: 20px;
+    right: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+    position: absolute;
+    background-color: transparent;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+}

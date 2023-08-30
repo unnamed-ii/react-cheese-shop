@@ -22,6 +22,12 @@
     top: 20px;
     right: 30px;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      opacity: .5;
+    }
   }
 
   &__form {
