@@ -18,9 +18,9 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - Ability to search product (Header) (Check input search)
 - Form validation (Modals, auth, recovery, registration pages)
 - Advanced filtering products (Category page)
-- Add setting active block (Home page, recommendations block)
 - Add rendering image of products/collections/articles/recipes from server
 
+- Add setting active block (Home page, recommendations block) +
 - ADD : on main-nav components links clicked navigate to category page wit changing title +
 - TO FIX: .basket className for button component isn't working for some reason +
 - Personal collection of previous orders (Portfolio page) +

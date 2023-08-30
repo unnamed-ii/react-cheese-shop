@@ -9,6 +9,8 @@
   &__item {
     color: $white;
     text-align: left;
+    cursor: pointer;
+    height: 300px;
 
     & + & {
       margin-left: 2px;
@@ -37,13 +39,18 @@
       color: $white;
       padding: 13px 30px;
       display: none;
+
+      &:hover {
+        opacity: .7;
+      }
     }
 
     img {
+      width: 293px;
+      height: 100%;
     }
 
     &.active {
-
       .recommendations__item-subtitle {
         display: none;
       }
@@ -68,11 +75,19 @@
         display: inline;
         margin-left: 30px;
       }
+
+      img {
+        width: 590px;
+      }
     }
   }
 }
 
 @media (max-width: 1230px) {
+  .recommendations {
+    display: none;
+  }
+
   .recommendations__item {
     margin-bottom: 16px;
   }
