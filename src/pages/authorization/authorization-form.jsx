@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext} from 'react';
 import './style.scss'
 import {Link, useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux";
@@ -8,33 +8,31 @@ import {logInActionCreator} from "../../store/user";
 import {refreshPage} from "../../utils/refreshPage";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
 import {LoadingAnimationContext} from "../../Context";
+import Title from "../../components/title";
+import Button from "../../components/button";
+import {useForm} from "react-hook-form";
+import {yupResolver} from "@hookform/resolvers/yup";
+import {authorizationFormSchema} from "../../utils/validationShemes";
 import {ReactComponent as FacebookIcon} from "../../images/icons/sign-up/facebook.svg";
 import {ReactComponent as GoogleIcon} from "../../images/icons/sign-up/google.svg";
 import {ReactComponent as VkIcon} from "../../images/icons/sign-up/vk.svg";
 import {ReactComponent as TwitterIcon} from "../../images/icons/sign-up/twitter.svg";
 import {ReactComponent as MailRuIcon} from "../../images/icons/sign-up/mailRu.svg";
 import {ReactComponent as YandexIcon} from "../../images/icons/sign-up/yandex.svg";
-import Title from "../../components/title";
-import Button from "../../components/button";
 
 const AuthorizationForm = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
-    const [userData, setUserData] = useState({
-        email: '',
-        password: ''
+    const {register, handleSubmit, formState: {errors}} = useForm({
+        defaultValues: {
+            email: "",
+            password: ""
+        },
+        resolver: yupResolver(authorizationFormSchema)
     });
-
-    const onFieldChange = (e) => {
-        setUserData(p => ({
-            ...p,
-            [e.target.name]: e.target.value
-        }))
-    }
-
-    const logIn = async (e) => {
-        e.preventDefault();
+    const logIn = data => console.log(data);
+    const logIn123 = async (data) => {
         setIsLoading(true);
         try {
             const querySnapshot = await getDocs(collection(database, "users"));
@@ -43,7 +41,7 @@ const AuthorizationForm = () => {
 
             querySnapshot.forEach((user) => {
                 // checking is on server any account with this email
-                if (user.data().email === userData.email) {
+                if (user.data().email === data.email) {
                     authorizingUser = user.data();
                     authorizingUserId = user.id;
                 }
@@ -53,7 +51,7 @@ const AuthorizationForm = () => {
             if (authorizingUser) {
                 // checking only password , because on line 44 we already checked email
                 // if password is right , then we doing authorization , otherwise giving info about mistake to user
-                if (authorizingUser.password === userData.password) {
+                if (authorizingUser.password === data.password) {
                     dispatch(logInActionCreator({
                         isAuth: true,
                         userData: authorizingUser,
@@ -72,7 +70,7 @@ const AuthorizationForm = () => {
                         refreshPage();
                     }, 500);
                 }
-                if (authorizingUser.password !== userData.password){
+                if (authorizingUser.password !== data.password) {
                     setIsLoading(false);
                     alert('Неверный пароль');
                 }
@@ -92,30 +90,33 @@ const AuthorizationForm = () => {
                 title={"Постоянный покупатель"}
                 className={"authorization"}
             />
-            <form onSubmit={logIn}>
+            <form onSubmit={handleSubmit(logIn)}>
                 <div className="email">
                     <div>Электронная почта</div>
                     <input
                         type="email"
                         placeholder="yourname@mail.com"
-                        value={userData.email}
-                        onChange={onFieldChange}
                         name={"email"}
+                        {...register("email")}
                     />
+                    <p className="input__error-message">
+                        {errors.email?.message}
+                    </p>
                 </div>
                 <div className="password">
                     <div>Ваш пароль</div>
                     <input
                         type="password"
                         placeholder="От 8 и более символов"
-                        value={userData.password}
-                        onChange={onFieldChange}
                         name={"password"}
+                        {...register("password")}
                     />
+                    <p className="input__error-message">
+                        {errors.password?.message}
+                    </p>
                 </div>
                 <Button
                     text={"Войти"}
-                    onClick={logIn}
                     className={"authorization-page"}
                 />
             </form>

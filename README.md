@@ -15,11 +15,12 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - ADD : 3d view of product "three.js"
 - firebase authentication
 - FSD Architecture
+- show modal of added to basket product when clicking on the button to add product 
 - Ability to search product (Header) (Check input search)
 - Advanced filtering products (Category page)
-- Form validation (Modals, auth, recovery, registration pages)
 - Add rendering image of products/collections/articles/recipes from server
 
+- Form validation (Modals, auth, recovery, registration pages) +
 - Add setting active block (Home page, recommendations block) +
 - ADD : on main-nav components links clicked navigate to category page wit changing title +
 - TO FIX: .basket className for button component isn't working for some reason +

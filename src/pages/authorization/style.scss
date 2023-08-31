@@ -11,6 +11,14 @@
     padding: 40px 55px 30px;
     width: 590px;
 
+    .input__error-message {
+      color: red;
+      text-decoration: underline;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+
     form {
       font-size: 16px;
       line-height: 24px;

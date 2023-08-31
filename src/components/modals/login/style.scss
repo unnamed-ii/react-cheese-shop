@@ -36,8 +36,15 @@
     font-size: 16px;
     line-height: 24px;
 
+    .input__error-message {
+      color: red;
+      text-decoration: underline;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
     input {
-      margin: 6px 0 20px;
+      margin-top: 6px;
       border: 1px solid #E6E6E6;
       border-radius: 6px;
       outline: none;
@@ -63,6 +70,10 @@
       width: 100%;
       padding: 12px 0;
       margin-bottom: 28px;
+
+      &:hover {
+        opacity: .7;
+      }
     }
 
     &-link {

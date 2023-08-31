@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import './style.scss';
 
-const CheckBox = ({checkedProp}) => {
-    const [isChecked, setIsChecked] = useState(checkedProp || false);
+const CheckBox = ({checkedProp = false}) => {
+    const [isChecked, setIsChecked] = useState(checkedProp);
     
     return (
         <label className="form-control">

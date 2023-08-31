@@ -12,6 +12,7 @@ import {LoadingAnimationContext} from "../../Context";
 import {refreshPage} from "../../utils/refreshPage";
 import Title from "../../components/title";
 import ReviewModal from "../../components/modals/review-modal";
+import RegistrationModal from "../../components/modals/registration";
 
 const Reviews = () => {
     const isAuth = JSON.parse(localStorage.getItem('isUserAuthorized'));
@@ -96,7 +97,7 @@ const Reviews = () => {
                                     <button onClick={toggleModal} className="reviews__top-authorization__button">
                                         <UserIcon className="user-icon"/> Авторизоваться
                                     </button>
-                                    <LoginModal
+                                    <RegistrationModal
                                         toggleModal={toggleModal}
                                         isModalOpened={isModalOpened}
                                     />

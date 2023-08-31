@@ -28,6 +28,13 @@
     padding: 30px;
     border-bottom: 1px solid #E6E6E6;
 
+    .input__error-message {
+      color: red;
+      text-decoration: underline;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
     form {
       font-size: 16px;
       line-height: 24px;
@@ -40,7 +47,7 @@
         padding: 13px 0 11px 14px;
         outline: none;
         width: 100%;
-        margin: 6px 0 20px;
+        margin-top: 6px;
 
         &::placeholder {
           color: #BFBFBF;
@@ -49,7 +56,6 @@
     }
 
     &-agreements {
-
       &__agreement {
         display: flex;
         font-size: 14px;
@@ -83,6 +89,10 @@
       font-size: 16px;
       line-height: 24px;
       display: block;
+
+      &:hover {
+        opacity: .7;
+      }
     }
   }
 

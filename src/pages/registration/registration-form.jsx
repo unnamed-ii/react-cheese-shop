@@ -1,89 +1,87 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './style.scss'
 import {Link, useNavigate} from "react-router-dom";
 import {database} from "../../firebase";
 import {addDoc, collection, getDocs} from "firebase/firestore";
 import CheckBox from "../../components/checkbox";
+import Button from "../../components/button";
+import {useForm} from "react-hook-form";
+import {yupResolver} from "@hookform/resolvers/yup";
+import {registrationFormSchema} from "../../utils/validationShemes";
 import {ReactComponent as FacebookIcon} from "../../images/icons/sign-up/facebook.svg";
 import {ReactComponent as GoogleIcon} from "../../images/icons/sign-up/google.svg";
 import {ReactComponent as VkIcon} from "../../images/icons/sign-up/vk.svg";
 import {ReactComponent as TwitterIcon} from "../../images/icons/sign-up/twitter.svg";
 import {ReactComponent as MailRuIcon} from "../../images/icons/sign-up/mailRu.svg";
 import {ReactComponent as YandexIcon} from "../../images/icons/sign-up/yandex.svg";
-import Button from "../../components/button";
 
 const RegistrationForm = () => {
-    const [userData, setUserData] = useState({
-        fullName: '',
-        email: '',
-        password: '',
-        passwordConfirmation: ''
-    });
     const navigate = useNavigate();
-
-    const registerUser = async (e) => {
-        e.preventDefault();
-
-        setUserData({
-            fullName: '',
-            email: '',
-            password: '',
-            passwordConfirmation: ''
-        })
-
+    const {register, handleSubmit, formState: {errors}} = useForm({
+        defaultValues: {
+            fullName: "",
+            email: "",
+            password: "",
+            passwordConfirm: "",
+        },
+        resolver: yupResolver(registrationFormSchema)
+    });
+    const registerUser = async (data) => {
         try {
-            const querySnapshot = await getDocs(collection(database, "users"));
+            const userInputsData = {
+                ...data,
+                phone: "",
+                address: "",
+                coupons: [],
+                favourite: [],
+                orders: [],
+            }
             let isEmailRegistered = false;
+            const usersCollectionSnapshot = await getDocs(collection(database, "users"));
 
-            querySnapshot.forEach((doc) => {
-                let currentUser = doc.data();
-
-                if (currentUser.email === userData.email) {
+            usersCollectionSnapshot.forEach((doc) => {
+                const user = doc.data();
+                if (user.email === userInputsData.email) {
                     alert('Account with this email is already registered');
                     isEmailRegistered = true;
                 }
             });
 
             if (isEmailRegistered === false) {
-                await addDoc(collection(database, "users"), userData);
+                await addDoc(collection(database, "users"), userInputsData);
                 navigate("/authorization");
             }
-
         } catch (e) {
-            console.log(e)
+            console.log(e);
         }
-
-    }
-
-    const onFieldChange = (e) => {
-        setUserData(p => ({
-            ...p,
-            [e.target.name]: e.target.value
-        }));
     }
 
     return (
         <div className="sign-up__form">
-            <form onSubmit={registerUser}>
+            <form onSubmit={handleSubmit(registerUser)}>
                 <div className="name">
                     <div>Ваше имя и фамилия</div>
                     <input
                         type="text"
                         placeholder="Владимир Иванов"
-                        value={userData.fullName}
-                        onChange={onFieldChange}
                         name={'fullName'}
+                        {...register("fullName")}
                     />
+                    <p className="input__error-message">
+                        {errors.fullName?.message}
+                    </p>
                 </div>
                 <div className="email">
                     <div>Электронная почта</div>
                     <input
                         type="email"
                         placeholder="yourname@mail.com"
-                        value={userData.email}
-                        onChange={onFieldChange}
                         name={'email'}
+                        {...register("email")}
                     />
+                    <p className="input__error-message">
+                        {errors.email?.message}
+                    </p>
                 </div>
                 <div className="password">
                     <div className="password__enter">
@@ -91,25 +89,28 @@ const RegistrationForm = () => {
                         <input
                             type="password"
                             placeholder="От 8 и более символов"
-                            value={userData.password}
-                            onChange={onFieldChange}
-                            name={'password'}
+                            name={"password"}
+                            {...register("password")}
                         />
+                        <p className="input__error-message">
+                            {errors.password?.message}
+                        </p>
                     </div>
                     <div className="password__confirmation">
                         <div>Подтвердите пароль</div>
                         <input
                             type="password"
                             placeholder="Повторите пароль"
-                            value={userData.passwordConfirmation}
-                            onChange={onFieldChange}
-                            name={'passwordConfirmation'}
+                            name={'passwordConfirm'}
+                            {...register("passwordConfirm")}
                         />
+                        <p className="input__error-message">
+                            {errors.passwordConfirm?.message}
+                        </p>
                     </div>
                 </div>
                 <Button
                     text={"Создать аккаунт"}
-                    onClick={registerUser}
                     className={"registration-page"}
                 />
             </form>
@@ -127,11 +128,11 @@ const RegistrationForm = () => {
                 </div>
                 <div className="agreements">
                     <div className="agreements__agreement">
-                        <CheckBox />
+                        <CheckBox/>
                         Получать письма с новостями и акциями
                     </div>
                     <div className="agreements__agreement">
-                        <CheckBox />
+                        <CheckBox/>
                         Я прочитал и соглашаюсь с условиями <a href="#">Политики конфиденциальности</a>
                     </div>
                 </div>
