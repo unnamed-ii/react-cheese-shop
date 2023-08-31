@@ -2,13 +2,13 @@ import React, {useState} from 'react';
 import './style.scss';
 import Counter from "../../components/counter";
 import {ReactComponent as ReviewIcon} from "../../images/icons/review.svg";
-import {ReactComponent as HeartIcon} from "../../images/icons/orange-empty-heart.svg";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {addProductActionCreator} from "../../store/basket";
 import AddToFavouriteButton from "../../components/add-to-favourite-button";
 import Button from "../../components/button";
 import Rating from "@mui/material/Rating";
 import Title from "../../components/title";
+import ProductAddedModal from "../../components/modals/product-added";
 
 const CollectionInfo = ({
                             price,
@@ -20,14 +20,31 @@ const CollectionInfo = ({
                             amount = 1
                         }) => {
     const dispatch = useDispatch();
+    const basketProducts = useSelector(state => state.basket.products);
+    const [isProductAdded, setIsProductAdded] = useState(false);
     const [productsNumber, setProductsNumber] = useState(amount);
-    const addProductToBasket = () => dispatch(addProductActionCreator({
-        title,
-        price,
-        id,
-        amount: productsNumber,
-        image
-    }));
+    const toggleModal = () => setIsProductAdded(!isProductAdded);
+    const addProductToBasket = () => {
+        let isProductInBasket = false;
+        for (let product of basketProducts) {
+            if (product.id === id) {
+                isProductInBasket = true;
+                break;
+            }
+        }
+        if (!isProductInBasket) {
+            dispatch(addProductActionCreator({
+                title,
+                price,
+                id,
+                amount: productsNumber,
+                image
+            }));
+            toggleModal();
+        } else {
+            alert("Уже в корзине");
+        }
+    };
 
     return (
         <div className="collection__box">
@@ -77,6 +94,12 @@ const CollectionInfo = ({
                     </div>
                 </div>
             </div>
+            <ProductAddedModal
+                isModalOpened={isProductAdded}
+                toggleModal={toggleModal}
+                title={title}
+                amount={amount}
+            />
         </div>
     );
 };

@@ -91,6 +91,8 @@
           width: 100%;
 
           &-available {
+            display: flex;
+            justify-content: space-between;
             font-size: 16px;
             line-height: 20px;
             color: $green;

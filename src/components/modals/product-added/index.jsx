@@ -1,47 +1,62 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './style.scss'
 import ModalWrapper from "../../modal-wrapper";
 import {ReactComponent as CloseBtnIcon} from '../../../images/icons/close-moduls-btn.svg';
 import {ReactComponent as QuestionMarkIcon} from '../../../images/icons/choose-modal-question.svg';
 import productImg from '../../../images/icons/choose-product-img.png';
+import {Link} from "react-router-dom";
 
-const ProductAddedModal = () => {
+const ProductAddedModal = ({
+                               toggleModal,
+                               isModalOpened,
+                               title,
+                               amount
+                           }) => {
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (isModalOpened && !event.target.closest('.modal-window')) {
+                toggleModal();
+            }
+        }
+        document.addEventListener('click', handleClickOutside);
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        }
+    }, [isModalOpened, toggleModal]);
+
     return (
-        <ModalWrapper>
-            <div className="product-added">
+        <ModalWrapper isModalOpened={isModalOpened}>
+            <div className="product-added modal-window">
                 <div className="product-added__title">
                     Добавлено в корзину
                 </div>
-                <div className="product-added__close">
-                    <CloseBtnIcon />
-                </div>
+                <button className="product-added__close" onClick={toggleModal}>
+                    <CloseBtnIcon/>
+                </button>
                 <div className="product-added__product">
                     <img src={productImg} alt="" className="product-added__product-image"/>
                     <div className="product-added__product-info">
                         <div className="top">
                             <div className="top__title">
-                                Ароматобразующая закваска Danisсo Choozit Flav 43 LYO (5d)
+                                {title}
                             </div>
                             <div className="top__amount">
-                                2 шт.
+                                {amount} шт.
                             </div>
                         </div>
                         <div className="bonus">
-                            <span>+99</span>  бонусных рублей
+                            <span>+99</span> бонусных рублей
                             <QuestionMarkIcon className="question-mark-icon"/>
                         </div>
                     </div>
                 </div>
                 <div className="product-added__buttons">
-                    <div className="product-added__buttons-button">
+                    <button className="product-added__buttons-button" onClick={toggleModal}>
                         Продолжить покупки
-                    </div>
-                    <div className="product-added__buttons-button orange">
+                    </button>
+                    <Link to="/checkout" className="product-added__buttons-button orange">
                         Просмотр корзины
-                    </div>
-                </div>
-                <div className="product-added__slider">
-
+                    </Link>
                 </div>
             </div>
         </ModalWrapper>

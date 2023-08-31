@@ -20,6 +20,12 @@
     top: 26px;
     right: 36px;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      opacity: .5;
+    }
   }
 
   &__product {
@@ -88,10 +94,21 @@
       width: 215px;
       padding: 10px;
       cursor: pointer;
+      border: none;
+      transition: all .6s;
+
+      &:hover {
+        color: $white;
+        background-color: $black;
+      }
 
       &.orange {
         background-color: $orange;
         color: $white;
+
+        &:hover {
+          opacity: .5;
+        }
       }
     }
   }

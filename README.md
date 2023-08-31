@@ -2,7 +2,12 @@
 Internet shop selling cheese
 
 ## Stack
-HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
+- HTML
+- SCSS 
+- React + Redux 
+- react-router-dom 
+- react-hook-from 
+- Firebase hosting and database
 
 ## What realised in this pet project
 - Authorization
@@ -15,11 +20,11 @@ HTML , SCSS, React + Redux, React - Router - Dom, Firebase hosting and database
 - ADD : 3d view of product "three.js"
 - firebase authentication
 - FSD Architecture
-- show modal of added to basket product when clicking on the button to add product 
 - Ability to search product (Header) (Check input search)
 - Advanced filtering products (Category page)
 - Add rendering image of products/collections/articles/recipes from server
 
+- show modal of added to basket product when clicking on the button to add product +
 - Form validation (Modals, auth, recovery, registration pages) +
 - Add setting active block (Home page, recommendations block) +
 - ADD : on main-nav components links clicked navigate to category page wit changing title +

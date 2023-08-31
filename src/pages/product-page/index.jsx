@@ -13,20 +13,22 @@ import {getDoc, doc} from "firebase/firestore";
 import {useLocation} from "react-router-dom";
 import {LoadingAnimationContext} from "../../Context";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {addProductActionCreator} from "../../store/basket";
 import card from '../../images/card.png'
 import Title from "../../components/title";
+import ProductAddedModal from "../../components/modals/product-added";
 
 const ProductPage = () => {
     const dispatch = useDispatch();
     const {pathname} = useLocation();
+    const basketProducts = useSelector(state => state.basket.products);
+    const currentShowingProductId = pathname.split('/')[pathname.split('/').length - 1];
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
-    const [showAlert, setShowAlert] = useState(false);
     const [productData, setProductData] = useState({});
     const [productsNumber, setProductsNumber] = useState(1);
-    const currentShowingProductId = pathname.split('/')[pathname.split('/').length - 1];
-    let productsRating;
+    const [isProductAdded, setIsProductAdded] = useState(false);
+    const toggleModal = () => setIsProductAdded(!isProductAdded);
 
     useEffect(async () => {
         setIsLoading(true);
@@ -39,7 +41,6 @@ const ProductPage = () => {
                     ...productSnap.data()
                 });
             }
-            // productsRating = +JSON.stringify(productData?.rate).split(":")[1].replace("}", "");
         } catch (e) {
             console.log(e);
         }
@@ -47,25 +48,36 @@ const ProductPage = () => {
     }, []);
 
     const addProductToBasket = () => {
-        dispatch(addProductActionCreator({
-            ...productData,
-            title: productData.name,
-            id: productData.collectionId,
-            price: productData.discountPrice,
-            amount: productsNumber,
-            image: card,
-        }));
-        setShowAlert(true);
+        let isProductInBasket = false;
+        for (let product of basketProducts) {
+            if (product.id === productData.id) {
+                isProductInBasket = true;
+                break;
+            }
+        }
+
+        if (!isProductInBasket) {
+            dispatch(addProductActionCreator({
+                ...productData,
+                title: productData.name,
+                id: productData.collectionId,
+                price: productData.discountPrice,
+                amount: productsNumber,
+                image: card,
+            }));
+            toggleModal();
+        }
     }
 
     return (
         <Wrapper>
             <LoadingAnimation isLoading={isLoading}/>
             <div className={"product-page " + (productData.inStock === false && "not-available")}>
-                <ProductAddedAlert
-                    productName={productData.name}
-                    showAlert={showAlert}
-                    setShowAlert={setShowAlert}
+                <ProductAddedModal
+                    toggleModal={toggleModal}
+                    isModalOpened={isProductAdded}
+                    title={productData?.name}
+                    amount={productsNumber}
                 />
                 <div className="product-card__inner">
                     <MainNav/>
@@ -73,13 +85,6 @@ const ProductPage = () => {
                         <Title
                             title={productData?.name}
                             className={"page"}
-                        />
-                        <Rating
-                            name="size-medium"
-                            defaultValue={5}
-                            value={productsRating}
-                            precision={0.5}
-                            readOnly
                         />
                         <Vendor
                             price={productData.price}

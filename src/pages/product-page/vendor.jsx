@@ -12,6 +12,7 @@ import AddToFavouriteButton from "../../components/add-to-favourite-button";
 import {doc, getDoc} from "firebase/firestore";
 import {database} from "../../firebase";
 import Button from "../../components/button";
+import Rating from "@mui/material/Rating";
 
 const Vendor = ({
                     price,
@@ -44,7 +45,13 @@ const Vendor = ({
             <div className="vendor-inner-wrapper">
                 <div className="vendor__info">
                     <div className="vendor__info-available">
-                        В наличии
+                        <div>В наличии</div>
+                        <Rating
+                            name="size-medium"
+                            defaultValue={5}
+                            precision={0.5}
+                            readOnly
+                        />
                     </div>
                     <div className="vendor__info-title">
                         <div className="vendor__info-title__price">

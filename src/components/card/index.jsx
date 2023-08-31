@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './style.scss'
 import {useDispatch} from "react-redux";
 import {addProductActionCreator} from "../../store/basket";
 import card from '../../images/card.png'
 import {Link} from "react-router-dom";
 import Button from "../button";
+import ProductAddedModal from "../modals/product-added";
 
 const Card = ({
                   title = 'Мезофильная закваска Danisco CHOOZIT MM...',
@@ -15,8 +16,16 @@ const Card = ({
                   image = card
               }) => {
     const dispatch = useDispatch();
-    const addProduct = () => dispatch(addProductActionCreator({title, price: discountPrice, id, amount, image}))
+    const [isProductAdded, setIsProductAdded] = useState(false);
+
+    const toggleModal = () => setIsProductAdded(!isProductAdded);
+
+    const addProduct = () => {
+        dispatch(addProductActionCreator({title, price: discountPrice, id, amount, image}));
+        setIsProductAdded(!isProductAdded);
+    }
     title = `${title.split('').splice(0,35).join('')}...`;
+
 
     return (
         <div className="card">
@@ -36,7 +45,12 @@ const Card = ({
                     onClick={addProduct}
                 />
             </div>
-
+            <ProductAddedModal
+                toggleModal={toggleModal}
+                isModalOpened={isProductAdded}
+                title={title}
+                amount={amount}
+            />
         </div>
     );
 };

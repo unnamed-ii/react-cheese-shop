@@ -11,19 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/validationShemes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/checkbox/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkbox/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modals/login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/login/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modals/login/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/login/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modals/registration/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/registration/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modals/registration/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/registration/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authorization/authorization-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authorization/authorization-form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authorization/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authorization/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration/registration-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/registration-form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/product-added/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/product-added/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/product-added/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/product-added/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/collection/collection-info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collection/collection-info.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/collections/collection-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collections/collection-card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/collections/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collections/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/product-page/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product-page/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/reviews/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reviews/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -253,7 +249,7 @@
       <workItem from="1692129409561" duration="64834000" />
       <workItem from="1692551253511" duration="107085000" />
       <workItem from="1693306130691" duration="1148000" />
-      <workItem from="1693317160427" duration="29300000" />
+      <workItem from="1693317160427" duration="33514000" />
     </task>
     <servers />
   </component>
@@ -327,9 +323,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693417760193" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1693507926499">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1693520819708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693507926499" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693520819708" />
   </component>
 </project>
