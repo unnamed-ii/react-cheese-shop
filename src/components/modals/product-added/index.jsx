@@ -10,7 +10,8 @@ const ProductAddedModal = ({
                                toggleModal,
                                isModalOpened,
                                title,
-                               amount
+                               amount,
+                               image
                            }) => {
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -34,7 +35,7 @@ const ProductAddedModal = ({
                     <CloseBtnIcon/>
                 </button>
                 <div className="product-added__product">
-                    <img src={productImg} alt="" className="product-added__product-image"/>
+                    <img src={image} alt="" className="product-added__product-image"/>
                     <div className="product-added__product-info">
                         <div className="top">
                             <div className="top__title">

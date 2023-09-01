@@ -71,6 +71,7 @@ const Products = () => {
                                                 title={product.name}
                                                 discountPrice={product.discountPrice}
                                                 normalPrice={product.normalPrice}
+                                                productImageURL={product.image}
                                             />
                                         )}
                                     </div>
@@ -89,6 +90,7 @@ const Products = () => {
                                             title={product.name}
                                             discountPrice={product.discountPrice}
                                             normalPrice={product.normalPrice}
+                                            productImageURL={product.image}
                                         />
                                     )}
                                 </div>

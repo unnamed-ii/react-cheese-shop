@@ -13,6 +13,7 @@ import {doc, getDoc} from "firebase/firestore";
 import {database} from "../../firebase";
 import Button from "../../components/button";
 import Rating from "@mui/material/Rating";
+import {getFileURLFromFirebaseStorage} from "../../utils/getFileFromFirebaseStorage";
 
 const Vendor = ({
                     price,
@@ -23,20 +24,21 @@ const Vendor = ({
                     productsNumber,
                     setProductsNumber,
                     productId,
-                    isInStock
+                    isInStock,
+                    imageURL
                 }) => {
 
     return (
         <div className="vendor">
             <div className="vendor-inner-wrapper">
                 <div className="vendor__images">
-                    <img className="vendor__images-main" src={productCart} alt=""/>
+                    <img className="vendor__images-main" src={imageURL} alt=""/>
                     <div className="vendor__images-group">
                         <img src={productCart2} alt=""/>
                         <img src={productCart2} alt=""/>
                         <img src={productCart2} alt=""/>
                     </div>
-                    <a href="" className="vendor__images-360__view">
+                    <a href="#" className="vendor__images-360__view">
                         <FullViewIcon/>
                         Посмотреть товар в 3D
                     </a>

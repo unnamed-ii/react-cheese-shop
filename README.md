@@ -7,7 +7,7 @@ Internet shop selling cheese
 - React + Redux 
 - react-router-dom 
 - react-hook-from 
-- Firebase hosting and database
+- Firebase hosting, database and storage
 
 ## What realised in this pet project
 - Authorization
@@ -24,7 +24,14 @@ Internet shop selling cheese
 - Advanced filtering products (Category page)
 - Add rendering image of products/collections/articles/recipes from server
 
-- show modal of added to basket product when clicking on the button to add product +
+// 01/08/2023. Yesterday you created function for getting image url, so now you have to create image field 
+               for every product/collection/article document in firestore.
+               This "image" field is a string, which is file name at firebase storage. So you have to find in internet
+               and download a bunch of different images for products/collections/articles. 
+
+// 02/08/2023. Image for products and collections uploaded to storage. Images for articles left.
+
+- Show modal of added to basket product when clicking on the button to add the product +
 - Form validation (Modals, auth, recovery, registration pages) +
 - Add setting active block (Home page, recommendations block) +
 - ADD : on main-nav components links clicked navigate to category page wit changing title +

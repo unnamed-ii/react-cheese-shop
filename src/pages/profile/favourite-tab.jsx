@@ -1,7 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react';
 import './style.scss';
 import FavouriteTabItem from "./favourite-tab-item";
-import favouriteProductImage from '../../images/favourite-product.png'
 import {database} from "../../firebase";
 import {doc, getDoc} from "firebase/firestore";
 import {LoadingAnimationContext} from "../../Context";
@@ -17,7 +16,7 @@ const FavouriteTab = ({activeTab}) => {
         const updatedFavouriteProductsList = favouriteProducts.filter(product => product.id !== id);
         setFavouriteProducts(updatedFavouriteProductsList);
     }
-
+    console.log(favouriteProducts)
     useEffect(() => {
         const getFavouriteProducts = async () => {
             try {
@@ -57,7 +56,7 @@ const FavouriteTab = ({activeTab}) => {
                             productId={product.id}
                             status={product.inStock}
                             normalPrice={product.price}
-                            image={favouriteProductImage}
+                            productImageURL={product.image}
                             manufacturer={product.manufacturer}
                             discountPrice={product.discountPrice}
                             updateShowingFavouriteProductsList={updateShowingFavouriteProductsList}

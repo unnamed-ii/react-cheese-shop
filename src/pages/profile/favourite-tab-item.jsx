@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './style.scss';
 import AddToFavouriteButton from "../../components/add-to-favourite-button";
 import {Link} from "react-router-dom";
 import Button from "../../components/button";
+import {getFileURLFromFirebaseStorage} from "../../utils/getFileFromFirebaseStorage";
 
 const FavouriteTabItem = ({
                               status,
-                              image,
+                              productImageURL,
                               title,
                               manufacturer,
                               discountPrice,
@@ -14,6 +15,14 @@ const FavouriteTabItem = ({
                               productId,
                               updateShowingFavouriteProductsList
                           }) => {
+    const [imageURL, setImageURL] = useState("");
+    console.log(productImageURL)
+    useEffect(() => {
+        if (productImageURL) {
+            getFileURLFromFirebaseStorage(productImageURL, setImageURL);
+        }
+    }, [productImageURL]);
+
     return (
         <div className={"favourite-cards__card " + (!status ? "out-of-stock" : "")}>
             <div className="favourite-cards__card-top">
@@ -27,7 +36,7 @@ const FavouriteTabItem = ({
                     updateShowingFavouriteProductsList={updateShowingFavouriteProductsList}
                 />
             </div>
-            <img src={image} alt="" className="favourite-cards__card-image"/>
+            <img src={imageURL} alt="" className="favourite-cards__card-image"/>
             <Link to={`/product-card/${productId}`}>
                 <div className="favourite-cards__card-title">
                     {title}

@@ -3,10 +3,8 @@ import './style.scss'
 import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
 import {CollectionCard} from "./collection-card";
-import collectionImage from "../../images/collections.png";
 import {collection, getDocs} from "firebase/firestore";
 import {database} from "../../firebase";
-import {useLocation} from "react-router-dom";
 import {LoadingAnimationContext} from "../../Context";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
 import Title from "../../components/title";
@@ -50,7 +48,8 @@ const Collections = () => {
                                     description={collection.shortDescription}
                                     price={collection.price}
                                     id={collection.id}
-                                    image={collectionImage}/>
+                                    productImageURL={collection.image}
+                                />
                             ))}
                         </div>
                     </div>

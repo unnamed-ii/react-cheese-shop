@@ -32,7 +32,7 @@ const Basket = () => {
                                 title={product.title}
                                 price={product.price}
                                 amount={product.amount}
-                                image={product.image}
+                                productImageURL={product.productImageURL}
                             />
                         ))}
                     </div>

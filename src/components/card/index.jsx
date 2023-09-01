@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './style.scss'
 import {useDispatch} from "react-redux";
 import {addProductActionCreator} from "../../store/basket";
@@ -6,6 +6,7 @@ import card from '../../images/card.png'
 import {Link} from "react-router-dom";
 import Button from "../button";
 import ProductAddedModal from "../modals/product-added";
+import {getFileURLFromFirebaseStorage} from "../../utils/getFileFromFirebaseStorage";
 
 const Card = ({
                   title = 'Мезофильная закваска Danisco CHOOZIT MM...',
@@ -13,23 +14,30 @@ const Card = ({
                   normalPrice = 1800,
                   id,
                   amount = 1,
-                  image = card
+                  productImageURL
               }) => {
     const dispatch = useDispatch();
     const [isProductAdded, setIsProductAdded] = useState(false);
+    const [imageURL, setImageURL] = useState("");
+
+    useEffect(() => {
+        if (productImageURL) {
+            getFileURLFromFirebaseStorage(productImageURL, setImageURL);
+        }
+    }, [productImageURL]);
 
     const toggleModal = () => setIsProductAdded(!isProductAdded);
 
     const addProduct = () => {
-        dispatch(addProductActionCreator({title, price: discountPrice, id, amount, image}));
+        dispatch(addProductActionCreator({title, price: discountPrice, id, amount, productImageURL}));
         setIsProductAdded(!isProductAdded);
     }
-    title = `${title.split('').splice(0,35).join('')}...`;
 
+    title = `${title.split('').splice(0,35).join('')}...`;
 
     return (
         <div className="card">
-            <img className="card__image" src={card} alt=""/>
+            <img className="card__image" src={imageURL} alt=""/>
             <Link className="card__description" to={`product-page/${id}`}>
                 {title}
             </Link>
@@ -50,6 +58,7 @@ const Card = ({
                 isModalOpened={isProductAdded}
                 title={title}
                 amount={amount}
+                image={imageURL}
             />
         </div>
     );

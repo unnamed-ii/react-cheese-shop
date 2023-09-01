@@ -57,10 +57,10 @@ const OrdersTab = ({activeTab}) => {
                     {orders?.map((order) => (
                         <OrdersTabItem
                             key={order.id}
-                            image={productImage}
                             title={order.title}
                             price={order.price}
                             amount={order.amount}
+                            productImageURL={order.image}
                         />
                     ))}
                 </div>

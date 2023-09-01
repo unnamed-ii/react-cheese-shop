@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './style.scss';
 import Counter from "../../components/counter";
 import {ReactComponent as ReviewIcon} from "../../images/icons/review.svg";
@@ -9,6 +9,7 @@ import Button from "../../components/button";
 import Rating from "@mui/material/Rating";
 import Title from "../../components/title";
 import ProductAddedModal from "../../components/modals/product-added";
+import {getFileURLFromFirebaseStorage} from "../../utils/getFileFromFirebaseStorage";
 
 const CollectionInfo = ({
                             price,
@@ -16,14 +17,22 @@ const CollectionInfo = ({
                             title,
                             shortDescription,
                             id,
-                            image,
+                            productImageURL,
                             amount = 1
                         }) => {
     const dispatch = useDispatch();
     const basketProducts = useSelector(state => state.basket.products);
     const [isProductAdded, setIsProductAdded] = useState(false);
     const [productsNumber, setProductsNumber] = useState(amount);
+    const [imageURL, setImageURL] = useState("");
+
     const toggleModal = () => setIsProductAdded(!isProductAdded);
+    useEffect(() => {
+        if (productImageURL) {
+            getFileURLFromFirebaseStorage(productImageURL, setImageURL);
+        }
+    }, [productImageURL]);
+
     const addProductToBasket = () => {
         let isProductInBasket = false;
         for (let product of basketProducts) {
@@ -38,7 +47,7 @@ const CollectionInfo = ({
                 price,
                 id,
                 amount: productsNumber,
-                image
+                productImageURL
             }));
             toggleModal();
         } else {
@@ -48,7 +57,7 @@ const CollectionInfo = ({
 
     return (
         <div className="collection__box">
-            <img src={image} alt="" className="collection__box-img"/>
+            <img src={imageURL} alt="" className="collection__box-img"/>
             <div className="collection__box-info">
                 <div className="is-available">
                     {inStock ? "В наличии" : "Нет в наличии"}
@@ -99,6 +108,7 @@ const CollectionInfo = ({
                 toggleModal={toggleModal}
                 title={title}
                 amount={amount}
+                image={imageURL}
             />
         </div>
     );

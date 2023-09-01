@@ -1,12 +1,19 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './style.scss';
 import Button from "../../components/button";
+import {getFileURLFromFirebaseStorage} from "../../utils/getFileFromFirebaseStorage";
 
-const OrdersTabItem = ({image, title, code = 323432, price, amount}) => {
+const OrdersTabItem = ({productImageURL, title, code = 323432, price, amount}) => {
+    const [imageURL, setImageURL] = useState("");
+    useEffect(() => {
+        if (productImageURL) {
+            getFileURLFromFirebaseStorage(productImageURL, setImageURL);
+        }
+    }, [productImageURL]);
 
     return (
         <div className="table__item">
-            <img src={image} alt="" className="table__item-image"/>
+            <img src={imageURL} alt="" className="table__item-image"/>
             <div className="table__item-info">
                 <div className="table__item-info__title">
                     {title}

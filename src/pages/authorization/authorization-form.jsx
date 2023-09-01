@@ -31,8 +31,8 @@ const AuthorizationForm = () => {
         },
         resolver: yupResolver(authorizationFormSchema)
     });
-    const logIn = data => console.log(data);
-    const logIn123 = async (data) => {
+
+    const logIn = async (data) => {
         setIsLoading(true);
         try {
             const querySnapshot = await getDocs(collection(database, "users"));

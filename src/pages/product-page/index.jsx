@@ -18,6 +18,7 @@ import {addProductActionCreator} from "../../store/basket";
 import card from '../../images/card.png'
 import Title from "../../components/title";
 import ProductAddedModal from "../../components/modals/product-added";
+import {getFileURLFromFirebaseStorage} from "../../utils/getFileFromFirebaseStorage";
 
 const ProductPage = () => {
     const dispatch = useDispatch();
@@ -29,6 +30,13 @@ const ProductPage = () => {
     const [productsNumber, setProductsNumber] = useState(1);
     const [isProductAdded, setIsProductAdded] = useState(false);
     const toggleModal = () => setIsProductAdded(!isProductAdded);
+    const [imageURL, setImageURL] = useState("");
+
+    useEffect(() => {
+        if (productData.image) {
+            getFileURLFromFirebaseStorage(productData.image, setImageURL);
+        }
+    }, [productData.image]);
 
     useEffect(async () => {
         setIsLoading(true);
@@ -63,7 +71,7 @@ const ProductPage = () => {
                 id: productData.collectionId,
                 price: productData.discountPrice,
                 amount: productsNumber,
-                image: card,
+                productImageURL: productData.image,
             }));
             toggleModal();
         }
@@ -78,6 +86,7 @@ const ProductPage = () => {
                     isModalOpened={isProductAdded}
                     title={productData?.name}
                     amount={productsNumber}
+                    image={imageURL}
                 />
                 <div className="product-card__inner">
                     <MainNav/>
@@ -87,15 +96,16 @@ const ProductPage = () => {
                             className={"page"}
                         />
                         <Vendor
-                            price={productData.price}
-                            discountPrice={productData.discountPrice}
-                            code={productData.code}
-                            manufacturer={productData.manufacturer}
+                            price={productData?.price}
+                            discountPrice={productData?.discountPrice}
+                            code={productData?.code}
+                            manufacturer={productData?.manufacturer}
                             addProductToBasket={addProductToBasket}
                             productsNumber={productsNumber}
                             setProductsNumber={setProductsNumber}
                             productId={productData?.collectionId}
                             isInStock={productData?.inStock}
+                            imageURL={imageURL}
                         />
                         <AnalogsProductsSlider bigSize={!productData.inStock}/>
                         <Tabs

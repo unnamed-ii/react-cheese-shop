@@ -10,7 +10,6 @@ import {database} from "../../firebase";
 import {LoadingAnimationContext} from "../../Context";
 import {useLocation} from "react-router-dom";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
-import collectionImage from "../../images/collections.png";
 
 const Collection = () => {
     const {pathname} = useLocation()
@@ -47,7 +46,7 @@ const Collection = () => {
                             title={collectionData.name}
                             shortDescription={collectionData.shortDescription}
                             id={collectionData.collectionId}
-                            image={collectionImage}
+                            productImageURL={collectionData.image}
                         />
                         <CollectionTabs
                             description={collectionData.description}
