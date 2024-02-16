@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -11,27 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/getFileFromFirebaseStorage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/products/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/products/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/basket/basket-product-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basket/basket-product-card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/basket/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basket/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modals/product-added/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/product-added/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authorization/authorization-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authorization/authorization-form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/collection/collection-info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collection/collection-info.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/collection/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collection/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/collections/collection-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collections/collection-card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/collections/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collections/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/collections/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collections/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/product-page/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product-page/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/product-page/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product-page/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/product-page/vendor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product-page/vendor.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/favourite-tab-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/favourite-tab-item.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/favourite-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/favourite-tab.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +32,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2F1yon6uB7pXZhCIXCEVY2arkMk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -56,24 +43,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/button" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.standard" value="" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Isa\Desktop\projects\react-cheese-shop\src\components\button" />
@@ -118,6 +99,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -262,11 +244,12 @@
       <workItem from="1693306130691" duration="1148000" />
       <workItem from="1693317160427" duration="37778000" />
       <workItem from="1693565861174" duration="8177000" />
+      <workItem from="1708066160447" duration="487000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -288,56 +271,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1692990007040">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1692990007040" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1692893071527">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1692893071527" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1692129390129">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1692129390129" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1693609122035">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1693609122035" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1693609122035">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1693609122035" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1693609122035">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1693609122035" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1693609122035">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1693609122035" />
-    <state x="478" y="169" key="SettingsEditor" timestamp="1693136318973">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="478" y="169" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1693136318973" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1692893071527">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1692893071527" />
-    <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1693263644161">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="767" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1693263644161" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1693417760193">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693417760193" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1693611421621">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1693611421621" />
   </component>
 </project>
