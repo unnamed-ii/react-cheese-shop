@@ -1,9 +1,8 @@
 # Pet Project
-Internet shop selling cheese
+Cheese shop
 
 ## Stack
-- HTML
-- SCSS 
+- HTML / SCSS 
 - React + Redux 
 - react-router-dom 
 - react-hook-from 
@@ -16,7 +15,7 @@ Internet shop selling cheese
 - Users basket
 - Adaptive styles
 
-## Tasks, that have to be done
+## To be completed
 - ADD : 3d view of product "three.js"
 - firebase authentication
 - FSD Architecture
