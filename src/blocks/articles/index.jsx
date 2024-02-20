@@ -10,18 +10,21 @@ import Title from "../../components/title";
 const Articles = () => {
     const [articles, setArticles] = useState([]);
 
-    useEffect(async () => {
-        try {
-            const querySnapshot = await getDocs(collection(database, 'articles'));
-            await querySnapshot.forEach((doc) => {
-                const id = doc.id;
-                const data = doc.data();
-                const article = {...JSON.parse(JSON.stringify(data)), id};
-                setArticles(p => ([...p, article]));
-            })
-        } catch (e) {
-            console.log(e);
+    useEffect( () => {
+        const getArticles = async () => {
+            try {
+                const querySnapshot = await getDocs(collection(database, 'articles'));
+                await querySnapshot.forEach((doc) => {
+                    const id = doc.id;
+                    const data = doc.data();
+                    const article = {...JSON.parse(JSON.stringify(data)), id};
+                    setArticles(p => ([...p, article]));
+                })
+            } catch (e) {
+                console.log(e);
+            }
         }
+        getArticles();
     }, []);
 
     return (

@@ -17,25 +17,29 @@ const Products = () => {
     const toggleCurrentFilter = (filterName) => setCurrentShowingProductsFilter(filterName);
     const filterShowingProducts = () => currentShowingProductsFilter === 'populars' ? 'populars' : 'promotions';
 
-    useEffect(async () => {
+    useEffect(  () => {
         setIsLoading(true);
-        try {
-            const querySnapshot = await getDocs(collection(database, 'products'));
-            await querySnapshot.forEach((doc) => {
-                const id = doc.id;
-                const data = doc.data();
-                const product = {...JSON.parse(JSON.stringify(data)), id};
-                if (product.type === 'ingredient') {
-                    setIngredientProducts(p => ([...p, product]));
-                }
-                if (product.type === 'equipment') {
-                    setEquipmentProducts(p => ([...p, product]));
-                }
-            })
-        } catch (e) {
-            console.log(e);
+        const getProducts = async () => {
+            try {
+                const querySnapshot = await getDocs(collection(database, 'products'));
+                await querySnapshot.forEach((doc) => {
+                    const id = doc.id;
+                    const data = doc.data();
+                    const product = {...JSON.parse(JSON.stringify(data)), id};
+                    if (product.type === 'ingredient') {
+                        setIngredientProducts(p => ([...p, product]));
+                    }
+                    if (product.type === 'equipment') {
+                        setEquipmentProducts(p => ([...p, product]));
+                    }
+                });
+            } catch (e) {
+                console.log(e);
+            }
         }
+        getProducts();
         setIsLoading(false);
+        return () => {}
     }, []);
 
     return (

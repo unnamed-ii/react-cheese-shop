@@ -15,25 +15,28 @@ const Recipes = () => {
     const [recipes, setRecipes] = useState([]);
     const [recentAddedRecipes, setRecentAddedRecipes] = useState([]);
 
-    useEffect(async () => {
+    useEffect( () => {
         setIsLoading(true);
-        try {
-            let docsIdx = 0;
-            const querySnapshot = await getDocs(collection(database, 'recipes'));
-            await querySnapshot.forEach((doc) => {
-                docsIdx++;
-                const id = doc.id;
-                const data = doc.data();
-                const recipe = {...JSON.parse(JSON.stringify(data)), id};
-                if (docsIdx <= 6){
-                    setRecipes(p => ([...p, recipe]));
-                } else {
-                    setRecentAddedRecipes(p => ([...p, recipe]));
-                }
-            })
-        } catch (e) {
-            console.log(e);
+        const getRecipes = async () => {
+            try {
+                let docsIdx = 0;
+                const querySnapshot = await getDocs(collection(database, 'recipes'));
+                await querySnapshot.forEach((doc) => {
+                    docsIdx++;
+                    const id = doc.id;
+                    const data = doc.data();
+                    const recipe = {...JSON.parse(JSON.stringify(data)), id};
+                    if (docsIdx <= 6){
+                        setRecipes(p => ([...p, recipe]));
+                    } else {
+                        setRecentAddedRecipes(p => ([...p, recipe]));
+                    }
+                })
+            } catch (e) {
+                console.log(e);
+            }
         }
+        getRecipes();
         setIsLoading(false);
     }, []);
 

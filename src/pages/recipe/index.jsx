@@ -17,20 +17,23 @@ const Recipe = () => {
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
     const [recipe, setRecipe] = useState({});
     const currentShowingRecipeId = pathname.split('/')[pathname.split('/').length - 1];
-    useEffect(async () => {
+    useEffect(() => {
         setIsLoading(true);
-        try {
-            const recipeRef = await doc(database, 'recipes', currentShowingRecipeId);
-            const recipeSnap = await getDoc(recipeRef);
-            if (recipeSnap.exists()) {
-                setRecipe({
-                    collectionId: recipeSnap.id,
-                    ...recipeSnap.data()
-                });
+        const getRecipe = async () => {
+            try {
+                const recipeRef = await doc(database, 'recipes', currentShowingRecipeId);
+                const recipeSnap = await getDoc(recipeRef);
+                if (recipeSnap.exists()) {
+                    setRecipe({
+                        collectionId: recipeSnap.id,
+                        ...recipeSnap.data()
+                    });
+                }
+            } catch (e) {
+                console.log(e);
             }
-        } catch (e) {
-            console.log(e);
         }
+        getRecipe();
         setIsLoading(false);
     }, []);
 

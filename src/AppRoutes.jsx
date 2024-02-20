@@ -12,7 +12,7 @@ const QA = lazy(() => import("./pages/qa"))
 const Calculator = lazy(() => import("./pages/calculator"));
 const Collections = lazy(() => import("./pages/collections"));
 const Profile = lazy(() => import("./pages/profile"));
-const About = lazy(() => import("./pages/ about"));
+const About = lazy(() => import("./pages/about"));
 const Registration = lazy(() => import("./pages/registration"));
 const Authorization = lazy(() => import("./pages/authorization"));
 const Recovery = lazy(() => import("./pages/recovery"));

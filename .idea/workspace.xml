@@ -15,7 +15,21 @@
   <component name="ChangeListManager">
     <list default="true" id="3ac95d05-b99f-4841-a183-69f24476cc07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppRoutes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppRoutes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/articles/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/articles/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/products/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/products/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ about/about-advantages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about/about-advantages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ about/about-company.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about/about-company.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ about/about-masters.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about/about-masters.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ about/about-motto.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about/about-motto.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ about/about-shop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about/about-shop.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ about/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ about/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ about/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/article/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/article/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/collections/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/collections/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recipe/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipe/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recipes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipes/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,6 +260,8 @@
       <workItem from="1693565861174" duration="8177000" />
       <workItem from="1708066160447" duration="1990000" />
       <workItem from="1708068201465" duration="965000" />
+      <workItem from="1708269076063" duration="3526000" />
+      <workItem from="1708439727952" duration="1243000" />
     </task>
     <servers />
   </component>

@@ -13,19 +13,22 @@ const Collections = () => {
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
     const [collections, setCollections] = useState([]);
 
-    useEffect(async () => {
+    useEffect( () => {
         setIsLoading(true);
-        try {
-            const querySnapshot = await getDocs(collection(database, 'collections'));
-            await querySnapshot.forEach((doc) => {
-                const id = doc.id;
-                const data = doc.data();
-                const newCollection = {...JSON.parse(JSON.stringify(data)), id};
-                setCollections(p => ([...p, newCollection]));
-            })
-        } catch (e) {
-            console.log(e);
+        const getCollections = async () => {
+            try {
+                const querySnapshot = await getDocs(collection(database, 'collections'));
+                await querySnapshot.forEach((doc) => {
+                    const id = doc.id;
+                    const data = doc.data();
+                    const newCollection = {...JSON.parse(JSON.stringify(data)), id};
+                    setCollections(p => ([...p, newCollection]));
+                })
+            } catch (e) {
+                console.log(e);
+            }
         }
+        getCollections();
         setIsLoading(false);
     }, []);
 

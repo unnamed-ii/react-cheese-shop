@@ -19,20 +19,23 @@ const Article = () => {
     const [article, setArticle] = useState({});
     const currentShowingCollectionId = pathname.split('/')[pathname.split('/').length - 1];
 
-    useEffect(async () => {
+    useEffect( () => {
         setIsLoading(true);
-        try {
-            const articleRef = await doc(database, 'articles', currentShowingCollectionId);
-            const articleSnap = await getDoc(articleRef);
-            if (articleSnap.exists()) {
-                setArticle({
-                    collectionId: articleSnap.id,
-                    ...articleSnap.data()
-                });
+        const getArticle = async () => {
+            try {
+                const articleRef = await doc(database, 'articles', currentShowingCollectionId);
+                const articleSnap = await getDoc(articleRef);
+                if (articleSnap.exists()) {
+                    setArticle({
+                        collectionId: articleSnap.id,
+                        ...articleSnap.data()
+                    });
+                }
+            } catch (e) {
+                console.log(e);
             }
-        } catch (e) {
-            console.log(e);
         }
+        getArticle();
         setIsLoading(false);
     }, []);
 
