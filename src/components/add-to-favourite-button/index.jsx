@@ -15,8 +15,9 @@ const AddToFavouriteButton = ({
                                   ...props
                               }) => {
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
+    const isAuth = JSON.parse(localStorage.getItem('isUserAuthorized'));
     const [isAdded, setIsAdded] = useState(isAlreadyAdded);
-    const userId = JSON.parse(localStorage.getItem("userInfo")).id;
+    const userId = isAuth ? JSON.parse(localStorage.getItem("userInfo")).id : "";
     const getProductData = async () => {
         try {
             const productRef = doc(database, collectionName, productId)

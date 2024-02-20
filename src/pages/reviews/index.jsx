@@ -15,7 +15,7 @@ import ReviewModal from "../../components/modals/review-modal";
 
 const Reviews = () => {
     const isAuth = JSON.parse(localStorage.getItem('isUserAuthorized'));
-    const userFullName = JSON.parse(localStorage.getItem('userInfo')).userData.fullName;
+    const userFullName = isAuth ? JSON.parse(localStorage.getItem('userInfo')).userData.fullName : "";
     const [isModalOpened, setIsModalOpened] = useState(false);
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
     const [reviewsList, setReviewsList] = useState([]);
