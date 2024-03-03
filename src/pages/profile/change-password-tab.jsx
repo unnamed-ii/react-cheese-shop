@@ -1,11 +1,10 @@
 import React, {useContext, useState} from 'react';
 import './style.scss';
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
-import {collection, getDocs, doc, updateDoc} from "firebase/firestore";
-import {database} from "../../firebase";
 import {LoadingAnimationContext} from "../../Context";
 import Button from "../../components/button";
 import Title from "../../components/title";
+import {changeUserPassword} from "../../api";
 
 const ChangePasswordTab = ({activeTab}) => {
     const userId = JSON.parse(localStorage.getItem('userInfo')).id;
@@ -26,24 +25,7 @@ const ChangePasswordTab = ({activeTab}) => {
         }
 
         let currentPassword = '';
-        try {
-            const querySnapshot = await getDocs(collection(database, "users"));
-            querySnapshot.forEach((user) => {
-                if (user.data().password === oldPassword) {
-                    currentPassword = oldPassword;
-                }
-            });
-
-            if (currentPassword){
-                // here we'll send new pass to server
-                const userRef = await doc(database, "users", userId);
-                await updateDoc(userRef, {
-                    password: newPassword,
-                })
-            }
-        } catch (e) {
-            console.log(e);
-        }
+        await changeUserPassword(oldPassword, currentPassword, newPassword, userId)
 
         if (!currentPassword) {
             setIsLoading(false);

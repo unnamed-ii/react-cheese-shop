@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from "react";
-import {database} from "../../firebase";
 import ModalWrapper from "../../components/modal-wrapper";
-import {doc, getDoc, updateDoc} from "firebase/firestore";
 import {ReactComponent as CloseIcon} from "../../images/icons/close-moduls-btn.svg";
+import {getUserInfo, updateUserInfo} from "../../api";
 
 export const EditingInfoForm = ({toggleEditingForm, activeTab}) => {
     const userInfo = JSON.parse(localStorage.getItem('userInfo'));
@@ -21,34 +20,13 @@ export const EditingInfoForm = ({toggleEditingForm, activeTab}) => {
         }))
     }
 
-    useEffect(async () => {
-        try {
-            const userRef = doc(database, 'users', userInfo.id);
-            const userSnap = await getDoc(userRef);
-            console.log('EditingInfoForm =>', userSnap.data());
-        } catch (e) {
-            console.log(e);
-        }
+    useEffect(() => {
+        void getUserInfo(userInfo);
     }, []);
 
     const editForm = async (e) => {
         e.preventDefault();
-        try {
-            const userDataRef = doc(database, 'users', userInfo.id);
-            const userData = {
-                fullName: form.fullName,
-                phone: form.phone,
-                email: form.email,
-                address: form.address,
-            }
-            await updateDoc(userDataRef, userData)
-            await localStorage.setItem('userInfo', JSON.stringify({
-                id: userInfo.id,
-                userData: userData
-            }));
-        } catch (e) {
-            console.log(e)
-        }
+        await updateUserInfo(form, userInfo);
         toggleEditingForm();
         setForm({
             name: '',

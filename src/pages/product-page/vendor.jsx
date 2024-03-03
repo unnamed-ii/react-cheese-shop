@@ -1,19 +1,14 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Counter from "../../components/counter";
 import {ReactComponent as FullViewIcon} from "../../images/icons/360.svg";
-import {ReactComponent as SolidHeartIcon} from "../../images/icons/profile/heart-solid.svg";
 import {ReactComponent as QuestionIcon} from "../../images/icons/choose-modal-question.svg";
 import {ReactComponent as GiftIcon} from "../../images/icons/product-card-page/gift.svg";
 import {ReactComponent as CreditCardsIcon} from "../../images/icons/product-card-page/credit-cards.svg";
 import {ReactComponent as MedalIcon} from "../../images/icons/product-card-page/medals.svg";
-import productCart from "../../images/product-card-page.png";
 import productCart2 from "../../images/product-card-page2.png";
 import AddToFavouriteButton from "../../components/add-to-favourite-button";
-import {doc, getDoc} from "firebase/firestore";
-import {database} from "../../firebase";
 import Button from "../../components/button";
 import Rating from "@mui/material/Rating";
-import {getFileURLFromFirebaseStorage} from "../../utils/getFileFromFirebaseStorage";
 
 const Vendor = ({
                     price,

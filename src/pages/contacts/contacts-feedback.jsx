@@ -1,10 +1,8 @@
 import React, {useContext, useState} from 'react';
-import {addDoc, collection} from "firebase/firestore";
-import {database} from "../../firebase";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
-import {refreshPage} from "../../utils/refreshPage";
 import {LoadingAnimationContext} from "../../Context";
 import Button from "../../components/button";
+import {sendFeedback} from "../../api";
 
 const ContactsFeedback = () => {
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
@@ -21,15 +19,7 @@ const ContactsFeedback = () => {
     }
     const messageFormSubmit = async (e) => {
         e.preventDefault();
-        setIsLoading(true);
-        try {
-            await addDoc(collection(database, 'questions-messages'), form);
-            setTimeout(() => {
-                refreshPage();
-            }, 1000)
-        } catch (e) {
-            console.log(e);
-        }
+        void sendFeedback(setIsLoading, form);
     }
 
     return (

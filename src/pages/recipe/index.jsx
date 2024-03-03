@@ -8,9 +8,8 @@ import RecipeBenefit from "./recipe-benefit";
 import RecipeRecommendation from "./recipe-recommendation";
 import {useLocation} from "react-router-dom";
 import {LoadingAnimationContext} from "../../Context";
-import {doc, getDoc} from "firebase/firestore";
-import {database} from "../../firebase";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
+import {getRecipe} from "../../api";
 
 const Recipe = () => {
     const {pathname} = useLocation()
@@ -18,23 +17,7 @@ const Recipe = () => {
     const [recipe, setRecipe] = useState({});
     const currentShowingRecipeId = pathname.split('/')[pathname.split('/').length - 1];
     useEffect(() => {
-        setIsLoading(true);
-        const getRecipe = async () => {
-            try {
-                const recipeRef = await doc(database, 'recipes', currentShowingRecipeId);
-                const recipeSnap = await getDoc(recipeRef);
-                if (recipeSnap.exists()) {
-                    setRecipe({
-                        collectionId: recipeSnap.id,
-                        ...recipeSnap.data()
-                    });
-                }
-            } catch (e) {
-                console.log(e);
-            }
-        }
-        getRecipe();
-        setIsLoading(false);
+        void getRecipe(setIsLoading, currentShowingRecipeId, setRecipe);
     }, []);
 
     return (

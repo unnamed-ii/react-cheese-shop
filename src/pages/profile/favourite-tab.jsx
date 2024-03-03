@@ -1,11 +1,10 @@
 import React, {useContext, useEffect, useState} from 'react';
 import './style.scss';
 import FavouriteTabItem from "./favourite-tab-item";
-import {database} from "../../firebase";
-import {doc, getDoc} from "firebase/firestore";
 import {LoadingAnimationContext} from "../../Context";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
 import Title from "../../components/title";
+import {getFavouriteProducts} from "../../api";
 
 const FavouriteTab = ({activeTab}) => {
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
@@ -18,18 +17,7 @@ const FavouriteTab = ({activeTab}) => {
     }
     console.log(favouriteProducts)
     useEffect(() => {
-        const getFavouriteProducts = async () => {
-            try {
-                setIsLoading(true);
-                const userRef = await doc(database, 'users', userId);
-                const userSnap = await getDoc(userRef);
-                setFavouriteProducts([...userSnap.data().favourite]);
-                setIsLoading(false);
-            } catch (e) {
-                console.log(e)
-            }
-        }
-        getFavouriteProducts();
+        void getFavouriteProducts(setIsLoading, userId, setFavouriteProducts);
         return () => {
             setFavouriteProducts([]);
         }

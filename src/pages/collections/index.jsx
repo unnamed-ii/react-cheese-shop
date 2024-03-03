@@ -3,33 +3,17 @@ import './style.scss'
 import Wrapper from "../../components/wrapper";
 import MainNav from "../../components/main-nav";
 import {CollectionCard} from "./collection-card";
-import {collection, getDocs} from "firebase/firestore";
-import {database} from "../../firebase";
 import {LoadingAnimationContext} from "../../Context";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
 import Title from "../../components/title";
+import {getCollections} from "../../api";
 
 const Collections = () => {
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
     const [collections, setCollections] = useState([]);
 
     useEffect( () => {
-        setIsLoading(true);
-        const getCollections = async () => {
-            try {
-                const querySnapshot = await getDocs(collection(database, 'collections'));
-                await querySnapshot.forEach((doc) => {
-                    const id = doc.id;
-                    const data = doc.data();
-                    const newCollection = {...JSON.parse(JSON.stringify(data)), id};
-                    setCollections(p => ([...p, newCollection]));
-                })
-            } catch (e) {
-                console.log(e);
-            }
-        }
-        getCollections();
-        setIsLoading(false);
+        void getCollections(setIsLoading, setCollections);
     }, []);
 
     return (

@@ -22,6 +22,7 @@ Cheese shop
 - Ability to search product (Header) (Check input search)
 - Advanced filtering products (Category page)
 - Add rendering image of products/collections/articles/recipes from server
+- Block unauthorized users from going to profile page (it's possible now, if they will change url)
 
 // 01/08/2023. Yesterday you created function for getting image url, so now you have to create image field 
                for every product/collection/article document in firestore.

@@ -5,10 +5,9 @@ import MainNav from "../../components/main-nav";
 import CheeseRecipeCard from "../../components/recipe-card";
 import AddedRecipe from "../../components/added-recipe-card";
 import {LoadingAnimationContext} from "../../Context";
-import {collection, getDocs} from "firebase/firestore";
-import {database} from "../../firebase";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
 import Title from "../../components/title";
+import {getRecipes} from "../../api";
 
 const Recipes = () => {
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
@@ -16,28 +15,7 @@ const Recipes = () => {
     const [recentAddedRecipes, setRecentAddedRecipes] = useState([]);
 
     useEffect( () => {
-        setIsLoading(true);
-        const getRecipes = async () => {
-            try {
-                let docsIdx = 0;
-                const querySnapshot = await getDocs(collection(database, 'recipes'));
-                await querySnapshot.forEach((doc) => {
-                    docsIdx++;
-                    const id = doc.id;
-                    const data = doc.data();
-                    const recipe = {...JSON.parse(JSON.stringify(data)), id};
-                    if (docsIdx <= 6){
-                        setRecipes(p => ([...p, recipe]));
-                    } else {
-                        setRecentAddedRecipes(p => ([...p, recipe]));
-                    }
-                })
-            } catch (e) {
-                console.log(e);
-            }
-        }
-        getRecipes();
-        setIsLoading(false);
+        void getRecipes(setIsLoading, setRecipes, setRecentAddedRecipes);
     }, []);
 
     return (

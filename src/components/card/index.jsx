@@ -6,7 +6,7 @@ import card from '../../images/card.png'
 import {Link} from "react-router-dom";
 import Button from "../button";
 import ProductAddedModal from "../modals/product-added";
-import {getFileURLFromFirebaseStorage} from "../../utils/getFileFromFirebaseStorage";
+import {getFileURLFromFirebaseStorage} from "../../api";
 
 const Card = ({
                   title = 'Мезофильная закваска Danisco CHOOZIT MM...',
@@ -22,7 +22,7 @@ const Card = ({
 
     useEffect(() => {
         if (productImageURL) {
-            getFileURLFromFirebaseStorage(productImageURL, setImageURL);
+            void getFileURLFromFirebaseStorage(productImageURL, setImageURL);
         }
     }, [productImageURL]);
 

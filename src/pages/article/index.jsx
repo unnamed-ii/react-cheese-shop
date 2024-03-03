@@ -8,10 +8,9 @@ import ArticleInfo from "./article-info";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
 import {useLocation} from "react-router-dom";
 import {LoadingAnimationContext} from "../../Context";
-import {doc, getDoc} from "firebase/firestore";
-import {database} from "../../firebase";
 import articleDefaultImage from '../../images/article.png'
 import Title from "../../components/title";
+import {getArticle} from "../../api";
 
 const Article = () => {
     const {pathname} = useLocation()
@@ -20,23 +19,7 @@ const Article = () => {
     const currentShowingCollectionId = pathname.split('/')[pathname.split('/').length - 1];
 
     useEffect( () => {
-        setIsLoading(true);
-        const getArticle = async () => {
-            try {
-                const articleRef = await doc(database, 'articles', currentShowingCollectionId);
-                const articleSnap = await getDoc(articleRef);
-                if (articleSnap.exists()) {
-                    setArticle({
-                        collectionId: articleSnap.id,
-                        ...articleSnap.data()
-                    });
-                }
-            } catch (e) {
-                console.log(e);
-            }
-        }
-        getArticle();
-        setIsLoading(false);
+        void getArticle(setIsLoading, currentShowingCollectionId, setArticle);
     }, []);
 
     return (

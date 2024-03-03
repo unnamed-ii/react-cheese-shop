@@ -5,13 +5,11 @@ import MainNav from "../../components/main-nav";
 import ReviewCard from "./review-card";
 import {ReactComponent as UserIcon} from '../../images/icons/reviews-user.svg';
 import LoginModal from "../../components/modals/login";
-import {database} from "../../firebase";
-import {addDoc, collection, getDocs} from "firebase/firestore";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
 import {LoadingAnimationContext} from "../../Context";
-import {refreshPage} from "../../utils/refreshPage";
 import Title from "../../components/title";
 import ReviewModal from "../../components/modals/review-modal";
+import {getReviews, sendReview} from "../../api";
 
 const Reviews = () => {
     const isAuth = JSON.parse(localStorage.getItem('isUserAuthorized'));
@@ -32,38 +30,8 @@ const Reviews = () => {
         }));
     }
 
-    const getReviews = async () => {
-        await setIsLoading(true);
-        const querySnapshot = await getDocs(collection(database, "reviews"));
-        querySnapshot.forEach((review) => {
-            const addingReview = review.data();
-            setReviewsList(prevState => ([
-                ...prevState,
-                addingReview
-            ]))
-        });
-    }
-
-    const sendReview = async (e) => {
-        e.preventDefault();
-        setIsLoading(true);
-        try {
-            const reviewData = {
-                fullName: userFullName,
-                rate: sendingReviewInputs.rate,
-                text: sendingReviewInputs.text,
-                createdAt: new Date().toDateString()
-            }
-            await addDoc(collection(database, "reviews"), reviewData);
-            refreshPage();
-            toggleModal();
-        } catch (e) {
-            console.log(e);
-        }
-        setIsLoading(false);
-    }
     useEffect(() => {
-        getReviews();
+        void getReviews(setIsLoading, setReviewsList);
         setTimeout(() => setIsLoading(false), 1000)
     }, []);
 
@@ -84,7 +52,7 @@ const Reviews = () => {
                                         <UserIcon className="user-icon"/> Оставить отзыв
                                     </button>
                                     <ReviewModal
-                                        sendReview={sendReview}
+                                        sendReview={(e) => sendReview(e, setIsLoading, userFullName, sendingReviewInputs, toggleModal)}
                                         toggleModal={toggleModal}
                                         isModalOpened={isModalOpened}
                                         onSendingReviewInputChange={onSendingReviewInputChange}

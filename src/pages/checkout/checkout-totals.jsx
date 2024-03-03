@@ -1,6 +1,7 @@
 import React from 'react';
 import {useSelector} from "react-redux";
 import Button from "../../components/button";
+import {leaveOrder} from "../../api";
 
 const CheckoutTotals = ({leaveOrder}) => {
     const basketSum = useSelector(state => state.basket.sum);

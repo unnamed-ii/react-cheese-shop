@@ -11,10 +11,8 @@ import {russianRegions} from "./constants";
 import {useDispatch, useSelector} from "react-redux";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
 import {LoadingAnimationContext} from "../../Context";
-import {addDoc, collection, doc, updateDoc, getDoc} from "firebase/firestore";
-import {database} from "../../firebase";
 import {useNavigate} from "react-router-dom";
-import {clearBasketActionCreator} from "../../store/basket";
+import {leaveOrder} from "../../api";
 
 const Checkout = () => {
     const dispatch = useDispatch();
@@ -70,25 +68,6 @@ const Checkout = () => {
         }))
     }
 
-    const leaveOrder = async () => {
-        try {
-            setIsLoading(true);
-            await addDoc(collection(database, "orders"), order);
-            const userRef = await doc(database, "users", userId);
-            const userDoc = await getDoc(userRef);
-            const userPreviousOrders = [...userDoc.data().orders];
-            await updateDoc(userRef, {
-                orders: [...userPreviousOrders, ...order.products]
-            })
-            navigate("/");
-            alert("Ваш заказ принят!")
-            dispatch(clearBasketActionCreator());
-            setIsLoading(false);
-        } catch (e) {
-            console.log(e)
-        }
-    }
-
     return (
         <Wrapper>
             <LoadingAnimation isLoading={isLoading}/>
@@ -113,7 +92,7 @@ const Checkout = () => {
                     />
                 </div>
                 <CheckoutTotals
-                    leaveOrder={leaveOrder}
+                    leaveOrder={() => leaveOrder(setIsLoading, order, userId, navigate, dispatch)}
                 />
             </div>
         </Wrapper>

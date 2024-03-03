@@ -3,7 +3,7 @@ import './style.scss';
 import AddToFavouriteButton from "../../components/add-to-favourite-button";
 import {Link} from "react-router-dom";
 import Button from "../../components/button";
-import {getFileURLFromFirebaseStorage} from "../../utils/getFileFromFirebaseStorage";
+import {getFileURLFromFirebaseStorage} from "../../api";
 
 const FavouriteTabItem = ({
                               status,
@@ -19,7 +19,7 @@ const FavouriteTabItem = ({
     console.log(productImageURL)
     useEffect(() => {
         if (productImageURL) {
-            getFileURLFromFirebaseStorage(productImageURL, setImageURL);
+            void getFileURLFromFirebaseStorage(productImageURL, setImageURL);
         }
     }, [productImageURL]);
 

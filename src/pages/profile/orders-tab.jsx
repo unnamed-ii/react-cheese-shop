@@ -1,31 +1,17 @@
 import React, {useContext, useEffect, useState} from 'react';
 import './style.scss';
 import OrdersTabItem from "./orders-tab-item";
-import productImage from "../../images/checkout-products-image.png";
 import Title from "../../components/title";
 import {LoadingAnimationContext} from "../../Context";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
-import {database} from "../../firebase";
-import { doc, getDoc} from "firebase/firestore";
+import {getUsersPreviousOrders} from "../../api";
 
 const OrdersTab = ({activeTab}) => {
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
     const userId = JSON.parse(localStorage.getItem("userInfo")).id;
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        const getUsersPreviousOrders = async () => {
-            try {
-                setIsLoading(true);
-                const userRef = await doc(database, "users", userId);
-                const userData = await getDoc(userRef);
-                const usersPreviousOrders = userData.data().orders;
-                setOrders([...usersPreviousOrders]);
-                setIsLoading(false);
-            } catch (e) {
-                console.log(e)
-            }
-        }
-        getUsersPreviousOrders();
+        void getUsersPreviousOrders(setIsLoading, userId, setOrders);
     }, [])
 
     return (

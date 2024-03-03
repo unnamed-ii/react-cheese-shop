@@ -3,7 +3,7 @@ import Counter from "../counter";
 import {useDispatch} from "react-redux";
 import {removeProductActionCreator, setProductNumberActionCreator} from "../../store/basket";
 import {ReactComponent as RemoveBtnIcon} from '../../images/icons/close-btn.svg';
-import {getFileURLFromFirebaseStorage} from "../../utils/getFileFromFirebaseStorage";
+import {getFileURLFromFirebaseStorage} from "../../api";
 
 const BasketProductCard = ({title, price, id, productImageURL, amount = 1}) => {
     const dispatch = useDispatch();
@@ -12,7 +12,7 @@ const BasketProductCard = ({title, price, id, productImageURL, amount = 1}) => {
 
     useEffect(() => {
         if (productImageURL) {
-            getFileURLFromFirebaseStorage(productImageURL, setImageURL);
+            void getFileURLFromFirebaseStorage(productImageURL, setImageURL);
         }
     }, [productImageURL]);
 

@@ -1,8 +1,6 @@
 import React from 'react';
 import './style.scss'
 import {Link, useNavigate} from "react-router-dom";
-import {database} from "../../firebase";
-import {addDoc, collection, getDocs} from "firebase/firestore";
 import CheckBox from "../../components/checkbox";
 import Button from "../../components/button";
 import {useForm} from "react-hook-form";
@@ -14,6 +12,7 @@ import {ReactComponent as VkIcon} from "../../images/icons/sign-up/vk.svg";
 import {ReactComponent as TwitterIcon} from "../../images/icons/sign-up/twitter.svg";
 import {ReactComponent as MailRuIcon} from "../../images/icons/sign-up/mailRu.svg";
 import {ReactComponent as YandexIcon} from "../../images/icons/sign-up/yandex.svg";
+import {addUser} from "../../api";
 
 const RegistrationForm = () => {
     const navigate = useNavigate();
@@ -27,33 +26,7 @@ const RegistrationForm = () => {
         resolver: yupResolver(registrationFormSchema)
     });
     const registerUser = async (data) => {
-        try {
-            const userInputsData = {
-                ...data,
-                phone: "",
-                address: "",
-                coupons: [],
-                favourite: [],
-                orders: [],
-            }
-            let isEmailRegistered = false;
-            const usersCollectionSnapshot = await getDocs(collection(database, "users"));
-
-            usersCollectionSnapshot.forEach((doc) => {
-                const user = doc.data();
-                if (user.email === userInputsData.email) {
-                    alert('Account with this email is already registered');
-                    isEmailRegistered = true;
-                }
-            });
-
-            if (isEmailRegistered === false) {
-                await addDoc(collection(database, "users"), userInputsData);
-                navigate("/authorization");
-            }
-        } catch (e) {
-            console.log(e);
-        }
+        void addUser(data, navigate);
     }
 
     return (

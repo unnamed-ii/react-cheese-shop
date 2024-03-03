@@ -9,7 +9,7 @@ import Button from "../../components/button";
 import Rating from "@mui/material/Rating";
 import Title from "../../components/title";
 import ProductAddedModal from "../../components/modals/product-added";
-import {getFileURLFromFirebaseStorage} from "../../utils/getFileFromFirebaseStorage";
+import {getFileURLFromFirebaseStorage} from "../../api";
 
 const CollectionInfo = ({
                             price,
@@ -29,7 +29,7 @@ const CollectionInfo = ({
     const toggleModal = () => setIsProductAdded(!isProductAdded);
     useEffect(() => {
         if (productImageURL) {
-            getFileURLFromFirebaseStorage(productImageURL, setImageURL);
+            void getFileURLFromFirebaseStorage(productImageURL, setImageURL);
         }
     }, [productImageURL]);
 

@@ -5,9 +5,8 @@ import Wrapper from "../../components/wrapper";
 import Card from "../../components/card";
 import LoadingAnimation from "../../components/loadingAnimation/loadingAnimation";
 import {LoadingAnimationContext} from "../../Context";
-import {database} from "../../firebase";
-import {collection, getDocs} from "firebase/firestore";
 import Title from "../../components/title";
+import {getProducts} from "../../api";
 
 const Products = () => {
     const {isLoading, setIsLoading} = useContext(LoadingAnimationContext);
@@ -15,30 +14,10 @@ const Products = () => {
     const [equipmentProducts, setEquipmentProducts] = useState([]);
     const [currentShowingProductsFilter, setCurrentShowingProductsFilter] = useState('populars');
     const toggleCurrentFilter = (filterName) => setCurrentShowingProductsFilter(filterName);
-    const filterShowingProducts = () => currentShowingProductsFilter === 'populars' ? 'populars' : 'promotions';
+    // const filterShowingProducts = () => currentShowingProductsFilter === 'populars' ? 'populars' : 'promotions';
 
     useEffect(  () => {
-        setIsLoading(true);
-        const getProducts = async () => {
-            try {
-                const querySnapshot = await getDocs(collection(database, 'products'));
-                await querySnapshot.forEach((doc) => {
-                    const id = doc.id;
-                    const data = doc.data();
-                    const product = {...JSON.parse(JSON.stringify(data)), id};
-                    if (product.type === 'ingredient') {
-                        setIngredientProducts(p => ([...p, product]));
-                    }
-                    if (product.type === 'equipment') {
-                        setEquipmentProducts(p => ([...p, product]));
-                    }
-                });
-            } catch (e) {
-                console.log(e);
-            }
-        }
-        getProducts();
-        setIsLoading(false);
+        void getProducts(setIsLoading, setIngredientProducts, setEquipmentProducts);
         return () => {}
     }, []);
 

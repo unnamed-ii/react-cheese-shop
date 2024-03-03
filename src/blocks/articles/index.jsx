@@ -2,29 +2,15 @@ import React, {useEffect, useState} from 'react';
 import './style.scss';
 import Wrapper from "../../components/wrapper";
 import {ArticleCard} from "./articles-card";
-import {collection, getDocs} from "firebase/firestore";
-import {database} from "../../firebase";
 import articleDefaultImage from '../../images/articles/article1.png';
 import Title from "../../components/title";
+import {getArticles} from "../../api";
 
 const Articles = () => {
     const [articles, setArticles] = useState([]);
 
     useEffect( () => {
-        const getArticles = async () => {
-            try {
-                const querySnapshot = await getDocs(collection(database, 'articles'));
-                await querySnapshot.forEach((doc) => {
-                    const id = doc.id;
-                    const data = doc.data();
-                    const article = {...JSON.parse(JSON.stringify(data)), id};
-                    setArticles(p => ([...p, article]));
-                })
-            } catch (e) {
-                console.log(e);
-            }
-        }
-        getArticles();
+        void getArticles(setArticles);
     }, []);
 
     return (
